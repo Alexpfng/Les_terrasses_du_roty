@@ -1,0 +1,62 @@
+/* ============================================================
+   Les Terrasses du Roty — design tokens
+   Extraits de la maquette Claude Design (source de vérité).
+   ============================================================ */
+:root {
+  /* Couleurs */
+  --ltdr-black: #0a0908;
+  --ltdr-black-deep: #060504;
+  --ltdr-black-bottle: #050404;
+  --ltdr-gold: #c9a227;
+  --ltdr-gold-dark: #a8861d; /* or sur fond clair (contraste) */
+  --ltdr-ivory: #f4f0e6;
+  --ltdr-ivory-60: rgba(244, 240, 230, 0.6);
+  --ltdr-ivory-55: rgba(244, 240, 230, 0.55);
+  --ltdr-ivory-45: rgba(244, 240, 230, 0.45);
+  --ltdr-ivory-35: rgba(244, 240, 230, 0.35);
+  --ltdr-ink-65: rgba(10, 9, 8, 0.65);
+  --ltdr-ink-60: rgba(10, 9, 8, 0.6);
+  --ltdr-ink-55: rgba(10, 9, 8, 0.55);
+  /* corps de texte sur ivoire — contraste AAA (~8:1) */
+  --ltdr-ink-strong: rgba(26, 22, 18, 0.92);
+  --ltdr-gold-border: rgba(201, 162, 39, 0.16);
+  --ltdr-gold-border-hover: rgba(201, 162, 39, 0.5);
+
+  /* Typographies */
+  --font-display: 'Cormorant', 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', -apple-system, 'Helvetica Neue', sans-serif;
+
+  /* Échelle display */
+  --fs-hero: clamp(42px, 8.2vw, 132px);
+  --fs-acte: clamp(30px, 4.4vw, 60px);
+  --fs-h2: clamp(36px, 5.5vw, 84px);
+  --fs-caption-3d: clamp(24px, 2.6vw, 36px);
+  --fs-counter: clamp(54px, 7vw, 104px);
+  --fs-menu: clamp(40px, 8vw, 104px);
+
+  /* Micro-typo (labels uppercase) */
+  --label-size: 11px;
+  --label-tracking: 0.32em;
+  --label-tracking-tight: 0.28em;
+
+  /* Espacements */
+  --pad-x: clamp(24px, 7vw, 110px);
+  --pad-hdr: clamp(20px, 3.5vw, 48px);
+
+  /* Étalonnage photo (direction artistique) */
+  /* monochrome chaud charbon→or pour les images « mémoire » (Actes II/III) */
+  --duotone: grayscale(1) sepia(0.5) saturate(1.7) hue-rotate(-12deg) contrast(1.08);
+  /* léger grade éditorial pour les photos couleur (boutique) */
+  --grade-photo: contrast(1.05) saturate(0.96) brightness(0.99);
+
+  /* Z-index */
+  --z-canvas: 1;
+  --z-content: 2;
+  --z-header: 990;
+  --z-menu: 994;
+  --z-vignette: 995;
+  --z-grain: 996;
+  --z-gate: 998;
+  --z-preloader: 999;
+  --z-cursor: 1000;
+}
