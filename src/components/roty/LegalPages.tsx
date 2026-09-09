@@ -1,4 +1,5 @@
 import { Breadcrumb } from "./SiteLayout";
+import { AnalyticsPreferencesButton } from "./AnalyticsConsent";
 export function LegalPage({ kind }: { kind: "mentions" | "confidentialite" | "conditions" }) {
   const title =
     kind === "mentions"
@@ -113,10 +114,43 @@ export function LegalPage({ kind }: { kind: "mentions" | "confidentialite" | "co
             </p>
             <h2>Cookies et mesure d’audience</h2>
             <p>
-              Cette version du site n’intègre ni publicité, ni outil de suivi d’audience, ni
-              inscription automatique à une newsletter. Les polices et les images sont servies
-              depuis le site. Aucun cookie publicitaire n’est déposé par l’application.
+              Sur le site public, Google Analytics peut mesurer les pages consultées et les étapes
+              du formulaire uniquement après votre accord. Refuser est aussi simple qu’accepter et
+              ne limite pas l’utilisation du site. La mesure est désactivée sur les versions de
+              préproduction.
             </p>
+            <p>
+              Les informations mesurées comprennent la page consultée, le début d’une demande et son
+              acceptation par le serveur, ainsi que le type de public et la cuvée choisis. Le site
+              n’envoie à Google ni nom, ni e-mail, ni téléphone, ni établissement, ni message, ni
+              paramètres d’URL. L’acceptation d’une demande par le serveur ne signifie pas qu’un
+              e-mail a été reçu ou qu’une vente a eu lieu.
+            </p>
+            <p>
+              Votre préférence est conservée dans votre navigateur pendant six mois. Après
+              consentement, les cookies Analytics permettent la mesure d’audience ; vous pouvez
+              retirer votre accord et supprimer ces cookies via le bouton ci-dessous. Aucun suivi
+              publicitaire n’est activé par le site. Les polices et images sont hébergées avec le
+              site.
+            </p>
+            <p>
+              Les données détaillées sur les événements et utilisateurs sont conservées deux mois
+              dans Analytics, sans prolongation automatique lors d’une nouvelle visite. Cette durée
+              ne concerne pas les rapports statistiques agrégés de Google.
+            </p>
+            <p>
+              Google Ireland Limited intervient pour la mesure d’audience. Consultez les{" "}
+              <a href="https://policies.google.com/privacy?hl=fr">
+                règles de confidentialité de Google
+              </a>{" "}
+              et les{" "}
+              <a href="https://privacy.google.com/businesses/processorterms/">
+                conditions de traitement des données
+              </a>
+              , notamment pour les transferts internationaux. Vous disposez des droits décrits
+              ci-dessus et pouvez retirer votre consentement à tout moment.
+            </p>
+            <AnalyticsPreferencesButton />
           </>
         ) : (
           <>

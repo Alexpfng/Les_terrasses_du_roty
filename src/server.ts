@@ -4,6 +4,7 @@ import { beforeSiteRequest, siteResponse } from "./lib/site-http.server";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
+import { analyticsConfiguration } from "./lib/analytics-config.server";
 
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
@@ -44,6 +45,8 @@ export default {
     try {
       const early = beforeSiteRequest(request);
       if (early) return await siteResponse(request, early);
+      if (new URL(request.url).pathname.replace(/\/$/, "") === "/api/analytics-config")
+        return await siteResponse(request, analyticsConfiguration(request));
       if (new URL(request.url).pathname.replace(/\/$/, "") === "/api/demandes")
         return await siteResponse(request, await handleDemande(request));
       const handler = await getServerEntry();

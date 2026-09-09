@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-09-09T11:27:02.037Z",
+  "base": "http://127.0.0.1:4323",
+  "mode": "Vite development, Chrome headless, no external form submitted",
+  "checks": [
+    {
+      "route": "/vins/",
+      "width": 390,
+      "status": 200,
+      "violations": [],
+      "title": "Syrah de Saulcet — Achat direct | Les Terrasses du Roty",
+      "titleLength": 55,
+      "h1": 1,
+      "overflow": false,
+      "brokenAnchors": []
+    },
+    {
+      "route": "/professionnels/",
+      "width": 390,
+      "status": 200,
+      "violations": [],
+      "title": "Syrah pour cavistes et restaurants | Les Terrasses du Roty",
+      "titleLength": 58,
+      "h1": 1,
+      "overflow": false,
+      "brokenAnchors": []
+    },
+    {
+      "route": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "width": 390,
+      "status": 200,
+      "violations": [],
+      "title": "Référencer une Syrah : le guide pro | Les Terrasses du Roty",
+      "titleLength": 59,
+      "h1": 1,
+      "overflow": false,
+      "brokenAnchors": []
+    },
+    {
+      "route": "/journal/acheter-vin-direct-producteur-allier/",
+      "width": 390,
+      "status": 200,
+      "violations": [],
+      "title": "Achat de vin en direct dans l’Allier | Les Terrasses du Roty",
+      "titleLength": 60,
+      "h1": 1,
+      "overflow": false,
+      "brokenAnchors": []
+    },
+    {
+      "route": "/vins/",
+      "width": 1440,
+      "status": 200,
+      "violations": [],
+      "title": "Syrah de Saulcet — Achat direct | Les Terrasses du Roty",
+      "titleLength": 55,
+      "h1": 1,
+      "overflow": false,
+      "brokenAnchors": []
+    },
+    {
+      "route": "/professionnels/",
+      "width": 1440,
+      "status": 200,
+      "violations": [],
+      "title": "Syrah pour cavistes et restaurants | Les Terrasses du Roty",
+      "titleLength": 58,
+      "h1": 1,
+      "overflow": false,
+      "brokenAnchors": []
+    },
+    {
+      "route": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "width": 1440,
+      "status": 200,
+      "violations": [],
+      "title": "Référencer une Syrah : le guide pro | Les Terrasses du Roty",
+      "titleLength": 59,
+      "h1": 1,
+      "overflow": false,
+      "brokenAnchors": []
+    },
+    {
+      "route": "/journal/acheter-vin-direct-producteur-allier/",
+      "width": 1440,
+      "status": 200,
+      "violations": [],
+      "title": "Achat de vin en direct dans l’Allier | Les Terrasses du Roty",
+      "titleLength": 60,
+      "h1": 1,
+      "overflow": false,
+      "brokenAnchors": []
+    },
+    {
+      "route": "/vins/",
+      "noJavaScript": true,
+      "status": 200,
+      "contentVisible": true
+    },
+    {
+      "route": "/professionnels/",
+      "noJavaScript": true,
+      "status": 200,
+      "contentVisible": true
+    }
+  ],
+  "passed": true
+}

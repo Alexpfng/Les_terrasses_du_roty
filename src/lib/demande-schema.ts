@@ -31,7 +31,7 @@ export const demandeSchema = z
     email: singleLine(254)
       .pipe(z.string().email("Indiquez une adresse e-mail valide."))
       .transform((value) => value.toLowerCase()),
-    profile: z.enum(["particulier", "professionnel"], {
+    profile: z.enum(["particulier", "caviste", "restaurateur", "professionnel"], {
       message: "Sélectionnez votre profil.",
     }),
     purpose: z.enum(["bouteilles", "conseil", "professionnel", "autre"], {

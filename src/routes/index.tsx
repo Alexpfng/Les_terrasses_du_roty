@@ -5,8 +5,8 @@ import { seo } from "@/content/seo";
 export const Route = createFileRoute("/")({
   head: () =>
     seo(
-      "Les Terrasses du Roty — Sept terrasses. Une Syrah.",
-      "À Saulcet, dans l’Allier, découvrez les sept terrasses en pierre sèche du Roty, leur histoire et les cuvées de Syrah. Contactez directement le domaine.",
+      "Les Terrasses du Roty — Syrah à Saulcet, Allier",
+      "Découvrez les vins de Syrah des Terrasses du Roty à Saulcet, dans l’Allier. Cuvées et contact direct pour particuliers, cavistes et restaurateurs.",
       "/",
     ),
   component: Home,
@@ -102,7 +102,7 @@ function Home() {
             </h2>
           </div>
           <p>
-            Découvrez les références du domaine.
+            Particuliers, découvrez les vins du domaine.
             <br />
             Les disponibilités se précisent ensemble.
           </p>

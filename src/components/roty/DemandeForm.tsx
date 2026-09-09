@@ -1,8 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { demandeSchema, demandeAcceptedMessage } from "@/lib/demande-schema";
+import { trackFormStart, trackAcceptedLead } from "@/lib/analytics";
 
 type Defaults = { cuvee?: string; profil?: string; objet?: string };
+const profileOptions = [
+  ["particulier", "Particulier"],
+  ["caviste", "Caviste"],
+  ["restaurateur", "Restaurateur"],
+  ["professionnel", "Autre professionnel"],
+] as const;
 type Result = {
   status?: string;
   request_id?: string;
@@ -28,7 +35,10 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
   const [hydrated, setHydrated] = useState(false);
   useEffect(() => setHydrated(true), []);
   const [profile, setProfile] = useState(
-    defaults.profil === "professionnel" ? "professionnel" : "particulier",
+    profileOptions.some(([value]) => value === defaults.profil) ? defaults.profil! : "particulier",
+  );
+  const [purpose, setPurpose] = useState(
+    defaults.objet || (profile === "particulier" ? "bouteilles" : "professionnel"),
   );
   const [shipping, setShipping] = useState(false);
   const [state, setState] = useState<"idle" | "sending" | "error" | "success">("idle");
@@ -40,6 +50,8 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
   const previousPayload = useRef("");
   const inFlight = useRef(false);
   const uncertain = useRef(false);
+  const analyticsStarted = useRef(false);
+  const analyticsLead = useRef(false);
   const summary = useRef<HTMLDivElement>(null);
   function showErrors(message: string, fields: Record<string, string> = {}) {
     setNotice(message);
@@ -67,7 +79,7 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
       email: form.get("email"),
       profile,
       purpose: form.get("purpose"),
-      company: profile === "professionnel" ? optional("company") : undefined,
+      company: profile !== "particulier" ? optional("company") : undefined,
       phone: optional("phone"),
       cuvee: optional("cuvee"),
       estimated_quantity: optional("estimated_quantity")
@@ -117,6 +129,9 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
       const result = (await response.json()) as Result;
       if (result.request_id) setRequestId(result.request_id);
       if (response.ok && result.status === "accepted" && result.request_id) {
+        if (!analyticsLead.current) {
+          analyticsLead.current = trackAcceptedLead({ profile, cuvee: parsed.data.cuvee });
+        }
         uncertain.current = false;
         setRequestId(result.request_id);
         setState("success");
@@ -175,6 +190,24 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
       action="/api/demandes"
       className="request-form"
       onSubmit={submit}
+      onChangeCapture={(event) => {
+        if (analyticsStarted.current || !event.isTrusted) return;
+        const target = event.target;
+        if (
+          !(
+            target instanceof HTMLInputElement ||
+            target instanceof HTMLSelectElement ||
+            target instanceof HTMLTextAreaElement
+          ) ||
+          target.name === "website"
+        )
+          return;
+        const form = event.currentTarget;
+        analyticsStarted.current = trackFormStart({
+          profile: (form.elements.namedItem("profile") as RadioNodeList | null)?.value,
+          cuvee: (form.elements.namedItem("cuvee") as HTMLSelectElement | null)?.value,
+        });
+      }}
       noValidate
       aria-busy={state === "sending"}
     >
@@ -210,27 +243,23 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
       <fieldset disabled={state === "sending"}>
         <legend className="form-legend">Vous êtes *</legend>
         <div className="profile-options">
-          <label>
-            <input
-              type="radio"
-              name="profile"
-              id="profile"
-              value="particulier"
-              checked={profile === "particulier"}
-              onChange={() => setProfile("particulier")}
-            />{" "}
-            Particulier
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="profile"
-              value="professionnel"
-              checked={profile === "professionnel"}
-              onChange={() => setProfile("professionnel")}
-            />{" "}
-            Professionnel
-          </label>
+          {profileOptions.map(([value, label]) => (
+            <label key={value}>
+              <input
+                type="radio"
+                name="profile"
+                id={value === "particulier" ? "profile" : `profile-${value}`}
+                value={value}
+                checked={profile === value}
+                onChange={() => {
+                  setProfile(value);
+                  if (value !== "particulier") setPurpose("professionnel");
+                  else if (purpose === "professionnel") setPurpose("bouteilles");
+                }}
+              />{" "}
+              {label}
+            </label>
+          ))}
         </div>
         {fieldError("profile")}
         <hr className="form-divider" />
@@ -261,7 +290,7 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
             />
             {fieldError("email")}
           </div>
-          {profile === "professionnel" ? (
+          {profile !== "particulier" ? (
             <div className="form-field full-field">
               <label htmlFor="company">
                 Établissement <span>facultatif</span>
@@ -281,9 +310,8 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
             <select
               id="purpose"
               name="purpose"
-              defaultValue={
-                defaults.objet || (profile === "professionnel" ? "professionnel" : "bouteilles")
-              }
+              value={purpose}
+              onChange={(event) => setPurpose(event.target.value)}
               required
               {...invalid("purpose")}
             >

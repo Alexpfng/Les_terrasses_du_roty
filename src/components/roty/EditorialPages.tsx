@@ -12,8 +12,8 @@ export function DomainePage() {
           <em>Écrire la suite.</em>
         </h1>
         <p>
-          Les Terrasses du Roty, c’est d’abord l’histoire d’un lieu que l’on choisit de remettre en
-          culture.
+          À Saulcet, dans l’Allier, les Terrasses du Roty réunissent la Syrah et sept terrasses en
+          pierre sèche. C’est l’histoire d’un lieu que l’on choisit de remettre en culture.
         </p>
       </section>
       <section className="wrap editorial-split">
@@ -74,7 +74,7 @@ export function TerrassesPage() {
     <>
       <section className="wrap page-intro">
         <Breadcrumb items={[{ label: "Les terrasses" }]} />
-        <p className="eyebrow">Le paysage du Roty</p>
+        <p className="eyebrow">Vignes en terrasses · Saulcet, Allier</p>
         <h1>
           La pierre dessine.
           <br />
@@ -154,15 +154,16 @@ export function VinsPage() {
     <>
       <section className="wrap page-intro">
         <Breadcrumb items={[{ label: "Les cuvées" }]} />
-        <p className="eyebrow">Les vins des Terrasses du Roty</p>
+        <p className="eyebrow">Syrah de Saulcet · Achat en direct dans l’Allier</p>
         <h1>
           Une Syrah.
           <br />
           <em>Des millésimes.</em>
         </h1>
         <p>
-          Le lieu reste, chaque année écrit sa propre histoire. Découvrez les références du domaine
-          et échangez avec nous pour choisir vos bouteilles.
+          Découvrez les cuvées 2023 et 2024 des Terrasses du Roty. Pour acheter notre Syrah en
+          direct, demandez au domaine les disponibilités, le tarif et les modalités adaptées à votre
+          besoin.
         </p>
       </section>
       <section className="wrap section-bottom">
@@ -171,6 +172,37 @@ export function VinsPage() {
           Prix et disponibilités sont confirmés par le domaine lors de l’échange. Aucune commande ni
           aucun paiement ne sont effectués sur ce site.
         </p>
+      </section>
+      <section className="wrap story-section" aria-labelledby="achat-direct">
+        <div>
+          <p className="eyebrow">Particuliers</p>
+          <h2 id="achat-direct">
+            Vos bouteilles,
+            <br />
+            <em>en direct du domaine.</em>
+          </h2>
+        </div>
+        <div className="story-copy">
+          <p>
+            Un millésime vous intéresse, ou vous découvrez la Syrah du Roty ? Indiquez la quantité
+            envisagée et votre code postal si vous souhaitez étudier une expédition. Vous pouvez
+            aussi demander conseil avant de choisir.
+          </p>
+          <p>
+            Le conditionnement, le prix total et les possibilités de retrait ou de transport se
+            précisent lors de l’échange. Pour un retrait, prenez contact avant de vous déplacer.
+          </p>
+          <p>
+            Notre{" "}
+            <a href="/journal/acheter-vin-direct-producteur-allier/">
+              guide de l’achat en direct dans l’Allier
+            </a>{" "}
+            vous aide à préparer ces quelques informations.
+          </p>
+          <ButtonLink href="/demande/?profil=particulier&objet=bouteilles">
+            Demander un tarif et une disponibilité
+          </ButtonLink>
+        </div>
       </section>
       <ContactBand />
     </>
@@ -272,8 +304,9 @@ export function ProfessionnelsPage() {
           <em>Un dialogue à ouvrir.</em>
         </h1>
         <p>
-          Vous souhaitez connaître la Syrah du Roty ou envisager un référencement ? Présentez-nous
-          votre établissement et votre besoin.
+          Une Syrah de Saulcet, dans l’Allier, à envisager pour votre cave ou votre carte des vins.
+          Échangez directement avec le domaine pour connaître les cuvées et préparer votre
+          approvisionnement.
         </p>
         <ButtonLink href="/demande/?profil=professionnel&objet=professionnel">
           Faire une demande professionnelle
@@ -310,6 +343,98 @@ export function ProfessionnelsPage() {
           </ButtonLink>
         </div>
       </section>
+      <section className="wrap story-section" aria-labelledby="cavistes">
+        <div>
+          <p className="eyebrow">Pour votre cave</p>
+          <h2 id="cavistes">
+            Cavistes,
+            <br />
+            <em>une référence à explorer.</em>
+          </h2>
+        </div>
+        <div className="story-copy">
+          <p>
+            Vous recherchez un vin de l’Allier en direct du domaine ? Présentez votre cave, la place
+            envisagée pour cette Syrah dans votre sélection et le millésime qui vous intéresse. Un
+            premier besoin estimatif suffit pour commencer l’échange.
+          </p>
+          <p>
+            Demandez une fiche cuvée à jour, le tarif professionnel applicable, le conditionnement
+            et les éventuelles quantités minimales. Votre code postal et votre échéance permettent
+            d’aborder les frais de transport et les possibilités d’approvisionnement.
+          </p>
+          <p>
+            Pour présenter le vin à vos clients, le <a href="/domaine/">récit du domaine</a> et les{" "}
+            <a href="/terrasses-pierre-seche/">sept terrasses en pierre sèche</a> donnent des
+            repères concrets sur le lieu. Les caractéristiques du vin restent propres à chaque
+            millésime.
+          </p>
+          <ButtonLink href="/demande/?profil=caviste&objet=professionnel">
+            Présenter mon projet de caviste
+          </ButtonLink>
+        </div>
+      </section>
+      <section className="wrap story-section" aria-labelledby="restaurateurs">
+        <div>
+          <p className="eyebrow">Pour votre restaurant</p>
+          <h2 id="restaurateurs">
+            Une Syrah,
+            <br />
+            <em>une place sur votre carte.</em>
+          </h2>
+        </div>
+        <div className="story-copy">
+          <p>
+            Indiquez le style de votre cuisine, les plats que vous souhaitez accompagner et la place
+            envisagée à la carte : à la bouteille ou au verre. Ces éléments permettent d’orienter
+            les questions de dégustation vers votre usage réel.
+          </p>
+          <p>
+            Pour étudier une Syrah pour votre restaurant, demandez les conseils de service du
+            millésime concerné, ses informations techniques et ses conditions professionnelles.
+            Précisez une quantité indicative, la ville de livraison et la date souhaitée pour votre
+            carte.
+          </p>
+          <p>
+            Les possibilités de dégustation, d’expédition et de réassort se discutent avec le
+            domaine. Elles ne sont pas acquises à l’envoi d’une demande.
+          </p>
+          <ButtonLink href="/demande/?profil=restaurateur&objet=professionnel">
+            Parler de ma carte des vins
+          </ButtonLink>
+        </div>
+      </section>
+      <section className="wrap story-section" aria-labelledby="questions-professionnelles">
+        <div>
+          <p className="eyebrow">Avant de prendre contact</p>
+          <h2 id="questions-professionnelles">
+            Vos questions,
+            <br />
+            <em>les premiers repères.</em>
+          </h2>
+        </div>
+        <div className="story-copy article-body">
+          <h3>Comment obtenir une fiche technique et un tarif professionnel ?</h3>
+          <p>
+            Utilisez le formulaire professionnel avec le nom de votre établissement, votre activité
+            et la cuvée envisagée. Ajoutez les informations dont vous avez besoin : fiche du
+            millésime, prix applicable ou conditions d’approvisionnement.
+          </p>
+          <h3>Y a-t-il un minimum de commande ou une livraison garantie ?</h3>
+          <p>
+            Ces conditions doivent être confirmées avec le domaine pour votre demande. Le site
+            n’annonce pas de minimum, de franco de port ou de délai garanti. Indiquez une quantité
+            et une destination pour étudier les possibilités.
+          </p>
+          <h3>Puis-je prendre contact avant de choisir une cuvée ?</h3>
+          <p>
+            Oui. Présentez votre projet de cave ou de restaurant, même exploratoire. Les{" "}
+            <a href="/vins/">cuvées présentées</a> et le{" "}
+            <a href="/journal/cavistes-restaurateurs-syrah-roty/">guide pour les professionnels</a>{" "}
+            vous donnent les premiers éléments pour cet échange.
+          </p>
+        </div>
+      </section>
       <ContactBand />
     </>
   );
@@ -326,8 +451,9 @@ export function JournalPage() {
           <em>Un vin à comprendre.</em>
         </h1>
         <p>
-          La pierre sèche, la Syrah, les millésimes et le lien avec le domaine. Cinq regards pour
-          mieux connaître les Terrasses du Roty, prolongés par les archives du domaine.
+          Acheter du vin en direct dans l’Allier, découvrir la Syrah à Saulcet ou préparer une
+          demande de caviste ou de restaurateur : cinq articles pour vous orienter, prolongés par le
+          récit des terrasses et les archives du domaine.
         </p>
       </section>
       <section className="wrap section-bottom">

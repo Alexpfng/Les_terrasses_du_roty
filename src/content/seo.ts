@@ -14,7 +14,14 @@ export function seo(title: string, description: string, path: string, type = "we
       { property: "og:site_name", content: "Les Terrasses du Roty" },
       { property: "og:url", content: SITE_URL + path },
       { property: "og:image", content: SITE_URL + "/assets/img/img-9683-1600.jpg" },
+      {
+        property: "og:image:alt",
+        content: "Les vignes des Terrasses du Roty à Saulcet, dans l’Allier",
+      },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: fullTitle },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: SITE_URL + "/assets/img/img-9683-1600.jpg" },
     ],
     links: [{ rel: "canonical", href: SITE_URL + path }],
   };

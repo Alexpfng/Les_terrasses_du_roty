@@ -4,13 +4,13 @@ import { seo, breadcrumbsSchema, structuredData } from "@/content/seo";
 export const Route = createFileRoute("/domaine")({
   head: () => ({
     ...seo(
-      "Le domaine — Saulcet, Allier",
-      "Découvrez l’histoire des Terrasses du Roty : la rencontre, la restauration des terrasses en pierre sèche et le choix de la Syrah à Saulcet.",
+      "Domaine de Syrah à Saulcet, Allier",
+      "À Saulcet dans l’Allier, découvrez Les Terrasses du Roty : l’histoire du domaine, le choix de la Syrah et la restauration de sept terrasses en pierre sèche.",
       "/domaine/",
     ),
     scripts: [
       structuredData(
-        breadcrumbsSchema([{ name: "Le domaine — Saulcet, Allier", path: "/domaine/" }]),
+        breadcrumbsSchema([{ name: "Domaine de Syrah à Saulcet, Allier", path: "/domaine/" }]),
       ),
     ],
   }),

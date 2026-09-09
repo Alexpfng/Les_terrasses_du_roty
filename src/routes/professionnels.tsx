@@ -4,14 +4,14 @@ import { seo, breadcrumbsSchema, structuredData } from "@/content/seo";
 export const Route = createFileRoute("/professionnels")({
   head: () => ({
     ...seo(
-      "Cavistes et restaurateurs — Contact professionnel",
-      "Contactez Les Terrasses du Roty pour une fiche cuvée, les disponibilités ou un projet de référencement pour votre cave ou restaurant.",
+      "Syrah pour cavistes et restaurants",
+      "Cavistes et restaurateurs : découvrez la Syrah de Saulcet et demandez fiche cuvée, tarif professionnel et modalités d’approvisionnement au domaine.",
       "/professionnels/",
     ),
     scripts: [
       structuredData(
         breadcrumbsSchema([
-          { name: "Cavistes et restaurateurs — Contact professionnel", path: "/professionnels/" },
+          { name: "Syrah pour cavistes et restaurants", path: "/professionnels/" },
         ]),
       ),
     ],

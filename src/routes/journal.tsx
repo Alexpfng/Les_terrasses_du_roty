@@ -4,15 +4,13 @@ import { seo, breadcrumbsSchema, structuredData } from "@/content/seo";
 export const Route = createFileRoute("/journal")({
   head: () => ({
     ...seo(
-      "Le journal du Roty — Vigne, Syrah et pierre sèche",
-      "Les articles du Roty : achat en direct, Syrah à Saulcet, terrasses en pierre sèche, repères sur le bio et demandes professionnelles.",
+      "Journal — Syrah, vigne et achat direct",
+      "Nos guides sur l’achat de vin en direct dans l’Allier, la Syrah à Saulcet et les demandes des cavistes et restaurateurs, avec les archives du domaine.",
       "/journal/",
     ),
     scripts: [
       structuredData(
-        breadcrumbsSchema([
-          { name: "Le journal du Roty — Vigne, Syrah et pierre sèche", path: "/journal/" },
-        ]),
+        breadcrumbsSchema([{ name: "Journal — Syrah, vigne et achat direct", path: "/journal/" }]),
       ),
     ],
   }),

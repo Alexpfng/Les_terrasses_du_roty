@@ -39,3 +39,6 @@ dist-ssr
 test-results/
 
 !docs/verification/*.log
+
+# Local Netlify folder
+.netlify

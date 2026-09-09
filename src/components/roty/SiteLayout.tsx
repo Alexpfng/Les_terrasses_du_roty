@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
+import { AnalyticsConsent, AnalyticsPreferencesButton } from "./AnalyticsConsent";
+import { publishedPaths } from "@/lib/site-routing";
 
 const links = [
   ["/domaine/", "Le domaine"],
@@ -117,6 +119,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
             <a href="/mentions-legales/">Mentions légales</a>
             <a href="/confidentialite/">Confidentialité</a>
             <a href="/conditions-de-vente/">Modalités d’achat</a>
+            <AnalyticsPreferencesButton />
           </nav>
         </div>
         <p className="health wrap">
@@ -124,6 +127,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           interdite aux mineurs.
         </p>
       </footer>
+      <AnalyticsConsent pathname={pathname} allowedPaths={publishedPaths} />
     </>
   );
 }

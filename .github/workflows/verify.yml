@@ -41,6 +41,8 @@ jobs:
           cat /tmp/roty-server.log
           exit 1
       - run: npm run test:http
+      - run: npm run test:seo
+      - run: npm run test:analytics
       - run: npm run test:browser
       - name: Verify runtime stream cleanup
         run: npm run test:runtime

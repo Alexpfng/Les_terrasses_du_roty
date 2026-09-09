@@ -5,7 +5,11 @@ import { seo } from "@/content/seo";
 export const Route = createFileRoute("/demande")({
   validateSearch: (search: Record<string, unknown>) => ({
     cuvee: ["2023", "2024"].includes(String(search.cuvee)) ? String(search.cuvee) : undefined,
-    profil: search.profil === "professionnel" ? "professionnel" : undefined,
+    profil: ["particulier", "professionnel", "caviste", "restaurateur"].includes(
+      String(search.profil),
+    )
+      ? String(search.profil)
+      : undefined,
     objet: ["bouteilles", "conseil", "professionnel", "autre"].includes(String(search.objet))
       ? String(search.objet)
       : undefined,

@@ -283,3 +283,17 @@ test("schema normalizes acceptable strings and supports a complete professional 
   assert.equal(data.name, "TEST TECHNIQUE");
   assert.equal(data.estimated_quantity, 12);
 });
+
+test("caviste and restaurateur profiles are accepted and retained in the domain email", async () => {
+  for (const profile of ["caviste", "restaurateur"]) {
+    const f = fixture();
+    const data = submission({ profile, purpose: "professionnel", company: "Établissement TEST" });
+    assert.equal(demandeSchema.parse(data).profile, profile);
+    assert.equal((await f.handler(request(data))).status, 200);
+    const email = JSON.parse(
+      String(f.calls.find((call) => call.url === "https://api.resend.com/emails")!.init.body),
+    );
+    assert.ok(email.text.includes(`Profil : ${profile}`));
+    assert.ok(email.text.includes("Établissement : Établissement TEST"));
+  }
+});

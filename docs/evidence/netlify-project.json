@@ -1,0 +1,30 @@
+{
+  "id": "b5b6a14e-3b07-4f89-8016-af1740b20192",
+  "name": "les-terrasses-du-roty",
+  "ssl_url": "https://les-terrasses-du-roty.netlify.app",
+  "admin_url": "https://app.netlify.com/projects/les-terrasses-du-roty",
+  "account_slug": "maxclubcomptable",
+  "account_type": "Free",
+  "default_domain": "les-terrasses-du-roty.netlify.app",
+  "build_settings": {},
+  "published_deploy": null,
+  "functions_region": "us-east-2",
+  "lifecycle_state": "active",
+  "checkedAt": "2026-09-09T11:21:26.627829+00:00",
+  "runtimeVariableKeys": [
+    "ROTY_PREVIEW_MODE",
+    "ROTY_PREVIEW_USER",
+    "ROTY_PREVIEW_PASSWORD",
+    "ROTY_FORM_HASH_SECRET",
+    "ROTY_FORM_NAMESPACE",
+    "ROTY_ALLOWED_ORIGINS",
+    "ROTY_GA_MEASUREMENT_ID",
+    "ROTY_GA_ENABLED"
+  ],
+  "secretsIncluded": false,
+  "analytics": {
+    "measurementId": "G-L2PJT90F4Y",
+    "enabled": false,
+    "contexts": "all"
+  }
+}

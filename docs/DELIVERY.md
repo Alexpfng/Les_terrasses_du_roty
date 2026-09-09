@@ -1,6 +1,13 @@
 # Livraison — 9 septembre 2026
 
-**Implémentation et recette locale réalisées. Publication sur le domaine non réalisée faute d’accès.** Le site public reste Shopify ; aucune préproduction distante n’a été inventée. Les e-mails n’ont pas été envoyés ni reçus pendant cette intervention.
+**Site complet, refonte ivoire/or, SEO ciblé et intégration Analytics réalisés et testés localement.** Le compte Analytics dédié est réellement créé. Search Console attend la publication du jeton sur le domaine. La préproduction Netlify est en préparation ; le site public reste Shopify. Aucun e-mail réel envoyé ou reçu n’est revendiqué.
+
+## SEO, Analytics et acquisition
+
+- Pages et maillage ciblant particuliers, cavistes et restaurateurs ; formulaire avec ces trois profils et « autre professionnel ». Intention d’achat direct, recherche de fiche cuvée, tarif professionnel et carte des vins distinguées sans inventer prix, stocks ou volumes de recherche. Recherche sourcée dans `SEO-INTENTIONS.md`.
+- Métadonnées et contenu serveur, schémas Organization/WebSite/BreadcrumbList/BlogPosting, canoniques et sitemap contrôlés sur les 19 pages. Jeton GSC réel présent dans le HTML initial.
+- GA4 créé : compte `407381204`, propriété `553368095`, flux `15746517257`, mesure `G-L2PJT90F4Y`. Consentement préalable, refus/retrait, six mois de préférence, aucune mesure en préproduction, filtrage des données personnelles. `generate_lead` déclaré événement clé sans valeur financière ; dimensions `visitor_profile` et `cuvee` créées. Détails et limites dans `ANALYTICS-SEARCH-CONSOLE.md`.
+- Cinq cibles de liens partenaires qualifiées, kit et trois modèles rédigés dans `BACKLINKS.md`. **Zéro message externe envoyé et zéro nouveau backlink acquis.** Diffusion des nouvelles routes après leur publication réelle ; aucun achat de lien ou adhésion payante.
 
 ## Ajustement visuel demandé par le propriétaire
 
@@ -27,7 +34,19 @@ Après sa remarque « trop tout noir » et sa nouvelle référence imprimeur : f
 
 Le commit et l’URL de la PR sont fournis dans la remise et par l’historique Git, afin de ne pas inscrire dans son propre contenu un hash de commit impossible à prédéterminer.
 
-## Tests effectivement exécutés
+## Recette après SEO et Analytics
+
+Build Node, lint et TypeScript passent (six avertissements Fast Refresh préexistants, zéro erreur). Résultats sur le build mis à jour :
+
+- **31 tests serveur** réussis, dont **9 avec Redis réel local**. Le prestataire e-mail est doublé dans ces tests.
+- **14 scénarios Analytics navigateur** réussis, Google totalement intercepté : consentement, refus, retrait, courses de chargement, filtrage des paramètres, démarrage réel de saisie et demande acceptée uniquement (`verification/analytics-seo.json`).
+- **19 pages**, **95 rendus responsives**, **19 contrôles sans JavaScript**, **19 contrôles axe sans violation**, aucune erreur navigateur (`verification/browser-seo.json`).
+- **38 contrôles HTTP** réussis et **37 rendus SSR** dont les timers sont correctement libérés (`verification/http-seo.json`, `verification/runtime-seo.json`).
+- **19 pages SEO SSR** : titres/descriptions/canoniques uniques, données structurées cohérentes, robots et sitemap valides, token GSC réel (`verification/seo-technical.json`).
+
+Ces contrôles locaux ne prouvent ni la réception d’un e-mail, ni une collecte GA réelle, ni l’indexation Google.
+
+## Recette initiale et visuelle conservée
 
 | Contrôle                    | Résultat                                                                                                        | Preuve                              |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
@@ -78,7 +97,7 @@ La réception ne peut être remplacée par un événement de test ou un HTTP 200
 
 ## Ce qui bloque la production
 
-Les accès précis sont détaillés dans `DEPLOYMENT.md` : projet SSR/Lovable lié au dépôt, zone OVH, administration Shopify pour sauvegarde du thème, service d’envoi/expéditeur et Redis partagés, preuve de réception sur la boîte cible. Aucun autre projet d’hébergement n’a été détourné et aucun service payant n’a été créé.
+Les étapes sont détaillées dans `DEPLOYMENT.md`. Le projet Netlify dédié existe et ses accès sont disponibles ; Lovable n’est plus un accès nécessaire. Il manque la connexion à la zone OVH pour la bascule Web et les trois enregistrements Resend (`evidence/resend-domain.md`), puis la validation du domaine d’envoi, la clé Resend dédiée et la preuve de réception dans `taff.roty@gmail.com`. La préparation Redis est suivie dans le dossier de déploiement. L’administration Shopify permettrait l’export complet du thème ; le thème public actuel reste intact. Aucun abonnement payant n’a été souscrit.
 
 La cible choisie permettra aussi de finaliser les mentions d’hébergement et les prestataires de confidentialité. La durée de conservation/purge réelle des messages dans Gmail doit être documentée par le responsable ; le code ne prétend pas supprimer automatiquement ces e-mails.
 

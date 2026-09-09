@@ -3,7 +3,9 @@ import { Outlet, createRootRouteWithContext, HeadContent, Scripts } from "@tanst
 import type { ReactNode } from "react";
 import { SiteLayout, ButtonLink } from "@/components/roty/SiteLayout";
 import appCss from "../roty.css?url";
+import analyticsCss from "../analytics.css?url";
 import { SITE_URL, structuredData } from "@/content/seo";
+import { googleSiteVerificationMeta } from "@/lib/analytics";
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -11,9 +13,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Les Terrasses du Roty" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#F7F4ED" },
+      ...googleSiteVerificationMeta(
+        import.meta.env.VITE_GOOGLE_SITE_VERIFICATION ||
+          "85RkIRx_0r7ElaMnrtFrwymUhGG2kCusNroF9-TvVaA",
+      ),
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "stylesheet", href: analyticsCss },
       { rel: "icon", type: "image/svg+xml", href: "/assets/img/favicon-etiquette.svg" },
       {
         rel: "preload",
@@ -36,6 +43,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         "@type": "Organization",
         "@id": SITE_URL + "/#organisation",
         name: "Les Terrasses du Roty",
+        legalName: "LES COTES DU ROTY",
+        taxID: "892392010",
         url: SITE_URL + "/",
         logo: SITE_URL + "/assets/img/logo-etiquette-light.svg",
         email: "taff.roty@gmail.com",
@@ -49,6 +58,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             addressCountry: "FR",
           },
         },
+      }),
+      structuredData({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": SITE_URL + "/#website",
+        name: "Les Terrasses du Roty",
+        url: SITE_URL + "/",
+        inLanguage: "fr-FR",
+        publisher: { "@id": SITE_URL + "/#organisation" },
       }),
     ],
   }),
