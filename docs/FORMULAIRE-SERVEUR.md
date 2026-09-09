@@ -78,3 +78,11 @@ Exécution du 9 septembre 2026 : Node 20.20.2, Redis 8.10.1 compilé depuis la s
 ## Retour arrière
 
 Le rétablissement du déploiement serveur précédent conserve le namespace, les secrets HMAC et les états Redis encore valides. Garder les identifiants d’envoi en cours et vérifier leur état avant toute relance. Couper temporairement la configuration d’envoi fait échouer les nouvelles tentatives sans produire de succès ; cela n’annule aucun e-mail déjà accepté. Ne pas supprimer Redis, les clés, les journaux utiles ou les messages reçus comme moyen de rollback. Le point de retour Pages est le déploiement `a934ec80-a7b4-4a8f-b2e7-a83150b60f0f` (`bf79572`), décrit dans `DEPLOYMENT-CLOUDFLARE.md`. La vitrine Shopify est privée et ses produits sont en brouillon ; un simple retour DNS ne restituerait donc pas son ancien catalogue public.
+
+## Vérification navigateur sur la version publiée 296198b
+
+Le 9 septembre 2026 vers 14:10 UTC, un test technique clairement identifié a été envoyé depuis le formulaire public de la nouvelle interface, profil restaurateur/cuvée 2024, après refus Analytics. Le serveur a répondu HTTP 200 / accepted, référence `9fc7567f-f26d-490d-8fc2-e9117465471e`. Resend confirme Sent et Delivered pour `c980063e-d972-408e-a4b5-cc3571673d5c`, avec acquittement Gmail 250 OK à `taff.roty@gmail.com`.
+
+Un réessai navigateur vers 14:12 UTC avec le même contenu et la même clé d’idempotence a retourné la même référence, affiché la confirmation et placé le focus sur celle-ci. Le contrôle indépendant de Resend a confirmé un seul message correspondant, sans doublon. Le helper de test initial avait confondu référence serveur et clé d’idempotence ; ces deux identifiants sont distincts. Aucun changement de l’application n’a été nécessaire. Aucun appel Google n’a été émis.
+
+La boîte principale, le dossier spam et la lecture humaine restent non vérifiés directement. Preuves : `verification/photos-production-form-ui.json` et `evidence/resend-apple-ui-delivery.json`. Les deux tests historiques restent documentés séparément.

@@ -1,0 +1,105 @@
+
+ ⛅️ wrangler 4.92.0
+───────────────────
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mWarning: Your working directory is a git repo and has uncommitted changes[0m
+
+  To silence this warning, pass in --commit-dirty=true
+
+
+Using redirected Wrangler configuration.
+ - Configuration being used: "dist/_worker.js/wrangler.json"
+ - Original user's configuration: "wrangler.json"
+ - Deploy configuration file: ".wrangler/deploy/config.json"
+Uploading... (52/203)
+Uploading... (102/203)
+Uploading... (152/203)
+Uploading... (203/203)
+✨ Success! Uploaded 151 files (52 already uploaded) (8.00 sec)
+
+✨ Uploading _headers
+Attaching additional modules:
+┌──────────────────────────────────────────┬──────┬─────────────┐
+│ Name                                     │ Type │ Size        │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _chunks/ssr-renderer.mjs                 │ esm  │ 0.59 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _libs/@tanstack/react-router+[...].mjs   │ esm  │ 499.86 KiB  │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _libs/@tanstack/router-core+[...].mjs    │ esm  │ 77.50 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _libs/h3+rou3+srvx.mjs                   │ esm  │ 13.89 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _libs/h3-v2.mjs                          │ esm  │ 9.40 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _libs/react+tanstack__react-query.mjs    │ esm  │ 10.93 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _libs/tanstack__history.mjs              │ esm  │ 11.81 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _libs/tanstack__query-core.mjs           │ esm  │ 46.80 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _libs/zod.mjs                            │ esm  │ 97.62 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _runtime.mjs                             │ esm  │ 1.45 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/ContentCards-CqbJYsvL.mjs           │ esm  │ 5.61 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/EditorialPages-lZZ9PvjX.mjs         │ esm  │ 32.20 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/LegalPages-CzDxAQst.mjs             │ esm  │ 14.77 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/SiteLayout-CeFXhBy9.mjs             │ esm  │ 30.43 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/conditions-de-vente-BbuabPKF.mjs    │ esm  │ 0.43 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/confidentialite-BaNP2QGJ.mjs        │ esm  │ 0.43 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/createStart-Dt05N14y.mjs            │ esm  │ 1.53 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/demande-BJa76jC5.mjs                │ esm  │ 25.73 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/demande-BS0bTBZD.mjs                │ esm  │ 1.08 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/domaine-DLR_xdXE.mjs                │ esm  │ 0.22 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/editorial-images-BPJZ8Eje.mjs       │ esm  │ 1.65 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/empty-plugin-adapters-D9UWiqvJ.mjs  │ esm  │ 0.22 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/journal-DUm9XYja.mjs                │ esm  │ 0.22 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/journal_._slug-CKQAg9S1.mjs         │ esm  │ 1.64 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/journal_._slug-Cs2e90Ok.mjs         │ esm  │ 2.74 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/mentions-legales-DVE-MeX2.mjs       │ esm  │ 0.42 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/professionnels-CpuJkdFk.mjs         │ esm  │ 0.24 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/router-92rUN8kG.mjs                 │ esm  │ 12.56 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/routes-BPuStrbo.mjs                 │ esm  │ 13.74 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/server-DGGNZe70.mjs                 │ esm  │ 55.53 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/ssr.mjs                             │ esm  │ 66.33 KiB   │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/start-Ok9K6Nid.mjs                  │ esm  │ 0.68 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/terrasses-pierre-seche-RD75Zc4_.mjs │ esm  │ 0.24 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/vins-kG1fsheA.mjs                   │ esm  │ 0.21 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/vins_.cuvee-2023-C3QIrKwu.mjs       │ esm  │ 0.42 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _ssr/vins_.cuvee-2024-DSJtHn9v.mjs       │ esm  │ 0.42 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ _tanstack-start-manifest_v-D8EWOVIq.mjs  │ esm  │ 3.88 KiB    │
+├──────────────────────────────────────────┼──────┼─────────────┤
+│ Total (37 modules)                       │      │ 1043.46 KiB │
+└──────────────────────────────────────────┴──────┴─────────────┘
+✨ Compiled Worker successfully
+✨ Uploading Worker bundle
+✨ Uploading _routes.json
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://8072ae85.les-terrasses-du-roty.pages.dev
+✨ Deployment alias URL: https://preproduction.les-terrasses-du-roty.pages.dev

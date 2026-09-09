@@ -1,0 +1,27 @@
+{
+  "observedAt": "2026-09-09T14:19:48.135202+00:00",
+  "source": "Authenticated Google Search Console UI",
+  "property": "https://www.les-terrasses-du-roty.fr/",
+  "deployedSha": "296198b69ac45a416807210b3c77593447aacc0e",
+  "postDeployment": true,
+  "requests": [
+    {
+      "url": "https://www.les-terrasses-du-roty.fr/",
+      "result": "Indexation demandée",
+      "observedBeforeRequest": "Home previously had a historical Google index entry; live test showed accessible and indexable. This does not prove indexing of the new design."
+    },
+    {
+      "url": "https://www.les-terrasses-du-roty.fr/vins/",
+      "result": "Indexation demandée",
+      "observedBeforeRequest": "Détectée, actuellement non indexée; sitemap.xml detected."
+    },
+    {
+      "url": "https://www.les-terrasses-du-roty.fr/professionnels/",
+      "result": "Indexation demandée",
+      "observedBeforeRequest": "Google ne reconnaît pas cette URL; not yet indexed."
+    }
+  ],
+  "uiConfirmation": "Cette URL a été ajoutée à une file d’attente d’exploration prioritaire.",
+  "duplicateRequestsMade": false,
+  "limitation": "Request accepted is not proof of actual crawl, indexing or ranking of the newly deployed content."
+}

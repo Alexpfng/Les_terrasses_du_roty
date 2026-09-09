@@ -1,8 +1,26 @@
 # Cloudflare Pages — état vérifié
 
-Vérification du 9 septembre 2026, version publique `bf7957241ede2b144480b8f781eb35d5db8644b0`. La nouvelle interface inspirée d’Apple est en préparation et n’est pas incluse dans les résultats de cette version. Projet Pages dédié `les-terrasses-du-roty`, compte `Max.corre@bulbiz.fr’s Account` (`b1779ede460184fbcf5c4b90c36d11e2`). Le tableau de bord confirme le forfait **Free — Current plan**. Aucun forfait payant n’a été activé. La bascule DNS `www` a été appliquée chez OVH par la tâche principale le 9 septembre à 12:30:17 UTC.
+Vérification du 9 septembre 2026 : **la nouvelle interface, les photographies variées et le logo noir officiel complet sont publiés sur le commit `296198b69ac45a416807210b3c77593447aacc0e`**. Projet Pages dédié `les-terrasses-du-roty`, compte `Max.corre@bulbiz.fr’s Account` (`b1779ede460184fbcf5c4b90c36d11e2`), forfait Free. Aucun forfait payant ni changement de secret ou de DNS effectué pour cette publication. Les résultats historiques de `bf79572` restent explicitement conservés ci-dessous.
 
-## Préproduction
+## Publication actuelle — 296198b
+
+- Production : **`9b2c15f8-283b-493b-89d7-0d61b9111e93`**, branche `production`, URL publique vérifiée **https://www.les-terrasses-du-roty.fr/**. Le domaine technique https://9b2c15f8.les-terrasses-du-roty.pages.dev reste volontairement `503/noindex`, comme le domaine racine Pages.
+
+- Préproduction : **`8072ae85-4dba-4fe3-b042-be5ee3ed8114`**, branche `preproduction`, URL immuable https://8072ae85.les-terrasses-du-roty.pages.dev et alias https://preproduction.les-terrasses-du-roty.pages.dev. Pages et API répondent `401` sans authentification ; GA reste désactivé.
+
+- Artefact identique testé puis publié, sans rebuild : SHA256 **`48d35c4b46c1cd53ab0bae002ca660647fa656aaca04e2fb9e5cc9e18a9c3a8a`**. Worktree isolé `/tmp/roty-cloudflare-apple-296198b`, installation `bun install --frozen-lockfile`, construction Node 22.23.2 avec le preset `cloudflare-pages`. Le dépôt utilise `bun.lock`, donc `npm ci` ne convient pas.
+
+- Routage généré contrôlé : `include: ["/*"]`, `exclude: ["/assets/*"]`, soit **2 règles**. Les **137 fichiers d’images** du bundle sont des ressources statiques exclues du Worker. Le mode `nodejs_compat` et la date de compatibilité `2026-06-03` sont conservés.
+
+La préproduction passe **19 pages SSR, 112 ressources, 60 GET/HEAD répétés et 13 contrôles complémentaires**. La production passe **19 pages SSR, 112 ressources, 26 liens et 11 contrôles complémentaires** : canoniques exactes, absence de noindex public, robots/sitemap, ressources immutable, erreurs 404/410 et protections Preview. La recette navigateur passe dans les deux environnements sur accueil, vins, professionnels, demande caviste et journal à **390 et 1440 px**, avec **7 scénarios du menu natif**, images différées chargées, aucun débordement ni erreur JavaScript. Le refus conservé en production produit **zéro appel Google et zéro cookie GA**. Le SVG noir servi publiquement possède le SHA256 exact de l’original : `7badf9367db345b8367a2a5af016fb2b768ac9ddfdb453485dc9557d86de16cd`.
+
+Un correctif du test attend maintenant l’activation du bouton du menu à chaque ouverture, y compris après un lien provoquant un nouveau document : l’instrumentation distante a confirmé `disabled: true` avant hydratation sur `/vins/`. Le site publié n’a pas changé. Les helpers HTTP lisent les attributs `srcSet` sans sensibilité à la casse, afin de couvrir réellement les variantes AVIF/WebP.
+
+La fenêtre d’observation du Worker Preview comporte **93 événements**, tous `outcome: ok`, sans exception. CPU médian **6 ms**, p95 **31 ms**, maximum **34 ms**. Ces pointes dépassent le budget CPU nominal du forfait gratuit ; aucune erreur de limite n’a été observée, mais cette fenêtre courte ne garantit pas une marge durable sous charge. Aucun nouvel e-mail n’a été envoyé par ces contrôles : seul un corps vide a été refusé en `422`, avant appel fournisseur. Le test réel final éventuel du propriétaire est documenté séparément.
+
+[Manifeste de publication](verification/photos-cloudflare-release.json), [artefact](verification/photos-cloudflare-artifact.json), [HTTP Preview](verification/photos-cloudflare-preview-http.json), [navigateur Preview](verification/photos-cloudflare-preview-browser.json), [runtime Preview](verification/photos-cloudflare-preview-runtime.json), [HTTP public](verification/photos-cloudflare-production-http.json), [navigateur public](verification/photos-cloudflare-production-browser.json), [protections et logo public](verification/photos-cloudflare-production-extra.json). Les captures Preview sont conservées dans `test-results/deployment/apple-preview-screenshots/`, celles du domaine public dans `test-results/deployment/apple-production-screenshots/`. Le point de retour demeure le bundle `bf79572` / déploiement `a934ec80-a7b4-4a8f-b2e7-a83150b60f0f`, en conservant configuration et états Redis.
+
+## Historique — préproduction bf79572
 
 - Commit déployé : `bf7957241ede2b144480b8f781eb35d5db8644b0`.
 - Déploiement : `0a55b884-234b-4426-bdd5-70bc31657c33`, environnement Preview, branche `preproduction`.
@@ -22,9 +40,9 @@ Commande de construction : `ROTY_BUILD_TARGET=cloudflare-pages npm run build`, a
 
 `node:process`, `node:crypto` et `Buffer` sont pris en charge par le mode de compatibilité utilisé. Les variables serveur sont lues pendant les requêtes. L’envoi de formulaire utilise Web Crypto et `fetch`, sans dépendance SMTP ni système de fichiers. La compatibilité a été vérifiée par les requêtes SSR distantes ci-dessous; un build réussi seul ne l’aurait pas établie. [Documentation Nitro](https://nitro.build/deploy/providers/cloudflare), [compatibilité Node](https://developers.cloudflare.com/workers/runtime-apis/nodejs/), [variables process.env](https://developers.cloudflare.com/workers/runtime-apis/nodejs/process/).
 
-## Résultats de recette
+## Historique — résultats de recette initiale
 
-La recette complète initiale portait sur `8b799b272f0e167a642ed179d00000f8f0da5e25`, URL <https://ea443b12.les-terrasses-du-roty.pages.dev>. Les commits suivants actualisent les mentions des prestataires et corrigent deux particularités réseau du runtime Cloudflare. La recette minimale du commit courant est consignée dans [cloudflare-fixed-preview.json](verification/cloudflare-fixed-preview.json). Le rapport [HTTP](verification/cloudflare-preview-http.json) confirme :
+La recette complète initiale portait sur `8b799b272f0e167a642ed179d00000f8f0da5e25`, URL <https://ea443b12.les-terrasses-du-roty.pages.dev>. Les commits suivants actualisent les mentions des prestataires et corrigent deux particularités réseau du runtime Cloudflare. La recette minimale du commit `bf79572` est consignée dans [cloudflare-fixed-preview.json](verification/cloudflare-fixed-preview.json). Le rapport [HTTP](verification/cloudflare-preview-http.json) confirme :
 
 - 19 pages rendues côté serveur, chacune avec un seul titre principal et une URL canonique de production ;
 - 28 ressources CSS, JavaScript et images servies correctement ;
@@ -47,7 +65,7 @@ La relance du **même UUID et du même contenu**, le 9 septembre à **12:26:57 U
 
 Le [runtime de cette recette](verification/cloudflare-mail-runtime.json) mesure **8 ms CPU / 458 ms wallTime** pour le POST complet Redis + Resend, `outcome: ok`, aucune exception. Les trois pages SSR contrôlées sur ce nouveau déploiement ont consommé 51, 17 et 10 ms CPU, toutes sans erreur ; les deux pics à froid renforcent la réserve sur la marge du forfait gratuit.
 
-## Raccordement de www et retour arrière
+## Historique — premier raccordement de www et transition DNS
 
 Cloudflare Pages accepte un sous-domaine `www` conservant ses serveurs DNS chez OVH : associer d’abord ce nom au projet Pages, puis remplacer son CNAME OVH par `les-terrasses-du-roty.pages.dev`. Un simple CNAME sans association préalable n’active pas le domaine. Cette propriété de Pages évite la migration de zone requise par un domaine personnalisé Workers. L’association `www.les-terrasses-du-roty.fr` a été créée (ID `797703f0-73e7-4bf7-a77d-f590d8632b55`), puis validée après la bascule CNAME : état **active**, validation **active**, certificat Google et **SSL enabled** confirmés par API/UI. Le site public répond en HTTPS200 avec le nouveau contenu, sans en-tête ni ressource Shopify. [État du domaine](verification/cloudflare-domain.json), [recette publique](verification/cloudflare-production-http.json). [Domaines personnalisés Pages](https://developers.cloudflare.com/pages/configuration/custom-domains/).
 
@@ -55,7 +73,7 @@ Production est publiée sur la branche `production`, déploiement **`a934ec80-a7
 
 Avant toute bascule DNS, conserver l’état OVH et la version Shopify actuelle. Tant que les DNS n’ont pas changé, le site public existant reste la solution de retour. Après bascule, une restauration DNS peut participer à un retour vers cet hébergement, avec les délais de propagation associés ; elle exige aussi de rétablir les rattachements et l’ouverture Shopify si ceux-ci ont été retirés. Pour revenir entre versions Pages, republier le dernier commit validé dans l’environnement Production en conservant sa configuration compatible. Les données Redis et les clés fournisseur ne doivent pas être supprimées lors d’un retour arrière.
 
-## Recette finale sur le domaine public
+## Historique — recette publique bf79572
 
 Après activation TLS, les **19 pages** répondent **200**, avec un seul `h1`, une URL canonique exacte, la méta Search Console et aucune directive `noindex`. **28 ressources** répondent 200 avec `Cache-Control: public, max-age=31536000, immutable` ; le HTML dynamique n’impose pas de cache public. Les **26 liens internes** aboutissent à 200, avec normalisation interne 307 de la valeur textuelle de cuvée pour deux CTA. Les **11 contrôles complémentaires** couvrent anciens parcours 301/308/410, 404, configuration GA, robots, corps invalide refusé422 et préproduction toujours401. `robots.txt` autorise l’indexation et annonce un sitemap comportant **19 URL canoniques**. `/api/analytics-config` renvoie l’identifiant réel uniquement sur le domaine canonique autorisé. L’envoi technique de production utilise un client HTTP sans chargement de Google et ne produit aucun événement GA.
 
@@ -63,7 +81,7 @@ Le test unique de production a reçu **accepted** à **12:34:46 UTC**, `request_
 
 Le [contrôle navigateur public](verification/cloudflare-production-browser.json) vérifie accueil, vins, professionnels, demande et journal à **390 et 1440 px**, y compris le chargement des images différées après défilement. Aucun débordement horizontal, aucune erreur JavaScript, aucune ressource en échec. Le menu mobile, les valeurs du profil caviste et le panneau des préférences sont fonctionnels. Le refus conservé produit **zéro appel Google et zéro cookie GA**. Les captures sont conservées localement dans le dossier ignoré `test-results/deployment/production-screenshots/`.
 
-## Analytics et Search Console sur la version publiée
+## Analytics et Search Console vérifiés lors de bf79572
 
 Une visite de production consentie a envoyé un vrai `page_view` à Google Analytics `G-L2PJT90F4Y`, acquitté **HTTP 204**. Aucun appel Google avant le choix ou après refus ; le retrait a supprimé les cookies et arrêté la collecte sur la page suivante. La visite de recette n’a émis aucun `generate_lead`. Le tableau de bord temps réel a affiché **1 utilisateur actif et 7 `page_view`**, valeurs agrégées qui ne sont pas attribuées au test technique. La propriété Search Console du préfixe `https://www.les-terrasses-du-roty.fr/` est vérifiée, et le détail de son sitemap affiche « Traitement du sitemap réussi », 19 pages découvertes, dernière lecture le 09/09/2026. Le test live de l’accueil à 15:06 heure de Paris confirme accès Google et indexabilité. L’index historique de cette URL peut correspondre à l’ancien contenu ; il ne prouve pas l’indexation de la nouvelle version. [Preuve réseau GA](verification/production-analytics.json), [observations Google](evidence/google-production-ui-2026-09-09.json), [configuration détaillée](ANALYTICS-SEARCH-CONSOLE.md).
 
@@ -73,15 +91,15 @@ La version publique validée `bf7957241ede2b144480b8f781eb35d5db8644b0` constitu
 
 Le changement d’environnement se fait **avant** un nouveau déploiement ; une modification de secret n’actualise pas rétroactivement une version existante. La préproduction doit toujours conserver sa protection et son namespace séparé. Le retour éventuel à Shopify exigerait aussi de rétablir son rattachement et son ouverture si ceux-ci ont été retirés ; une restauration DNS seule ne suffit alors plus.
 
-## Prochaine interface — procédure préparée, non exécutée
+## Procédure exécutée et réutilisable
 
-Le prochain SHA n’est pas encore fixé. Une construction Node locale de la nouvelle interface et sa recette ont été autorisées ; aucun nouveau déploiement distant n’est couvert par cette préparation documentaire. Après le signal de la tâche principale et la fixation du commit, utiliser un nouveau répertoire **`/tmp/roty-cloudflare-apple-<SHA>`**. Ne pas écraser le worktree ou le bundle du point de retour `bf79572`, ni le build local de la tâche principale.
+La procédure ci-dessous a été exécutée pour `296198b`, avec le même artefact publié après validation des captures et des contrôles de préproduction. Pour une prochaine évolution, utiliser un nouveau répertoire **`/tmp/roty-cloudflare-apple-<SHA>`** et conserver les bundles de retour validés.
 
-1. Créer un worktree détaché du SHA validé. Installer les dépendances verrouillées avec `npm ci` dans ce worktree ; conserver les caches `node_modules/.nitro`, `.vite` et `.vite-temp` isolés. Ne pas utiliser un lien global vers le `node_modules` du dépôt principal.
+1. Créer un worktree détaché du SHA validé. Installer les dépendances verrouillées avec `bun install --frozen-lockfile` dans ce worktree ; conserver les caches `node_modules/.nitro`, `.vite` et `.vite-temp` isolés. Ne pas utiliser un lien global vers le `node_modules` du dépôt principal.
 2. Fixer la configuration Wrangler locale au projet `les-terrasses-du-roty`, à la date `2026-06-03` et au flag `nodejs_compat`. Construire avec Node 22 et `ROTY_BUILD_TARGET=cloudflare-pages npm run build`. Les commandes sont celles du preset existant, sans changement de stack.
 3. Conserver les variables Preview existantes : authentification active, `ROTY_PREVIEW_MODE=1`, `ROTY_GA_ENABLED=0`, origine de l’alias Preview et namespace séparé. Publier `dist` avec Wrangler sur **la branche `preproduction`**, en renseignant le SHA exact. Relever l’URL immuable réellement retournée et vérifier l’alias privé.
 4. Réaliser la recette du nouveau bundle : 19 pages SSR et canoniques, ressources et liens, redirections et 404/410, menu natif au clavier, mobile et bureau, saisie/erreurs/reprise du formulaire, consentement et absence de Google. Les scripts locaux qui soumettent des données synthétiques doivent rester sur loopback sans fournisseur configuré ; ne pas les pointer vers le formulaire public. Les preuves historiques de `bf79572` restent conservées séparément.
 5. Après validation du nouveau SHA, publier **le même artefact** sur **la branche `production`**, sans changer les DNS ni les secrets. Vérifier `www` en HTTPS, son contenu, l’indexation autorisée, le sitemap, les ressources, les protections Preview et les hôtes techniques fermés. La recette d’interface ne doit pas créer d’événement GA ou d’e-mail de test supplémentaire sans l’autorisation correspondante.
 6. En cas de défaut, republier le bundle validé de `bf7957241ede2b144480b8f781eb35d5db8644b0` qui correspond au déploiement `a934ec80-a7b4-4a8f-b2e7-a83150b60f0f`, en conservant les états Redis et la configuration de production.
 
-Les commandes de déploiement restent à exécuter après le signal prévu : `wrangler pages deploy dist --project-name les-terrasses-du-roty --branch preproduction --commit-hash <SHA>` puis, après recette, la même commande avec `--branch production`. Le compte visé est `b1779ede460184fbcf5c4b90c36d11e2`.
+Les commandes exécutées pour cette publication, réutilisables sur un prochain SHA validé : `wrangler pages deploy dist --project-name les-terrasses-du-roty --branch preproduction --commit-hash <SHA>` puis, après recette, la même commande avec `--branch production`. Le compte visé est `b1779ede460184fbcf5c4b90c36d11e2`.

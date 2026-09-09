@@ -58,3 +58,9 @@ Le test technique du formulaire public a été accepté par le serveur puis déc
 - [Paramètres de la balise GA4](https://developers.google.com/analytics/devguides/collection/ga4/reference/config).
 - [Vérification de propriété Search Console](https://support.google.com/webmasters/answer/9008080?hl=fr).
 - [CNIL : cookies et traceurs](https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi).
+
+## Contrôle après publication du design et des photos
+
+Le commit `296198b69ac45a416807210b3c77593447aacc0e` est publié sur le domaine canonique. La recette navigateur de cette version confirme zéro appel/cookie GA après refus. Un vrai test de formulaire, accepté puis livré, n’a créé aucune conversion Google car le consentement avait été refusé.
+
+Après publication, trois demandes distinctes dans Search Console ont reçu la confirmation « Indexation demandée » : accueil, `/vins/` et `/professionnels/`. Les URL ont été ajoutées à la file d’exploration prioritaire. Avant demande, les vins étaient détectés mais non indexés et Google ne reconnaissait pas encore la page professionnels. Il s’agit de demandes acceptées, pas d’une preuve d’indexation du nouveau site ou de classement. Voir `evidence/google-indexing-apple-2026-09-09.json` et `verification/photos-production-form-ui.json`.

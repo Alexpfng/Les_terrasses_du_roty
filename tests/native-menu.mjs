@@ -12,10 +12,11 @@ export async function verifyNativeMenu(page, base) {
   });
   const dialog = page.getByRole("dialog", { name: "Navigation mobile", exact: true });
   const close = page.getByRole("button", { name: "Fermer le menu", exact: true });
-  await page.waitForFunction(() => !document.querySelector(".shell-menu-toggle").disabled);
   const originalOverflow = await page.evaluate(() => document.body.style.overflow);
 
   async function open() {
+    // A normal link creates a new document whose menu awaits hydration.
+    await page.waitForFunction(() => !document.querySelector(".shell-menu-toggle").disabled);
     await opener.focus();
     await page.keyboard.press("Enter");
     await dialog.waitFor({ state: "visible" });
