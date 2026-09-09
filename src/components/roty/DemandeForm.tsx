@@ -202,6 +202,7 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
           ) : null}
         </div>
       ) : null}
+      <h2 className="form-title">Votre demande</h2>
       <p className="form-help">
         Les champs marqués * sont indispensables. Aucune information de paiement n’est demandée.
       </p>

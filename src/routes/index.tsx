@@ -14,40 +14,36 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-      <section className="hero wrap">
-        <div className="hero-copy">
-          <p className="eyebrow">Les Terrasses du Roty · Saulcet, Allier</p>
-          <h1>
-            Sept terrasses.
-            <br />
-            <em>Une Syrah.</em>
-            <span>Un lieu à part.</span>
-          </h1>
-          <p className="hero-intro">
-            À Saulcet, la vigne retrouve sa place sur des terrasses en pierre sèche. Découvrez le
-            lieu, le travail qui le façonne et les cuvées des Terrasses du Roty.
-          </p>
-          <div className="actions">
-            <ButtonLink href="/vins/">Découvrir les cuvées</ButtonLink>
-            <ButtonLink secondary href="/demande/">
-              Demander des bouteilles
-            </ButtonLink>
+      <section className="hero">
+        <Photo
+          name="img-9683"
+          alt="Travail de la vigne sur les terrasses du Roty, avec le paysage de Saulcet en arrière-plan"
+          className="hero-landscape"
+          eager
+          sizes="100vw"
+        />
+        <div className="hero-inner wrap">
+          <div className="hero-copy">
+            <p className="eyebrow">Saulcet, Allier · Un lieu à part</p>
+            <h1>
+              Sept terrasses.
+              <br />
+              <em>Une Syrah.</em>
+            </h1>
+          </div>
+          <div className="hero-details">
+            <p className="hero-intro">
+              À Saulcet, la vigne retrouve sa place sur des terrasses en pierre sèche. Découvrez le
+              lieu, le travail qui le façonne et les cuvées des Terrasses du Roty.
+            </p>
+            <div className="actions">
+              <ButtonLink href="/vins/">Découvrir les cuvées</ButtonLink>
+              <ButtonLink secondary href="/demande/">
+                Demander des bouteilles
+              </ButtonLink>
+            </div>
           </div>
         </div>
-        <figure className="hero-figure">
-          <Photo
-            name="img-9683"
-            alt="Travail de la vigne sur les terrasses du Roty, avec le paysage de Saulcet en arrière-plan"
-            eager
-          />
-          <figcaption>
-            <span>01 / Le lieu</span>
-            <span>Saulcet, Allier</span>
-          </figcaption>
-          <span className="photo-note" aria-hidden="true">
-            LA VIGNE RETROUVE SA PLACE
-          </span>
-        </figure>
       </section>
       <div className="place-line wrap">
         <span>Sept terrasses en pierre sèche</span>

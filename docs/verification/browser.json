@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-09-09T09:45:23.914Z",
+  "checkedAt": "2026-09-09T10:44:01.102Z",
   "pages": [
     {
       "path": "/",
@@ -808,7 +808,7 @@
   "noJavaScript": [
     {
       "path": "/",
-      "characters": 2537
+      "characters": 2458
     },
     {
       "path": "/domaine/",
@@ -836,7 +836,7 @@
     },
     {
       "path": "/demande/",
-      "characters": 1462
+      "characters": 1310
     },
     {
       "path": "/journal/",

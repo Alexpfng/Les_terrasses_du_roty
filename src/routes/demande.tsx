@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Breadcrumb } from "@/components/roty/SiteLayout";
+import { Breadcrumb, Photo } from "@/components/roty/SiteLayout";
 import { DemandeForm } from "@/components/roty/DemandeForm";
 import { seo } from "@/content/seo";
 export const Route = createFileRoute("/demande")({
@@ -22,31 +22,30 @@ function DemandePage() {
   const defaults = Route.useSearch();
   return (
     <>
-      <section className="wrap page-intro">
+      <div className="wrap contact-breadcrumb">
         <Breadcrumb items={[{ label: "Nous contacter" }]} />
-        <p className="eyebrow">Écrire aux Terrasses du Roty</p>
-        <h1>
-          Tout commence
-          <br />
-          <em>par un échange.</em>
-        </h1>
-        <p>
-          Quelques bouteilles, une cuvée à découvrir, un projet professionnel. Dites-nous ce que
-          vous recherchez.
-        </p>
-      </section>
+      </div>
       <section className="wrap form-layout">
-        <aside className="form-aside">
-          <h2>
-            Votre demande,
-            <br />
-            directement au domaine.
-          </h2>
+        <div className="contact-intro">
+          <p className="eyebrow">Un lien direct avec le domaine</p>
+          <h1>
+            Parlons <br />
+            <em>du Roty.</em>
+          </h1>
           <p>
-            Nous préciserons ensemble le millésime, les disponibilités, le prix et les modalités
-            possibles. Inutile de connaître déjà toutes les réponses.
+            Quelques bouteilles, une cuvée à découvrir, un projet professionnel. Dites-nous ce que
+            vous recherchez.
           </p>
+        </div>
+        <DemandeForm defaults={defaults} />
+        <aside className="form-aside">
+          <Photo
+            name="img-9683"
+            alt="Le travail de la vigne sur les terrasses à Saulcet"
+            sizes="(max-width: 640px) 100vw, 35vw"
+          />
           <div className="contact-details">
+            <p className="eyebrow">Les coordonnées du domaine</p>
             <p>
               Les Terrasses du Roty
               <br />
@@ -59,7 +58,6 @@ function DemandePage() {
             </p>
           </div>
         </aside>
-        <DemandeForm defaults={defaults} />
       </section>
     </>
   );

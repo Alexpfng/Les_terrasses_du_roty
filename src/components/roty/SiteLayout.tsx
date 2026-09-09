@@ -18,24 +18,34 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
         Aller au contenu
       </a>
       <header className="site-header wrap">
-        <a href="/" className="brand" aria-label="Les Terrasses du Roty — accueil">
-          <img
-            src="/assets/img/logo-gold.png"
-            alt="Les Terrasses du Roty"
-            width="784"
-            height="977"
-          />
-        </a>
-        <nav className="desktop-nav" aria-label="Navigation principale">
-          {links.map(([href, label]) => (
+        <nav className="desktop-nav nav-start" aria-label="Navigation principale">
+          {links.slice(0, 3).map(([href, label]) => (
             <a key={href} href={href} aria-current={pathname.startsWith(href) ? "page" : undefined}>
               {label}
             </a>
           ))}
         </nav>
-        <a className="header-contact" href="/demande/">
-          Nous contacter <span aria-hidden="true">↗</span>
+        <a className="mobile-contact" href="/demande/">
+          Nous écrire
         </a>
+        <a href="/" className="brand" aria-label="Les Terrasses du Roty — accueil">
+          <img
+            src="/assets/img/logo-etiquette-light.svg"
+            alt="Les Terrasses du Roty"
+            width="212"
+            height="260"
+          />
+        </a>
+        <nav className="desktop-nav nav-end" aria-label="Le journal et le domaine">
+          {links.slice(3).map(([href, label]) => (
+            <a key={href} href={href} aria-current={pathname.startsWith(href) ? "page" : undefined}>
+              {label}
+            </a>
+          ))}
+          <a className="header-contact" href="/demande/">
+            Nous écrire <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
         <button
           type="button"
           className="menu-toggle"
@@ -79,10 +89,10 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
         <div className="wrap footer-top">
           <a href="/" className="footer-brand">
             <img
-              src="/assets/img/logo-gold.png"
+              src="/assets/img/logo-etiquette.svg"
               alt="Les Terrasses du Roty"
-              width="784"
-              height="977"
+              width="212"
+              height="260"
             />
           </a>
           <div>
@@ -123,23 +133,25 @@ export function Photo({
   alt,
   className = "",
   eager = false,
+  sizes = "(max-width: 767px) 100vw, 55vw",
 }: {
   name: string;
   alt: string;
   className?: string;
   eager?: boolean;
+  sizes?: string;
 }) {
   return (
     <picture className={`photo ${className}`}>
       <source
         type="image/avif"
         srcSet={`/assets/img/${name}-800.avif 800w, /assets/img/${name}-1600.avif 1600w`}
-        sizes="(max-width: 767px) 100vw, 55vw"
+        sizes={sizes}
       />
       <source
         type="image/webp"
         srcSet={`/assets/img/${name}-800.webp 800w, /assets/img/${name}-1600.webp 1600w`}
-        sizes="(max-width: 767px) 100vw, 55vw"
+        sizes={sizes}
       />
       <img
         src={`/assets/img/${name}-800.jpg`}

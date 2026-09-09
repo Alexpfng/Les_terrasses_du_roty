@@ -2,11 +2,15 @@
 
 **Implémentation et recette locale réalisées. Publication sur le domaine non réalisée faute d’accès.** Le site public reste Shopify ; aucune préproduction distante n’a été inventée. Les e-mails n’ont pas été envoyés ni reçus pendant cette intervention.
 
+## Ajustement visuel demandé par le propriétaire
+
+Après sa remarque « trop tout noir » et sa nouvelle référence imprimeur : fonds de lecture ivoire, image d’accueil panoramique, navigation équilibrée autour du logo officiel, cuvées et journal sans cadres noirs, formulaire clair. Sur mobile, les champs précèdent les coordonnées dans le rendu et dans l’ordre clavier. Les sources vectorielles du logo sont documentées dans `logo-provenance.md`.
+
 ## Résultat implémenté
 
 - Branche dédiée : `codex/refonte-noir-or-2026-09-09`.
 - React 18, TanStack Start, Router, Vite et configuration Lovable conservés. Aucune mise à niveau globale de dépendances. Ajout de Playwright et axe uniquement pour la recette.
-- Noir `#0A0908`, noir profond `#060504`, or `#C9A227`, textes `#F4F0E6` ; aucun vert d’interface. Logo et photos identiques aux originaux, vérifiés par SHA-256.
+- Direction affinée à la demande du propriétaire : ivoire `#F7F4ED`, encre `#29241F`, or lisible `#745619`, accents dorés `#B59551` ; aucun vert d’interface. Logo officiel fin or/blanc sur le pied de page sombre et or/noir sur l’en-tête ivoire, copiés sans modification depuis les SVG de la charte. Or du logo inchangé `#D7AB0E`. Photographies originales conservées. Voir `logo-provenance.md`.
 - 19 pages : accueil, domaine, terrasses, index vins, cuvées 2024 et 2023, professionnels, demande, journal, cinq nouveaux articles, deux archives et trois pages légales.
 - Contenu présent dans le HTML initial. Aucun écran de préchargement, obligation de 3D ou verrouillage du défilement. Polices et images locales.
 - Panier, checkout, compte et paiement retirés des parcours publics. URLs supprimées en 410, inconnues en 404 ; redirections vers les seuls équivalents documentés. Archives commerciales Shopify intactes.
@@ -39,7 +43,7 @@ Le commit et l’URL de la PR sont fournis dans la remise et par l’historique 
 | Interactions                | Contexte cuvée/pro, validation/focus, saisie conservée après 503, clavier et mouvement réduit                   | `verification/browser.json`         |
 | Recette indépendante        | 30 combinaisons responsive supplémentaires, clavier, menu, formulaire                                           | `qa/README.md`                      |
 | Flux serveur                | 37 timers SSR créés et nettoyés, aucun restant ni expiration ; 30 HEAD concurrents, GET et erreurs/redirections | `verification/runtime.json`         |
-| Identité graphique          | Hash des assets identique au commit initial                                                                     | `verification/original-assets.json` |
+| Identité graphique          | Photos/anciens assets préservés ; nouveaux SVG identiques à la charte fournie                                   | `verification/original-assets.json` |
 
 Le lint initial échouait sur 752 erreurs de formatage. Le commit isolé `042a3c7` formate les composants immersifs archivés sans modifier leur comportement ; ils ne sont plus importés dans le site public. Les fichiers générés de tests sont exclus du lint.
 
@@ -47,9 +51,15 @@ La dernière revue a également sécurisé le réessai d’une demande incertain
 
 Un défaut de nettoyage des flux HEAD a été détecté dans les journaux de recette, corrigé, puis couvert par un test sur le vrai build React/TanStack. Les rapports ci-dessus sont ceux de la version corrigée ; les premières exécutions ayant révélé le défaut ne sont pas présentées comme une validation serveur complète.
 
-## Performance mesurée
+## Performance de la version ivoire
 
-Lighthouse 12.8.2, accueil du build local, mobile simulé : performance **85/100**, accessibilité **100/100**, bonnes pratiques **100/100**. FCP 2,0 s, LCP 4,1 s, TBT 0 ms, CLS 0. Le score SEO local est **69/100**, affecté par le blocage d’indexation volontaire de la préproduction. Ce résultat n’est ni une mesure du domaine Shopify ni une garantie sur le futur hébergement. Le LCP mobile pourra encore bénéficier d’images de diffusion plus légères et doit être remesuré après déploiement.
+Lighthouse 12.8.2, build local de production, mobile simulé : **89/100 en performance**, **100/100 en accessibilité**, **100/100 en bonnes pratiques**. FCP 2,0 s, LCP 3,5 s, TBT 0 ms, CLS 0. SEO local 69/100, avec `noindex` volontaire. Preuve : `verification/lighthouse-ivory.json`. Cette mesure est locale et ne décrit pas le site Shopify public.
+
+La recette de cette version reprend les 19 pages, 95 largeurs/page, 19 contrôles sans JavaScript et 19 contrôles axe (aucune violation), ainsi que les 38 contrôles HTTP et les parcours du formulaire. Le build Node, TypeScript et le lint sont vérifiés à nouveau (`verification/ivory-*.log`). La revue indépendante est dans `qa/ivory-review.md`.
+
+## Performance historique avant l’ajustement ivoire
+
+Mesure historique de la première version noire, avant les ajustements visuels demandés par le propriétaire. Lighthouse 12.8.2, accueil du build local, mobile simulé : performance **85/100**, accessibilité **100/100**, bonnes pratiques **100/100**. FCP 2,0 s, LCP 4,1 s, TBT 0 ms, CLS 0. Le score SEO local est **69/100**, affecté par le blocage d’indexation volontaire de la préproduction. Ce résultat n’est ni une mesure du domaine Shopify ni une garantie sur le futur hébergement. Le LCP mobile pourra encore bénéficier d’images de diffusion plus légères et doit être remesuré après déploiement.
 
 La compression statique native Nitro a fait passer cette mesure de performance de 72 à 85 ; les fichiers originaux du logo et des photographies restent inchangés. Preuves avant/après dans `verification/lighthouse-before-compression.json` et `verification/lighthouse-summary.json`.
 

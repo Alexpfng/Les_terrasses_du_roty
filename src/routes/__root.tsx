@@ -10,11 +10,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { title: "Les Terrasses du Roty" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "theme-color", content: "#0A0908" },
+      { name: "theme-color", content: "#F7F4ED" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", href: "/assets/img/sun-gold.png" },
+      { rel: "icon", type: "image/svg+xml", href: "/assets/img/favicon-etiquette.svg" },
       {
         rel: "preload",
         href: "/assets/fonts/cormorant-latin.woff2",
@@ -37,7 +37,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         "@id": SITE_URL + "/#organisation",
         name: "Les Terrasses du Roty",
         url: SITE_URL + "/",
-        logo: SITE_URL + "/assets/img/logo-gold.png",
+        logo: SITE_URL + "/assets/img/logo-etiquette-light.svg",
         email: "taff.roty@gmail.com",
         location: {
           "@type": "Place",

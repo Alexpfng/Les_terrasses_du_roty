@@ -18,17 +18,19 @@
   font-display: swap;
 }
 :root {
-  --black: #0a0908;
-  --deep: #060504;
-  --gold: #c9a227;
-  --text: #f4f0e6;
-  --muted: #b9b2a7;
-  --line: #493d22;
-  --surface: #12100e;
-  color-scheme: dark;
+  --black: #24201c;
+  --deep: #1e1b18;
+  --paper: #f7f4ed;
+  --gold: #745619;
+  --foil: #b59551;
+  --text: #29241f;
+  --muted: #6c645b;
+  --line: #d9d0c1;
+  --surface: #eee8dd;
+  color-scheme: light;
   font-family: Inter, Arial, sans-serif;
   color: var(--text);
-  background: var(--black);
+  background: var(--paper);
   font-synthesis: none;
 }
 * {
@@ -113,14 +115,14 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 }
 ::selection {
-  background: var(--gold);
+  background: #e5d2a4;
   color: var(--black);
 }
 [hidden] {
   display: none !important;
 }
 .wrap {
-  width: min(1328px, calc(100% - 112px));
+  width: min(1328px, calc(100% - 128px));
   margin-inline: auto;
 }
 .eyebrow {
@@ -136,34 +138,35 @@ textarea {
   left: 18px;
   top: -80px;
   z-index: 100;
-  background: var(--gold);
-  color: var(--black);
+  background: var(--black);
+  color: #fffdf8;
   padding: 12px 20px;
 }
 .skip-link:focus {
   top: 12px;
 }
 .site-header {
-  height: 122px;
-  display: flex;
+  height: 148px;
+  display: grid;
+  grid-template-columns: 1fr 126px 1fr;
   align-items: center;
-  gap: 40px;
-  border-bottom: 1px solid var(--line);
+  gap: 38px;
 }
 .brand {
+  justify-self: center;
   flex-shrink: 0;
-  margin-right: auto;
 }
 .brand img {
-  width: 69px;
-  height: 86px;
+  width: 89px;
+  height: 109px;
   object-fit: contain;
 }
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 29px;
+  gap: clamp(18px, 2.7vw, 42px);
   font-size: 11px;
+  letter-spacing: 0.02em;
 }
 .desktop-nav a {
   text-decoration: none;
@@ -174,13 +177,18 @@ textarea {
   color: var(--gold);
 }
 .header-contact {
-  display: flex;
-  gap: 25px;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
   color: var(--gold);
-  font-size: 11px;
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 1px solid var(--foil);
   padding: 8px 0;
+}
+.nav-end {
+  justify-content: flex-end;
+}
+.mobile-contact {
+  display: none;
 }
 .menu-toggle {
   display: none;
@@ -213,31 +221,78 @@ textarea {
   padding: 20px 0;
 }
 .hero {
+  min-height: min(730px, 78svh);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background: #3e3b2f;
+  isolation: isolate;
+  --text: #fffdf8;
+  --muted: #f0eadd;
+  --gold: #e1c780;
+  --line: #b2a388;
+  color: var(--text);
+}
+.hero-landscape {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.hero-landscape img {
+  object-position: center 46%;
+}
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgb(19 17 13 / 3%) 5%,
+    rgb(19 17 13 / 30%) 35%,
+    rgb(19 17 13 / 82%) 100%
+  );
+}
+.hero-inner {
   display: grid;
-  grid-template-columns: 1.04fr 1fr;
-  gap: 70px;
-  align-items: center;
-  padding-block: 65px 56px;
+  grid-template-columns: 1.35fr 0.85fr;
+  align-items: end;
+  gap: 90px;
+  padding-block: 145px 68px;
 }
 .hero-copy .eyebrow {
-  margin-bottom: 34px;
+  color: var(--text);
+  margin-bottom: 26px;
 }
 .hero h1 {
-  font-size: clamp(60px, 6.9vw, 99px);
-  line-height: 0.99;
-  letter-spacing: -0.045em;
+  font-size: clamp(74px, 8.1vw, 118px);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
 }
-.hero h1 span {
-  display: block;
-  font-size: 0.73em;
-  margin-top: 12px;
+.hero h1 em {
+  color: var(--text);
 }
 .hero-intro {
-  max-width: 397px;
-  color: var(--muted);
+  max-width: 380px;
+  color: var(--text);
   font-size: 13px;
-  line-height: 1.9;
-  margin-top: 30px;
+  line-height: 1.95;
+}
+.hero .actions {
+  gap: 12px 24px;
+  margin-top: 27px;
+}
+.hero .button {
+  background: var(--paper);
+  color: var(--black);
+  border-color: var(--paper);
+}
+.hero .button:hover {
+  background: #e8dcc4;
+  border-color: #e8dcc4;
+}
+.hero .text-link {
+  color: var(--text);
 }
 .actions {
   display: flex;
@@ -250,18 +305,22 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  gap: 26px;
-  padding: 16px 23px;
-  background: var(--gold);
-  color: var(--black);
-  border: 1px solid var(--gold);
+  gap: 34px;
+  padding: 17px 25px;
+  background: var(--black);
+  color: #fffdf8;
+  border: 1px solid var(--black);
   font-size: 11px;
   line-height: 1.5;
   text-decoration: none;
-  transition: background 0.2s;
+  letter-spacing: 0.025em;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
 }
 .button:hover {
-  background: #dfbd55;
+  background: #665033;
+  border-color: #665033;
 }
 .button span {
   font-size: 17px;
@@ -293,54 +352,25 @@ textarea {
   height: 100%;
   object-fit: cover;
 }
-.hero-figure {
-  position: relative;
-  padding-right: 18px;
-}
-.hero-figure .photo {
-  height: 560px;
-}
-.hero-figure img {
-  object-position: 48% center;
-}
-.hero-figure figcaption {
-  display: flex;
-  justify-content: space-between;
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-top: 13px;
-}
-.photo-note {
-  position: absolute;
-  right: -13px;
-  top: 0;
-  writing-mode: vertical-rl;
-  font-size: 8px;
-  letter-spacing: 0.19em;
-  color: var(--gold);
-}
 .place-line {
   display: flex;
   justify-content: space-between;
-  border-block: 1px solid var(--line);
-  padding: 21px 0;
-  font-size: 10px;
-  letter-spacing: 0.1em;
+  gap: 25px;
+  border-bottom: 1px solid var(--line);
+  padding: 28px 0;
+  font-size: 9px;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--muted);
 }
 .place-line span + span:before {
-  content: "·";
-  color: var(--gold);
-  margin-right: 36px;
+  content: none;
 }
 .story-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 90px;
-  padding-block: 108px;
+  gap: 110px;
+  padding-block: 126px;
 }
 .story-section .eyebrow,
 .section-heading .eyebrow,
@@ -349,9 +379,10 @@ textarea {
 }
 .story-copy {
   padding-top: 11px;
-  max-width: 520px;
+  max-width: 495px;
   color: var(--muted);
   font-size: 14px;
+  line-height: 1.95;
 }
 .story-copy p + p {
   margin-top: 18px;
@@ -362,7 +393,7 @@ textarea {
 }
 .landscape-section {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1.35fr 1fr;
   background: var(--surface);
 }
 .landscape-section > .photo {
@@ -401,13 +432,13 @@ textarea {
 }
 .wine-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 64px;
+  align-items: start;
 }
 .wine-card {
-  border: 1px solid var(--line);
   text-decoration: none;
-  background: var(--surface);
+  min-width: 0;
 }
 .wine-card > .photo {
   height: 365px;
@@ -419,7 +450,8 @@ textarea {
   transform: scale(1.025);
 }
 .wine-card-copy {
-  padding: 28px 30px;
+  padding: 28px 0 22px;
+  border-bottom: 1px solid var(--line);
 }
 .wine-card-copy h3 {
   margin-top: 12px;
@@ -445,23 +477,23 @@ textarea {
   justify-content: center;
   align-items: center;
   color: var(--gold);
-  background: radial-gradient(ellipse at center, #282010 0, var(--deep) 75%);
+  background: #eae1d0;
   position: relative;
 }
 .vintage-art:before,
 .vintage-art:after {
   content: "";
   position: absolute;
-  width: 70%;
+  width: calc(100% - 48px);
   height: 1px;
-  background: var(--line);
-  left: 15%;
+  background: #b9a174;
+  left: 24px;
 }
 .vintage-art:before {
-  top: 42px;
+  top: 24px;
 }
 .vintage-art:after {
-  bottom: 42px;
+  bottom: 24px;
 }
 .vintage-art span {
   font-size: 9px;
@@ -478,9 +510,9 @@ textarea {
   height: 620px;
 }
 .professional-band {
-  background: var(--deep);
+  background: #eae2d5;
   border-block: 1px solid var(--line);
-  padding: 76px 0;
+  padding: 90px 0;
   text-align: center;
 }
 .professional-band h2 {
@@ -497,7 +529,7 @@ textarea {
 .journal-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 34px;
+  gap: 40px;
 }
 .journal-card .photo {
   height: 230px;
@@ -534,11 +566,11 @@ textarea {
 }
 .contact-band {
   border-top: 1px solid var(--line);
-  padding-block: 78px 90px;
+  padding-block: 94px 108px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 40px;
 }
 .contact-band .eyebrow {
   margin-bottom: 23px;
@@ -552,9 +584,14 @@ textarea {
   margin-top: 20px;
 }
 .site-footer {
+  --text: #f8f3e9;
+  --muted: #c5bdb0;
+  --gold: #dec680;
+  --line: #52483b;
+  color: var(--text);
   background: var(--deep);
   border-top: 1px solid var(--line);
-  padding-top: 64px;
+  padding-top: 74px;
 }
 .footer-top {
   display: grid;
@@ -564,8 +601,8 @@ textarea {
   padding-bottom: 65px;
 }
 .footer-brand img {
-  width: 99px;
-  height: 123px;
+  width: 110px;
+  height: 135px;
   object-fit: contain;
 }
 .footer-title {
@@ -623,7 +660,7 @@ textarea {
   color: var(--gold);
 }
 .page-intro {
-  padding-block: 42px 65px;
+  padding-block: 32px 70px;
 }
 .page-intro .eyebrow {
   margin-bottom: 25px;
@@ -761,7 +798,7 @@ textarea {
 }
 .article-body p {
   margin-block: 22px;
-  color: #d1cbc1;
+  color: var(--muted);
 }
 .article-body h2 {
   font-size: 39px;
@@ -823,14 +860,51 @@ textarea {
 }
 .form-layout {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 90px;
-  padding-bottom: 100px;
+  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "intro form" "aside form";
+  column-gap: 100px;
+  row-gap: 38px;
+  padding-bottom: 110px;
   align-items: start;
 }
 .form-aside {
-  position: sticky;
-  top: 30px;
+  grid-area: aside;
+  max-width: 355px;
+}
+.contact-breadcrumb {
+  padding-top: 28px;
+}
+.contact-breadcrumb .breadcrumbs {
+  margin-bottom: 35px;
+}
+.contact-intro {
+  grid-area: intro;
+}
+.contact-intro .eyebrow {
+  margin-bottom: 24px;
+}
+.contact-intro h1 {
+  font-size: clamp(66px, 6.7vw, 96px);
+}
+.contact-intro > p:last-child {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.95;
+  margin-top: 28px;
+  max-width: 335px;
+}
+.form-aside .photo {
+  height: 215px;
+}
+.form-aside .contact-details .eyebrow {
+  margin-bottom: 14px;
+  color: var(--gold);
+  font-size: 9px;
+}
+.form-title {
+  font-size: 39px;
+  margin-bottom: 13px;
 }
 .form-aside h2 {
   font-size: 42px;
@@ -849,9 +923,11 @@ textarea {
   color: var(--gold);
 }
 .request-form {
+  grid-area: form;
   border: 1px solid var(--line);
+  border-top: 2px solid var(--foil);
   padding: 38px;
-  background: var(--surface);
+  background: #fffcf6;
   min-width: 0;
 }
 .form-grid {
@@ -873,17 +949,30 @@ textarea {
   color: var(--muted);
   font-size: 10px;
 }
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--gold);
+  background: #fff;
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #72685b;
+}
 .form-field input,
 .form-field select,
 .form-field textarea {
   width: 100%;
   min-width: 0;
-  border: 1px solid #756336;
+  border: 1px solid #9a8e7d;
   border-radius: 0;
-  background: var(--black);
+  background: #fffcf6;
   color: var(--text);
   padding: 12px 13px;
   font-size: 13px;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
 }
 .form-field textarea {
   resize: vertical;
@@ -956,7 +1045,7 @@ textarea {
   padding: 20px;
   margin-bottom: 24px;
   font-size: 13px;
-  background: var(--black);
+  background: var(--surface);
 }
 .form-notice h2 {
   font-family: Inter, Arial, sans-serif;
@@ -975,6 +1064,7 @@ textarea {
   color: var(--gold);
 }
 .form-success {
+  grid-area: form;
   padding: 35px;
 }
 .form-success h2 {
@@ -988,101 +1078,129 @@ textarea {
   overflow: hidden;
   clip-path: inset(50%);
 }
-@media (min-width: 1600px) {
-  .hero-figure .photo {
-    height: 610px;
-  }
-}
 @media (max-width: 1150px) {
   .wrap {
-    width: calc(100% - 72px);
-  }
-  .desktop-nav {
-    gap: 17px;
+    width: calc(100% - 80px);
   }
   .site-header {
-    gap: 25px;
+    gap: 20px;
+    grid-template-columns: 1fr 105px 1fr;
+    height: 136px;
   }
-  .hero {
-    gap: 40px;
+  .desktop-nav {
+    gap: 22px;
+    font-size: 10px;
+  }
+  .hero-inner {
+    gap: 48px;
+    grid-template-columns: 1.2fr 0.9fr;
   }
   .hero h1 {
-    font-size: 76px;
+    font-size: 86px;
   }
-  .hero-figure .photo {
-    height: 510px;
+  .hero-intro {
+    font-size: 12px;
+  }
+  .hero .actions {
+    margin-top: 20px;
   }
   .landscape-caption {
-    padding: 42px 34px;
+    padding: 45px 35px;
   }
   .story-section {
-    gap: 55px;
+    gap: 60px;
   }
   .editorial-split,
   .cuvee-detail {
     gap: 45px;
   }
   .form-layout {
-    gap: 45px;
+    column-gap: 60px;
   }
   .request-form {
-    padding: 28px;
+    padding: 30px;
   }
-  .place-line span + span:before {
-    margin-right: 12px;
+  .wine-grid {
+    gap: 40px;
   }
   .journal-grid {
-    gap: 24px;
+    gap: 28px;
   }
 }
 @media (max-width: 900px) {
   .desktop-nav {
     display: none;
   }
-  .menu-toggle {
-    display: flex;
-  }
   .site-header {
-    height: 104px;
+    height: 126px;
+    position: relative;
+  }
+  .brand {
+    grid-column: 2;
+    grid-row: 1;
   }
   .brand img {
-    height: 75px;
-    width: 60px;
+    width: 78px;
+    height: 96px;
+  }
+  .mobile-contact {
+    display: inline;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border-bottom: 1px solid var(--foil);
+    padding-block: 6px;
+  }
+  .menu-toggle {
+    display: flex;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    padding: 6px 0;
   }
   .hero {
+    min-height: 640px;
+  }
+  .hero-inner {
+    grid-template-columns: 1fr;
     gap: 30px;
+    padding-block: 150px 46px;
+  }
+  .hero-details {
+    max-width: 460px;
+  }
+  .hero-intro {
+    max-width: 430px;
+    font-size: 13px;
   }
   .hero h1 {
-    font-size: 61px;
+    font-size: 94px;
   }
-  .hero .eyebrow {
-    font-size: 9px;
-  }
-  .hero-figure .photo {
-    height: 475px;
-  }
-  .actions {
-    gap: 18px;
+  .hero .actions {
+    gap: 14px 24px;
   }
   .place-line {
     font-size: 8px;
-    gap: 15px;
+    letter-spacing: 0.08em;
   }
   .story-section {
-    padding-block: 78px;
-    gap: 35px;
+    padding-block: 85px;
+    gap: 40px;
   }
   .landscape-section {
     grid-template-columns: 1fr 1fr;
   }
   .landscape-section > .photo {
-    min-height: 450px;
+    min-height: 440px;
   }
   .landscape-caption h2 {
     font-size: 45px;
   }
   .section-pad {
-    padding-block: 80px;
+    padding-block: 85px;
   }
   .journal-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1091,30 +1209,39 @@ textarea {
   .vintage-art {
     height: 300px;
   }
-  .wine-card-copy {
-    padding: 23px;
+  .wine-card-copy h3 {
+    font-size: 34px;
   }
   .editorial-split {
     gap: 35px;
   }
   .editorial-split > .photo {
-    height: 550px;
+    height: 530px;
   }
   .prose h2 {
     font-size: 41px;
   }
   .form-layout {
-    grid-template-columns: 1fr 1.3fr;
-    gap: 28px;
+    grid-template-columns: 0.8fr 1.2fr;
+    column-gap: 30px;
+  }
+  .request-form {
+    padding: 26px;
   }
   .form-grid {
     gap: 18px;
   }
-  .request-form {
-    padding: 25px;
-  }
   .form-field {
     grid-column: 1/-1;
+  }
+  .contact-intro h1 {
+    font-size: 70px;
+  }
+  .contact-intro .eyebrow {
+    font-size: 9px;
+  }
+  .form-aside .photo {
+    height: 200px;
   }
   .footer-top {
     gap: 30px;
@@ -1122,7 +1249,7 @@ textarea {
   }
   .footer-brand img {
     width: 78px;
-    height: 98px;
+    height: 96px;
   }
   .contact-band h2 {
     font-size: 44px;
@@ -1142,121 +1269,135 @@ textarea {
     font-size: 14px;
   }
   .wrap {
-    width: calc(100% - 40px);
+    width: calc(100% - 44px);
   }
   .site-header {
-    height: 96px;
-    gap: 22px;
+    height: 108px;
+    grid-template-columns: 1fr 86px 1fr;
+    gap: 12px;
   }
   .brand img {
-    width: 55px;
-    height: 69px;
+    width: 72px;
+    height: 89px;
   }
-  .header-contact {
+  .mobile-contact {
+    font-size: 9px;
+  }
+  .menu-toggle {
     font-size: 10px;
-    gap: 15px;
+    gap: 12px;
   }
   .hero {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding-block: 43px 32px;
+    min-height: 590px;
+  }
+  .hero-inner {
+    gap: 30px;
+    padding-block: 145px 35px;
   }
   .hero-copy .eyebrow {
     font-size: 8px;
-    letter-spacing: 0.16em;
-    margin-bottom: 27px;
+    letter-spacing: 0.17em;
+    margin-bottom: 23px;
   }
   .hero h1 {
-    font-size: clamp(60px, 15.5vw, 90px);
+    font-size: clamp(61px, 16vw, 91px);
+    line-height: 1;
   }
   .hero-intro {
-    font-size: 13px;
-    margin-top: 23px;
+    font-size: 12px;
+    line-height: 1.85;
+    max-width: 335px;
   }
-  .actions {
-    gap: 22px;
-    margin-top: 27px;
+  .hero-landscape img {
+    object-position: 48% center;
+  }
+  .hero .actions {
+    margin-top: 23px;
+    gap: 14px 20px;
+  }
+  .hero .text-link {
+    font-size: 10px;
   }
   .button {
-    font-size: 11px;
+    font-size: 10px;
     padding: 15px 18px;
-    gap: 20px;
-  }
-  .hero-figure {
-    padding-right: 14px;
-  }
-  .hero-figure .photo {
-    height: 390px;
-  }
-  .hero-figure figcaption {
-    font-size: 8px;
-  }
-  .photo-note {
-    right: -7px;
-    font-size: 7px;
+    gap: 24px;
   }
   .place-line {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 9px;
-    padding: 19px 0;
+    padding-block: 22px;
+    gap: 15px;
+    align-items: center;
+    font-size: 7px;
+    line-height: 1.8;
   }
-  .place-line span + span:before {
-    content: none;
+  .place-line span {
+    max-width: 100px;
+  }
+  .place-line span:nth-child(2) {
+    text-align: center;
+  }
+  .place-line span:last-child {
+    text-align: right;
   }
   .story-section {
     grid-template-columns: 1fr;
-    padding-block: 63px;
-    gap: 29px;
+    padding-block: 72px;
+    gap: 30px;
   }
   .story-copy {
     padding-top: 0;
     font-size: 13px;
   }
   .story-section .eyebrow {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 49px;
   }
   .landscape-section {
     grid-template-columns: 1fr;
   }
   .landscape-section > .photo {
-    height: 300px;
+    height: 290px;
     min-height: 0;
   }
   .landscape-caption {
-    padding: 34px 27px 40px;
+    padding: 36px 27px 42px;
   }
   .landscape-caption h2 {
     font-size: 47px;
   }
   .section-pad {
-    padding-block: 68px;
+    padding-block: 72px;
   }
   .section-heading {
     flex-direction: column;
     align-items: start;
     gap: 25px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
   .section-heading .eyebrow {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
   .section-heading > p {
     font-size: 12px;
   }
   .wine-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 38px;
   }
   .wine-card > .photo,
   .vintage-art {
-    height: 310px;
+    height: 320px;
   }
   .wine-card-copy {
-    padding: 24px;
+    padding: 24px 0;
+  }
+  .wine-card-copy h3 {
+    font-size: 38px;
   }
   .professional-band {
-    padding: 58px 0;
+    padding: 66px 0;
   }
   .professional-band h2 {
     font-size: 45px;
@@ -1266,7 +1407,7 @@ textarea {
   }
   .journal-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 25px;
   }
   .journal-card .photo {
     height: 260px;
@@ -1281,12 +1422,12 @@ textarea {
     font-size: 9px;
   }
   .journal-card > div {
-    padding-bottom: 30px;
+    padding-bottom: 26px;
   }
   .contact-band {
     flex-direction: column;
     align-items: start;
-    padding-block: 55px 65px;
+    padding-block: 64px 72px;
     gap: 30px;
   }
   .contact-band h2 {
@@ -1296,20 +1437,20 @@ textarea {
     font-size: 12px;
   }
   .footer-top {
-    grid-template-columns: 70px 1fr;
-    gap: 27px;
+    grid-template-columns: 75px 1fr;
+    gap: 28px;
     padding-bottom: 40px;
   }
   .footer-brand img {
-    width: 64px;
-    height: 80px;
+    width: 72px;
+    height: 89px;
   }
   .footer-title {
-    font-size: 32px;
+    font-size: 34px;
   }
   .footer-contact {
     grid-column: 1/-1;
-    margin-top: 9px;
+    margin-top: 12px;
     gap: 12px;
   }
   .footer-bottom {
@@ -1324,7 +1465,7 @@ textarea {
     font-size: 9px;
   }
   .site-footer {
-    padding-top: 45px;
+    padding-top: 52px;
   }
   .breadcrumbs {
     font-size: 9px;
@@ -1332,7 +1473,7 @@ textarea {
     overflow-wrap: anywhere;
   }
   .page-intro {
-    padding-block: 28px 43px;
+    padding-block: 24px 45px;
   }
   .page-intro h1 {
     font-size: 55px;
@@ -1386,7 +1527,7 @@ textarea {
     font-size: 28px;
   }
   .article-header {
-    padding-block: 28px 35px;
+    padding-block: 24px 35px;
   }
   .article-header h1 {
     font-size: 49px;
@@ -1410,17 +1551,42 @@ textarea {
   }
   .form-layout {
     grid-template-columns: 1fr;
-    gap: 35px;
+    grid-template-areas: "intro" "form" "aside";
+    gap: 30px;
     padding-bottom: 65px;
   }
-  .form-aside {
-    position: static;
+  .contact-breadcrumb {
+    padding-top: 16px;
   }
-  .form-aside h2 {
-    font-size: 37px;
+  .contact-breadcrumb .breadcrumbs {
+    margin-bottom: 20px;
+  }
+  .contact-intro .eyebrow {
+    font-size: 8px;
+    margin-bottom: 14px;
+  }
+  .contact-intro h1 {
+    font-size: 55px;
+  }
+  .contact-intro h1 br {
+    display: none;
+  }
+  .contact-intro > p:last-child {
+    font-size: 12px;
+    margin-top: 17px;
+  }
+  .form-aside {
+    max-width: none;
+  }
+  .form-aside .photo {
+    height: 240px;
   }
   .request-form {
-    padding: 23px 20px;
+    padding: 24px 20px;
+  }
+  .form-title {
+    font-size: 34px;
+    margin-bottom: 10px;
   }
   .form-field {
     gap: 7px;
@@ -1433,6 +1599,9 @@ textarea {
   }
   .profile-options {
     gap: 20px;
+  }
+  .form-divider {
+    margin-block: 16px;
   }
   .form-field label {
     font-size: 12px;
