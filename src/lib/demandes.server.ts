@@ -223,7 +223,7 @@ async function redis(dependencies: Dependencies, config: Config, command: (strin
     headers: { Authorization: `Bearer ${config.redisToken}`, "Content-Type": "application/json" },
     body: JSON.stringify(command),
     signal: AbortSignal.timeout(4_000),
-    redirect: "error",
+    redirect: "manual",
   });
   if (!result.ok) throw new Error("storage_unavailable");
   const data: unknown = await result.json();
@@ -451,7 +451,7 @@ export function createDemandeHandler(dependencies: Dependencies) {
           },
           body: JSON.stringify(message(data, config, requestId, Number(value))),
           signal: AbortSignal.timeout(SERVICE_TIMEOUT_MS),
-          redirect: "error",
+          redirect: "manual",
         });
       } catch {
         await finish("uncertain");
@@ -533,7 +533,8 @@ export function createDemandeHandler(dependencies: Dependencies) {
 export async function handleDemande(request: Request): Promise<Response> {
   return createDemandeHandler({
     env: () => process.env,
-    fetch: globalThis.fetch,
+    // workerd requires the native receiver; redirects are checked above and never followed.
+    fetch: globalThis.fetch.bind(globalThis),
     audit: (event) => console.info(JSON.stringify(event)),
   })(request);
 }
