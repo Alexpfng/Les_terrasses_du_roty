@@ -155,6 +155,55 @@ try {
   assert.equal(await page.getByText("Merci pour votre message.").count(), 0);
   result.form.push("Real endpoint 503: no success, input retained");
   await page.screenshot({ path: "test-results/demande-service-unavailable.png", fullPage: true });
+  // Controlled HTTP doubles test a delivery-uncertainty sequence. This is not
+  // evidence of sending or receiving a real email; the genuine 503 is tested above.
+  let retryCalls = 0;
+  const retryKeys = [];
+  const technicalReference = "11111111-1111-4111-8111-111111111111";
+  await page.route("**/api/demandes", async (route) => {
+    retryCalls++;
+    retryKeys.push(route.request().postDataJSON().idempotency_key);
+    const body =
+      retryCalls === 1
+        ? {
+            status: "uncertain",
+            code: "delivery_uncertain",
+            request_id: technicalReference,
+            message: "Transmission technique incertaine. Conservez la référence.",
+          }
+        : {
+            status: "error",
+            code: "service_unavailable",
+            message: "Indisponibilité technique temporaire.",
+          };
+    await route.fulfill({
+      status: retryCalls === 1 ? 504 : 503,
+      contentType: "application/json",
+      body: JSON.stringify(body),
+    });
+  });
+  await page.getByRole("button", { name: "Envoyer ma demande" }).click();
+  await page.getByText(`Référence à conserver : ${technicalReference}`).waitFor();
+  await page.getByRole("button", { name: "Envoyer ma demande" }).click();
+  await page.getByText("Indisponibilité technique temporaire.").waitFor();
+  assert.equal(retryCalls, 2);
+  assert.equal(retryKeys[0], retryKeys[1], "Retry must preserve provider identity");
+  assert.equal(await page.getByText(`Référence à conserver : ${technicalReference}`).count(), 1);
+  await page.locator("#message").fill("TEST TECHNIQUE : contenu modifié après résultat incertain.");
+  await page.getByRole("button", { name: "Envoyer ma demande" }).click();
+  await page.getByText(/La transmission précédente reste incertaine/).waitFor();
+  assert.equal(retryCalls, 2, "503 on retry must not allow a new key or modified submission");
+  await page.evaluate(() => {
+    const future = Date.now() + 24 * 60 * 60 * 1000;
+    Date.now = () => future;
+  });
+  await page.getByRole("button", { name: "Envoyer ma demande" }).click();
+  await page.getByText(/Le délai de réessai sécurisé est dépassé/).waitFor();
+  assert.equal(retryCalls, 2, "Old uncertain attempts require manual verification");
+  result.form.push(
+    "Mocked uncertainty then 503 preserves reference/key, blocks changed content and retries after 23h",
+  );
+  await page.unroute("**/api/demandes");
   await page.goto(base + "/");
   await page.keyboard.press("Tab");
   assert.equal(await page.evaluate(() => document.activeElement.textContent), "Aller au contenu");

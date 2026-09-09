@@ -2,6 +2,9 @@ name: Verify Roty site
 on:
   pull_request:
   workflow_dispatch:
+concurrency:
+  group: roty-verify-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:

@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-09-09T09:34:25.746Z",
+  "checkedAt": "2026-09-09T09:45:23.914Z",
   "pages": [
     {
       "path": "/",
@@ -887,6 +887,7 @@
     "Cuvee and professional context prefilled",
     "Accessible validation summary receives focus",
     "Real endpoint 503: no success, input retained",
+    "Mocked uncertainty then 503 preserves reference/key, blocks changed content and retries after 23h",
     "Keyboard skip link reaches main",
     "Reduced motion disables smooth scroll"
   ],

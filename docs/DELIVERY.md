@@ -43,6 +43,8 @@ Le commit et l’URL de la PR sont fournis dans la remise et par l’historique 
 
 Le lint initial échouait sur 752 erreurs de formatage. Le commit isolé `042a3c7` formate les composants immersifs archivés sans modifier leur comportement ; ils ne sont plus importés dans le site public. Les fichiers générés de tests sont exclus du lint.
 
+La dernière revue a également sécurisé le réessai d’une demande incertaine : une réponse temporaire 429/503 ne permet pas de créer une nouvelle clé, la référence reste affichée et une reprise au-delà de 23 heures est bloquée. Le parcours est couvert par une séquence HTTP doublée côté navigateur, distincte du test du véritable endpoint 503.
+
 Un défaut de nettoyage des flux HEAD a été détecté dans les journaux de recette, corrigé, puis couvert par un test sur le vrai build React/TanStack. Les rapports ci-dessus sont ceux de la version corrigée ; les premières exécutions ayant révélé le défaut ne sont pas présentées comme une validation serveur complète.
 
 ## Performance mesurée

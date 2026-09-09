@@ -84,6 +84,7 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
     if (!key.current || (fingerprint !== previousPayload.current && !uncertain.current)) {
       key.current = crypto.randomUUID();
       firstAttemptAt.current = Date.now();
+      setRequestId("");
     }
     if (uncertain.current && fingerprint !== previousPayload.current) {
       showErrors(
@@ -114,13 +115,16 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
         signal: AbortSignal.timeout(25000),
       });
       const result = (await response.json()) as Result;
+      if (result.request_id) setRequestId(result.request_id);
       if (response.ok && result.status === "accepted" && result.request_id) {
         uncertain.current = false;
         setRequestId(result.request_id);
         setState("success");
         requestAnimationFrame(() => summary.current?.focus());
       } else {
-        uncertain.current = result.status === "uncertain";
+        // A transient rejection of a retry cannot disprove the earlier delivery.
+        // Only an accepted response resolves an existing uncertain attempt.
+        uncertain.current = uncertain.current || result.status === "uncertain";
         const fields = Object.fromEntries(
           Object.entries(result.field_errors || {}).map(([name, value]) => [
             name,
@@ -184,6 +188,7 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
         <div className="form-notice" role="alert" tabIndex={-1} ref={summary}>
           <h2>Votre demande n’est pas confirmée.</h2>
           <p>{notice}</p>
+          {requestId ? <p className="fine-print">Référence à conserver : {requestId}</p> : null}
           {Object.keys(errors).length ? (
             <ul>
               {Object.entries(errors).map(([name, error]) => (
