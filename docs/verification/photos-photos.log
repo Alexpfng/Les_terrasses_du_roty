@@ -1,0 +1,27 @@
+
+> test:photos
+> node tests/photos.mjs
+
+{
+  "passed": true,
+  "pages": 19,
+  "variants": 102,
+  "gallery": [
+    {
+      "card": 1,
+      "keyboardRevealed": true,
+      "fullCardVisible": true
+    },
+    {
+      "card": 2,
+      "keyboardRevealed": true,
+      "fullCardVisible": true
+    },
+    {
+      "card": 3,
+      "keyboardRevealed": true,
+      "fullCardVisible": true
+    }
+  ],
+  "headerBackdropFilter": "saturate(1.4) blur(20px)"
+}

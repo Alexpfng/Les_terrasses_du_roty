@@ -1,0 +1,67 @@
+
+> test:analytics
+> node tests/analytics-browser.mjs
+
+{
+  "checkedAt": "2026-09-09T13:12:12.061Z",
+  "provider": "Mock Google tag; all external requests intercepted",
+  "checks": [
+    {
+      "name": "Before a choice: no Google request, cookie, event queue or consent storage write",
+      "passed": true
+    },
+    {
+      "name": "Refusal persists for the same duration and a later page load still makes no Google request",
+      "passed": true
+    },
+    {
+      "name": "After acceptance: one page view, safe SPA navigation, no query/hash/title/referrer/form PII",
+      "passed": true
+    },
+    {
+      "name": "Withdrawal disables GA immediately, deletes its cookies/tag, sends no denial ping and preserves entered form text",
+      "passed": true
+    },
+    {
+      "name": "Stored acceptance cannot bypass missing/invalid/disabled/failing server configuration",
+      "passed": true
+    },
+    {
+      "name": "Preview and HTTP hosts do not initialize GA, even with stored acceptance",
+      "passed": true
+    },
+    {
+      "name": "Accept then withdraw while config is pending: no tag is ever requested",
+      "passed": true
+    },
+    {
+      "name": "Accept then withdraw while Google script is loading: late completion cannot configure or send",
+      "passed": true
+    },
+    {
+      "name": "Expired stored consent requires a fresh choice",
+      "passed": true
+    },
+    {
+      "name": "Reacceptance after withdrawal reuses a loaded tag without duplicate page views",
+      "passed": true
+    },
+    {
+      "name": "An unlisted path containing personal data does not start Google",
+      "passed": true
+    },
+    {
+      "name": "Real React consent UI: equally presented acceptance/refusal, preferences keyboard access and no Google on refusal",
+      "passed": true
+    },
+    {
+      "name": "Real DemandeForm: focus and validation/errors never produce a lead; only true accepted response does",
+      "passed": true
+    },
+    {
+      "name": "Caviste and restaurateur choices reveal company, select professional purpose and send the correct categorical profile",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

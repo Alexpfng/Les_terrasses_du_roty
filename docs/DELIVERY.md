@@ -1,106 +1,83 @@
 # Livraison — 9 septembre 2026
 
-**Site complet, refonte ivoire/or, SEO ciblé et intégration Analytics réalisés et testés localement.** Le compte Analytics dédié est réellement créé. Search Console attend la publication du jeton sur le domaine. La préproduction Netlify est en préparation ; le site public reste Shopify. Aucun e-mail réel envoyé ou reçu n’est revendiqué.
+**Le site complet est publié sur https://www.les-terrasses-du-roty.fr/ et le formulaire a livré un vrai e-mail au serveur Gmail.** Cette livraison documente le commit `bf7957241ede2b144480b8f781eb35d5db8644b0`, déploiement Cloudflare Pages `a934ec80-a7b4-4a8f-b2e7-a83150b60f0f`. La nouvelle interface inspirée d’Apple, demandée ensuite par le propriétaire, a passé sa recette locale et attend sa préproduction : elle ne doit pas être confondue avec la version publique et les preuves ci-dessous.
 
-## SEO, Analytics et acquisition
+## Site et parcours
 
-- Pages et maillage ciblant particuliers, cavistes et restaurateurs ; formulaire avec ces trois profils et « autre professionnel ». Intention d’achat direct, recherche de fiche cuvée, tarif professionnel et carte des vins distinguées sans inventer prix, stocks ou volumes de recherche. Recherche sourcée dans `SEO-INTENTIONS.md`.
-- Métadonnées et contenu serveur, schémas Organization/WebSite/BreadcrumbList/BlogPosting, canoniques et sitemap contrôlés sur les 19 pages. Jeton GSC réel présent dans le HTML initial.
-- GA4 créé : compte `407381204`, propriété `553368095`, flux `15746517257`, mesure `G-L2PJT90F4Y`. Consentement préalable, refus/retrait, six mois de préférence, aucune mesure en préproduction, filtrage des données personnelles. `generate_lead` déclaré événement clé sans valeur financière ; dimensions `visitor_profile` et `cuvee` créées. Détails et limites dans `ANALYTICS-SEARCH-CONSOLE.md`.
-- Cinq cibles de liens partenaires qualifiées, kit et trois modèles rédigés dans `BACKLINKS.md`. **Zéro message externe envoyé et zéro nouveau backlink acquis.** Diffusion des nouvelles routes après leur publication réelle ; aucun achat de lien ou adhésion payante.
+- Branche dédiée : `codex/refonte-noir-or-2026-09-09`. React 18, TanStack Start, Router, Vite et configuration Lovable conservés ; publication avec le preset Nitro `cloudflare-pages` et compatibilité Node.
+- 19 pages : accueil, domaine, terrasses, index vins, cuvées 2024 et 2023, professionnels, demande, journal, cinq nouveaux articles, deux archives et trois pages légales. Contenus rendus côté serveur et consultables sans JavaScript ; polices et photographies locales.
+- Logo officiel documenté dans `logo-provenance.md`, informations vérifiées et absence de vert d’interface conservés. Après la version ivoire/or, la nouvelle direction demandée emploie blancs, gris doux, Inter, espaces généreux et accents or. Son build et sa recette restent distincts des résultats historiques.
+- Panier, checkout, compte et paiement retirés. Anciennes routes commerciales en 410, inconnues en 404 et redirections vers les équivalents documentés. Aucun prix, stock, avis ou certification inventé.
+- Formulaire réel à destinataire fixe, profils particulier/caviste/restaurateur/autre professionnel, contexte cuvée, validation, quotas Redis atomiques et idempotence. Sans configuration ou en cas de panne, vraie erreur, saisie conservée et aucun succès simulé.
 
-## Ajustement visuel demandé par le propriétaire
+## URLs réellement vérifiées
 
-Après sa remarque « trop tout noir » et sa nouvelle référence imprimeur : fonds de lecture ivoire, image d’accueil panoramique, navigation équilibrée autour du logo officiel, cuvées et journal sans cadres noirs, formulaire clair. Sur mobile, les champs précèdent les coordonnées dans le rendu et dans l’ordre clavier. Les sources vectorielles du logo sont documentées dans `logo-provenance.md`.
+| URL                                                      | État du commit publié `bf79572`                                                                                           |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `https://www.les-terrasses-du-roty.fr/`                  | HTTPS 200, nouvelle application SSR, absence de code de vitrine Shopify                                                   |
+| `https://www.les-terrasses-du-roty.fr/vins/`             | HTTPS 200, catalogue sans achat en ligne                                                                                  |
+| `https://www.les-terrasses-du-roty.fr/professionnels/`   | HTTPS 200, parcours professionnels                                                                                        |
+| `https://www.les-terrasses-du-roty.fr/demande/`          | HTTPS 200, envoi serveur opérationnel                                                                                     |
+| `https://www.les-terrasses-du-roty.fr/journal/`          | HTTPS 200, cinq articles et deux archives                                                                                 |
+| `https://www.les-terrasses-du-roty.fr/sitemap.xml`       | 19 URL canoniques ; sitemap traité par Google                                                                             |
+| `https://preproduction.les-terrasses-du-roty.pages.dev/` | 401 sans identifiants ; version `bf79572` testée sous protection, Analytics désactivé                                     |
+| `https://les-terrasses-du-roty.pages.dev/`               | 503/noindex volontaire, hôte technique fermé                                                                              |
+| `https://les-terrasses-du-roty.fr/`                      | HTTPS 308 vers `www` via Cloudflare Pages, chemin et paramètres conservés, certificat valide |
 
-## Résultat implémenté
+La préproduction du commit publié est le déploiement `0a55b884-234b-4426-bdd5-70bc31657c33`. `http://127.0.0.1:4173/` est uniquement la recette locale de la prochaine interface, accessible sur le Mac quand le serveur tourne.
 
-- Branche dédiée : `codex/refonte-noir-or-2026-09-09`.
-- React 18, TanStack Start, Router, Vite et configuration Lovable conservés. Aucune mise à niveau globale de dépendances. Ajout de Playwright et axe uniquement pour la recette.
-- Direction affinée à la demande du propriétaire : ivoire `#F7F4ED`, encre `#29241F`, or lisible `#745619`, accents dorés `#B59551` ; aucun vert d’interface. Logo officiel fin or/blanc sur le pied de page sombre et or/noir sur l’en-tête ivoire, copiés sans modification depuis les SVG de la charte. Or du logo inchangé `#D7AB0E`. Photographies originales conservées. Voir `logo-provenance.md`.
-- 19 pages : accueil, domaine, terrasses, index vins, cuvées 2024 et 2023, professionnels, demande, journal, cinq nouveaux articles, deux archives et trois pages légales.
-- Contenu présent dans le HTML initial. Aucun écran de préchargement, obligation de 3D ou verrouillage du défilement. Polices et images locales.
-- Panier, checkout, compte et paiement retirés des parcours publics. URLs supprimées en 410, inconnues en 404 ; redirections vers les seuls équivalents documentés. Archives commerciales Shopify intactes.
-- Titres/descriptions/canoniques propres, sitemap de 19 URLs, Organization, BreadcrumbList et BlogPosting conformes au visible. Pas de faux prix/stock/certification/avis/dates de publication.
-- Formulaire serveur avec destinataire fixe, validation stricte, origine, limitation 16 Kio, honeypot, quotas Redis atomiques multi-instance, idempotence et gestion d’erreurs/incertitudes. Sans prestataire configuré : 503, aucun succès simulé. Formulaire sans JavaScript explicitement non envoyable, sans données personnelles placées dans l’URL.
+## Recette locale de la prochaine interface Apple
 
-## URLs vérifiées
+La dernière recette locale couvre la version définitive avec **le logo noir officiel complet, conservé octet pour octet dans l’en-tête et le menu**, sept photographies réelles issues des archives du domaine et des photographies d’illustration identifiées. Le build Node passe, ainsi que TypeScript et le lint (**0 erreur, 6 avertissements préexistants**). Les **19 pages**, **95 rendus responsives**, **19 pages sans JavaScript**, **19 contrôles axe sans violation**, **7 scénarios du menu**, **38 contrôles HTTP** et le SEO des **19 pages** passent sur ce build. Les images de couverture, Open Graph, Twitter et JSON-LD des articles concordent.
 
-- `http://127.0.0.1:4173/` : build de production **local**, rendu complet vérifié. Cette adresse n’est accessible que sur le Mac pendant que le serveur reste démarré.
-- `http://127.0.0.1:4173/demande/` : formulaire réel connecté au endpoint local, échec 503 vérifié faute de configuration.
-- `https://www.les-terrasses-du-roty.fr/` : HTTPS 200, **ancien site Shopify**, pas la refonte.
-- `https://les-terrasses-du-roty.fr/` : redirection vers la version canonique `www`.
-- Aucune URL distante de préproduction de la refonte ni aucun déploiement public de celle-ci.
+Les **102 variantes d’images** référencées sont chargées et décodées, sans répétition de la même photographie dans une page. La galerie mobile révèle ses **trois cartes au clavier**, permet le défilement horizontal interne jusqu’à la dernière carte et ne provoque aucun débordement de page. L’effet de flou de l’en-tête est confirmé dans le CSS calculé. Le menu est vérifié pour Tab/Shift+Tab, Escape, retour du focus, blocage du défilement, réouverture immédiate, fermeture par lien et passage au bureau. Le formulaire conserve validation, erreurs réelles, référence et protection contre la répétition d’une demande incertaine.
 
-Le commit et l’URL de la PR sont fournis dans la remise et par l’historique Git, afin de ne pas inscrire dans son propre contenu un hash de commit impossible à prédéterminer.
+Les **32 tests serveur dont 9 Redis réels**, **14 scénarios Analytics interceptés** et **37 flux SSR nettoyés** de la précédente recette Apple restent les preuves des logiques inchangées ; ils n’ont pas été présentés comme de nouveaux envois ni relancés pour les seuls changements d’images. Trois mesures locales mobiles configurées donnent un LCP de **1,204 à 1,212 s**, CLS **0** ; ce sont des mesures de laboratoire local, pas les Core Web Vitals de production.
 
-## Recette après SEO et Analytics
+Les rapports définitifs et le manifeste de sources sont dans [verification/photos-local-summary.json](verification/photos-local-summary.json), [images et logo](verification/photos-images.json), [navigateur](verification/photos-browser.json), [SEO](verification/photos-seo.json), [HTTP](verification/photos-http.json) et [performance locale](verification/photos-performance-local.json). Les preuves antérieures `apple-*` sont conservées. **Cette recette ne constitue pas encore une publication distante du nouveau design.** Le preset Cloudflare devra encore confirmer l’exclusion statique `/assets/*` sur le SHA final. Aucun e-mail ni événement GA réel supplémentaire n’a été émis par cette recette.
 
-Build Node, lint et TypeScript passent (six avertissements Fast Refresh préexistants, zéro erreur). Résultats sur le build mis à jour :
+## Résultats de recette du site publié
 
-- **31 tests serveur** réussis, dont **9 avec Redis réel local**. Le prestataire e-mail est doublé dans ces tests.
-- **14 scénarios Analytics navigateur** réussis, Google totalement intercepté : consentement, refus, retrait, courses de chargement, filtrage des paramètres, démarrage réel de saisie et demande acceptée uniquement (`verification/analytics-seo.json`).
-- **19 pages**, **95 rendus responsives**, **19 contrôles sans JavaScript**, **19 contrôles axe sans violation**, aucune erreur navigateur (`verification/browser-seo.json`).
-- **38 contrôles HTTP** réussis et **37 rendus SSR** dont les timers sont correctement libérés (`verification/http-seo.json`, `verification/runtime-seo.json`).
-- **19 pages SEO SSR** : titres/descriptions/canoniques uniques, données structurées cohérentes, robots et sitemap valides, token GSC réel (`verification/seo-technical.json`).
+- CI du commit `bf79572` réussie : [exécution GitHub Actions](https://github.com/Alexpfng/Les_terrasses_du_roty/actions/runs/34350897604).
+- **32 tests serveur** passent, dont **9 avec Redis réel local**, aucun ignoré. Le fournisseur e-mail est doublé dans ces tests ; l’envoi réel est vérifié séparément. Le correctif de transport Cloudflare couvre `fetch` lié au contexte et refus explicite des redirections Redis/Resend.
+- **19 pages publiques 200**, un `h1` par page, canoniques exactes et aucune directive `noindex`. **28 ressources** 200 avec cache immutable, **26 liens internes** valides et **11 contrôles supplémentaires** : redirections historiques, 404/410, robots/sitemap, GA serveur et maintien de la protection Preview. Preuve : `verification/cloudflare-production-http.json`.
+- Recette navigateur de production : accueil, vins, professionnels, demande et journal aux largeurs 390 et 1440 px ; ressources et images chargées, contexte caviste conservé, zéro exception ni appel Google pendant cette recette. Preuve : `verification/cloudflare-production-browser.json`.
+- Recette locale précédente : **19 pages**, **95 rendus responsives**, **19 pages sans JavaScript**, **19 contrôles axe sans violation**, **38 contrôles HTTP**, **37 rendus SSR avec timers nettoyés**, **14 scénarios Analytics interceptés**. Ces contrôles ne sont pas une certification d’accessibilité et ne valident pas automatiquement la nouvelle interface. Voir `verification/browser-seo.json`, `http-seo.json`, `runtime-seo.json`, `analytics-seo.json` et `seo-technical.json`.
+- Cloudflare Free : aucune exception ou erreur CPU dans la fenêtre de recette. Les mesures SSR de préproduction comportent des pointes de 39 ms ; les requêtes d’envoi réelles prennent 8 ms en préproduction et 9 ms en production. Cette fenêtre courte ne garantit pas une marge durable du forfait Free. Détails dans `DEPLOYMENT-CLOUDFLARE.md`.
 
-Ces contrôles locaux ne prouvent ni la réception d’un e-mail, ni une collecte GA réelle, ni l’indexation Google.
-
-## Recette initiale et visuelle conservée
-
-| Contrôle                    | Résultat                                                                                                        | Preuve                              |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| `npm run build`             | Réussi                                                                                                          | `verification/build.log`            |
-| `npm run build:local`       | Réussi, serveur Node exécutable                                                                                 | `verification/build-local.log`      |
-| `npm run typecheck`         | Réussi                                                                                                          | `verification/typecheck.log`        |
-| `npm run lint`              | 0 erreur ; 6 avertissements Fast Refresh préexistants dans les composants UI inutilisés                         | `verification/lint.log`             |
-| Tests serveur               | 24/24, dont 9 tests avec Redis réel local isolé ; aucun test sauté                                              | `verification/server-tests.tap`     |
-| HTTP, routes, SEO, bundle   | 38 contrôles passés ; redirections, 404/410, SSR, robots/sitemap et secrets                                     | `verification/http.json`            |
-| Responsive                  | 95/95 : 19 pages × 360, 390, 768, 1280, 1440 px ; aucun débordement ni vert calculé                             | `verification/browser.json`         |
-| Sans JavaScript             | 19/19 pages avec contenu principal dans le HTML                                                                 | `verification/browser.json`         |
-| Accessibilité axe WCAG A/AA | 19 pages, zéro violation détectée ; ne vaut pas certification d’accessibilité                                   | `verification/browser.json`         |
-| Interactions                | Contexte cuvée/pro, validation/focus, saisie conservée après 503, clavier et mouvement réduit                   | `verification/browser.json`         |
-| Recette indépendante        | 30 combinaisons responsive supplémentaires, clavier, menu, formulaire                                           | `qa/README.md`                      |
-| Flux serveur                | 37 timers SSR créés et nettoyés, aucun restant ni expiration ; 30 HEAD concurrents, GET et erreurs/redirections | `verification/runtime.json`         |
-| Identité graphique          | Photos/anciens assets préservés ; nouveaux SVG identiques à la charte fournie                                   | `verification/original-assets.json` |
-
-Le lint initial échouait sur 752 erreurs de formatage. Le commit isolé `042a3c7` formate les composants immersifs archivés sans modifier leur comportement ; ils ne sont plus importés dans le site public. Les fichiers générés de tests sont exclus du lint.
-
-La dernière revue a également sécurisé le réessai d’une demande incertaine : une réponse temporaire 429/503 ne permet pas de créer une nouvelle clé, la référence reste affichée et une reprise au-delà de 23 heures est bloquée. Le parcours est couvert par une séquence HTTP doublée côté navigateur, distincte du test du véritable endpoint 503.
-
-Un défaut de nettoyage des flux HEAD a été détecté dans les journaux de recette, corrigé, puis couvert par un test sur le vrai build React/TanStack. Les rapports ci-dessus sont ceux de la version corrigée ; les premières exécutions ayant révélé le défaut ne sont pas présentées comme une validation serveur complète.
-
-## Performance de la version ivoire
-
-Lighthouse 12.8.2, build local de production, mobile simulé : **89/100 en performance**, **100/100 en accessibilité**, **100/100 en bonnes pratiques**. FCP 2,0 s, LCP 3,5 s, TBT 0 ms, CLS 0. SEO local 69/100, avec `noindex` volontaire. Preuve : `verification/lighthouse-ivory.json`. Cette mesure est locale et ne décrit pas le site Shopify public.
-
-La recette de cette version reprend les 19 pages, 95 largeurs/page, 19 contrôles sans JavaScript et 19 contrôles axe (aucune violation), ainsi que les 38 contrôles HTTP et les parcours du formulaire. Le build Node, TypeScript et le lint sont vérifiés à nouveau (`verification/ivory-*.log`). La revue indépendante est dans `qa/ivory-review.md`.
-
-## Performance historique avant l’ajustement ivoire
-
-Mesure historique de la première version noire, avant les ajustements visuels demandés par le propriétaire. Lighthouse 12.8.2, accueil du build local, mobile simulé : performance **85/100**, accessibilité **100/100**, bonnes pratiques **100/100**. FCP 2,0 s, LCP 4,1 s, TBT 0 ms, CLS 0. Le score SEO local est **69/100**, affecté par le blocage d’indexation volontaire de la préproduction. Ce résultat n’est ni une mesure du domaine Shopify ni une garantie sur le futur hébergement. Le LCP mobile pourra encore bénéficier d’images de diffusion plus légères et doit être remesuré après déploiement.
-
-La compression statique native Nitro a fait passer cette mesure de performance de 72 à 85 ; les fichiers originaux du logo et des photographies restent inchangés. Preuves avant/après dans `verification/lighthouse-before-compression.json` et `verification/lighthouse-summary.json`.
+La version ivoire précédente avait obtenu localement Lighthouse 89 en performance, 100 en accessibilité et 100 en bonnes pratiques, LCP 3,5 s et CLS 0 (`verification/lighthouse-ivory.json`). Cette mesure ne décrit ni la production distante ni la nouvelle interface Apple. Les preuves historiques des premiers builds sont conservées dans `verification/` et `qa/`.
 
 ## État réel des e-mails
 
-| Étape                                | État                                                             |
-| ------------------------------------ | ---------------------------------------------------------------- |
-| Validation et interface              | Testées et opérationnelles                                       |
-| Endpoint réel local                  | Testé ; réponse 503 sans configuration                           |
-| Intégration prestataire              | Implémentée ; tests HTTP avec doublure du prestataire uniquement |
-| Acceptation d’un e-mail réel         | **Non effectuée : accès/expéditeur non configurés**              |
-| Livraison prestataire                | **Non vérifiée**                                                 |
-| Réception dans `taff.roty@gmail.com` | **Non vérifiée : cette boîte n’est pas connectée**               |
+| Étape                                           | État vérifié                                                                                                            |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Formulaire et services                          | Cloudflare Pages → Upstash REST → Resend, réellement configurés                                                         |
+| Expéditeur                                      | `site@notifications.les-terrasses-du-roty.fr`, domaine Resend vérifié                                                   |
+| Destinataire                                    | Constante serveur `taff.roty@gmail.com`                                                                                 |
+| Acceptation production                          | HTTP 200 / `accepted` à **12:34:46.511 UTC**, le 9 septembre 2026                                                       |
+| Référence applicative                           | `10ef8bf8-6178-460d-a708-ebcd504a090d`                                                                                  |
+| Identifiant Resend                              | `cde5e306-ebd4-4d39-b47e-9ec1bd84c3a1`                                                                                  |
+| Livraison                                       | Événements Sent + Delivered observés dans Resend ; serveur Gmail **SMTP 250 2.0.0 OK**                                  |
+| Boîte principale, dossier spam, lecture humaine | **Non vérifiés directement** : accès de lecture au compte Gmail exact ou confirmation du destinataire encore nécessaire |
 
-La réception ne peut être remplacée par un événement de test ou un HTTP 200. Les demandes techniques de recette sont clairement identifiées et n’utilisent aucune donnée de prospect réel.
+Le message était marqué `TEST TECHNIQUE ROTY PRODUCTION`, sans commande ni prospect réel. La recette de préproduction a également été acceptée et livrée. Aucun événement GA de conversion n’a été créé par ces tests HTTP. [Preuve prestataire](evidence/resend-delivery.json), [réponse production](verification/cloudflare-production-mail.json), [exécution production](verification/cloudflare-production-mail-runtime.json), [contrat et exploitation](FORMULAIRE-SERVEUR.md).
 
-## Ce qui bloque la production
+## Analytics, Search Console et acquisition
 
-Les étapes sont détaillées dans `DEPLOYMENT.md`. Le projet Netlify dédié existe et ses accès sont disponibles ; Lovable n’est plus un accès nécessaire. Il manque la connexion à la zone OVH pour la bascule Web et les trois enregistrements Resend (`evidence/resend-domain.md`), puis la validation du domaine d’envoi, la clé Resend dédiée et la preuve de réception dans `taff.roty@gmail.com`. La préparation Redis est suivie dans le dossier de déploiement. L’administration Shopify permettrait l’export complet du thème ; le thème public actuel reste intact. Aucun abonnement payant n’a été souscrit.
+GA4 réel `G-L2PJT90F4Y`, propriété `553368095`, flux `15746517257`. Une visite consentie a produit un vrai `page_view` reçu en HTTP **204** ; aucun appel Google avant choix/après refus, retrait vérifié. L’interface temps réel a affiché **1 utilisateur actif et 7 `page_view`** sur sa fenêtre agrégée : ces sept événements ne sont pas attribués à la seule visite de recette. `generate_lead` est déclaré événement clé et ne part qu’après acceptation réelle. Dimensions `visitor_profile` et `cuvee`, six mois de préférence, deux mois de conservation GA, mesure améliorée désactivée. [Preuves et configuration](ANALYTICS-SEARCH-CONSOLE.md).
 
-La cible choisie permettra aussi de finaliser les mentions d’hébergement et les prestataires de confidentialité. La durée de conservation/purge réelle des messages dans Gmail doit être documentée par le responsable ; le code ne prétend pas supprimer automatiquement ces e-mails.
+Search Console : propriété du préfixe `https://www.les-terrasses-du-roty.fr/` **vérifiée**. Le détail du sitemap affiche à 13:06 UTC « Traitement du sitemap réussi », dernière lecture le 09/09/2026, **19 pages découvertes**, 0 vidéo. Le test live de l’accueil confirme accès Google et indexabilité. L’index historique de cette URL peut correspondre à Shopify et ne prouve pas que la nouvelle version est déjà indexée. Aucun classement garanti. [Preuve Google](evidence/google-production-ui-2026-09-09.json).
 
-## Retour arrière
+Contenus et maillage ciblent particuliers, cavistes et restaurateurs. Cinq cibles de liens sont qualifiées. Une demande factuelle de correction Vivino a été envoyée par son support, avec confirmation de création d’un dossier ; aucun lien ni correction publique acquis n’est vérifié. Le formulaire Domaine Ray est préparé et bloqué avant envoi par un CAPTCHA. Aucun achat de lien ni adhésion payante. [État acquisition](BACKLINKS.md), [preuves](evidence/backlink-outreach-2026-09-09.json).
 
-Commit initial conservé : `c56ec8d465d71399c9def39a696c133caa9a2f4f`. Archive Git locale créée et inventoriée (180 entrées). DNS et thème Shopify inchangés : `www → shops.myshopify.com.`, apex `23.227.38.65`, thème `183360323928`. Détails, limites et procédure dans `DEPLOYMENT.md` ; le retour DNS vers Shopify rétablirait son ancien parcours marchand.
+## Hébergement et retrait de Shopify
+
+`www` pointe réellement vers Cloudflare Pages Free depuis la modification OVH du 9 septembre à 12:30:17 UTC. Aucun forfait payant activé. La vitrine Shopify est privée et ses deux produits ont été placés en brouillon dans tous les canaux. Les données produit, commandes et clients sont conservées ; le compte n’a pas été supprimé. L’abonnement était déjà résilié avec désactivation annoncée le 8 décembre 2026. L’export du thème a été demandé, mais sa réception n’est pas confirmée. [Retrait de vitrine](evidence/shopify-retirement.json), [catalogue retiré](evidence/shopify-catalogue-retired.json).
+
+La délégation vers `desi.ns.cloudflare.com` et `rodrigo.ns.cloudflare.com` est confirmée sur les trois serveurs autoritatifs `.fr` depuis le 9 septembre à **13:34:09 UTC**. L’apex et `www` sont **Active / SSL enabled** dans Pages. L’apex renvoie **308** vers `www`, en conservant chemin et paramètres ; les 7 contrôles HTTPS passent et les 9 enregistrements DNS sont présents, avec MX et Resend préservés. La signature DNSSEC Cloudflare est préparée, mais le nouveau DS n’est pas encore publié chez OVH. Sa publication et le retrait des anciens alias Shopify restent différés jusqu’à **15:34:09 UTC**, puis soumis à un nouveau contrôle des caches et du DNS. Ces alias servent temporairement les clients utilisant encore l’ancienne délégation. [État DNS](evidence/dns-transition.json), [preuves apex](evidence/cloudflare-apex-transition.json), [contrôles HTTPS](verification/cloudflare-apex-http.json).
+
+## Retour arrière et prochaine publication
+
+Le point de retour fonctionnel est **`bf79572`**, déploiement Pages **`a934ec80-a7b4-4a8f-b2e7-a83150b60f0f`**. Le bundle et le worktree isolé restent conservés. La prochaine interface doit être testée sur un nouveau SHA en préproduction, puis publier le même artefact après validation visuelle, sans modifier les secrets ni les namespaces. Procédure dans `DEPLOYMENT-CLOUDFLARE.md`.
+
+Un rollback Pages conserve les états Redis et les identifiants d’envoi en cours. Ne pas relancer une demande incertaine avec une nouvelle clé. Le commit initial `c56ec8d465d71399c9def39a696c133caa9a2f4f` et l’archive Git sont conservés. Un retour DNS vers Shopify ne suffirait plus à rouvrir son catalogue : vitrine privée et produits en brouillon ont été volontairement retirés. La recette de la nouvelle interface et le contrôle direct de la boîte Gmail demeurent des états distincts à documenter.

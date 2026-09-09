@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-09-09T12:40:08.948Z",
+  "base": "https://www.les-terrasses-du-roty.fr",
+  "commit": "bf7957241ede2b144480b8f781eb35d5db8644b0",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [390, 1440]
+    },
+    {
+      "path": "/vins/",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [390, 1440]
+    },
+    {
+      "path": "/professionnels/",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [390, 1440]
+    },
+    {
+      "path": "/demande/?profil=caviste",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [390, 1440]
+    },
+    {
+      "path": "/journal/",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [390, 1440]
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "googleRequests": 0,
+  "passed": true,
+  "gaCookies": 0
+}

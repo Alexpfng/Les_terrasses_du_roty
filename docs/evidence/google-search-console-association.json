@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-09-09T13:11:28.536820+00:00",
+  "status": "created and verified in Google Analytics UI",
+  "googleAnalytics": {
+    "accountId": "407381204",
+    "propertyId": "553368095",
+    "accountName": "Les Terrasses du Roty",
+    "propertyName": "Les Terrasses du Roty — site web",
+    "streamId": "15746517257",
+    "streamName": "Site officiel — Les Terrasses du Roty",
+    "streamUrl": "https://www.les-terrasses-du-roty.fr",
+    "measurementId": "G-L2PJT90F4Y",
+    "adminAssociationUrl": "https://analytics.google.com/analytics/web/#/a407381204p553368095/admin/integrations/search-console"
+  },
+  "searchConsole": {
+    "property": "https://www.les-terrasses-du-roty.fr/",
+    "propertyType": "URL prefix",
+    "verifiedOwnershipAvailableInSelectionUi": true
+  },
+  "uiEvidence": {
+    "before": "Aucune association n’a encore été configurée.",
+    "creationResult": "ASSOCIATION CRÉÉE",
+    "dateDisplayed": "9 sept. 2026",
+    "createdBy": "max.corre@bulbiz.fr",
+    "persistedRowAfterClosingWizard": {
+      "property": "https://www.les-terrasses-du-roty.fr/",
+      "type": "Préfixe d’URL",
+      "stream": "Site officiel — Les Terrasses du Roty",
+      "streamId": "15746517257"
+    },
+    "streamIdentifiersIndependentlyReadBeforeSubmission": true,
+    "propertyUrlCheckedBeforeSubmission": true
+  },
+  "scope": {
+    "associationOnly": true,
+    "otherPropertiesChanged": false,
+    "advertisingLinksChanged": false,
+    "dataRetentionChanged": false,
+    "trackingConfigurationChanged": false,
+    "sharingSettingsChanged": false
+  },
+  "dataAvailability": {
+    "associationIsNotProofOfSearchDataInReports": true,
+    "searchMetricsInspected": false,
+    "analyticsHomeReportedNoDataYetDuringSetup": true
+  },
+  "notes": [
+    "Read the exact account/property URL and names in a dedicated browser tab.",
+    "Verified stream15746517257 and measurementG-L2PJT90F4Y from the stream details UI before final submission.",
+    "Only the authorized Roty URL-prefix Search Console property was selected.",
+    "No settings outside this product association were changed."
+  ]
+}

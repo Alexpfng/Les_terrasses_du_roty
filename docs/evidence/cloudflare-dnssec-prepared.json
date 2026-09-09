@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-09-09T13:37:51.091780+00:00",
+  "domain": "les-terrasses-du-roty.fr",
+  "cloudflareSigningEnabled": true,
+  "cloudflareUiStatus": "Pending; waiting for DS at registrar",
+  "registrarDsPublished": false,
+  "earliestConservativeRegistrarPublicationAt": "2026-09-09T15:34:09.224392+00:00",
+  "condition": "Root must recheck old delegation/DNSKEY cache expiry and live DNS before publishing registrar key",
+  "ds": {
+    "record": "les-terrasses-du-roty.fr. 3600 IN DS 2371 13 2 8A76E0B128F9101E1706A84FB91AEF710D92E645B50A6F499DA5413A921A4DCB",
+    "keyTag": 2371,
+    "algorithm": 13,
+    "digestType": 2,
+    "digest": "8A76E0B128F9101E1706A84FB91AEF710D92E645B50A6F499DA5413A921A4DCB",
+    "ttl": 3600
+  },
+  "dnskey": {
+    "flags": 257,
+    "protocol": 3,
+    "algorithm": 13,
+    "publicKeyBase64": "mdsswUyr3DPW132mOi8V9xESWE8jTo0dxCjjnopKl+GqJxpVXckHAeF+KkxLbxILfDLUT0rAK9iUzy1L53eKGQ=="
+  },
+  "verification": {
+    "computedKeyTag": 2371,
+    "computedSha256DsDigestMatchesUi": true,
+    "authoritativeDnskeyChecks": [
+      {
+        "server": "desi.ns.cloudflare.com",
+        "response": "les-terrasses-du-roty.fr. 3600\tIN\tDNSKEY\t257 3 13 mdsswUyr3DPW132mOi8V9xESWE8jTo0dxCjjnopKl+GqJxpVXckHAeF+ KkxLbxILfDLUT0rAK9iUzy1L53eKGQ==\nles-terrasses-du-roty.fr. 3600\tIN\tDNSKEY\t256 3 13 oJMRESz5E4gYzS/q6XDrvU1qMPYIjCWzJaOau8XNEZeqCYKD5ar0IRd8 KqXXFJkqmVfRvMGPmM1x8fGAa2XhSA==\nles-terrasses-du-roty.fr. 3600\tIN\tRRSIG\tDNSKEY 13 2 3600 20261108133636 20260908133636 2371 les-terrasses-du-roty.fr. fpqyK3UIxaQkOOfBlTE/vNJoVwWZgP5+Pji13EIfiMc8xoxu31dgVgpC 9HXVTGtwcBUk0A1BfXu9qiVhArbtzA==",
+        "dnskeyPresent": true,
+        "signaturePresent": true
+      },
+      {
+        "server": "rodrigo.ns.cloudflare.com",
+        "response": "les-terrasses-du-roty.fr. 3600\tIN\tDNSKEY\t257 3 13 mdsswUyr3DPW132mOi8V9xESWE8jTo0dxCjjnopKl+GqJxpVXckHAeF+ KkxLbxILfDLUT0rAK9iUzy1L53eKGQ==\nles-terrasses-du-roty.fr. 3600\tIN\tDNSKEY\t256 3 13 oJMRESz5E4gYzS/q6XDrvU1qMPYIjCWzJaOau8XNEZeqCYKD5ar0IRd8 KqXXFJkqmVfRvMGPmM1x8fGAa2XhSA==\nles-terrasses-du-roty.fr. 3600\tIN\tRRSIG\tDNSKEY 13 2 3600 20261108133636 20260908133636 2371 les-terrasses-du-roty.fr. fpqyK3UIxaQkOOfBlTE/vNJoVwWZgP5+Pji13EIfiMc8xoxu31dgVgpC 9HXVTGtwcBUk0A1BfXu9qiVhArbtzA==",
+        "dnskeyPresent": true,
+        "signaturePresent": true
+      }
+    ],
+    "parentDsResponse": "",
+    "parentDsPresent": false
+  },
+  "ovhUiExpectedFields": [
+    "Key Tag",
+    "Flag",
+    "Algorithm",
+    "Public key (encoded in base64)"
+  ],
+  "sources": [
+    "https://developers.cloudflare.com/dns/dnssec/",
+    "https://docs.ovhcloud.com/en/guides/web-cloud/domains/dns-dnssec"
+  ],
+  "secretValuesIncluded": false
+}

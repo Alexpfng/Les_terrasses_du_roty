@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-09T12:35:49.610Z",
+  "id": "797703f0-73e7-4bf7-a77d-f590d8632b55",
+  "name": "www.les-terrasses-du-roty.fr",
+  "status": "active",
+  "certificateAuthority": "google",
+  "verification": {
+    "status": "active"
+  },
+  "validation": {
+    "status": "active",
+    "method": "http"
+  },
+  "cname": "les-terrasses-du-roty.pages.dev",
+  "dnsChangedByRootAt": "2026-09-09T12:30:17Z",
+  "httpsPublicVerified": true
+}

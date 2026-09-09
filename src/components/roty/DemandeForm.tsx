@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { demandeSchema, demandeAcceptedMessage } from "@/lib/demande-schema";
 import { trackFormStart, trackAcceptedLead } from "@/lib/analytics";
+import "@/form-premium.css";
 
 type Defaults = { cuvee?: string; profil?: string; objet?: string };
 const profileOptions = [
@@ -174,7 +175,15 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
   });
   if (state === "success")
     return (
-      <div className="form-notice form-success" role="status" tabIndex={-1} ref={summary}>
+      <div
+        className="form-notice form-success premium-form-success"
+        role="status"
+        tabIndex={-1}
+        ref={summary}
+      >
+        <span className="form-success-mark" aria-hidden="true">
+          ✓
+        </span>
         <p className="eyebrow">Demande transmise</p>
         <h2>Merci pour votre message.</h2>
         <p>{demandeAcceptedMessage}</p>
@@ -188,7 +197,7 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
     <form
       method="post"
       action="/api/demandes"
-      className="request-form"
+      className="request-form premium-request-form"
       onSubmit={submit}
       onChangeCapture={(event) => {
         if (analyticsStarted.current || !event.isTrusted) return;
@@ -235,213 +244,246 @@ export function DemandeForm({ defaults }: { defaults: Defaults }) {
           ) : null}
         </div>
       ) : null}
-      <h2 className="form-title">Votre demande</h2>
-      <p className="form-help">
-        Les champs marqués * sont indispensables. Aucune information de paiement n’est demandée.
-      </p>
-      <hr className="form-divider" />
-      <fieldset disabled={state === "sending"}>
-        <legend className="form-legend">Vous êtes *</legend>
-        <div className="profile-options">
-          {profileOptions.map(([value, label]) => (
-            <label key={value}>
+      <header className="form-heading">
+        <h2 className="form-title">Votre demande.</h2>
+        <p className="form-help">Quelques détails pour vous répondre au mieux.</p>
+        <p className="form-required">* Champs obligatoires</p>
+      </header>
+      <fieldset className="form-content" disabled={state === "sending"}>
+        <legend className="form-visually-hidden">Les informations de votre demande</legend>
+        <fieldset className="form-profile" {...invalid("profile")}>
+          <legend className="form-legend">Vous êtes *</legend>
+          <div className="profile-options">
+            {profileOptions.map(([value, label]) => (
+              <label key={value}>
+                <input
+                  type="radio"
+                  name="profile"
+                  id={value === "particulier" ? "profile" : `profile-${value}`}
+                  value={value}
+                  checked={profile === value}
+                  onChange={() => {
+                    setProfile(value);
+                    if (value !== "particulier") setPurpose("professionnel");
+                    else if (purpose === "professionnel") setPurpose("bouteilles");
+                  }}
+                />
+                <span>{label}</span>
+              </label>
+            ))}
+          </div>
+          {fieldError("profile")}
+        </fieldset>
+        <section className="form-section" aria-labelledby="form-coordinates-title">
+          <h3 id="form-coordinates-title">Vos coordonnées</h3>
+          <div className="form-grid">
+            <div className="form-field">
+              <label htmlFor="name">Votre nom *</label>
               <input
-                type="radio"
-                name="profile"
-                id={value === "particulier" ? "profile" : `profile-${value}`}
-                value={value}
-                checked={profile === value}
-                onChange={() => {
-                  setProfile(value);
-                  if (value !== "particulier") setPurpose("professionnel");
-                  else if (purpose === "professionnel") setPurpose("bouteilles");
-                }}
-              />{" "}
-              {label}
-            </label>
-          ))}
-        </div>
-        {fieldError("profile")}
-        <hr className="form-divider" />
-        <div className="form-grid">
-          <div className="form-field">
-            <label htmlFor="name">Votre nom *</label>
-            <input
-              id="name"
-              name="name"
-              autoComplete="name"
-              required
-              minLength={2}
-              maxLength={120}
-              {...invalid("name")}
-            />
-            {fieldError("name")}
-          </div>
-          <div className="form-field">
-            <label htmlFor="email">Votre e-mail *</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              maxLength={254}
-              {...invalid("email")}
-            />
-            {fieldError("email")}
-          </div>
-          {profile !== "particulier" ? (
-            <div className="form-field full-field">
-              <label htmlFor="company">
-                Établissement <span>facultatif</span>
+                id="name"
+                name="name"
+                autoComplete="name"
+                required
+                minLength={2}
+                maxLength={120}
+                {...invalid("name")}
+              />
+              {fieldError("name")}
+            </div>
+            <div className="form-field">
+              <label htmlFor="email">Votre e-mail *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                maxLength={254}
+                {...invalid("email")}
+              />
+              {fieldError("email")}
+            </div>
+            {profile !== "particulier" ? (
+              <div className="form-field">
+                <label htmlFor="company">
+                  Établissement <span>facultatif</span>
+                </label>
+                <input
+                  id="company"
+                  name="company"
+                  autoComplete="organization"
+                  maxLength={160}
+                  {...invalid("company")}
+                />
+                {fieldError("company")}
+              </div>
+            ) : null}
+            <div className={`form-field${profile === "particulier" ? " full-field" : ""}`}>
+              <label htmlFor="phone">
+                Téléphone <span>facultatif</span>
               </label>
               <input
-                id="company"
-                name="company"
-                autoComplete="organization"
-                maxLength={160}
-                {...invalid("company")}
+                id="phone"
+                name="phone"
+                type="tel"
+                autoComplete="tel"
+                maxLength={40}
+                {...invalid("phone")}
               />
-              {fieldError("company")}
+              {fieldError("phone")}
             </div>
-          ) : null}
-          <div className="form-field">
-            <label htmlFor="purpose">Objet de la demande *</label>
-            <select
-              id="purpose"
-              name="purpose"
-              value={purpose}
-              onChange={(event) => setPurpose(event.target.value)}
-              required
-              {...invalid("purpose")}
-            >
-              <option value="bouteilles">Demander des bouteilles</option>
-              <option value="conseil">Découvrir / demander conseil</option>
-              <option value="professionnel">Demande professionnelle</option>
-              <option value="autre">Autre question</option>
-            </select>
-            {fieldError("purpose")}
           </div>
-          <div className="form-field">
-            <label htmlFor="phone">
-              Téléphone <span>facultatif</span>
+        </section>
+        <section className="form-section" aria-labelledby="form-request-title">
+          <h3 id="form-request-title">Votre envie</h3>
+          <p className="form-section-copy">Une cuvée, un conseil ou un projet à partager.</p>
+          <div className="form-grid">
+            <div className="form-field full-field">
+              <label htmlFor="purpose">Objet de la demande *</label>
+              <select
+                id="purpose"
+                name="purpose"
+                value={purpose}
+                onChange={(event) => setPurpose(event.target.value)}
+                required
+                {...invalid("purpose")}
+              >
+                <option value="bouteilles">Demander des bouteilles</option>
+                <option value="conseil">Découvrir / demander conseil</option>
+                <option value="professionnel">Demande professionnelle</option>
+                <option value="autre">Autre question</option>
+              </select>
+              {fieldError("purpose")}
+            </div>
+            <div className="form-cuvee-panel full-field">
+              <div className="form-cuvee-heading">
+                <span className="form-cuvee-dot" aria-hidden="true" />
+                <p>
+                  La Syrah du Roty <span>Saulcet · Allier</span>
+                </p>
+              </div>
+              <div className="form-grid">
+                <div className="form-field">
+                  <label htmlFor="cuvee">Cuvée souhaitée</label>
+                  <select
+                    id="cuvee"
+                    name="cuvee"
+                    defaultValue={defaults.cuvee || "a_conseiller"}
+                    {...invalid("cuvee")}
+                  >
+                    <option value="a_conseiller">Je souhaite être conseillé(e)</option>
+                    <option value="2024">Cuvée 2024</option>
+                    <option value="2023">Cuvée 2023</option>
+                  </select>
+                  {fieldError("cuvee")}
+                </div>
+                <div className="form-field">
+                  <label htmlFor="estimated_quantity">
+                    Quantité estimée <span>facultative</span>
+                  </label>
+                  <input
+                    id="estimated_quantity"
+                    name="estimated_quantity"
+                    type="number"
+                    inputMode="numeric"
+                    min={1}
+                    max={10000}
+                    step={1}
+                    placeholder="Nombre de bouteilles"
+                    {...invalid("estimated_quantity")}
+                  />
+                  {fieldError("estimated_quantity")}
+                </div>
+              </div>
+              <p className="form-help form-cuvee-note">
+                Les disponibilités vous seront confirmées par le domaine.
+              </p>
+            </div>
+            <label className="checkbox-line full-field">
+              <input
+                type="checkbox"
+                checked={shipping}
+                onChange={(event) => setShipping(event.target.checked)}
+              />
+              <span>Je souhaite me renseigner sur une expédition.</span>
             </label>
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              autoComplete="tel"
-              maxLength={40}
-              {...invalid("phone")}
-            />
-            {fieldError("phone")}
+            {shipping ? (
+              <>
+                <div className="form-field">
+                  <label htmlFor="country">
+                    Pays <span>facultatif</span>
+                  </label>
+                  <input
+                    id="country"
+                    name="country"
+                    autoComplete="country-name"
+                    maxLength={80}
+                    {...invalid("country")}
+                  />
+                  {fieldError("country")}
+                </div>
+                <div className="form-field">
+                  <label htmlFor="postal_code">
+                    Code postal <span>facultatif</span>
+                  </label>
+                  <input
+                    id="postal_code"
+                    name="postal_code"
+                    autoComplete="postal-code"
+                    maxLength={20}
+                    {...invalid("postal_code")}
+                  />
+                  {fieldError("postal_code")}
+                </div>
+              </>
+            ) : null}
+            <div className="form-field full-field">
+              <label htmlFor="message">
+                Votre message <span>facultatif · 3 000 caractères maximum</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                maxLength={3000}
+                rows={5}
+                {...invalid("message")}
+              />
+              {fieldError("message")}
+            </div>
+            <div className="honeypot" aria-hidden="true">
+              <label htmlFor="website">Laisser vide</label>
+              <input id="website" name="website" tabIndex={-1} autoComplete="off" />
+            </div>
           </div>
-          <div className="form-field">
-            <label htmlFor="cuvee">Cuvée souhaitée</label>
-            <select
-              id="cuvee"
-              name="cuvee"
-              defaultValue={defaults.cuvee || "a_conseiller"}
-              {...invalid("cuvee")}
-            >
-              <option value="a_conseiller">Je souhaite être conseillé(e)</option>
-              <option value="2024">Cuvée 2024</option>
-              <option value="2023">Cuvée 2023</option>
-            </select>
-            {fieldError("cuvee")}
-          </div>
-          <div className="form-field">
-            <label htmlFor="estimated_quantity">
-              Quantité estimée <span>facultative</span>
-            </label>
+        </section>
+        <div className="form-confirmation">
+          <label className="checkbox-line">
             <input
-              id="estimated_quantity"
-              name="estimated_quantity"
-              type="number"
-              inputMode="numeric"
-              min={1}
-              max={10000}
-              step={1}
-              placeholder="Nombre de bouteilles"
-              {...invalid("estimated_quantity")}
-            />
-            {fieldError("estimated_quantity")}
-          </div>
-          <label className="checkbox-line full-field">
-            <input
+              id="is_adult"
+              name="is_adult"
               type="checkbox"
-              checked={shipping}
-              onChange={(event) => setShipping(event.target.checked)}
+              required
+              {...invalid("is_adult")}
             />
-            Je souhaite me renseigner sur une expédition.
+            <span>Je certifie avoir 18 ans ou plus. *</span>
           </label>
-          {shipping ? (
-            <>
-              <div className="form-field">
-                <label htmlFor="country">
-                  Pays <span>facultatif</span>
-                </label>
-                <input
-                  id="country"
-                  name="country"
-                  autoComplete="country-name"
-                  maxLength={80}
-                  {...invalid("country")}
-                />
-                {fieldError("country")}
-              </div>
-              <div className="form-field">
-                <label htmlFor="postal_code">
-                  Code postal <span>facultatif</span>
-                </label>
-                <input
-                  id="postal_code"
-                  name="postal_code"
-                  autoComplete="postal-code"
-                  maxLength={20}
-                  {...invalid("postal_code")}
-                />
-                {fieldError("postal_code")}
-              </div>
-            </>
-          ) : null}
-          <div className="form-field full-field">
-            <label htmlFor="message">
-              Votre message <span>facultatif · 3 000 caractères maximum</span>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              maxLength={3000}
-              rows={5}
-              {...invalid("message")}
-            />
-            {fieldError("message")}
-          </div>
-          <div className="honeypot" aria-hidden="true">
-            <label htmlFor="website">Laisser vide</label>
-            <input id="website" name="website" tabIndex={-1} autoComplete="off" />
-          </div>
+          {fieldError("is_adult")}
+          <p className="form-help form-privacy">
+            Vos informations sont utilisées pour vous répondre, sans inscription à une newsletter.{" "}
+            <a href="/confidentialite/">En savoir plus sur vos données.</a>
+          </p>
         </div>
-        <hr className="form-divider" />
-        <label className="checkbox-line">
-          <input id="is_adult" name="is_adult" type="checkbox" required {...invalid("is_adult")} />
-          Je certifie avoir 18 ans ou plus. *
-        </label>
-        {fieldError("is_adult")}
-        <p className="form-help" style={{ marginTop: 18 }}>
-          Vos informations servent à répondre à votre demande. Elles sont adressées au domaine et ne
-          vous inscrivent à aucune newsletter.{" "}
-          <a href="/confidentialite/">En savoir plus sur vos données.</a>
-        </p>
       </fieldset>
-      <button className="button" type="submit" disabled={!hydrated || state === "sending"}>
+      <button
+        className="button form-submit"
+        type="submit"
+        disabled={!hydrated || state === "sending"}
+      >
         {state === "sending" ? "Transmission en cours…" : "Envoyer ma demande"}
         <span aria-hidden="true">↗</span>
       </button>
-      <p className="form-help" style={{ marginTop: 14 }}>
-        Cet envoi ne confirme aucun achat ni aucune réservation. Les disponibilités et modalités
-        seront précisées par le domaine.
+      <p className="form-help form-submit-note">
+        Aucun paiement en ligne. Cette demande ne confirme ni achat ni réservation.
       </p>
     </form>
   );

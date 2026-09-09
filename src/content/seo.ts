@@ -1,5 +1,14 @@
 export const SITE_URL = "https://www.les-terrasses-du-roty.fr";
-export function seo(title: string, description: string, path: string, type = "website") {
+export function seo(
+  title: string,
+  description: string,
+  path: string,
+  type = "website",
+  image = {
+    path: "/assets/img/img-9683-1600.jpg",
+    alt: "Les vignes des Terrasses du Roty à Saulcet, dans l’Allier",
+  },
+) {
   const fullTitle = title.includes("Les Terrasses du Roty")
     ? title
     : `${title} | Les Terrasses du Roty`;
@@ -13,15 +22,15 @@ export function seo(title: string, description: string, path: string, type = "we
       { property: "og:locale", content: "fr_FR" },
       { property: "og:site_name", content: "Les Terrasses du Roty" },
       { property: "og:url", content: SITE_URL + path },
-      { property: "og:image", content: SITE_URL + "/assets/img/img-9683-1600.jpg" },
+      { property: "og:image", content: SITE_URL + image.path },
       {
         property: "og:image:alt",
-        content: "Les vignes des Terrasses du Roty à Saulcet, dans l’Allier",
+        content: image.alt,
       },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: fullTitle },
       { name: "twitter:description", content: description },
-      { name: "twitter:image", content: SITE_URL + "/assets/img/img-9683-1600.jpg" },
+      { name: "twitter:image", content: SITE_URL + image.path },
     ],
     links: [{ rel: "canonical", href: SITE_URL + path }],
   };

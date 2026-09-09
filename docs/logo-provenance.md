@@ -58,3 +58,12 @@ SHA-256 du favicon extrait : `f9840d0c213c59ef1830e7a79b6a4a5038bf477a1406e3ad6b
 Le rendu a été inspecté dans Chrome à 240, 32 et 16 px sur fonds sombre et clair ; les tracés fins d’origine sont conservés, sans épaississement artificiel.
 
 Le branchement du favicon dans le document HTML est réalisé séparément ; cette sous-tâche n’a modifié ni `__root.tsx` ni le CSS.
+
+## Logo noir complet dans la navigation
+
+La dernière référence explicite du propriétaire est `LES TERRASSES DU ROTY  format S/Plan de travail 1 copie 2S.png` (197 × 241 px, fond transparent), montrant le symbole au-dessus du nom, entièrement en noir. Le header et le menu mobile utilisent son équivalent vectoriel officiel `LES TERRASSES DU ROTY format vecto/LES TERRASSES DU ROTY noir.svg`, copié octet pour octet dans `public/assets/img/logo-etiquette-black.svg`. Le logo conserve ses 19 tracés, sa disposition verticale, son lettrage, ses proportions et sa couleur. Aucun filtre, épaississement ou substitution typographique n’est appliqué. Les autres exports officiels restent intacts.
+
+Le logo complet mesure 74 px de large sur ordinateur et 68 px sur mobile ; sa hauteur est automatique. Le lien porte le nom accessible « Les Terrasses du Roty — accueil ». Le pied de page conserve la variante officielle doré-noir.
+
+SHA-256 SVG noir : `7badf9367db345b8367a2a5af016fb2b768ac9ddfdb453485dc9557d86de16cd`.
+SHA-256 PNG de référence : `f27f3a7fefeba68cb601690950a0bb50d89a1749bd3b0b737b34b2e800c81627`.

@@ -2,6 +2,12 @@ node_modules
 dist
 .output
 .vinxi
+.netlify
+.nitro
+.tanstack
+.wrangler
+.test-build
+test-results
 pnpm-lock.yaml
 package-lock.json
 bun.lock

@@ -4,6 +4,9 @@ import type { ReactNode } from "react";
 import { SiteLayout, ButtonLink } from "@/components/roty/SiteLayout";
 import appCss from "../roty.css?url";
 import analyticsCss from "../analytics.css?url";
+import shellCss from "../site-shell.css?url";
+import editorialCss from "../editorial-premium.css?url";
+import formCss from "../form-premium.css?url";
 import { SITE_URL, structuredData } from "@/content/seo";
 import { googleSiteVerificationMeta } from "@/lib/analytics";
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
@@ -12,7 +15,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { title: "Les Terrasses du Roty" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "theme-color", content: "#F7F4ED" },
+      { name: "theme-color", content: "#F5F5F7" },
       ...googleSiteVerificationMeta(
         import.meta.env.VITE_GOOGLE_SITE_VERIFICATION ||
           "85RkIRx_0r7ElaMnrtFrwymUhGG2kCusNroF9-TvVaA",
@@ -21,14 +24,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "stylesheet", href: analyticsCss },
+      { rel: "stylesheet", href: shellCss },
+      { rel: "stylesheet", href: editorialCss },
+      { rel: "stylesheet", href: formCss },
       { rel: "icon", type: "image/svg+xml", href: "/assets/img/favicon-etiquette.svg" },
-      {
-        rel: "preload",
-        href: "/assets/fonts/cormorant-latin.woff2",
-        as: "font",
-        type: "font/woff2",
-        crossOrigin: "anonymous",
-      },
       {
         rel: "preload",
         href: "/assets/fonts/inter-latin.woff2",

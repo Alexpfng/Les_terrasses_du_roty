@@ -1,0 +1,312 @@
+
+> test:seo
+> node tests/seo.mjs
+
+{
+  "checkedAt": "2026-09-09T13:53:49.216Z",
+  "base": "http://127.0.0.1:4173",
+  "target": "Local production SSR, JavaScript disabled, external browser requests blocked",
+  "pages": [
+    {
+      "path": "/",
+      "title": "Les Terrasses du Roty — Syrah à Saulcet, Allier",
+      "description": "Découvrez les vins de Syrah des Terrasses du Roty à Saulcet, dans l’Allier. Cuvées et contact direct pour particuliers, cavistes et restaurateurs.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/",
+      "h1": "Sept terrasses. Une Syrah.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/domaine/",
+      "title": "Domaine de Syrah à Saulcet, Allier | Les Terrasses du Roty",
+      "description": "À Saulcet dans l’Allier, découvrez Les Terrasses du Roty : l’histoire du domaine, le choix de la Syrah et la restauration de sept terrasses en pierre sèche.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/domaine/",
+      "h1": "Le Roty. Une nouvelle histoire.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "title": "Terrasses en pierre sèche à Saulcet | Les Terrasses du Roty",
+      "description": "Sept terrasses en pierre sèche à Saulcet, dans l’Allier : découvrez leur restauration et le retour de la vigne au Roty, avec les photographies du domaine.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/terrasses-pierre-seche/",
+      "h1": "Sept terrasses. Une même terre.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/vins/",
+      "title": "Syrah de Saulcet — Achat direct | Les Terrasses du Roty",
+      "description": "Syrah 2023 et 2024 à Saulcet, dans l’Allier : découvrez les cuvées du Roty et demandez au domaine les tarifs, disponibilités et modalités d’achat.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/",
+      "h1": "Une Syrah. Deux millésimes.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "title": "Cuvée 2024 — Syrah du Roty | Les Terrasses du Roty",
+      "description": "Découvrez la cuvée 2024 des Terrasses du Roty. Demandez sa fiche, son prix et sa disponibilité directement au domaine, sans paiement en ligne.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/cuvee-2024/",
+      "h1": "Cuvée 2024.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "title": "Cuvée 2023 — Syrah du Roty | Les Terrasses du Roty",
+      "description": "Découvrez la cuvée 2023 des Terrasses du Roty. Demandez sa fiche, son prix et sa disponibilité directement au domaine, sans paiement en ligne.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/cuvee-2023/",
+      "h1": "Cuvée 2023.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/professionnels/",
+      "title": "Syrah pour cavistes et restaurants | Les Terrasses du Roty",
+      "description": "Cavistes et restaurateurs : découvrez la Syrah de Saulcet et demandez fiche cuvée, tarif professionnel et modalités d’approvisionnement au domaine.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/professionnels/",
+      "h1": "Votre sélection. Notre Syrah.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/demande/",
+      "title": "Contacter le domaine — Demander des bouteilles | Les Terrasses du Roty",
+      "description": "Adressez votre demande aux Terrasses du Roty : bouteilles de Syrah, conseils, cuvées et informations professionnelles. Aucun achat confirmé par le formulaire.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/demande/",
+      "h1": "Parlons du Roty.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/journal/",
+      "title": "Journal — Syrah, vigne et achat direct | Les Terrasses du Roty",
+      "description": "Nos guides sur l’achat de vin en direct dans l’Allier, la Syrah à Saulcet et les demandes des cavistes et restaurateurs, avec les archives du domaine.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/",
+      "h1": "Un lieu à lire. Un vin à comprendre.",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/mentions-legales/",
+      "title": "Mentions légales | Les Terrasses du Roty",
+      "description": "Éditeur et coordonnées des Terrasses du Roty, immatriculation et informations sur le site.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/mentions-legales/",
+      "h1": "Mentions légales",
+      "structuredTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/confidentialite/",
+      "title": "Confidentialité et données personnelles | Les Terrasses du Roty",
+      "description": "Comprendre les données utilisées pour votre demande au domaine, les destinataires et vos droits.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/confidentialite/",
+      "h1": "Vos données personnelles",
+      "structuredTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "title": "Modalités de demande et d’achat | Les Terrasses du Roty",
+      "description": "Comment demander des bouteilles au domaine : informations, disponibilité, prix et confirmation des modalités avant tout achat.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/conditions-de-vente/",
+      "h1": "Les modalités d’achat",
+      "structuredTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "title": "Achat de vin en direct dans l’Allier | Les Terrasses du Roty",
+      "description": "Cuvée, quantité, tarif et livraison : les informations à préparer pour demander du vin directement aux Terrasses du Roty, à Saulcet.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/acheter-vin-direct-producteur-allier/",
+      "h1": "Acheter du vin en direct dans l’Allier : comment faire sa demande au domaine ?",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "title": "Vin bio près de Saint-Pourçain : les repères utiles | Les Terrasses du Roty",
+      "description": "Origine, certification, cépage et millésime : les points à vérifier pour choisir un vin bio près de Saint-Pourçain sans confondre lieu et appellation.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vin-bio-pres-saint-pourcain/",
+      "h1": "Vin bio près de Saint-Pourçain : les repères pour choisir sans confusion",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "title": "Vignes en terrasses et pierre sèche | Les Terrasses du Roty",
+      "description": "À Saulcet, les terrasses du Roty donnent son nom au projet viticole. Découvrez le lien entre ce paysage, sa restauration et le choix de la Syrah.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vignes-terrasses-pierre-seche-roty/",
+      "h1": "Vignes en terrasses et pierre sèche : comprendre le paysage du Roty",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "title": "Syrah à Saulcet, dans l’Allier | Les Terrasses du Roty",
+      "description": "Un lieu, un cépage, un millésime : découvrez les repères pour comprendre la Syrah des Terrasses du Roty sans confondre localisation et appellation.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/syrah-saulcet-allier/",
+      "h1": "Une Syrah à Saulcet : comprendre le choix des Terrasses du Roty",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "title": "Référencer une Syrah : le guide pro | Les Terrasses du Roty",
+      "description": "Caviste ou restaurateur : préparez votre demande de fiche cuvée, tarif et approvisionnement en Syrah auprès des Terrasses du Roty, dans l’Allier.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/cavistes-restaurateurs-syrah-roty/",
+      "h1": "Cavistes et restaurateurs : préparer une demande pour la Syrah du Roty",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "title": "Vendanges, macération et élevage | Archives du Roty | Les Terrasses du Roty",
+      "description": "Les étapes de vinification décrites dans le journal des Terrasses du Roty en août 2025 : vendange manuelle, macération et élevage.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vinification-vendanges-maceration-elevage/",
+      "h1": "Vinification : vendanges, macération et élevage",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "title": "Vendanges 2024 au Roty | Archives du domaine | Les Terrasses du Roty",
+      "description": "Retour sur la récolte manuelle de la parcelle du Roty à Saulcet, décrite dans le journal du domaine : les vendanges du 5 octobre 2024.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vendanges-2024/",
+      "h1": "Vendanges 2024 : la récolte du Roty",
+      "structuredTypes": [
+        "Organization",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "hiddenEditorialBlocks": 0,
+      "verificationTokenMatches": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "Preview blocked by robots.txt and response headers",
+      "passed": true
+    },
+    {
+      "name": "Valid sitemap with all 19 unique canonical URLs",
+      "passed": true
+    },
+    {
+      "name": "Canonical URLs ignore query parameters",
+      "passed": true
+    },
+    {
+      "name": "Unique titles, descriptions, canonicals and consistent social metadata on 19 SSR pages",
+      "passed": true
+    },
+    {
+      "name": "JSON-LD parses and matches visible content and reviewed entity facts; no offer/review schema",
+      "passed": true
+    },
+    {
+      "name": "Public GSC token matches the value obtained from Search Console; ownership validation not tested",
+      "passed": true
+    },
+    {
+      "name": "All metadata image URLs resolve locally",
+      "count": 9,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "blockedExternalOrigins": []
+}

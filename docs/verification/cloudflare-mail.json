@@ -1,0 +1,32 @@
+{
+  "startedAt": "2026-09-09T12:26:56.850Z",
+  "base": "https://preproduction.les-terrasses-du-roty.pages.dev",
+  "commit": "bf7957241ede2b144480b8f781eb35d5db8644b0",
+  "test": "Retry of the exact same authorized technical form submission after confirmed pre-send compatibility failure",
+  "previousAttempts": [
+    {
+      "startedAt": "2026-09-09T12:17:31.153Z",
+      "base": "https://preproduction.les-terrasses-du-roty.pages.dev",
+      "commit": "2ae3351792acf7aa1c74afbc8d98eb00166b898c",
+      "test": "One authorized technical form submission; real Redis and Resend",
+      "accepted": false,
+      "providerDelivery": "not_yet_verified",
+      "mailboxReceipt": "not_verified",
+      "finishedAt": "2026-09-09T12:17:31.287Z",
+      "httpStatus": 503,
+      "serverStatus": "error",
+      "errorCode": "service_unavailable"
+    }
+  ],
+  "accepted": true,
+  "providerDelivery": "delivered",
+  "mailboxReceipt": "not_verified",
+  "finishedAt": "2026-09-09T12:26:57.509Z",
+  "httpStatus": 200,
+  "retryAfter": null,
+  "serverStatus": "accepted",
+  "requestId": "1f26bc3c-0d4b-41ab-80b5-6c3f6f50319b",
+  "providerId": "92fd193c-80a5-4b4a-afd5-753b93a05a89",
+  "providerDeliveredAt": "2026-09-09T12:26Z",
+  "providerEvidence": "Resend owner UI checked by hebergement: matching request_id tag and recipient, sent + delivered events. Displayed minute precision."
+}

@@ -1,6 +1,6 @@
 # Google Analytics et Search Console — état réel
 
-Configuration effectuée le 9 septembre 2026 dans la session Google autorisée du propriétaire. Les propriétés des autres projets n’ont pas été modifiées.
+Configuration et recette de production effectuées le 9 septembre 2026 dans la session Google autorisée du propriétaire, pour le commit `bf7957241ede2b144480b8f781eb35d5db8644b0`. Les propriétés des autres projets n’ont pas été modifiées. Les preuves ci-dessous portent sur cette version déjà publiée ; elles ne valent pas recette de la nouvelle interface en préparation.
 
 ## Analytics réellement créé
 
@@ -17,7 +17,9 @@ Configuration effectuée le 9 septembre 2026 dans la session Google autorisée d
 - Dimensions personnalisées créées et retrouvées dans la liste : **Profil visiteur** (`visitor_profile`) et **Cuvée demandée** (`cuvee`), portée événement.
 - `generate_lead` créé comme **événement clé**, déclenché par le code, comptage une fois par événement, sans valeur monétaire par défaut. Aucun événement fondé sur une simple URL de contact n’a été créé.
 
-Le tableau de bord indique **aucune donnée reçue** lors de ce contrôle. La création du flux n’est pas une preuve de collecte. Aucun trafic de préproduction n’est volontairement envoyé à cette propriété.
+La collecte réelle est maintenant **vérifiée en production** : après un accord explicite, une visite technique a chargé la balise pour `G-L2PJT90F4Y` puis envoyé `page_view` à `region1.google-analytics.com/g/collect`, avec réponse **HTTP 204**. L’URL transmise ne contient ni query string ni fragment et le référent est vide. Aucun appel Google n’a eu lieu avant le choix ni après refus. Le retrait supprime les cookies Analytics et arrête la collecte lors de la navigation suivante. Cette visite n’a soumis aucun formulaire et n’a produit aucun `generate_lead`. [Preuve réseau réelle](verification/production-analytics.json).
+
+Le tableau de bord temps réel a ensuite affiché **1 utilisateur actif** et **7 événements `page_view`** dans sa fenêtre agrégée. Ces sept événements ne sont pas attribués à la visite de recette : leur origine individuelle n’a pas été établie. Ce relevé confirme une activité visible dans la propriété, sans démontrer sept visites distinctes, des prospects ou une évolution du trafic. [Observation de l’interface Google par la tâche principale](evidence/google-production-ui-2026-09-09.json). Aucun trafic de préproduction n’est volontairement envoyé à cette propriété.
 
 ## Installation dans le site
 
@@ -27,9 +29,9 @@ Refuser/accepter sont présentés de façon équivalente. Le choix expire après
 
 Événements applicatifs : `page_view`, `form_start`, `generate_lead`. Le dernier correspond exclusivement à la réponse serveur `accepted`, jamais à un simple clic, une erreur ou une soumission invalide. Il **ne prouve ni réception d’e-mail ni vente**. Paramètres catégoriels autorisés : `visitor_profile` et `cuvee`. Ni coordonnées, ni texte libre, ni query string, ni fragment, ni référent externe ne sont transmis par le code. Les pages sont limitées à la liste des routes publiques.
 
-Le serveur reste désactivé en préproduction. Les essais automatisés interceptent Google ; leurs événements ne constituent pas des visiteurs ou conversions réels.
+Le serveur reste désactivé en préproduction. Les suites automatisées locales interceptent Google ; leurs événements ne constituent pas des visiteurs ou conversions réels. La visite consentie réelle décrite plus haut est un contrôle de production distinct.
 
-## Search Console préparée, propriété non vérifiée
+## Search Console vérifiée et sitemap traité
 
 Une propriété de préfixe URL a été ajoutée pour **`https://www.les-terrasses-du-roty.fr/`**. La fenêtre de vérification Google a fourni cette balise publique, intégrée au rendu HTML serveur :
 
@@ -39,7 +41,15 @@ Une propriété de préfixe URL a été ajoutée pour **`https://www.les-terrass
 
 Ce jeton provient directement de la nouvelle propriété, pas de l’ancien site ni d’un exemple. Il peut être remplacé par `VITE_GOOGLE_SITE_VERIFICATION` à la construction.
 
-La propriété n’est **pas encore vérifiée** : le domaine public sert encore Shopify. Après publication sur le domaine, contrôler le jeton dans le HTML public, valider la propriété, soumettre `https://www.les-terrasses-du-roty.fr/sitemap.xml` et inspecter l’accueil, les vins et les professionnels. Aucun sitemap de préproduction ne doit être soumis. Une soumission à Google ne garantit pas l’indexation.
+La propriété de préfixe URL est **vérifiée dans l’interface Search Console** après publication de la balise dans le HTML public. Le sitemap **`https://www.les-terrasses-du-roty.fr/sitemap.xml` a été soumis depuis cette interface** par la tâche principale. Le contrôle HTTP de production confirme 19 URL canoniques et un `robots.txt` ouvert annonçant ce sitemap. [État Google observé](evidence/google-production-ui-2026-09-09.json), [contrôle public des pages et du sitemap](verification/cloudflare-production-http.json).
+
+La validation porte sur ce préfixe HTTPS `www`, pas sur une propriété Domaine englobant tous les sous-domaines. Le détail du sitemap, rouvert à 13:06 UTC, affiche « Traitement du sitemap réussi », dernière lecture le 09/09/2026, **19 pages découvertes et 0 vidéo**. Le test de l’URL active de l’accueil à 15:06 heure de Paris affiche « Google a accès à cette URL » et « La page peut être indexée ». L’index historique de l’accueil peut correspondre au contenu Shopify précédent : il ne prouve pas l’indexation de cette nouvelle version. Aucun classement n’est revendiqué. Aucun sitemap de préproduction n’a été soumis.
+
+L’association de cette propriété Search Console au flux GA4 `15746517257` est **créée et vérifiée** dans l’interface Google Analytics à 13:11 UTC. La ligne persistée reprend le préfixe `www` et le flux du site officiel. Cette association ne prouve pas encore la présence de métriques de recherche dans les rapports. [Preuve de l’association](evidence/google-search-console-association.json).
+
+## Formulaire et mesure des demandes
+
+Le test technique du formulaire public a été accepté par le serveur puis déclaré **sent + delivered** par Resend : identifiant fournisseur `cde5e306-ebd4-4d39-b47e-9ec1bd84c3a1`, référence de demande `10ef8bf8-6178-460d-a708-ebcd504a090d`, acquittement SMTP Gmail `250 2.0.0 OK`. La boîte `taff.roty@gmail.com` n’a pas été consultée directement et sa réception par le propriétaire reste non vérifiée. Cet essai HTTP n’a chargé aucune balise Google et ne représente pas une conversion GA. [Preuve de livraison fournisseur](evidence/resend-delivery.json).
 
 ## Références officielles
 

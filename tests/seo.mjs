@@ -205,6 +205,8 @@ try {
         h1: [...document.querySelectorAll("main h1")].map((node) => node.innerText),
         articleExcerpt: document.querySelector(".article-excerpt")?.innerText,
         articleText: document.querySelector("article .article-body")?.innerText,
+        articleCover: document.querySelector(".article-cover img")?.getAttribute("src"),
+        articleCoverAlt: document.querySelector(".article-cover img")?.getAttribute("alt"),
         mainText: document.querySelector("main")?.innerText || "",
         hiddenEditorial,
         commerceLinks: [...document.querySelectorAll("a[href], form[action]")]
@@ -348,6 +350,18 @@ try {
         `${path}: no invented author/publication date`,
       );
       imagePaths.add(article.image);
+      assert.equal(article.image, socialImage, `${path}: article schema and social image agree`);
+      assert.ok(data.articleCover, `${path}: visible article cover required`);
+      assert.equal(
+        canonicalOrigin + data.articleCover.replace(/-800\.(?:jpg|webp|avif)$/, "-1600.jpg"),
+        socialImage,
+        `${path}: visible article cover, OG, Twitter and JSON-LD use the same photograph`,
+      );
+      assert.equal(
+        data.articleCoverAlt,
+        data.ogImageAlt[0],
+        `${path}: visible and social image alternatives agree`,
+      );
     }
     report.pages.push({
       path,

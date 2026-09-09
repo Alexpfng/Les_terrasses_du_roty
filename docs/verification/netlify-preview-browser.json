@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-09-09T11:51:30.789Z",
+  "baseUrl": "https://preproduction--les-terrasses-du-roty.netlify.app",
+  "deployId": "6aa14733a01a39611d0de394",
+  "views": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Les Terrasses du Roty — Syrah à Saulcet, Allier",
+      "viewport": 1440,
+      "width": 1440,
+      "brokenImages": 0,
+      "firstInputTop": null
+    },
+    {
+      "path": "/demande/",
+      "status": 200,
+      "title": "Contacter le domaine — Demander des bouteilles | Les Terrasses du Roty",
+      "viewport": 390,
+      "width": 390,
+      "brokenImages": 0,
+      "firstInputTop": 640.109375
+    }
+  ],
+  "pageErrors": [],
+  "analyticsRequests": 0,
+  "analyticsConfiguration": {
+    "enabled": false,
+    "measurementId": null
+  },
+  "form": {
+    "defaultProfile": "particulier",
+    "status": 503,
+    "response": {
+      "status": "error",
+      "code": "service_unavailable",
+      "message": "L’envoi est momentanément indisponible. Votre demande n’a pas été transmise. Conservez votre saisie et réessayez plus tard."
+    },
+    "errorText": "Votre demande n’est pas confirmée.\n\nL’envoi est momentanément indisponible. Votre demande n’a pas été transmise. Conservez votre saisie et réessayez plus tard.",
+    "fieldsRetained": true,
+    "realProviderConfigured": false,
+    "emailsSent": 0
+  }
+}

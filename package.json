@@ -15,6 +15,7 @@
     "start:local": "HOST=127.0.0.1 PORT=4173 ROTY_PREVIEW_MODE=1 node .output/server/index.mjs",
     "test:server": "tsc -p tests/tsconfig.json && node --test .test-build/tests/*.test.js",
     "test:browser": "node tests/browser.mjs",
+    "test:photos": "node tests/photos.mjs",
     "test:http": "node tests/http.mjs",
     "test:runtime": "node tests/runtime.mjs",
     "test:analytics": "node tests/analytics-browser.mjs",

@@ -44,6 +44,7 @@ jobs:
       - run: npm run test:seo
       - run: npm run test:analytics
       - run: npm run test:browser
+      - run: npm run test:photos
       - name: Verify runtime stream cleanup
         run: npm run test:runtime
       - uses: actions/upload-artifact@v4

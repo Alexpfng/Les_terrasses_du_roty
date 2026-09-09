@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-09T13:18:26.531Z",
+  "base": "http://127.0.0.1:4323",
+  "checks": [
+    "Enter opens a native modal, focuses close and marks opener expanded",
+    "Tab and Shift+Tab wrap within the modal; background controls receive no focus",
+    "Open modal locks body overflow and prevents wheel scrolling of the background",
+    "Escape closes the menu, restores body scrolling and returns focus to the opener",
+    "Close button restores opener focus and scroll state",
+    "A menu link navigates to the cuvées and closes the modal with scrolling restored",
+    "Switching to desktop closes the modal and moves focus to the visible header brand"
+  ],
+  "axeOpenMenu": []
+}

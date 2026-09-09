@@ -1,0 +1,1000 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "checkedAt": "2026-09-09T13:53:49.186Z",
+  "pages": [
+    {
+      "path": "/",
+      "photographs": [
+        {
+          "source": "/assets/img/bottle-studio-800.jpg",
+          "name": "bottle-studio",
+          "alt": "Présentation de la bouteille de Syrah 2024, avec l’étiquette noire et or des Terrasses du Roty"
+        },
+        {
+          "source": "/assets/img/label-crop-800.jpg",
+          "name": "label-crop",
+          "alt": "Détail de l’étiquette originale des Terrasses du Roty, Syrah 2024"
+        },
+        {
+          "source": "/assets/img/img-9683-800.jpg",
+          "name": "img-9683",
+          "alt": "Travail de la vigne au Roty, sur les coteaux de Saulcet dans l’Allier"
+        },
+        {
+          "source": "/assets/img/roty-restoration-800.jpg",
+          "name": "roty-restoration",
+          "alt": "Un engin à chenilles travaille le sol d’une terrasse, photographie des archives du domaine"
+        },
+        {
+          "source": "/assets/img/roty-planting-800.jpg",
+          "name": "roty-planting",
+          "alt": "Vue aérienne du travail manuel de plantation dans une parcelle, archives du domaine"
+        },
+        {
+          "source": "/assets/img/roty-harvest-woman-800.jpg",
+          "name": "roty-harvest-woman",
+          "alt": "Une personne récolte des grappes dans les rangs avec un seau jaune, archives du domaine"
+        },
+        {
+          "source": "/assets/img/wine-cork-800.jpg",
+          "name": "wine-cork",
+          "alt": "Photographie d’illustration : détail d’un goulot de bouteille de vin"
+        },
+        {
+          "source": "/assets/img/wine-reflections-800.jpg",
+          "name": "wine-reflections",
+          "alt": "Photographie d’illustration : un verre de vin et des reflets de feuillage"
+        },
+        {
+          "source": "/assets/img/dji-0086-800.jpg",
+          "name": "dji-0086",
+          "alt": "Le chantier de remise en état des terrasses du Roty à Saulcet"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/domaine/",
+      "photographs": [
+        {
+          "source": "/assets/img/roty-vineyard-800.jpg",
+          "name": "roty-vineyard",
+          "alt": "Des rangs de vigne sur un coteau, avec le paysage en arrière-plan"
+        },
+        {
+          "source": "/assets/img/roty-team-800.jpg",
+          "name": "roty-team",
+          "alt": "Des personnes vues de dos portent les couleurs des Terrasses du Roty"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "photographs": [
+        {
+          "source": "/assets/img/dji-0086-800.jpg",
+          "name": "dji-0086",
+          "alt": "Les terrasses du Roty pendant leur remise en état : murs de pierre, niveaux de culture et engins de chantier"
+        },
+        {
+          "source": "/assets/img/roty-terraces-800.jpg",
+          "name": "roty-terraces",
+          "alt": "Vue aérienne de niveaux de culture en terrasses, bordés de murs de pierre"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/vins/",
+      "photographs": [
+        {
+          "source": "/assets/img/label-crop-800.jpg",
+          "name": "label-crop",
+          "alt": "Détail de l’étiquette originale des Terrasses du Roty, Syrah 2024"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "photographs": [
+        {
+          "source": "/assets/img/bottle-studio-800.jpg",
+          "name": "bottle-studio",
+          "alt": "Visuel studio de la bouteille des Terrasses du Roty, Syrah 2024"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "photographs": [],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/professionnels/",
+      "photographs": [
+        {
+          "source": "/assets/img/wine-table-800.jpg",
+          "name": "wine-table",
+          "alt": "Photographie d’illustration : un verre de vin rouge sur une table de restaurant"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/demande/",
+      "photographs": [
+        {
+          "source": "/assets/img/wine-tasting-800.jpg",
+          "name": "wine-tasting",
+          "alt": "Deux verres de vin aux reflets lumineux, photographie d’illustration"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/journal/",
+      "photographs": [
+        {
+          "source": "/assets/img/wine-cork-800.jpg",
+          "name": "wine-cork",
+          "alt": "Photographie d’illustration : détail d’un goulot de bouteille de vin"
+        },
+        {
+          "source": "/assets/img/wine-reflections-800.jpg",
+          "name": "wine-reflections",
+          "alt": "Photographie d’illustration : un verre de vin et des reflets de feuillage"
+        },
+        {
+          "source": "/assets/img/dji-0086-800.jpg",
+          "name": "dji-0086",
+          "alt": "Le chantier de remise en état des terrasses du Roty à Saulcet"
+        },
+        {
+          "source": "/assets/img/wine-motion-800.jpg",
+          "name": "wine-motion",
+          "alt": "Photographie d’illustration : du vin rouge en mouvement dans un verre"
+        },
+        {
+          "source": "/assets/img/wine-table-800.jpg",
+          "name": "wine-table",
+          "alt": "Photographie d’illustration : un verre de vin rouge sur une table de restaurant"
+        },
+        {
+          "source": "/assets/img/wine-silhouette-800.jpg",
+          "name": "wine-silhouette",
+          "alt": "Photographie d’illustration : une bouteille et un verre de vin sur fond sombre"
+        },
+        {
+          "source": "/assets/img/roty-harvest-2024-800.jpg",
+          "name": "roty-harvest-2024",
+          "alt": "Deux personnes récoltent des grappes dans les rangs de vigne"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/mentions-legales/",
+      "photographs": [],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/confidentialite/",
+      "photographs": [],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "photographs": [],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "photographs": [
+        {
+          "source": "/assets/img/wine-cork-800.jpg",
+          "name": "wine-cork",
+          "alt": "Photographie d’illustration : détail d’un goulot de bouteille de vin"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "photographs": [
+        {
+          "source": "/assets/img/wine-reflections-800.jpg",
+          "name": "wine-reflections",
+          "alt": "Photographie d’illustration : un verre de vin et des reflets de feuillage"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "photographs": [
+        {
+          "source": "/assets/img/dji-0086-800.jpg",
+          "name": "dji-0086",
+          "alt": "Le chantier de remise en état des terrasses du Roty à Saulcet"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "photographs": [
+        {
+          "source": "/assets/img/wine-motion-800.jpg",
+          "name": "wine-motion",
+          "alt": "Photographie d’illustration : du vin rouge en mouvement dans un verre"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "photographs": [
+        {
+          "source": "/assets/img/wine-table-800.jpg",
+          "name": "wine-table",
+          "alt": "Photographie d’illustration : un verre de vin rouge sur une table de restaurant"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "photographs": [
+        {
+          "source": "/assets/img/wine-silhouette-800.jpg",
+          "name": "wine-silhouette",
+          "alt": "Photographie d’illustration : une bouteille et un verre de vin sur fond sombre"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "photographs": [
+        {
+          "source": "/assets/img/roty-harvest-2024-800.jpg",
+          "name": "roty-harvest-2024",
+          "alt": "Deux personnes récoltent des grappes dans les rangs de vigne"
+        }
+      ],
+      "duplicatePhotographs": 0,
+      "loadedWidths": [
+        390,
+        1440
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "path": "/assets/img/bottle-studio-800.jpg",
+      "width": 800,
+      "height": 1000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/bottle-studio-800.avif",
+      "width": 800,
+      "height": 1000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/bottle-studio-1600.avif",
+      "width": 1122,
+      "height": 1402,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/bottle-studio-800.webp",
+      "width": 800,
+      "height": 1000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/bottle-studio-1600.webp",
+      "width": 1122,
+      "height": 1402,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/label-crop-800.jpg",
+      "width": 800,
+      "height": 683,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/label-crop-800.avif",
+      "width": 800,
+      "height": 683,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/label-crop-1600.avif",
+      "width": 1600,
+      "height": 1366,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/label-crop-800.webp",
+      "width": 800,
+      "height": 683,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/label-crop-1600.webp",
+      "width": 1600,
+      "height": 1366,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/img-9683-800.jpg",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/img-9683-800.avif",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/img-9683-1600.avif",
+      "width": 1600,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/img-9683-800.webp",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/img-9683-1600.webp",
+      "width": 1600,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-restoration-800.jpg",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-restoration-800.avif",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-restoration-1600.avif",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-restoration-800.webp",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-restoration-1600.webp",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-planting-800.jpg",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-planting-800.avif",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-planting-1600.avif",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-planting-800.webp",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-planting-1600.webp",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-800.jpg",
+      "width": 800,
+      "height": 1067,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-800.avif",
+      "width": 800,
+      "height": 1067,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-1600.avif",
+      "width": 1600,
+      "height": 2133,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-800.webp",
+      "width": 800,
+      "height": 1067,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-1600.webp",
+      "width": 1600,
+      "height": 2133,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-cork-800.jpg",
+      "width": 800,
+      "height": 1139,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-cork-800.avif",
+      "width": 800,
+      "height": 1139,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-cork-1600.avif",
+      "width": 1600,
+      "height": 2279,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-cork-800.webp",
+      "width": 800,
+      "height": 1139,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-cork-1600.webp",
+      "width": 1600,
+      "height": 2279,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-reflections-800.jpg",
+      "width": 800,
+      "height": 1204,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-reflections-800.avif",
+      "width": 800,
+      "height": 1204,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-reflections-1600.avif",
+      "width": 1600,
+      "height": 2409,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-reflections-800.webp",
+      "width": 800,
+      "height": 1204,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-reflections-1600.webp",
+      "width": 1600,
+      "height": 2409,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/dji-0086-800.jpg",
+      "width": 800,
+      "height": 599,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/dji-0086-800.avif",
+      "width": 800,
+      "height": 599,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/dji-0086-1600.avif",
+      "width": 1600,
+      "height": 1198,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/dji-0086-800.webp",
+      "width": 800,
+      "height": 599,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/dji-0086-1600.webp",
+      "width": 1600,
+      "height": 1198,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-vineyard-800.jpg",
+      "width": 800,
+      "height": 587,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-vineyard-800.avif",
+      "width": 800,
+      "height": 587,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-vineyard-1600.avif",
+      "width": 1600,
+      "height": 1174,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-vineyard-800.webp",
+      "width": 800,
+      "height": 587,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-vineyard-1600.webp",
+      "width": 1600,
+      "height": 1174,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-team-800.jpg",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-team-800.avif",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-team-1600.avif",
+      "width": 1600,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-team-800.webp",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-team-1600.webp",
+      "width": 1600,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-terraces-800.jpg",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-terraces-800.avif",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-terraces-1600.avif",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-terraces-800.webp",
+      "width": 800,
+      "height": 600,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-terraces-1600.webp",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-table-800.jpg",
+      "width": 800,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-table-800.avif",
+      "width": 800,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-table-1600.avif",
+      "width": 1600,
+      "height": 2400,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-table-800.webp",
+      "width": 800,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-table-1600.webp",
+      "width": 1600,
+      "height": 2400,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-tasting-800.jpg",
+      "width": 800,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-tasting-800.avif",
+      "width": 800,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-tasting-1600.avif",
+      "width": 1600,
+      "height": 2400,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-tasting-800.webp",
+      "width": 800,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-tasting-1600.webp",
+      "width": 1600,
+      "height": 2400,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-motion-800.jpg",
+      "width": 800,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-motion-800.avif",
+      "width": 800,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-motion-1600.avif",
+      "width": 1600,
+      "height": 2397,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-motion-800.webp",
+      "width": 800,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-motion-1600.webp",
+      "width": 1600,
+      "height": 2397,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-silhouette-800.jpg",
+      "width": 800,
+      "height": 1000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-silhouette-800.avif",
+      "width": 800,
+      "height": 1000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-silhouette-1600.avif",
+      "width": 1600,
+      "height": 2000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-silhouette-800.webp",
+      "width": 800,
+      "height": 1000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-silhouette-1600.webp",
+      "width": 1600,
+      "height": 2000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-800.jpg",
+      "width": 800,
+      "height": 1067,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-800.avif",
+      "width": 800,
+      "height": 1067,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-1600.avif",
+      "width": 1600,
+      "height": 2133,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-800.webp",
+      "width": 800,
+      "height": 1067,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-1600.webp",
+      "width": 1600,
+      "height": 2133,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/bottle-studio-1600.jpg",
+      "width": 1122,
+      "height": 1402,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/label-crop-1600.jpg",
+      "width": 1600,
+      "height": 1366,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/img-9683-1600.jpg",
+      "width": 1600,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-restoration-1600.jpg",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-planting-1600.jpg",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-1600.jpg",
+      "width": 1600,
+      "height": 2133,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-cork-1600.jpg",
+      "width": 1600,
+      "height": 2279,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-reflections-1600.jpg",
+      "width": 1600,
+      "height": 2409,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/dji-0086-1600.jpg",
+      "width": 1600,
+      "height": 1198,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-vineyard-1600.jpg",
+      "width": 1600,
+      "height": 1174,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-team-1600.jpg",
+      "width": 1600,
+      "height": 1200,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-terraces-1600.jpg",
+      "width": 1600,
+      "height": 1199,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-table-1600.jpg",
+      "width": 1600,
+      "height": 2400,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-tasting-1600.jpg",
+      "width": 1600,
+      "height": 2400,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-motion-1600.jpg",
+      "width": 1600,
+      "height": 2397,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/wine-silhouette-1600.jpg",
+      "width": 1600,
+      "height": 2000,
+      "decoded": true
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-1600.jpg",
+      "width": 1600,
+      "height": 2133,
+      "decoded": true
+    }
+  ],
+  "gallery": [
+    {
+      "card": 1,
+      "keyboardRevealed": true,
+      "fullCardVisible": true
+    },
+    {
+      "card": 2,
+      "keyboardRevealed": true,
+      "fullCardVisible": true
+    },
+    {
+      "card": 3,
+      "keyboardRevealed": true,
+      "fullCardVisible": true
+    }
+  ],
+  "externalRequests": [],
+  "browserErrors": [],
+  "passed": true,
+  "officialLogo": {
+    "path": "/assets/img/logo-etiquette-black.svg",
+    "sha256": "7badf9367db345b8367a2a5af016fb2b768ac9ddfdb453485dc9557d86de16cd",
+    "originalBytesPreserved": true,
+    "placements": [
+      {
+        "selector": ".shell-header .shell-brand",
+        "completeOfficialLogo": true,
+        "imageDecoded": true
+      },
+      {
+        "selector": "#mobile-nav .shell-brand",
+        "completeOfficialLogo": true,
+        "imageDecoded": true
+      }
+    ]
+  },
+  "headerBackdropFilter": "saturate(1.4) blur(20px)",
+  "galleryInspection": "Third figure reached through internal DOM scroll; no body overflow"
+}

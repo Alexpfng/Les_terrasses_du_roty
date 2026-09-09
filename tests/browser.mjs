@@ -2,6 +2,7 @@ import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdir, writeFile } from "node:fs/promises";
 import assert from "node:assert/strict";
+import { verifyNativeMenu } from "./native-menu.mjs";
 const base = process.env.ROTY_TEST_URL || "http://127.0.0.1:4173";
 if (!/^http:\/\/(127\.0\.0\.1|localhost):\d+$/.test(base))
   throw new Error("This test submits synthetic data: a loopback URL is required.");
@@ -14,6 +15,7 @@ const result = {
   accessibility: [],
   noJavaScript: [],
   form: [],
+  menu: [],
   errors: [],
 };
 const browser = await chromium.launch({
@@ -106,6 +108,7 @@ try {
       })),
     });
   }
+  result.menu = await verifyNativeMenu(page, base);
   const nojs = await browser.newContext({
     javaScriptEnabled: false,
     viewport: { width: 390, height: 844 },
@@ -238,6 +241,7 @@ try {
         axePages: result.accessibility.length,
         nojsPages: result.noJavaScript.length,
         form: result.form,
+        menu: result.menu,
         errors: result.errors,
       },
       null,

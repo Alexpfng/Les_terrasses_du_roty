@@ -31,9 +31,13 @@ const uiBuild = await build({
     },
   },
 });
-const uiBundle = (Array.isArray(uiBuild) ? uiBuild[0] : uiBuild).output.find(
-  (item) => item.type === "chunk",
-).code;
+const uiOutput = (Array.isArray(uiBuild) ? uiBuild[0] : uiBuild).output;
+const uiBundle = uiOutput.find((item) => item.type === "chunk").code;
+const formCss = uiOutput
+  .filter((item) => item.type === "asset" && item.fileName.endsWith(".css"))
+  .map((item) => String(item.source))
+  .join("\n");
+assert.ok(formCss.includes("premium-request-form"), "Fixture includes actual form CSS");
 const consentCss = await readFile(new URL("../src/analytics.css", import.meta.url), "utf8");
 const browser = await chromium.launch({
   ...(process.env.ROTY_TEST_CHROMIUM === "1" ? {} : { channel: "chrome" }),
@@ -133,7 +137,7 @@ async function fixture(options = {}) {
     if (url.origin === origin && options.ui)
       return route.fulfill({
         contentType: "text/html",
-        body: `<!doctype html><html lang="fr"><head><title>Fixture React</title><style>${consentCss}</style></head><body><div id="fixture"></div><script type="module" src="/fixture.js"></script></body></html>`,
+        body: `<!doctype html><html lang="fr"><head><title>Fixture React</title><style>${consentCss}\n${formCss}</style></head><body><div id="fixture"></div><script type="module" src="/fixture.js"></script></body></html>`,
       });
     if (url.origin === origin)
       return route.fulfill({

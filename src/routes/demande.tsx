@@ -44,8 +44,8 @@ function DemandePage() {
         <DemandeForm defaults={defaults} />
         <aside className="form-aside">
           <Photo
-            name="img-9683"
-            alt="Le travail de la vigne sur les terrasses à Saulcet"
+            name="wine-tasting"
+            alt="Deux verres de vin aux reflets lumineux, photographie d’illustration"
             sizes="(max-width: 640px) 100vw, 35vw"
           />
           <div className="contact-details">

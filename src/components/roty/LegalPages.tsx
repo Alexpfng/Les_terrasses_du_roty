@@ -54,9 +54,16 @@ export function LegalPage({ kind }: { kind: "mentions" | "confidentialite" | "co
             </p>
             <h2>Contenus et crédits</h2>
             <p>
-              Le logo et les photographies proviennent des fichiers du domaine. Leur reproduction ou
-              leur réutilisation nécessite l’autorisation de leurs ayants droit. Les articles citent
-              les références utiles à leur contenu.
+              Le logo et les photographies du vignoble proviennent des fichiers du domaine. Le
+              visuel de la bouteille sur fond clair est une présentation retouchée à partir de ces
+              photographies. Leur reproduction ou leur réutilisation nécessite l’autorisation de
+              leurs ayants droit. Les articles citent les références utiles à leur contenu.
+            </p>
+            <p>
+              Les photographies d’illustration sélectionnées et fournies pour le site sont créditées
+              à Alaksiej Carankievic, Mae Mu, Saman Taheri, Anna Bratiychuk, Andreas Haslinger et
+              Sahand Karwan (Unsplash). Elles illustrent l’univers du vin et ne constituent pas des
+              photographies du vignoble ou des cuvées du Roty.
             </p>
             <p>
               L’usage du site suppose de respecter son fonctionnement et de ne pas envoyer de

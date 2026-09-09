@@ -8,8 +8,21 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // The wrapper forwards Nitro options. Pre-compress static assets for the
 // standalone Node build; the existing Lovable target remains auto-detected.
+// A single Pages rule keeps every image/font/script on the static CDN without
+// exhausting Cloudflare's 100-rule limit as the photo library grows.
 const localNitro = process.env.ROTY_BUILD_TARGET
-  ? { preset: process.env.ROTY_BUILD_TARGET, compressPublicAssets: true }
+  ? {
+      preset: process.env.ROTY_BUILD_TARGET,
+      compressPublicAssets: true,
+      ...(process.env.ROTY_BUILD_TARGET === "cloudflare-pages"
+        ? {
+            cloudflare: {
+              nodeCompat: true,
+              pages: { routes: { exclude: ["/assets/*"] } },
+            },
+          }
+        : {}),
+    }
   : undefined;
 
 export default defineConfig({

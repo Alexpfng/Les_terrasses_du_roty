@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-09-09T13:38:46.016Z",
+  "checks": [
+    {
+      "url": "https://les-terrasses-du-roty.fr/",
+      "method": "GET",
+      "status": 308,
+      "location": "https://www.les-terrasses-du-roty.fr/",
+      "tlsVerified": true,
+      "pass": true
+    },
+    {
+      "url": "https://les-terrasses-du-roty.fr/domaine/",
+      "method": "GET",
+      "status": 308,
+      "location": "https://www.les-terrasses-du-roty.fr/domaine/",
+      "tlsVerified": true,
+      "pass": true
+    },
+    {
+      "url": "https://les-terrasses-du-roty.fr/demande/?profil=caviste&objet=professionnel",
+      "method": "GET",
+      "status": 308,
+      "location": "https://www.les-terrasses-du-roty.fr/demande/?profil=caviste&objet=professionnel",
+      "tlsVerified": true,
+      "pass": true
+    },
+    {
+      "url": "https://les-terrasses-du-roty.fr/",
+      "method": "HEAD",
+      "status": 308,
+      "location": "https://www.les-terrasses-du-roty.fr/",
+      "tlsVerified": true,
+      "headBodyEmpty": true,
+      "pass": true
+    },
+    {
+      "url": "https://les-terrasses-du-roty.fr/domaine/",
+      "method": "HEAD",
+      "status": 308,
+      "location": "https://www.les-terrasses-du-roty.fr/domaine/",
+      "tlsVerified": true,
+      "headBodyEmpty": true,
+      "pass": true
+    },
+    {
+      "url": "https://les-terrasses-du-roty.fr/demande/?profil=caviste&objet=professionnel",
+      "method": "HEAD",
+      "status": 308,
+      "location": "https://www.les-terrasses-du-roty.fr/demande/?profil=caviste&objet=professionnel",
+      "tlsVerified": true,
+      "headBodyEmpty": true,
+      "pass": true
+    },
+    {
+      "url": "https://www.les-terrasses-du-roty.fr/",
+      "method": "GET",
+      "status": 200,
+      "tlsVerified": true,
+      "rotySsrMain": true,
+      "pass": true
+    }
+  ],
+  "allPass": true,
+  "environment": "Normal public HTTPS resolution with certificate validation enabled; no forced IP and no email sent"
+}
