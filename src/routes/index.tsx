@@ -1,121 +1,147 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { lazy, Suspense, useEffect, useState } from "react";
-
-// Styles globaux + design tokens + @font-face du site (chemins /assets servis depuis public/).
-import "@/terrasse/styles/global.css";
-
-// Le récit immersif (three.js, GSAP, Lenis) est strictement client : pas de SSR possible.
-const App = lazy(() => import("@/terrasse/app/App"));
-
-const JSON_LD = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      name: "Les Terrasses du Roty",
-      url: "https://www.les-terrasses-du-roty.fr/",
-      logo: "https://www.les-terrasses-du-roty.fr/assets/img/logo-gold.png",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Saulcet",
-        addressRegion: "Allier",
-        addressCountry: "FR",
-      },
-    },
-    {
-      "@type": "Product",
-      name: "Les Terrasses du Roty — Cuvée 2024",
-      description:
-        "Syrah 100 % issue de sept terrasses en pierre sèche à Saulcet, vignoble de Saint-Pourçain. Agriculture biologique certifiée Ecocert®. Livraison à la mise en bouteille, novembre 2025.",
-      image:
-        "https://www.les-terrasses-du-roty.fr/assets/img/mockup-coffret-1600.jpg",
-      brand: { "@type": "Brand", name: "Les Terrasses du Roty" },
-      offers: {
-        "@type": "Offer",
-        url: "https://www.les-terrasses-du-roty.fr/products/cuvee-2024-les-terrasses-du-roty-precommande",
-        priceCurrency: "EUR",
-        price: "25.00",
-        availability: "https://schema.org/PreOrder",
-      },
-    },
-  ],
-};
-
+import { Photo, ButtonLink, ContactBand } from "@/components/roty/SiteLayout";
+import { JournalCards, WineCards } from "@/components/roty/ContentCards";
+import { seo } from "@/content/seo";
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      {
-        title:
-          "Les Terrasses du Roty — Syrah née sur 7 terrasses de pierre sèche · Saint-Pourçain",
-      },
-      {
-        name: "description",
-        content:
-          "Un vin rare, Syrah 100 %, né sur sept terrasses en pierre sèche réhabilitées à la main à Saulcet, vignoble de Saint-Pourçain. Agriculture biologique, cuvée 2024 certifiée Ecocert® en précommande.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:locale", content: "fr_FR" },
-      {
-        property: "og:title",
-        content: "Les Terrasses du Roty — Né sur des terres oubliées",
-      },
-      {
-        property: "og:description",
-        content:
-          "Syrah 100 %, sept terrasses de pierre sèche rouvertes à la main à Saulcet. Cuvée 2024 certifiée Ecocert®, en précommande — 25 €.",
-      },
-      {
-        property: "og:image",
-        content: "/assets/img/mockup-coffret-1600.jpg",
-      },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "twitter:title",
-        content: "Les Terrasses du Roty — Né sur des terres oubliées",
-      },
-      {
-        name: "twitter:description",
-        content:
-          "Syrah 100 %, sept terrasses de pierre sèche rouvertes à la main à Saulcet. Cuvée 2024 certifiée Ecocert®, en précommande — 25 €.",
-      },
-    ],
-    links: [
-      { rel: "icon", type: "image/png", href: "/assets/img/sun-gold.png" },
-      { rel: "canonical", href: "https://www.les-terrasses-du-roty.fr/" },
-      {
-        rel: "preload",
-        href: "/assets/fonts/cormorant-latin.woff2",
-        as: "font",
-        type: "font/woff2",
-        crossOrigin: "anonymous",
-      },
-      {
-        rel: "preload",
-        href: "/assets/fonts/inter-latin.woff2",
-        as: "font",
-        type: "font/woff2",
-        crossOrigin: "anonymous",
-      },
-      { rel: "preload", href: "/assets/img/sun-gold.png", as: "image" },
-    ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(JSON_LD),
-      },
-    ],
-  }),
-  component: Index,
+  head: () =>
+    seo(
+      "Les Terrasses du Roty — Sept terrasses. Une Syrah.",
+      "À Saulcet, dans l’Allier, découvrez les sept terrasses en pierre sèche du Roty, leur histoire et les cuvées de Syrah. Contactez directement le domaine.",
+      "/",
+    ),
+  component: Home,
 });
-
-function Index() {
-  // Monté uniquement après hydratation : l'arbre three.js/GSAP ne touche jamais le serveur.
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
+function Home() {
   return (
-    <Suspense fallback={null}>
-      <App />
-    </Suspense>
+    <>
+      <section className="hero wrap">
+        <div className="hero-copy">
+          <p className="eyebrow">Les Terrasses du Roty · Saulcet, Allier</p>
+          <h1>
+            Sept terrasses.
+            <br />
+            <em>Une Syrah.</em>
+            <span>Un lieu à part.</span>
+          </h1>
+          <p className="hero-intro">
+            À Saulcet, la vigne retrouve sa place sur des terrasses en pierre sèche. Découvrez le
+            lieu, le travail qui le façonne et les cuvées des Terrasses du Roty.
+          </p>
+          <div className="actions">
+            <ButtonLink href="/vins/">Découvrir les cuvées</ButtonLink>
+            <ButtonLink secondary href="/demande/">
+              Demander des bouteilles
+            </ButtonLink>
+          </div>
+        </div>
+        <figure className="hero-figure">
+          <Photo
+            name="img-9683"
+            alt="Travail de la vigne sur les terrasses du Roty, avec le paysage de Saulcet en arrière-plan"
+            eager
+          />
+          <figcaption>
+            <span>01 / Le lieu</span>
+            <span>Saulcet, Allier</span>
+          </figcaption>
+          <span className="photo-note" aria-hidden="true">
+            LA VIGNE RETROUVE SA PLACE
+          </span>
+        </figure>
+      </section>
+      <div className="place-line wrap">
+        <span>Sept terrasses en pierre sèche</span>
+        <span>Un cépage : la Syrah</span>
+        <span>Un lien direct avec le domaine</span>
+      </div>
+      <section className="story-section wrap">
+        <div>
+          <p className="eyebrow">Le domaine</p>
+          <h2>
+            Tout commence
+            <br />
+            par <em>un lieu.</em>
+          </h2>
+        </div>
+        <div className="story-copy">
+          <p>
+            Une pente, des murs de pierre sèche et la volonté de leur redonner une place dans le
+            paysage viticole. Au Roty, l’histoire du vin commence par celle des terrasses.
+          </p>
+          <p>
+            À Saulcet, dans l’Allier, leur remise en culture ouvre un nouveau chapitre. Le lieu, les
+            gestes et le choix de la Syrah donnent au projet son identité.
+          </p>
+          <ButtonLink secondary href="/domaine/">
+            Découvrir notre histoire
+          </ButtonLink>
+        </div>
+      </section>
+      <section className="landscape-section wrap">
+        <Photo
+          name="dji-0086"
+          alt="Vue du chantier de remise en état des niveaux de culture et des murs de pierre du Roty"
+        />
+        <div className="landscape-caption">
+          <p className="eyebrow">La pierre, le temps, le geste</p>
+          <h2>
+            Redonner vie
+            <br />
+            <em>aux terrasses.</em>
+          </h2>
+          <p>Les murs dessinent le paysage. Leur restauration accompagne le retour de la vigne.</p>
+          <ButtonLink secondary href="/terrasses-pierre-seche/">
+            Parcourir les terrasses
+          </ButtonLink>
+        </div>
+      </section>
+      <section className="wrap section-pad">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Les cuvées du Roty</p>
+            <h2>
+              La Syrah,
+              <br />
+              <em>au fil des millésimes.</em>
+            </h2>
+          </div>
+          <p>
+            Découvrez les références du domaine.
+            <br />
+            Les disponibilités se précisent ensemble.
+          </p>
+        </div>
+        <WineCards />
+      </section>
+      <section className="professional-band">
+        <div className="wrap">
+          <p className="eyebrow">Cavistes & restaurateurs</p>
+          <h2>Faisons connaissance.</h2>
+          <p>
+            Une cuvée, une fiche technique, un projet de référencement.
+            <br />
+            Un échange direct pour préparer votre demande.
+          </p>
+          <ButtonLink href="/professionnels/">L’espace professionnels</ButtonLink>
+        </div>
+      </section>
+      <section className="wrap section-pad">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Le journal du Roty</p>
+            <h2>
+              Lire le lieu.
+              <br />
+              <em>Comprendre le vin.</em>
+            </h2>
+          </div>
+          <ButtonLink secondary href="/journal/">
+            Tout le journal
+          </ButtonLink>
+        </div>
+        <JournalCards limit={3} />
+      </section>
+      <ContactBand />
+    </>
   );
 }

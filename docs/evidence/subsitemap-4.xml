@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/collections/frontpage</loc>
+    <lastmod>2026-08-29T02:30:01+02:00</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/collections/cuvees-2023</loc>
+    <lastmod>2026-08-29T02:30:01+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0930/1806/3192/collections/andreas-haslinger-aZgVmUVqkwA-unsplash.jpg?v=1754494076</image:loc>
+      <image:title>Cuvées 2023</image:title>
+    </image:image>
+  </url>
+</urlset>

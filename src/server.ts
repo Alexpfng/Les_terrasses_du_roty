@@ -1,4 +1,6 @@
 import "./lib/error-capture";
+import { handleDemande } from "./lib/demandes.server";
+import { beforeSiteRequest, siteResponse } from "./lib/site-http.server";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
@@ -40,9 +42,13 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const early = beforeSiteRequest(request);
+      if (early) return await siteResponse(request, early);
+      if (new URL(request.url).pathname.replace(/\/$/, "") === "/api/demandes")
+        return await siteResponse(request, await handleDemande(request));
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
+      return await siteResponse(request, await normalizeCatastrophicSsrResponse(response));
     } catch (error) {
       console.error(error);
       return new Response(renderErrorPage(), {

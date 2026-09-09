@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node"],
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "../.test-build",
+    "rootDir": ".."
+  },
+  "include": ["./**/*.ts", "../src/lib/demandes.server.ts", "../src/lib/demande-schema.ts"]
+}

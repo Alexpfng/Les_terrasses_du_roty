@@ -1,0 +1,516 @@
+{
+  "checkedAt": "2026-09-09T09:23:08.282939+00:00",
+  "runtime": "dev Vite localhost5173",
+  "cases": [
+    {
+      "url": "http://127.0.0.1:5173/",
+      "title": "Les Terrasses du Roty — Sept terrasses. Une Syrah.",
+      "viewport": {
+        "width": 360,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "h1": [
+        "Sept terrasses.Une Syrah.Un lieu à part."
+      ],
+      "textLength": 2887,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/domaine/",
+      "title": "Le domaine — Saulcet, Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 360,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "h1": [
+        "Retrouver la terre.Écrire la suite."
+      ],
+      "textLength": 1633,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/vins/cuvee-2024/",
+      "title": "Cuvée 2024 — Syrah du Roty | Les Terrasses du Roty",
+      "viewport": {
+        "width": 360,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "h1": [
+        "Cuvée 2024"
+      ],
+      "textLength": 1118,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/demande/",
+      "title": "Contacter le domaine — Demander des bouteilles | Les Terrasses du Roty",
+      "viewport": {
+        "width": 360,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "h1": [
+        "Tout commencepar un échange."
+      ],
+      "textLength": 1642,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/",
+      "title": "Le journal du Roty — Vigne, Syrah et pierre sèche | Les Terrasses du Roty",
+      "viewport": {
+        "width": 360,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "h1": [
+        "Un lieu à lire.Un vin à comprendre."
+      ],
+      "textLength": 2443,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/syrah-saulcet-allier/",
+      "title": "Syrah à Saulcet, dans l’Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 360,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "h1": [
+        "Une Syrah à Saulcet : comprendre le choix des Terrasses du Roty"
+      ],
+      "textLength": 4542,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/",
+      "title": "Les Terrasses du Roty — Sept terrasses. Une Syrah.",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "h1": [
+        "Sept terrasses.Une Syrah.Un lieu à part."
+      ],
+      "textLength": 2887,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/domaine/",
+      "title": "Le domaine — Saulcet, Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "h1": [
+        "Retrouver la terre.Écrire la suite."
+      ],
+      "textLength": 1633,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/vins/cuvee-2024/",
+      "title": "Cuvée 2024 — Syrah du Roty | Les Terrasses du Roty",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "h1": [
+        "Cuvée 2024"
+      ],
+      "textLength": 1118,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/demande/",
+      "title": "Contacter le domaine — Demander des bouteilles | Les Terrasses du Roty",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "h1": [
+        "Tout commencepar un échange."
+      ],
+      "textLength": 1642,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/",
+      "title": "Le journal du Roty — Vigne, Syrah et pierre sèche | Les Terrasses du Roty",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "h1": [
+        "Un lieu à lire.Un vin à comprendre."
+      ],
+      "textLength": 2443,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/syrah-saulcet-allier/",
+      "title": "Syrah à Saulcet, dans l’Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "scrollWidth": 390,
+      "h1": [
+        "Une Syrah à Saulcet : comprendre le choix des Terrasses du Roty"
+      ],
+      "textLength": 4542,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/",
+      "title": "Les Terrasses du Roty — Sept terrasses. Une Syrah.",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "h1": [
+        "Sept terrasses.Une Syrah.Un lieu à part."
+      ],
+      "textLength": 2887,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/domaine/",
+      "title": "Le domaine — Saulcet, Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "h1": [
+        "Retrouver la terre.Écrire la suite."
+      ],
+      "textLength": 1633,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/vins/cuvee-2024/",
+      "title": "Cuvée 2024 — Syrah du Roty | Les Terrasses du Roty",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "h1": [
+        "Cuvée 2024"
+      ],
+      "textLength": 1118,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/demande/",
+      "title": "Contacter le domaine — Demander des bouteilles | Les Terrasses du Roty",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "h1": [
+        "Tout commencepar un échange."
+      ],
+      "textLength": 1642,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/",
+      "title": "Le journal du Roty — Vigne, Syrah et pierre sèche | Les Terrasses du Roty",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "h1": [
+        "Un lieu à lire.Un vin à comprendre."
+      ],
+      "textLength": 2443,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/syrah-saulcet-allier/",
+      "title": "Syrah à Saulcet, dans l’Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "h1": [
+        "Une Syrah à Saulcet : comprendre le choix des Terrasses du Roty"
+      ],
+      "textLength": 4542,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/",
+      "title": "Les Terrasses du Roty — Sept terrasses. Une Syrah.",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1280,
+      "h1": [
+        "Sept terrasses.Une Syrah.Un lieu à part."
+      ],
+      "textLength": 2942,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/domaine/",
+      "title": "Le domaine — Saulcet, Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1280,
+      "h1": [
+        "Retrouver la terre.Écrire la suite."
+      ],
+      "textLength": 1688,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/vins/cuvee-2024/",
+      "title": "Cuvée 2024 — Syrah du Roty | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1280,
+      "h1": [
+        "Cuvée 2024"
+      ],
+      "textLength": 1173,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/demande/",
+      "title": "Contacter le domaine — Demander des bouteilles | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1280,
+      "h1": [
+        "Tout commencepar un échange."
+      ],
+      "textLength": 1697,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/",
+      "title": "Le journal du Roty — Vigne, Syrah et pierre sèche | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1280,
+      "h1": [
+        "Un lieu à lire.Un vin à comprendre."
+      ],
+      "textLength": 2498,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/syrah-saulcet-allier/",
+      "title": "Syrah à Saulcet, dans l’Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1280,
+      "h1": [
+        "Une Syrah à Saulcet : comprendre le choix des Terrasses du Roty"
+      ],
+      "textLength": 4597,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/",
+      "title": "Les Terrasses du Roty — Sept terrasses. Une Syrah.",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "h1": [
+        "Sept terrasses.Une Syrah.Un lieu à part."
+      ],
+      "textLength": 2942,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/domaine/",
+      "title": "Le domaine — Saulcet, Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "h1": [
+        "Retrouver la terre.Écrire la suite."
+      ],
+      "textLength": 1688,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/vins/cuvee-2024/",
+      "title": "Cuvée 2024 — Syrah du Roty | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "h1": [
+        "Cuvée 2024"
+      ],
+      "textLength": 1173,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/demande/",
+      "title": "Contacter le domaine — Demander des bouteilles | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "h1": [
+        "Tout commencepar un échange."
+      ],
+      "textLength": 1697,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/",
+      "title": "Le journal du Roty — Vigne, Syrah et pierre sèche | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "h1": [
+        "Un lieu à lire.Un vin à comprendre."
+      ],
+      "textLength": 2498,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    },
+    {
+      "url": "http://127.0.0.1:5173/journal/syrah-saulcet-allier/",
+      "title": "Syrah à Saulcet, dans l’Allier | Les Terrasses du Roty",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "h1": [
+        "Une Syrah à Saulcet : comprendre le choix des Terrasses du Roty"
+      ],
+      "textLength": 4597,
+      "overlays": 0,
+      "brokenImages": [],
+      "overflow": [],
+      "greenInterface": []
+    }
+  ]
+}

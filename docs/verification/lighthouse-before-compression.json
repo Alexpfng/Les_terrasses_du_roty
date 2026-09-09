@@ -1,0 +1,125 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "fetchTime": "2026-09-09T09:35:52.953Z",
+  "lighthouseVersion": "12.8.2",
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "scores": {
+    "performance": 72,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "metrics": {
+    "first-contentful-paint": "3.3 s",
+    "largest-contentful-paint": "5.8 s",
+    "total-blocking-time": "0 ms",
+    "cumulative-layout-shift": "0",
+    "speed-index": "3.3 s"
+  },
+  "failedAudits": [
+    {
+      "key": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "score": 0.4,
+      "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+      "displayValue": "3.3 s"
+    },
+    {
+      "key": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "score": 0.15,
+      "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+      "displayValue": "5.8 s"
+    },
+    {
+      "key": "speed-index",
+      "title": "Speed Index",
+      "score": 0.91,
+      "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+      "displayValue": "3.3 s"
+    },
+    {
+      "key": "interactive",
+      "title": "Time to Interactive",
+      "score": 0.67,
+      "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+      "displayValue": "5.8 s"
+    },
+    {
+      "key": "largest-contentful-paint-element",
+      "title": "Largest Contentful Paint element",
+      "score": 0,
+      "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+      "displayValue": "5,780 ms"
+    },
+    {
+      "key": "render-blocking-resources",
+      "title": "Eliminate render-blocking resources",
+      "score": 0,
+      "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+      "displayValue": "Est savings of 450 ms"
+    },
+    {
+      "key": "unused-javascript",
+      "title": "Reduce unused JavaScript",
+      "score": 0,
+      "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+      "displayValue": "Est savings of 133 KiB"
+    },
+    {
+      "key": "modern-image-formats",
+      "title": "Serve images in next-gen formats",
+      "score": 0,
+      "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
+      "displayValue": "Est savings of 45 KiB"
+    },
+    {
+      "key": "uses-text-compression",
+      "title": "Enable text compression",
+      "score": 0,
+      "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more about text compression](https://developer.chrome.com/docs/lighthouse/performance/uses-text-compression/).",
+      "displayValue": "Est savings of 257 KiB"
+    },
+    {
+      "key": "uses-responsive-images",
+      "title": "Properly size images",
+      "score": 0,
+      "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
+      "displayValue": "Est savings of 127 KiB"
+    },
+    {
+      "key": "is-crawlable",
+      "title": "Page is blocked from indexing",
+      "score": 0,
+      "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/)."
+    },
+    {
+      "key": "document-latency-insight",
+      "title": "Document request latency",
+      "score": 0.5,
+      "description": "Your first network request is the most important.  Reduce its latency by avoiding redirects, ensuring a fast server response, and enabling text compression.",
+      "displayValue": "Est savings of 10 KiB"
+    },
+    {
+      "key": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "score": 0,
+      "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/lighthouse/performance/uses-optimized-images/)",
+      "displayValue": "Est savings of 267 KiB"
+    },
+    {
+      "key": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load."
+    },
+    {
+      "key": "render-blocking-insight",
+      "title": "Render blocking requests",
+      "score": 0,
+      "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+      "displayValue": "Est savings of 450 ms"
+    }
+  ]
+}

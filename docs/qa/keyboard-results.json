@@ -1,0 +1,40 @@
+{
+  "firstTab": {
+    "text": "Aller au contenu",
+    "outline": "rgb(201, 162, 39) solid 2px",
+    "visibility": "visible"
+  },
+  "skipLinkDestination": {
+    "id": "contenu",
+    "tag": "MAIN"
+  },
+  "fourthTab": {
+    "text": "Menu+",
+    "tag": "BUTTON"
+  },
+  "menuOpenedWithSpace": {
+    "hidden": false,
+    "expanded": "true",
+    "focus": "Fermer×",
+    "scrollWidth": 360
+  },
+  "menuLinkFocus": {
+    "text": "Les cuvées↗",
+    "href": "/vins/",
+    "outline": "rgb(201, 162, 39) solid 2px"
+  },
+  "menuNavigates": {
+    "url": "http://127.0.0.1:5173/vins/",
+    "h1": "Une Syrah.Des millésimes.",
+    "menuClosed": true
+  },
+  "errorSummaryTab": {
+    "text": "Nom : Indiquez votre nom (au moins 2 caractères).",
+    "href": "#name"
+  },
+  "errorLinkFocus": {
+    "id": "name",
+    "tag": "INPUT",
+    "description": "name-error"
+  }
+}
