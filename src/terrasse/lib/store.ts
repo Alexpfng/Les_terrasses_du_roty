@@ -1,8 +1,8 @@
-import { create } from 'zustand';
+import { create } from "zustand";
 
-export type Tier = 'high' | 'mid' | 'low';
+export type Tier = "high" | "mid" | "low";
 
-const AGE_KEY = 'ltdr-age-ok';
+const AGE_KEY = "ltdr-age-ok";
 const AGE_TTL = 30 * 24 * 3600 * 1000; // 30 jours
 
 const readAge = (): boolean => {
@@ -37,7 +37,7 @@ interface LtdrState {
   showDust: boolean;
   showTerraces: boolean;
   showBottle: boolean;
-  setScene: (k: 'showDust' | 'showTerraces' | 'showBottle', v: boolean) => void;
+  setScene: (k: "showDust" | "showTerraces" | "showBottle", v: boolean) => void;
   /** tier de performance */
   tier: Tier;
   setTier: (t: Tier) => void;
@@ -63,6 +63,6 @@ export const useLtdrStore = create<LtdrState>((set) => ({
   showTerraces: false,
   showBottle: false,
   setScene: (k, v) => set({ [k]: v }),
-  tier: 'high',
+  tier: "high",
   setTier: (tier) => set({ tier }),
 }));

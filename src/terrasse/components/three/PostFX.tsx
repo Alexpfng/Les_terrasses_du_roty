@@ -1,4 +1,4 @@
-import { EffectComposer, Bloom, Noise, Vignette } from '@react-three/postprocessing';
+import { EffectComposer, Bloom, Noise, Vignette } from "@react-three/postprocessing";
 
 /**
  * Post-processing léger : seuil de bloom haut pour que seuls les reflets
