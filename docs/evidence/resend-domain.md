@@ -4,7 +4,7 @@ Domaine ajouté via la session Resend autorisée du compte du propriétaire, dan
 
 [Écran de configuration du domaine](https://resend.com/domains/add/e8a63e6e-74ad-4236-b83c-17a929c63027).
 
-Les valeurs ci-dessous ont été lues dans les tableaux DNS de cet écran. Ce sont des données publiques de validation, pas des clés API. **Aucun enregistrement n’a encore été ajouté à OVH ; le domaine d’envoi n’est pas vérifié.**
+Les valeurs ci-dessous ont été lues dans les tableaux DNS de cet écran. Ce sont des données publiques de validation, pas des clés API. **Les trois enregistrements ont été publiés dans OVH et vérifiés sur le serveur autoritatif le 9 septembre 2026.** La zone antérieure est sauvegardée dans `ovh-zone-before-2026-09-09.txt` et les réponses DNS dans `dns-resend-published.txt`. La vérification par Resend reste une étape distincte, suivie dans le rapport de déploiement.
 
 | Type  | Nom relatif à les-terrasses-du-roty.fr | Valeur exacte                                                                                                                                                                                                                | TTL  |
 | ----- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |

@@ -42,11 +42,15 @@ export function LegalPage({ kind }: { kind: "mentions" | "confidentialite" | "co
               Les vignes du Roty se trouvent à Saulcet, dans l’Allier. Le siège social ne constitue
               pas une adresse d’accueil sans rendez-vous.
             </p>
-            <h2>Hébergement du domaine public</h2>
+            <h2>Hébergement</h2>
             <p>
-              Au 9 septembre 2026, le domaine www.les-terrasses-du-roty.fr est servi par Shopify
-              International Limited, Victoria Buildings, 2nd Floor, 1–2 Haddington Road, Dublin 4,
-              D04 XN32, Irlande. <a href="https://www.shopify.com/fr/contact">Contacter Shopify</a>.
+              Cette version du site est hébergée sur Cloudflare Pages par Cloudflare, Inc., 101
+              Townsend Street, San Francisco, CA 94107, États-Unis. Téléphone :{" "}
+              <a href="tel:+16503198930">+1 650 319 8930</a>.{" "}
+              <a href="https://www.cloudflare.com/policies/privacy/">
+                Coordonnées et confidentialité de Cloudflare
+              </a>
+              .
             </p>
             <h2>Contenus et crédits</h2>
             <p>
@@ -83,9 +87,21 @@ export function LegalPage({ kind }: { kind: "mentions" | "confidentialite" | "co
             <h2>Qui reçoit votre demande ?</h2>
             <p>
               Votre message est destiné aux personnes habilitées du domaine, dans la boîte
-              taff.roty@gmail.com. Les prestataires techniques d’hébergement, d’acheminement et de
-              messagerie interviennent dans sa transmission et sa conservation. Aucun message n’est
-              envoyé par cette version tant que le service d’acheminement n’a pas été configuré.
+              taff.roty@gmail.com. Cloudflare héberge le site et son formulaire serveur ; Resend
+              assure l’acheminement des e-mails ; la boîte Gmail du domaine permet leur réception et
+              leur suivi. Upstash conserve les seules données techniques nécessaires aux quotas et à
+              la prévention des doubles envois, dans une base située à Francfort.
+            </p>
+            <p>
+              Resend envoie depuis sa région d’Irlande, mais conserve le contenu des messages et ses
+              journaux techniques aux États-Unis pendant trente jours sur son offre standard. Des
+              transferts internationaux peuvent également intervenir chez les autres prestataires.
+              Leurs engagements sont décrits dans les{" "}
+              <a href="https://resend.com/legal/dpa">conditions de traitement de Resend</a>, les{" "}
+              <a href="https://www.cloudflare.com/cloudflare-customer-dpa/">
+                conditions de Cloudflare
+              </a>{" "}
+              et la <a href="https://upstash.com/static/trust/privacy.pdf">politique d’Upstash</a>.
             </p>
             <h2>Conservation</h2>
             <p>
