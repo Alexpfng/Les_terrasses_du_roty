@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-09-09T09:27:34.325688+00:00",
+  "homeConsoleErrors": [],
+  "homePageErrors": "",
+  "prefilledCuvee": {
+    "cuvee": "2024"
+  },
+  "professionalFieldVisible": true,
+  "shippingFieldsVisible": {
+    "country": true,
+    "postalCode": true
+  },
+  "quantityError": {
+    "text": "Indiquez au moins une bouteille.",
+    "focusedRole": "alert"
+  },
+  "unavailableProvider": {
+    "alert": "Votre demande n’est pas confirmée.L’envoi est momentanément indisponible. Votre demande n’a pas été transmise. Conservez votre saisie et réessayez plus tard.",
+    "focus": "alert",
+    "retained": {
+      "name": "TEST TECHNIQUE CODEX",
+      "email": "test-technique@example.com",
+      "company": "RECETTE LOCALE",
+      "quantity": "12",
+      "message": "TEST TECHNIQUE LOCAL CODEX — aucune demande commerciale. Vérification du formulaire sans prestataire configuré."
+    },
+    "success": false
+  },
+  "reducedMotion": {
+    "matches": true,
+    "motionElements": 0,
+    "scrollBehavior": "auto"
+  },
+  "networkRequests": "[24803.5423] POST http://127.0.0.1:5173/api/demandes (Fetch) 503\n[24803.5932] POST http://127.0.0.1:5173/api/demandes (Fetch) 503"
+}

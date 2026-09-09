@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-09-09T12:37:25.751877+00:00",
+  "domain": {
+    "name": "notifications.les-terrasses-du-roty.fr",
+    "id": "e8a63e6e-74ad-4236-b83c-17a929c63027",
+    "status": "verified",
+    "region": "eu-west-1"
+  },
+  "sender": "site@notifications.les-terrasses-du-roty.fr",
+  "recipient": "taff.roty@gmail.com",
+  "keyRotation": {
+    "completed": true,
+    "activeKeyName": "les-terrasses-du-roty-netlify-v2",
+    "permissions": "Sending access",
+    "domainScope": "notifications.les-terrasses-du-roty.fr only",
+    "previousKeyRevoked": true,
+    "secretValuesIncluded": false,
+    "destinations": [
+      "Cloudflare Pages Preview secret_text",
+      "Cloudflare Pages Production secret_text",
+      "Netlify Production, Deploy Previews and Branch deploys secret"
+    ],
+    "deploymentBeforeRevocation": {
+      "netlify": "6aa14e0f2aa93a27d5114874",
+      "cloudflare": "60ea8a84"
+    }
+  },
+  "redisDiagnostic": {
+    "tokenComparedInMemoryToOriginalTransfer": true,
+    "consolePing": "PONG",
+    "consoleLuaReturnOne": 1,
+    "consoleLuaTime": "successful",
+    "consoleLuaSetEx60GetCjsonDel": 1,
+    "technicalKeyRemoved": true,
+    "directRestBearerTest": false
+  },
+  "notes": [
+    "No real customer data used.",
+    "No positive test sent from Netlify.",
+    "Resend provider status, request_id tag and technical content directly inspected in the authenticated provider UI.",
+    "Delivered detail confirms the recipient mail server accepted the message; the SMTP success response is recorded above.",
+    "Provider delivery does not establish inbox folder, spam folder or user receipt/read confirmation."
+  ],
+  "initialAttempt": {
+    "marker": "TEST TECHNIQUE ROTY",
+    "attemptAt": "2026-09-09T12:17:31Z",
+    "httpStatus": 503,
+    "acceptedByProvider": false,
+    "providerDelivered": false,
+    "gmailInboxDirectlyVerified": false,
+    "reason": "Cloudflare fetch receiver error before Redis network request; identified by workerd reproduction and corrected before retry"
+  },
+  "emailTest": {
+    "marker": "TEST TECHNIQUE ROTY",
+    "retryUsedSameIdempotencyKey": true,
+    "acceptedAt": "2026-09-09T12:26:57.509Z",
+    "httpStatus": 200,
+    "applicationStatus": "accepted",
+    "requestId": "1f26bc3c-0d4b-41ab-80b5-6c3f6f50319b",
+    "providerId": "92fd193c-80a5-4b4a-afd5-753b93a05a89",
+    "providerUrl": "https://resend.com/emails/92fd193c-80a5-4b4a-afd5-753b93a05a89",
+    "subject": "[Roty] Demande d’information",
+    "acceptedByProvider": true,
+    "providerDelivered": true,
+    "providerEvents": [
+      "sent",
+      "delivered"
+    ],
+    "providerEventTimeUi": "Sep 09, 2:26 PM (Europe/Paris; 12:26 UTC)",
+    "providerEventTimePrecision": "minute as displayed; not inferred exact delivery timestamp",
+    "smtpResponse": "250 2.0.0 OK 1788956818 5b1f17b1804b1-49cf113384dsi367237785e9.9 - gsmtp",
+    "gmailReceivingServerAccepted": true,
+    "gmailInboxDirectlyVerified": false,
+    "mailboxOwnerReceiptConfirmed": false
+  },
+  "productionEmailTest": {
+    "marker": "TEST TECHNIQUE ROTY PRODUCTION",
+    "acceptedAt": "2026-09-09T12:34:46.511Z",
+    "httpStatus": 200,
+    "applicationStatus": "accepted",
+    "requestId": "10ef8bf8-6178-460d-a708-ebcd504a090d",
+    "providerId": "cde5e306-ebd4-4d39-b47e-9ec1bd84c3a1",
+    "providerUrl": "https://resend.com/emails/cde5e306-ebd4-4d39-b47e-9ec1bd84c3a1",
+    "subject": "[Roty] Demande professionnelle",
+    "acceptedByProvider": true,
+    "providerDelivered": true,
+    "providerEvents": [
+      "sent",
+      "delivered"
+    ],
+    "providerEventTimeUi": "Sep 09, 2:34 PM (Europe/Paris; 12:34 UTC)",
+    "providerEventTimePrecision": "minute as displayed; not inferred exact delivery timestamp",
+    "smtpResponse": "250 2.0.0 OK 1788957287 5b1f17b1804b1-49cf113384dsi367675835e9.9 - gsmtp",
+    "gmailReceivingServerAccepted": true,
+    "gmailInboxDirectlyVerified": false,
+    "mailboxOwnerReceiptConfirmed": false
+  }
+}

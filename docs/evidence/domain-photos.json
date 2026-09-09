@@ -1,0 +1,575 @@
+{
+  "createdAt": "2026-09-09T13:33:04.045Z",
+  "photos": [
+    {
+      "name": "roty-vineyard",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/vendanges 2024/image00008.jpeg",
+      "description": "Panorama des rangs de vigne et du paysage.",
+      "sourceSha256": "0f9a8b560ed1e52f0d24589ba7c2a8706cafca094c52489a557ce7fbf074f230",
+      "originalWidth": 4030,
+      "originalHeight": 2957,
+      "changes": "EXIF orientation, proportional downsampling, JPEG/WebP/AVIF encoding only; no crop, generative edit or retouch; private EXIF/XMP/IPTC metadata stripped.",
+      "variants": [
+        {
+          "path": "/assets/img/roty-vineyard-800.avif",
+          "width": 800,
+          "height": 587,
+          "bytes": 38664,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "2a86310a72a7e3521440ebe1a789f7bf79e2a9698ddf113593d0c40b00552d4b"
+        },
+        {
+          "path": "/assets/img/roty-vineyard-800.webp",
+          "width": 800,
+          "height": 587,
+          "bytes": 83766,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "2574dd285f955ba273de835da7c56558f4e1f71fd8ffa806d20e16d31202eb94"
+        },
+        {
+          "path": "/assets/img/roty-vineyard-800.jpg",
+          "width": 800,
+          "height": 587,
+          "bytes": 91360,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "3a4e9b1a876441eb56159726cf659a65a83ec30fb30e24a903e36fb494ee518c"
+        },
+        {
+          "path": "/assets/img/roty-vineyard-1600.avif",
+          "width": 1600,
+          "height": 1174,
+          "bytes": 158316,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "69b41dba19497fd7b241718cc39b71d635a02f8281db3066d2d3318ef0b866a1"
+        },
+        {
+          "path": "/assets/img/roty-vineyard-1600.webp",
+          "width": 1600,
+          "height": 1174,
+          "bytes": 334816,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "784dcfab1a13a8a135985a107abbdc1f200bdb8815732cc68e5fe54d44472b95"
+        },
+        {
+          "path": "/assets/img/roty-vineyard-1600.jpg",
+          "width": 1600,
+          "height": 1174,
+          "bytes": 353116,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "26251f09386eb547c4081585a5407066b94279c26c3e6949b474ec8b6d3d6f20"
+        }
+      ],
+      "originalPreserved": true
+    },
+    {
+      "name": "roty-harvest-2024",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/vendanges 2024/image00004.jpeg",
+      "description": "Deux personnes récoltent des grappes entre les rangs, collection locale vendanges 2024.",
+      "sourceSha256": "1c36e2918773b0ae20803aa7a03d2981100301b86a23708773d7afe52d3218eb",
+      "originalWidth": 3024,
+      "originalHeight": 4032,
+      "changes": "EXIF orientation, proportional downsampling, JPEG/WebP/AVIF encoding only; no crop, generative edit or retouch; private EXIF/XMP/IPTC metadata stripped.",
+      "variants": [
+        {
+          "path": "/assets/img/roty-harvest-2024-800.avif",
+          "width": 800,
+          "height": 1067,
+          "bytes": 117240,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "416b0a5469fad38f77726efb82a62d5584c9f52fad6cdf54201881537ab4d23b"
+        },
+        {
+          "path": "/assets/img/roty-harvest-2024-800.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 252612,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "b8e5aa8a8db9eb85d0bd5b36a90d7058f946ef19f1dae5ad915318b4132af436"
+        },
+        {
+          "path": "/assets/img/roty-harvest-2024-800.jpg",
+          "width": 800,
+          "height": 1067,
+          "bytes": 247853,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "30cc1d3e5da067ea1b94539b5dd607516eb035530e6c6698555942c9fa5c9d1a"
+        },
+        {
+          "path": "/assets/img/roty-harvest-2024-1600.avif",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 406885,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "f0f6a10843c168fe2b214ae1ff1a9441edd5f0c3a8596bd22633697dfc19f568"
+        },
+        {
+          "path": "/assets/img/roty-harvest-2024-1600.webp",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 882530,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "235884ab7d6894a12dd7155a8ced03a46ba6b7135140fdc2a5f507c3c05d5322"
+        },
+        {
+          "path": "/assets/img/roty-harvest-2024-1600.jpg",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 890706,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "c8b3bf9e0d04637c60db969b179d2e1eaf5086e78da3798ade55af5d227485b8"
+        }
+      ],
+      "originalPreserved": true
+    },
+    {
+      "name": "roty-harvest-woman",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/terrasses-du-roty-site/asset-src/IMG_7091.jpg",
+      "description": "Personne vendangeant entre les rangs avec un seau jaune.",
+      "sourceSha256": "9a328a61107d5e14d8ab99699dd4de694dfeec20bacd18d096d81605d777a502",
+      "originalWidth": 1800,
+      "originalHeight": 2400,
+      "changes": "EXIF orientation, proportional downsampling, JPEG/WebP/AVIF encoding only; no crop, generative edit or retouch; private EXIF/XMP/IPTC metadata stripped.",
+      "variants": [
+        {
+          "path": "/assets/img/roty-harvest-woman-800.avif",
+          "width": 800,
+          "height": 1067,
+          "bytes": 56629,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "d0be7c61a62131029d0546dcc120103acd870607df5e0da92b2950cd913e20e5"
+        },
+        {
+          "path": "/assets/img/roty-harvest-woman-800.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 114126,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "7d9f483210243e17a920a3899df75df546d855c5bcc56d377a6f4d5619ba3005"
+        },
+        {
+          "path": "/assets/img/roty-harvest-woman-800.jpg",
+          "width": 800,
+          "height": 1067,
+          "bytes": 146340,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "93ae8d89183273aab7973e44efa49c25c9dacc951ac258279c578e3e82b81727"
+        },
+        {
+          "path": "/assets/img/roty-harvest-woman-1600.avif",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 131463,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "d9cb804bc948cbaaef26855688e7a6b021436add672166501be08b88fd72f876"
+        },
+        {
+          "path": "/assets/img/roty-harvest-woman-1600.webp",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 256656,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "a5f70bfe5705930d4a2509e7b7d663886b0c3437a90128622bd3dd750e21e8b3"
+        },
+        {
+          "path": "/assets/img/roty-harvest-woman-1600.jpg",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 387860,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "93595df6d40d38acf688f729756003182fce73247d8dfab69bcbd73ae84d1ad4"
+        }
+      ],
+      "originalPreserved": true
+    },
+    {
+      "name": "roty-team",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/vendanges 2024/image00005.jpeg",
+      "description": "Équipe de dos portant les vêtements Les Terrasses du Roty.",
+      "sourceSha256": "d96ef4b2fea0d7854cbfd5e81462cd853f2133a02a561deab2eee10f881318de",
+      "originalWidth": 4032,
+      "originalHeight": 3024,
+      "changes": "EXIF orientation, proportional downsampling, JPEG/WebP/AVIF encoding only; no crop, generative edit or retouch; private EXIF/XMP/IPTC metadata stripped.",
+      "variants": [
+        {
+          "path": "/assets/img/roty-team-800.avif",
+          "width": 800,
+          "height": 600,
+          "bytes": 41165,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "26cb99087ebf6e0684e0952a14710836af8bb9b5095e14c7cd691cc5bc9cd2ae"
+        },
+        {
+          "path": "/assets/img/roty-team-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 86958,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "01ba47d2371a958283a0f52583125c7dae73ddfb2197c37804d2c7f5c99ee147"
+        },
+        {
+          "path": "/assets/img/roty-team-800.jpg",
+          "width": 800,
+          "height": 600,
+          "bytes": 95723,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "b538b978cfbba68b1a3147dbf284a79e6df7420645826dd03e2e7e05ab944591"
+        },
+        {
+          "path": "/assets/img/roty-team-1600.avif",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 151168,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "0b737bdfe41e2f025f1379da68a18b71c036f6da6e0bcb4c4fade4ff68e92c82"
+        },
+        {
+          "path": "/assets/img/roty-team-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 314642,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "e2469952e97a4e4856f0c277fa14153bf9d86930adc71db0830d622f09758143"
+        },
+        {
+          "path": "/assets/img/roty-team-1600.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 347948,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "f717f458214b7015bba58ce285d3f49099e8130da84dec40c9955c612b6c8d6a"
+        }
+      ],
+      "originalPreserved": true
+    },
+    {
+      "name": "roty-restoration",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/PHOTOS:VIDEOS/wetransfer_terrasses-au-drone_2024-05-30_1810/DJI_0087.JPG",
+      "description": "Engin à chenilles au travail sur une terrasse.",
+      "sourceSha256": "2a72f4c2cea7b6a609c4f52961c76cf70ee5ece920a374868d41f0d87da9d6c6",
+      "originalWidth": 4056,
+      "originalHeight": 3040,
+      "changes": "EXIF orientation, proportional downsampling, JPEG/WebP/AVIF encoding only; no crop, generative edit or retouch; private EXIF/XMP/IPTC metadata stripped.",
+      "variants": [
+        {
+          "path": "/assets/img/roty-restoration-800.avif",
+          "width": 800,
+          "height": 600,
+          "bytes": 57562,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "e84ad893892859fc4baa3e8f3e7f880b32fba61ce481960fb73b5d39425a43cf"
+        },
+        {
+          "path": "/assets/img/roty-restoration-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 141742,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "2c0296f4430b188440c99b59f791aca9e8d039b65bec713e1f175be6ac499310"
+        },
+        {
+          "path": "/assets/img/roty-restoration-800.jpg",
+          "width": 800,
+          "height": 600,
+          "bytes": 130992,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "d7a4b2c0d3a55a4d05c88e02f58c1a4b268c84d80bc14d654fee4a5c1263b99a"
+        },
+        {
+          "path": "/assets/img/roty-restoration-1600.avif",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 253001,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "b89d96258fdaa1eee665b02ae83f6c25e7f46664157d7a70337ac6c1ece80e52"
+        },
+        {
+          "path": "/assets/img/roty-restoration-1600.webp",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 603642,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "de3c96ee5242e3ccdddd9b2a360fa633e8a8570815b92b5bf552b2b60d12e674"
+        },
+        {
+          "path": "/assets/img/roty-restoration-1600.jpg",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 555756,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "db6ea25225fc11e1ccaa1346dbed21295a77c0969e51187fdee98e9bbf839627"
+        }
+      ],
+      "originalPreserved": true
+    },
+    {
+      "name": "roty-planting",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/PHOTOS:VIDEOS/wetransfer_plantation-du-plateau-drone_2024-05-30_1821/DJI_0374.JPG",
+      "description": "Travail manuel de plantation sur le plateau, vue aérienne.",
+      "sourceSha256": "fa30c7673a34a7a3280729c29b496efb1540d36044c29556cf3c344f40c7bbb0",
+      "originalWidth": 4056,
+      "originalHeight": 3040,
+      "changes": "EXIF orientation, proportional downsampling, JPEG/WebP/AVIF encoding only; no crop, generative edit or retouch; private EXIF/XMP/IPTC metadata stripped.",
+      "variants": [
+        {
+          "path": "/assets/img/roty-planting-800.avif",
+          "width": 800,
+          "height": 600,
+          "bytes": 80408,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "3de728253cee745a08854aafe6e15782dca828e649c206f18e61d07ef1d82e14"
+        },
+        {
+          "path": "/assets/img/roty-planting-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 193208,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "8d1d39432cb6811243f06c43a588f8e63b3d1d05b65722be593d60f1f684488c"
+        },
+        {
+          "path": "/assets/img/roty-planting-800.jpg",
+          "width": 800,
+          "height": 600,
+          "bytes": 169814,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "1635922a8a2ae0ca39c76ff59a1739361b53010583ff8165b664f80c42097fee"
+        },
+        {
+          "path": "/assets/img/roty-planting-1600.avif",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 374403,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "85f730288eb0de198443a8f95f6d296cd79477b51f182a9cb35a0cc87946a949"
+        },
+        {
+          "path": "/assets/img/roty-planting-1600.webp",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 817500,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "4a8ed084897114dedaba95c415d5d7f365d63b0aa79068b6f0150bba68ebd261"
+        },
+        {
+          "path": "/assets/img/roty-planting-1600.jpg",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 714809,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "06aca402738c0d26669d3f8274a6b17f96d42ee36b26b4545ce60d251e9ecea8"
+        }
+      ],
+      "originalPreserved": true
+    },
+    {
+      "name": "roty-terraces",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/PHOTOS:VIDEOS/wetransfer_plantation-du-plateau-drone_2024-05-30_1821/DJI_0350.JPG",
+      "description": "Vue aérienne générale des terrasses et des parcelles voisines.",
+      "sourceSha256": "4476b04da39ff017010f51a074cee69e4d0b0546ee14b86a8f4250704c161570",
+      "originalWidth": 4056,
+      "originalHeight": 3040,
+      "changes": "EXIF orientation, proportional downsampling, JPEG/WebP/AVIF encoding only; no crop, generative edit or retouch; private EXIF/XMP/IPTC metadata stripped.",
+      "variants": [
+        {
+          "path": "/assets/img/roty-terraces-800.avif",
+          "width": 800,
+          "height": 600,
+          "bytes": 38553,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "f56cf76aa00e770bd4c34d0489e33a289ff183f4c91737fd5468877b7625ec36"
+        },
+        {
+          "path": "/assets/img/roty-terraces-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 92842,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "285ab31df1da92a55c92c63c89d477ea4a90858d98df9b86e783c80b8b8770a8"
+        },
+        {
+          "path": "/assets/img/roty-terraces-800.jpg",
+          "width": 800,
+          "height": 600,
+          "bytes": 95551,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "97a733ff5f8f45e4021fac19e5aef7b5e3f243f52b3f4a975addfddc9145d5ef"
+        },
+        {
+          "path": "/assets/img/roty-terraces-1600.avif",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 164188,
+          "format": "avif",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "a102ece2e09e748104e66880203c35d88b44f419e303577371ae1466ca7cb3ec"
+        },
+        {
+          "path": "/assets/img/roty-terraces-1600.webp",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 385940,
+          "format": "webp",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "8e03d4602ae2484500477a5a2bc392dd3f81523913cd9435b6abd96313b0b665"
+        },
+        {
+          "path": "/assets/img/roty-terraces-1600.jpg",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 382676,
+          "format": "jpg",
+          "exif": false,
+          "xmp": false,
+          "iptc": false,
+          "sha256": "da8591980779524a2354976f65fb83497acdf9410f19f9393826ae660d2d463e"
+        }
+      ],
+      "originalPreserved": true
+    }
+  ],
+  "selectionValidatedBy": "Root task after visual inspection of owner-provided contact sheets",
+  "publicPhotoCount": 7,
+  "publicVariantCount": 42,
+  "productionUse": "Prepared assets for the upcoming photo-diversity release; not deployed by this conversion.",
+  "processing": {
+    "tool": "bundled Sharp 0.35.4",
+    "sizes": [800, 1600],
+    "jpegQuality": 82,
+    "webpQuality": 78,
+    "avifQuality": 48,
+    "avifEffort": 5,
+    "orientation": "auto from EXIF",
+    "resize": "proportional, no enlargement",
+    "crop": false,
+    "retouch": false,
+    "generativeEditing": false,
+    "privateMetadataRemoved": ["EXIF", "XMP", "IPTC"]
+  },
+  "unusedReserve": {
+    "name": "roty-harvest-man",
+    "source": "/Users/maxcorre/Desktop/DMERX/CDR/terrasses-du-roty-site/asset-src/IMG_7124.jpg",
+    "publicVariantsCreated": false,
+    "reason": "No final page assignment, omitted from public assets"
+  }
+}

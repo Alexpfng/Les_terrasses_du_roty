@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-09-09T14:11:14.937Z",
+  "passed": true,
+  "results": [
+    {
+      "url": "https://les-terrasses-du-roty.pages.dev/",
+      "status": 503,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "url": "https://9b2c15f8.les-terrasses-du-roty.pages.dev/",
+      "status": 503,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "url": "https://preproduction.les-terrasses-du-roty.pages.dev/",
+      "status": 401,
+      "noindex": "noindex, nofollow"
+    },
+    {
+      "url": "https://www.les-terrasses-du-roty.fr/assets/img/logo-etiquette-black.svg",
+      "status": 200,
+      "sha256": "7badf9367db345b8367a2a5af016fb2b768ac9ddfdb453485dc9557d86de16cd",
+      "cache": "public, max-age=31536000, immutable"
+    }
+  ]
+}

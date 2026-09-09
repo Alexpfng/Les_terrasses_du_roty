@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-09-09T14:11:36Z",
+  "scope": "One explicitly authorized technical form submission from the published Apple-style website; no customer or purchase request",
+  "productionCommit": "296198b69ac45a416807210b3c77593447aacc0e",
+  "websiteUrl": "https://www.les-terrasses-du-roty.fr/demande/",
+  "browserSubmission": {
+    "source": "Root agent reported the real public browser submission and the HTTP200 accepted response; provider independently correlated below",
+    "reportedAcceptedTimeWindowUtc": [
+      "2026-09-09T14:10:17Z",
+      "2026-09-09T14:10:20Z"
+    ],
+    "httpStatus": 200,
+    "applicationStatus": "accepted",
+    "requestId": "9fc7567f-f26d-490d-8fc2-e9117465471e",
+    "profile": "restaurateur",
+    "cuvee": "2024",
+    "marker": "TEST TECHNIQUE ROTY — vérification du nouveau site",
+    "testAssertionNote": "The browser helper initially assumed that server request_id equalled the client idempotency key. That assertion was invalid; the site response was HTTP200 accepted. No extra submission was made by the provider-verification agent."
+  },
+  "providerVerification": {
+    "method": "Authenticated Resend dashboard in a dedicated Chrome tab, read-only",
+    "team": "bulbiz",
+    "providerId": "c980063e-d972-408e-a4b5-cc3571673d5c",
+    "providerUrl": "https://resend.com/emails/c980063e-d972-408e-a4b5-cc3571673d5c",
+    "logUrl": "https://resend.com/logs/9bf4602f-cfd2-4d65-a0d5-3dcc1ceeddb8",
+    "sender": "Les Terrasses du Roty <site@notifications.les-terrasses-du-roty.fr>",
+    "recipient": "taff.roty@gmail.com",
+    "replyTo": "taff.roty@gmail.com",
+    "subject": "[Roty] Demande professionnelle — Cuvée 2024",
+    "requestIdTag": "9fc7567f-f26d-490d-8fc2-e9117465471e",
+    "requestIdTagMatchesServer": true,
+    "messageDateFieldUtc": "2026-09-09T14:10:18.000Z",
+    "technicalMarkerProfileCuveeAndVersionMatched": true,
+    "providerEvents": [
+      "Sent",
+      "Delivered"
+    ],
+    "providerEventTimeUi": "Sep 09, 4:10 PM (Europe/Paris; 14:10 UTC)",
+    "providerEventTimePrecision": "Minute as displayed. No exact provider event timestamp inferred from SMTP text.",
+    "smtpResponse": "250 2.0.0 OK  1788963020 ffacd0b85a97d-485885dcd24si36750612f8f.382 - gsmtp",
+    "acceptedByProvider": true,
+    "providerDelivered": true,
+    "gmailReceivingServerAccepted": true
+  },
+  "domain": {
+    "name": "notifications.les-terrasses-du-roty.fr",
+    "id": "e8a63e6e-74ad-4236-b83c-17a929c63027",
+    "statusVerifiedDuringPreparation": true,
+    "region": "eu-west-1"
+  },
+  "limits": {
+    "gmailMailboxDirectlyOpened": false,
+    "inboxOrSpamFolderVerified": false,
+    "humanReceiptOrReadConfirmationObservedByThisAgent": false
+  },
+  "historicalProofUnchanged": "docs/evidence/resend-delivery.json",
+  "mutationsByVerificationAgent": {
+    "emailSent": false,
+    "resendSettingsChanged": false,
+    "keysCreatedOrRotated": false
+  },
+  "secretValuesIncluded": false,
+  "idempotentBrowserReplay": {
+    "replayedAtUtc": "2026-09-09T14:12:18Z",
+    "browserObservationsSource": "Root agent: exactly the same body and idempotency_key, browser route rejected payload changes; server returned the same request_id, Merci screen and correct focus observed, no Google call",
+    "serverRequestIdUnchanged": "9fc7567f-f26d-490d-8fc2-e9117465471e",
+    "providerListRefreshedAtUtc": "2026-09-09T14:13:40.197461+00:00",
+    "providerUiQuery": "https://resend.com/emails?query=taff.roty@gmail.com",
+    "providerUiWindow": "Last 15 days; All Statuses; All API keys",
+    "recipientMessagesVisible": 3,
+    "historicalProviderIds": [
+      "cde5e306-ebd4-4d39-b47e-9ec1bd84c3a1",
+      "92fd193c-80a5-4b4a-afd5-753b93a05a89"
+    ],
+    "newTestProviderIds": [
+      "c980063e-d972-408e-a4b5-cc3571673d5c"
+    ],
+    "messagesMatchingNewRequestIdObserved": 1,
+    "requestIdReconfirmedInMessageDetail": true,
+    "providerSentAndDeliveredStillConfirmed": true,
+    "duplicateMessageObserved": false,
+    "verificationAgentSentNoRequest": true,
+    "scope": "Observation after fresh authenticated provider list load, followed by the single new test detail. The list still contains only the two historical technical tests and this one final test."
+  }
+}

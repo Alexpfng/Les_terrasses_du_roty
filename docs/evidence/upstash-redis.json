@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-09-09T11:53:18.328977+00:00",
+  "id": "55feadbc-b506-46a2-9240-d15ea0629209",
+  "name": "les-terrasses-du-roty",
+  "console": "https://console.upstash.com/redis/55feadbc-b506-46a2-9240-d15ea0629209/details?teamid=0",
+  "plan": "Free",
+  "region": "eu-central-1",
+  "provider": "AWS",
+  "tls": true,
+  "eviction": false,
+  "durableClaimedAccount": true,
+  "ephemeralDatabase": false,
+  "paymentMethodAdded": false,
+  "netlifySiteId": "b5b6a14e-3b07-4f89-8016-af1740b20192",
+  "secretValuesIncluded": false,
+  "configuredKeys": [
+    "ROTY_REDIS_REST_URL",
+    "ROTY_REDIS_REST_TOKEN"
+  ],
+  "otherDatabasesModified": false
+}

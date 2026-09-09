@@ -1,0 +1,128 @@
+.analytics-preferences {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.analytics-consent {
+  position: fixed;
+  inset: auto 24px 24px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 920px;
+  max-height: min(65vh, 520px);
+  margin-inline: auto;
+  padding: 24px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid #d2d2d7;
+  border-radius: 22px;
+  background: #fff;
+  color: #1d1d1f;
+  box-shadow: 0 12px 56px rgb(29 29 31 / 14%);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+.analytics-copy {
+  min-width: 0;
+  max-width: 580px;
+}
+.analytics-copy h2 {
+  margin: 0 0 8px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+}
+.analytics-copy p {
+  margin: 0;
+  color: #6e6e73;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.analytics-copy p + p {
+  margin-top: 7px;
+}
+.analytics-copy a {
+  color: #8a6728;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.analytics-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.analytics-choice {
+  min-width: 105px;
+  min-height: 44px;
+  padding: 11px 18px;
+  border: 1px solid #86868b;
+  border-radius: 999px;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background 160ms,
+    border-color 160ms;
+}
+.analytics-choice:hover {
+  background: #e8e8ed;
+  border-color: #6e6e73;
+}
+.analytics-consent:focus-visible,
+.analytics-choice:focus-visible,
+.analytics-copy a:focus-visible,
+.analytics-preferences:focus-visible {
+  outline: 2px solid #8a6728;
+  outline-offset: 4px;
+}
+.analytics-saved {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+@media (max-width: 760px) {
+  .analytics-consent {
+    inset: auto 16px max(16px, env(safe-area-inset-bottom));
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 18px;
+    border-radius: 20px;
+  }
+  .analytics-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .analytics-choice {
+    min-width: 0;
+  }
+  .analytics-choice:only-child {
+    grid-column: 1 / -1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .analytics-choice {
+    transition: none;
+  }
+}

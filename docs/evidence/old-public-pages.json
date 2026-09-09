@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-09-09T09:08:10.311744+00:00",
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://www.les-terrasses-du-roty.fr/",
+      "httpStatus": 200
+    },
+    {
+      "path": "/agents.md",
+      "url": "https://www.les-terrasses-du-roty.fr/agents.md",
+      "httpStatus": 200
+    },
+    {
+      "path": "/blogs/infos",
+      "url": "https://www.les-terrasses-du-roty.fr/blogs/infos",
+      "httpStatus": 200
+    },
+    {
+      "path": "/blogs/infos/l-art-de-la-vinification-vendanges-maceration-et-elevage",
+      "url": "https://www.les-terrasses-du-roty.fr/blogs/infos/l-art-de-la-vinification-vendanges-maceration-et-elevage",
+      "httpStatus": 200
+    },
+    {
+      "path": "/blogs/infos/l-origine-des-terrasses-du-roty",
+      "url": "https://www.les-terrasses-du-roty.fr/blogs/infos/l-origine-des-terrasses-du-roty",
+      "httpStatus": 200
+    },
+    {
+      "path": "/blogs/infos/la-syrah-un-cepage-noble-du-sud-qui-s-epanouit-au-coeur-du-bourbonnais",
+      "url": "https://www.les-terrasses-du-roty.fr/blogs/infos/la-syrah-un-cepage-noble-du-sud-qui-s-epanouit-au-coeur-du-bourbonnais",
+      "httpStatus": 200
+    },
+    {
+      "path": "/blogs/infos/vendanges-2024-une-cuvee-qui-s-annonce-exceptionnelle-%F0%9F%8D%87",
+      "url": "https://www.les-terrasses-du-roty.fr/blogs/infos/vendanges-2024-une-cuvee-qui-s-annonce-exceptionnelle-%F0%9F%8D%87",
+      "httpStatus": 200
+    },
+    {
+      "path": "/blogs/vendanges-2024",
+      "url": "https://www.les-terrasses-du-roty.fr/blogs/vendanges-2024",
+      "httpStatus": 200
+    },
+    {
+      "path": "/collections/all",
+      "url": "https://www.les-terrasses-du-roty.fr/collections/all",
+      "httpStatus": 200
+    },
+    {
+      "path": "/collections/cuvees-2023",
+      "url": "https://www.les-terrasses-du-roty.fr/collections/cuvees-2023",
+      "httpStatus": 200
+    },
+    {
+      "path": "/collections/frontpage",
+      "url": "https://www.les-terrasses-du-roty.fr/collections/frontpage",
+      "httpStatus": 200
+    },
+    {
+      "path": "/pages/contact",
+      "url": "https://www.les-terrasses-du-roty.fr/pages/contact",
+      "httpStatus": 200
+    },
+    {
+      "path": "/pages/data-sharing-opt-out",
+      "url": "https://www.les-terrasses-du-roty.fr/pages/data-sharing-opt-out",
+      "httpStatus": 200
+    },
+    {
+      "path": "/policies/contact-information",
+      "url": "https://www.les-terrasses-du-roty.fr/policies/contact-information",
+      "httpStatus": 200
+    },
+    {
+      "path": "/policies/legal-notice",
+      "url": "https://www.les-terrasses-du-roty.fr/policies/legal-notice",
+      "httpStatus": 200
+    },
+    {
+      "path": "/policies/privacy-policy",
+      "url": "https://www.les-terrasses-du-roty.fr/policies/privacy-policy",
+      "httpStatus": 200
+    },
+    {
+      "path": "/policies/refund-policy",
+      "url": "https://www.les-terrasses-du-roty.fr/policies/refund-policy",
+      "httpStatus": 200
+    },
+    {
+      "path": "/policies/shipping-policy",
+      "url": "https://www.les-terrasses-du-roty.fr/policies/shipping-policy",
+      "httpStatus": 200
+    },
+    {
+      "path": "/policies/terms-of-sale",
+      "url": "https://www.les-terrasses-du-roty.fr/policies/terms-of-sale",
+      "httpStatus": 200
+    },
+    {
+      "path": "/policies/terms-of-service",
+      "url": "https://www.les-terrasses-du-roty.fr/policies/terms-of-service",
+      "httpStatus": 200
+    },
+    {
+      "path": "/products/cuvee-2024-les-terrasses-du-roty-precommande",
+      "url": "https://www.les-terrasses-du-roty.fr/products/cuvee-2024-les-terrasses-du-roty-precommande",
+      "httpStatus": 200
+    },
+    {
+      "path": "/products/les-terrasses-du-roty-cuvee-2023",
+      "url": "https://www.les-terrasses-du-roty.fr/products/les-terrasses-du-roty-cuvee-2023",
+      "httpStatus": 200
+    }
+  ]
+}

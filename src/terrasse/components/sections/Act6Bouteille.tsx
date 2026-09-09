@@ -1,28 +1,36 @@
-import { useEffect, useRef } from 'react';
-import { ScrollTrigger, useGSAP } from '@/terrasse/lib/gsapSetup';
-import { ANIM } from '@/terrasse/lib/animConfig';
-import { progressState, smoothstep } from '@/terrasse/lib/progress';
-import { useScrollScene } from '@/terrasse/hooks/useScrollScene';
-import { prefersReducedMotion } from '@/terrasse/hooks/useReducedMotion';
-import { useLtdrStore } from '@/terrasse/lib/store';
-import { Pic } from '@/terrasse/components/ui/Pic';
-import { PHOTOS } from '@/terrasse/lib/assets';
+import { useEffect, useRef } from "react";
+import { ScrollTrigger, useGSAP } from "@/terrasse/lib/gsapSetup";
+import { ANIM } from "@/terrasse/lib/animConfig";
+import { progressState, smoothstep } from "@/terrasse/lib/progress";
+import { useScrollScene } from "@/terrasse/hooks/useScrollScene";
+import { prefersReducedMotion } from "@/terrasse/hooks/useReducedMotion";
+import { useLtdrStore } from "@/terrasse/lib/store";
+import { Pic } from "@/terrasse/components/ui/Pic";
+import { PHOTOS } from "@/terrasse/lib/assets";
 
 const captions = [
   {
-    pos: { left: 'clamp(24px, 8vw, 130px)', top: '38%' },
-    main: 'Cuvée 2024',
-    mainSize: 'clamp(34px, 4vw, 58px)',
-    sub: 'Syrah 100 %',
-    align: 'left' as const,
+    pos: { left: "clamp(24px, 8vw, 130px)", top: "38%" },
+    main: "Cuvée 2024",
+    mainSize: "clamp(34px, 4vw, 58px)",
+    sub: "Syrah 100 %",
+    align: "left" as const,
   },
-  { pos: { right: 'clamp(24px, 8vw, 130px)', top: '42%' }, main: 'Récoltée à la main.', align: 'right' as const },
-  { pos: { left: 'clamp(24px, 8vw, 130px)', top: '46%' }, main: 'Vinifiée et mise en bouteille à la propriété.', align: 'left' as const },
   {
-    pos: { right: 'clamp(24px, 8vw, 130px)', top: '44%' },
-    main: 'Édition limitée.',
-    sub: '25 € — Précommande',
-    align: 'right' as const,
+    pos: { right: "clamp(24px, 8vw, 130px)", top: "42%" },
+    main: "Récoltée à la main.",
+    align: "right" as const,
+  },
+  {
+    pos: { left: "clamp(24px, 8vw, 130px)", top: "46%" },
+    main: "Vinifiée et mise en bouteille à la propriété.",
+    align: "left" as const,
+  },
+  {
+    pos: { right: "clamp(24px, 8vw, 130px)", top: "44%" },
+    main: "Édition limitée.",
+    sub: "25 € — Précommande",
+    align: "right" as const,
   },
 ];
 
@@ -38,8 +46,8 @@ export const Act6Bouteille = () => {
   const dragLayerRef = useRef<HTMLDivElement>(null);
   const tier = useLtdrStore((s) => s.tier);
   const reduced = prefersReducedMotion();
-  const fallback = tier === 'low' || reduced;
-  useScrollScene(ref, 6, fallback ? undefined : 'showBottle', 540); // pin bouteille 360%
+  const fallback = tier === "low" || reduced;
+  useScrollScene(ref, 6, fallback ? undefined : "showBottle", 540); // pin bouteille 360%
 
   useGSAP(
     () => {
@@ -47,7 +55,7 @@ export const Act6Bouteille = () => {
       if (!root || fallback) return;
       ScrollTrigger.create({
         trigger: root,
-        start: 'top top',
+        start: "top top",
         end: `+=${ANIM.bottle.pinLength}`,
         pin: true,
         anticipatePin: 1,
@@ -65,7 +73,8 @@ export const Act6Bouteille = () => {
           });
           const hintOn = smoothstep(ANIM.bottle.dragHintAt, ANIM.bottle.dragHintAt + 0.1, p);
           if (dragHintRef.current) dragHintRef.current.style.opacity = (hintOn * 0.9).toFixed(3);
-          if (dragLayerRef.current) dragLayerRef.current.style.pointerEvents = hintOn > 0.5 ? 'auto' : 'none';
+          if (dragLayerRef.current)
+            dragLayerRef.current.style.pointerEvents = hintOn > 0.5 ? "auto" : "none";
         },
       });
     },
@@ -95,7 +104,7 @@ export const Act6Bouteille = () => {
       lastX = e.clientX;
       velocity = 0;
       cancelAnimationFrame(raf);
-      layer.style.cursor = 'grabbing';
+      layer.style.cursor = "grabbing";
     };
     const move = (e: PointerEvent) => {
       if (!dragging) return;
@@ -107,18 +116,18 @@ export const Act6Bouteille = () => {
     const up = () => {
       if (!dragging) return;
       dragging = false;
-      layer.style.cursor = 'grab';
+      layer.style.cursor = "grab";
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(decay); // glisse inertielle
     };
-    layer.addEventListener('pointerdown', down);
-    window.addEventListener('pointermove', move);
-    window.addEventListener('pointerup', up);
+    layer.addEventListener("pointerdown", down);
+    window.addEventListener("pointermove", move);
+    window.addEventListener("pointerup", up);
     return () => {
       cancelAnimationFrame(raf);
-      layer.removeEventListener('pointerdown', down);
-      window.removeEventListener('pointermove', move);
-      window.removeEventListener('pointerup', up);
+      layer.removeEventListener("pointerdown", down);
+      window.removeEventListener("pointermove", move);
+      window.removeEventListener("pointerup", up);
     };
   }, [fallback]);
 
@@ -127,20 +136,47 @@ export const Act6Bouteille = () => {
       ref={ref}
       id="acte-6"
       aria-label="Acte VI — La bouteille"
-      style={{ position: 'relative', height: '100vh', overflow: 'hidden', background: fallback ? 'var(--ltdr-black-bottle)' : 'transparent' }}
+      style={{
+        position: "relative",
+        height: "100vh",
+        overflow: "hidden",
+        background: fallback ? "var(--ltdr-black-bottle)" : "transparent",
+      }}
     >
       {fallback && (
-        <div style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', padding: '14vh 24px' }}>
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            display: "grid",
+            placeItems: "center",
+            padding: "14vh 24px",
+          }}
+        >
           <Pic
             photo={PHOTOS.cuvee2023}
             sizes="(max-width: 900px) 90vw, 60vw"
-            style={{ maxHeight: '72vh', width: 'auto', objectFit: 'contain', filter: 'brightness(0.9)' }}
+            style={{
+              maxHeight: "72vh",
+              width: "auto",
+              objectFit: "contain",
+              filter: "brightness(0.9)",
+            }}
           />
         </div>
       )}
       <h2
         className="acte-kicker"
-        style={{ position: 'absolute', top: '12vh', left: 0, right: 0, textAlign: 'center', margin: 0, fontWeight: 300, pointerEvents: 'none' }}
+        style={{
+          position: "absolute",
+          top: "12vh",
+          left: 0,
+          right: 0,
+          textAlign: "center",
+          margin: 0,
+          fontWeight: 300,
+          pointerEvents: "none",
+        }}
       >
         Acte VI — La bouteille
       </h2>
@@ -152,19 +188,35 @@ export const Act6Bouteille = () => {
             capRefs.current[i] = el;
           }}
           style={{
-            position: 'absolute',
+            position: "absolute",
             maxWidth: 380,
             opacity: fallback ? 1 : 0,
-            pointerEvents: 'none',
+            pointerEvents: "none",
             textAlign: c.align,
             ...c.pos,
           }}
         >
-          <p className="display" style={{ margin: 0, fontSize: c.mainSize ?? 'clamp(26px, 2.8vw, 40px)', lineHeight: 1.15, color: 'var(--ltdr-ivory)' }}>
+          <p
+            className="display"
+            style={{
+              margin: 0,
+              fontSize: c.mainSize ?? "clamp(26px, 2.8vw, 40px)",
+              lineHeight: 1.15,
+              color: "var(--ltdr-ivory)",
+            }}
+          >
             {c.main}
           </p>
           {c.sub && (
-            <p style={{ margin: '14px 0 0', fontSize: 11, letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--ltdr-gold)' }}>
+            <p
+              style={{
+                margin: "14px 0 0",
+                fontSize: 11,
+                letterSpacing: "0.3em",
+                textTransform: "uppercase",
+                color: "var(--ltdr-gold)",
+              }}
+            >
               {c.sub}
             </p>
           )}
@@ -174,22 +226,28 @@ export const Act6Bouteille = () => {
         ref={dragLayerRef}
         aria-hidden="true"
         data-cursor="drag"
-        style={{ position: 'absolute', inset: 0, pointerEvents: 'none', cursor: 'grab', touchAction: 'pan-y' }}
+        style={{
+          position: "absolute",
+          inset: 0,
+          pointerEvents: "none",
+          cursor: "grab",
+          touchAction: "pan-y",
+        }}
       />
       <div
         ref={dragHintRef}
         style={{
-          position: 'absolute',
-          bottom: '7vh',
+          position: "absolute",
+          bottom: "7vh",
           left: 0,
           right: 0,
-          textAlign: 'center',
+          textAlign: "center",
           fontSize: 10,
-          letterSpacing: '0.3em',
-          textTransform: 'uppercase',
-          color: 'var(--ltdr-ivory-45)',
+          letterSpacing: "0.3em",
+          textTransform: "uppercase",
+          color: "var(--ltdr-ivory-45)",
           opacity: 0,
-          pointerEvents: 'none',
+          pointerEvents: "none",
         }}
       >
         — Glisser pour tourner la bouteille —

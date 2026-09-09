@@ -1,0 +1,326 @@
+{
+  "checkedAt": "2026-09-09T13:38:45.217269+00:00",
+  "registrarUpdateRequestedAt": "2026-09-09T13:27:00Z",
+  "registrarTimePrecision": "minute as reported by root; exact confirmation recorded by root separately",
+  "cloudflareNameserverCheckRequested": true,
+  "cloudflareZoneUiState": "Your domain is now protected by Cloudflare",
+  "apexAssociationSubmitted": true,
+  "apexDnsChanged": true,
+  "dnssecEnabledAtCloudflare": true,
+  "parentDsAdded": false,
+  "checks": [
+    {
+      "server": "d.nic.fr",
+      "nameservers": [
+        {
+          "name": "dns200.anycast.me.",
+          "ttl": 3600
+        },
+        {
+          "name": "ns200.anycast.me.",
+          "ttl": 3600
+        }
+      ]
+    },
+    {
+      "server": "f.ext.nic.fr",
+      "nameservers": [
+        {
+          "name": "dns200.anycast.me.",
+          "ttl": 3600
+        },
+        {
+          "name": "ns200.anycast.me.",
+          "ttl": 3600
+        }
+      ]
+    },
+    {
+      "server": "g.ext.nic.fr",
+      "nameservers": [
+        {
+          "name": "ns200.anycast.me.",
+          "ttl": 3600
+        },
+        {
+          "name": "dns200.anycast.me.",
+          "ttl": 3600
+        }
+      ]
+    },
+    {
+      "server": "1.1.1.1",
+      "nameservers": [
+        {
+          "name": "dns200.anycast.me.",
+          "ttl": 3583
+        },
+        {
+          "name": "ns200.anycast.me.",
+          "ttl": 3583
+        }
+      ]
+    },
+    {
+      "server": "8.8.8.8",
+      "nameservers": [
+        {
+          "name": "dns200.anycast.me.",
+          "ttl": 3600
+        },
+        {
+          "name": "ns200.anycast.me.",
+          "ttl": 3600
+        }
+      ]
+    }
+  ],
+  "latestParentChecks": [
+    {
+      "server": "d.nic.fr",
+      "nameservers": [
+        {
+          "name": "rodrigo.ns.cloudflare.com.",
+          "ttl": 3600
+        },
+        {
+          "name": "desi.ns.cloudflare.com.",
+          "ttl": 3600
+        }
+      ]
+    },
+    {
+      "server": "f.ext.nic.fr",
+      "nameservers": [
+        {
+          "name": "rodrigo.ns.cloudflare.com.",
+          "ttl": 3600
+        },
+        {
+          "name": "desi.ns.cloudflare.com.",
+          "ttl": 3600
+        }
+      ]
+    },
+    {
+      "server": "g.ext.nic.fr",
+      "nameservers": [
+        {
+          "name": "rodrigo.ns.cloudflare.com.",
+          "ttl": 3600
+        },
+        {
+          "name": "desi.ns.cloudflare.com.",
+          "ttl": 3600
+        }
+      ]
+    }
+  ],
+  "parentCloudflareDelegationFirstObservedAt": "2026-09-09T13:34:09.224392+00:00",
+  "allParentsCloudflareFirstObservedAt": "2026-09-09T13:34:09.224392+00:00",
+  "earliestConservativeCleanupAt": "2026-09-09T15:34:09.224392+00:00",
+  "apexChangeObservedAt": "2026-09-09T13:36:03.493624+00:00",
+  "apexPagesState": "Active; SSL enabled",
+  "wwwPagesState": "Active; SSL enabled",
+  "apexDnsUiConfirmation": {
+    "old": {
+      "type": "A",
+      "name": "@",
+      "value": "23.227.38.65",
+      "ttl": "1 hr"
+    },
+    "new": {
+      "type": "CNAME",
+      "name": "@",
+      "value": "les-terrasses-du-roty.pages.dev",
+      "ttl": "Auto"
+    },
+    "action": "Activate domain"
+  },
+  "apexAuthoritativeChecks": [
+    {
+      "server": "desi.ns.cloudflare.com",
+      "type": "A",
+      "answer": "les-terrasses-du-roty.fr. 300\tIN\tA\t188.114.97.6\nles-terrasses-du-roty.fr. 300\tIN\tA\t188.114.96.6"
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "type": "AAAA",
+      "answer": "les-terrasses-du-roty.fr. 300\tIN\tAAAA\t2a06:98c1:3121::6\nles-terrasses-du-roty.fr. 300\tIN\tAAAA\t2a06:98c1:3120::6"
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "type": "CNAME",
+      "answer": ""
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "type": "A",
+      "answer": "les-terrasses-du-roty.fr. 300\tIN\tA\t188.114.96.6\nles-terrasses-du-roty.fr. 300\tIN\tA\t188.114.97.6"
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "type": "AAAA",
+      "answer": "les-terrasses-du-roty.fr. 300\tIN\tAAAA\t2a06:98c1:3121::6\nles-terrasses-du-roty.fr. 300\tIN\tAAAA\t2a06:98c1:3120::6"
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "type": "CNAME",
+      "answer": ""
+    }
+  ],
+  "dnssecPreparedEvidence": "docs/evidence/cloudflare-dnssec-prepared.json",
+  "nonApexDnsChecks": [
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "MX",
+      "values": [
+        "1 mx4.mail.ovh.net.",
+        "10 mx3.mail.ovh.net."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "TXT",
+      "values": [
+        "\"v=spf1 -all\""
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "account.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "values": [
+        "shops.myshopify.com."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "www.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "values": [
+        "les-terrasses-du-roty.pages.dev."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "resend._domainkey.notifications.les-terrasses-du-roty.fr.",
+      "type": "TXT",
+      "values": [
+        "\"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAAKa7iDiuH5fGU8RVLz2559UaikosF655AFu5PCas0F/3RwoNZ6Tzb+KC7lJ9o88+DcYWxwQB8dT4zSIBxVjxV0G0cpDPGF4frk1OK5nRS6jp18WvH+19BiJQmiEGOYbh1Msoj4Jgom8uUvnRf9ZIIu1nm2mRMzVkeeic+C4pgQIDAQAB\""
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "rsend.notifications.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "values": [
+        "rsend-euw1.forge.rmta.net."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "send.notifications.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "values": [
+        "send.forge.rmta.net."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "MX",
+      "values": [
+        "1 mx4.mail.ovh.net.",
+        "10 mx3.mail.ovh.net."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "TXT",
+      "values": [
+        "\"v=spf1 -all\""
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "account.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "values": [
+        "shops.myshopify.com."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "www.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "values": [
+        "les-terrasses-du-roty.pages.dev."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "resend._domainkey.notifications.les-terrasses-du-roty.fr.",
+      "type": "TXT",
+      "values": [
+        "\"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAAKa7iDiuH5fGU8RVLz2559UaikosF655AFu5PCas0F/3RwoNZ6Tzb+KC7lJ9o88+DcYWxwQB8dT4zSIBxVjxV0G0cpDPGF4frk1OK5nRS6jp18WvH+19BiJQmiEGOYbh1Msoj4Jgom8uUvnRf9ZIIu1nm2mRMzVkeeic+C4pgQIDAQAB\""
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "rsend.notifications.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "values": [
+        "rsend-euw1.forge.rmta.net."
+      ],
+      "matchesBaseline": true
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "send.notifications.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "values": [
+        "send.forge.rmta.net."
+      ],
+      "matchesBaseline": true
+    }
+  ],
+  "allNonApexDnsPreserved": true,
+  "zoneRecordsUiFinal": {
+    "recordCount": 9,
+    "apex": {
+      "type": "CNAME",
+      "name": "les-terrasses-du-roty.fr",
+      "value": "les-terrasses-du-roty.pages.dev",
+      "proxied": true,
+      "ttl": "Auto"
+    },
+    "www": {
+      "type": "CNAME",
+      "name": "www",
+      "value": "les-terrasses-du-roty.pages.dev",
+      "proxied": false,
+      "ttl": "1 hr",
+      "unchanged": true
+    },
+    "allOtherRecordsPreserved": true,
+    "verification": "14 authoritative comparisons across both Cloudflare nameservers match baseline; UI inventory contains 9 records"
+  },
+  "httpVerificationEvidence": "docs/verification/cloudflare-apex-http.json",
+  "httpChecksPassed": 7
+}

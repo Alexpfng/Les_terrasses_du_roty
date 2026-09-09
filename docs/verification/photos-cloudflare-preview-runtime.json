@@ -1,0 +1,1589 @@
+{
+  "checkedAt": "2026-09-09T14:04:28.720Z",
+  "target": "https://8072ae85.les-terrasses-du-roty.pages.dev",
+  "events": [
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962681700,
+      "cpuTime": 2,
+      "wallTime": 8,
+      "path": "/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962681955,
+      "cpuTime": 0,
+      "wallTime": 0,
+      "path": "/robots.txt",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962682349,
+      "cpuTime": 1,
+      "wallTime": 1,
+      "path": "/sitemap.xml",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962682411,
+      "cpuTime": 33,
+      "wallTime": 46,
+      "path": "/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962682528,
+      "cpuTime": 10,
+      "wallTime": 11,
+      "path": "/domaine/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962682648,
+      "cpuTime": 6,
+      "wallTime": 7,
+      "path": "/terrasses-pierre-seche/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962682720,
+      "cpuTime": 8,
+      "wallTime": 8,
+      "path": "/vins/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962682838,
+      "cpuTime": 11,
+      "wallTime": 16,
+      "path": "/vins/cuvee-2024/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962682925,
+      "cpuTime": 7,
+      "wallTime": 8,
+      "path": "/vins/cuvee-2023/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683025,
+      "cpuTime": 6,
+      "wallTime": 7,
+      "path": "/professionnels/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683179,
+      "cpuTime": 11,
+      "wallTime": 11,
+      "path": "/demande/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683257,
+      "cpuTime": 9,
+      "wallTime": 10,
+      "path": "/journal/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683344,
+      "cpuTime": 5,
+      "wallTime": 5,
+      "path": "/mentions-legales/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683407,
+      "cpuTime": 6,
+      "wallTime": 7,
+      "path": "/confidentialite/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683464,
+      "cpuTime": 3,
+      "wallTime": 3,
+      "path": "/conditions-de-vente/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683519,
+      "cpuTime": 6,
+      "wallTime": 6,
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683579,
+      "cpuTime": 3,
+      "wallTime": 4,
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683696,
+      "cpuTime": 6,
+      "wallTime": 7,
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683777,
+      "cpuTime": 4,
+      "wallTime": 4,
+      "path": "/journal/syrah-saulcet-allier/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683835,
+      "cpuTime": 6,
+      "wallTime": 8,
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683891,
+      "cpuTime": 7,
+      "wallTime": 10,
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962683973,
+      "cpuTime": 3,
+      "wallTime": 4,
+      "path": "/journal/vendanges-2024/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962685654,
+      "cpuTime": 34,
+      "wallTime": 53,
+      "path": "/vins/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962687362,
+      "cpuTime": 15,
+      "wallTime": 16,
+      "path": "/demande/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962688924,
+      "cpuTime": 7,
+      "wallTime": 7,
+      "path": "/professionnels/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962689141,
+      "cpuTime": 3,
+      "wallTime": 3,
+      "path": "/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962689695,
+      "cpuTime": 13,
+      "wallTime": 14,
+      "path": "/domaine/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962689819,
+      "cpuTime": 6,
+      "wallTime": 7,
+      "path": "/terrasses-pierre-seche/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962690242,
+      "cpuTime": 11,
+      "wallTime": 11,
+      "path": "/vins/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962690738,
+      "cpuTime": 9,
+      "wallTime": 13,
+      "path": "/journal/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962690785,
+      "cpuTime": 12,
+      "wallTime": 16,
+      "path": "/vins/cuvee-2023/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962690905,
+      "cpuTime": 6,
+      "wallTime": 6,
+      "path": "/professionnels/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962691195,
+      "cpuTime": 9,
+      "wallTime": 10,
+      "path": "/demande/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962691321,
+      "cpuTime": 32,
+      "wallTime": 48,
+      "path": "/journal/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962691727,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/mentions-legales/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962691980,
+      "cpuTime": 6,
+      "wallTime": 6,
+      "path": "/conditions-de-vente/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962692209,
+      "cpuTime": 6,
+      "wallTime": 6,
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962692340,
+      "cpuTime": 31,
+      "wallTime": 49,
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962692520,
+      "cpuTime": 6,
+      "wallTime": 8,
+      "path": "/journal/syrah-saulcet-allier/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962692666,
+      "cpuTime": 6,
+      "wallTime": 6,
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962692731,
+      "cpuTime": 4,
+      "wallTime": 5,
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962692786,
+      "cpuTime": 10,
+      "wallTime": 10,
+      "path": "/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962692872,
+      "cpuTime": 10,
+      "wallTime": 10,
+      "path": "/journal/vendanges-2024/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962692964,
+      "cpuTime": 7,
+      "wallTime": 8,
+      "path": "/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962693232,
+      "cpuTime": 10,
+      "wallTime": 11,
+      "path": "/domaine/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962693335,
+      "cpuTime": 7,
+      "wallTime": 7,
+      "path": "/terrasses-pierre-seche/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962693429,
+      "cpuTime": 31,
+      "wallTime": 48,
+      "path": "/vins/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962693664,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/vins/cuvee-2024/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962693801,
+      "cpuTime": 8,
+      "wallTime": 10,
+      "path": "/vins/cuvee-2023/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962693879,
+      "cpuTime": 5,
+      "wallTime": 5,
+      "path": "/professionnels/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962693987,
+      "cpuTime": 14,
+      "wallTime": 15,
+      "path": "/demande/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694054,
+      "cpuTime": 6,
+      "wallTime": 7,
+      "path": "/journal/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694168,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/vins/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694219,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/mentions-legales/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694296,
+      "cpuTime": 7,
+      "wallTime": 9,
+      "path": "/confidentialite/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694399,
+      "cpuTime": 15,
+      "wallTime": 19,
+      "path": "/conditions-de-vente/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694500,
+      "cpuTime": 4,
+      "wallTime": 4,
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694635,
+      "cpuTime": 6,
+      "wallTime": 6,
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694735,
+      "cpuTime": 4,
+      "wallTime": 5,
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694841,
+      "cpuTime": 9,
+      "wallTime": 12,
+      "path": "/journal/syrah-saulcet-allier/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962694912,
+      "cpuTime": 5,
+      "wallTime": 5,
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695006,
+      "cpuTime": 4,
+      "wallTime": 5,
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695065,
+      "cpuTime": 12,
+      "wallTime": 14,
+      "path": "/journal/vendanges-2024/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695270,
+      "cpuTime": 11,
+      "wallTime": 13,
+      "path": "/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695336,
+      "cpuTime": 3,
+      "wallTime": 3,
+      "path": "/domaine/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695441,
+      "cpuTime": 6,
+      "wallTime": 7,
+      "path": "/terrasses-pierre-seche/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695502,
+      "cpuTime": 3,
+      "wallTime": 3,
+      "path": "/vins/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695601,
+      "cpuTime": 2,
+      "wallTime": 3,
+      "path": "/vins/cuvee-2024/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695748,
+      "cpuTime": 3,
+      "wallTime": 3,
+      "path": "/vins/cuvee-2023/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695842,
+      "cpuTime": 7,
+      "wallTime": 7,
+      "path": "/professionnels/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962695902,
+      "cpuTime": 5,
+      "wallTime": 5,
+      "path": "/demande/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696008,
+      "cpuTime": 8,
+      "wallTime": 8,
+      "path": "/journal/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696081,
+      "cpuTime": 4,
+      "wallTime": 4,
+      "path": "/mentions-legales/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696177,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/confidentialite/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696273,
+      "cpuTime": 3,
+      "wallTime": 4,
+      "path": "/conditions-de-vente/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696374,
+      "cpuTime": 7,
+      "wallTime": 8,
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696449,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696544,
+      "cpuTime": 8,
+      "wallTime": 9,
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696627,
+      "cpuTime": 4,
+      "wallTime": 4,
+      "path": "/journal/syrah-saulcet-allier/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696825,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962696911,
+      "cpuTime": 3,
+      "wallTime": 4,
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962697025,
+      "cpuTime": 4,
+      "wallTime": 4,
+      "path": "/journal/vendanges-2024/",
+      "method": "HEAD",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962697427,
+      "cpuTime": 4,
+      "wallTime": 4,
+      "path": "/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962698703,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/terrasses-pierre-seche/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962698825,
+      "cpuTime": 0,
+      "wallTime": 0,
+      "path": "/pages/contact",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962698913,
+      "cpuTime": 0,
+      "wallTime": 0,
+      "path": "/products/les-terrasses-du-roty-cuvee-2023",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962698979,
+      "cpuTime": 0,
+      "wallTime": 0,
+      "path": "/vins",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962699365,
+      "cpuTime": 0,
+      "wallTime": 0,
+      "path": "/cart",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962699444,
+      "cpuTime": 0,
+      "wallTime": 0,
+      "path": "/checkout",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962700043,
+      "cpuTime": 3,
+      "wallTime": 4,
+      "path": "/inexistante-recette/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962700105,
+      "cpuTime": 0,
+      "wallTime": 1,
+      "path": "/api/analytics-config",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962700171,
+      "cpuTime": 0,
+      "wallTime": 0,
+      "path": "/robots.txt",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-preview",
+      "eventTimestamp": 1788962700286,
+      "cpuTime": 5,
+      "wallTime": 6,
+      "path": "/api/demandes",
+      "method": "POST",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": [
+        "wallTime",
+        "cpuTime",
+        "eventTimestamp"
+      ]
+    }
+  ],
+  "stderr": [],
+  "exitCode": 0
+}

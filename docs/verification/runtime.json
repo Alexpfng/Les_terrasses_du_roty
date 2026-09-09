@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-09-09T09:45:42.360Z",
+  "base": "http://127.0.0.1:4181",
+  "target": "Real Node production build, instrumented SSR lifetime timers",
+  "checks": [
+    {
+      "name": "Before rendered requests",
+      "passed": true,
+      "timers": {
+        "active": 0,
+        "started": 0,
+        "cleared": 0,
+        "expired": 0,
+        "oldestActiveMs": 0
+      }
+    },
+    {
+      "name": "Thirty parallel HEAD responses release every SSR timer",
+      "passed": true,
+      "timers": {
+        "active": 0,
+        "started": 30,
+        "cleared": 30,
+        "expired": 0,
+        "oldestActiveMs": 0
+      }
+    },
+    {
+      "name": "Completed GET responses release every SSR timer",
+      "passed": true,
+      "timers": {
+        "active": 0,
+        "started": 36,
+        "cleared": 36,
+        "expired": 0,
+        "oldestActiveMs": 0
+      }
+    },
+    {
+      "name": "HEAD errors and redirects also release all SSR timers",
+      "passed": true,
+      "timers": {
+        "active": 0,
+        "started": 37,
+        "cleared": 37,
+        "expired": 0,
+        "oldestActiveMs": 0
+      }
+    },
+    {
+      "name": "No runtime exceptions or forced cleanup warnings",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "headRequests": 30,
+  "serverStderr": "\rStopping server gracefully (5s)... Press Ctrl+C again to force close.\u001b[2K\rServer closed successfully.\n"
+}

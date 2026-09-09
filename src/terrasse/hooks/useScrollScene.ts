@@ -1,6 +1,6 @@
-import { type RefObject } from 'react';
-import { ScrollTrigger, useGSAP } from '@/terrasse/lib/gsapSetup';
-import { useLtdrStore } from '@/terrasse/lib/store';
+import { type RefObject } from "react";
+import { ScrollTrigger, useGSAP } from "@/terrasse/lib/gsapSetup";
+import { useLtdrStore } from "@/terrasse/lib/store";
 
 /**
  * Relie une section à l'indicateur Terrasse I→VII et, optionnellement,
@@ -10,7 +10,7 @@ import { useLtdrStore } from '@/terrasse/lib/store';
 export const useScrollScene = (
   ref: RefObject<HTMLElement>,
   act: number,
-  scene?: 'showDust' | 'showTerraces' | 'showBottle',
+  scene?: "showDust" | "showTerraces" | "showBottle",
   /**
    * Fenêtre de montage de la scène 3D, en % de viewport depuis l'entrée
    * de la section. DOIT couvrir toute la durée du pin (sinon la scène se
@@ -27,8 +27,8 @@ export const useScrollScene = (
       if (!el) return;
       ScrollTrigger.create({
         trigger: el,
-        start: 'top 55%',
-        end: 'bottom 45%',
+        start: "top 55%",
+        end: "bottom 45%",
         onToggle: (self) => {
           if (self.isActive) setActiveAct(act);
         },
@@ -37,7 +37,7 @@ export const useScrollScene = (
         ScrollTrigger.create({
           trigger: el,
           // monte la scène dès l'approche, la garde montée pendant tout le pin
-          start: 'top 130%',
+          start: "top 130%",
           end: `top+=${sceneSpanPercent}% top`,
           onToggle: (self) => setScene(scene, self.isActive),
         });

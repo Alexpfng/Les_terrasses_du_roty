@@ -1,0 +1,11 @@
+$ORIGIN les-terrasses-du-roty.fr.
+$TTL 3600
+@ IN MX 1 mx4.mail.ovh.net.
+@ IN MX 10 mx3.mail.ovh.net.
+@ IN A 23.227.38.65
+@ IN TXT "v=spf1 -all"
+account IN CNAME shops.myshopify.com.
+www IN CNAME les-terrasses-du-roty.pages.dev.
+resend._domainkey.notifications IN TXT "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAAKa7iDiuH5fGU8RVLz2559UaikosF655AFu5PCas0F/3RwoNZ6Tzb+KC7lJ9o88+DcYWxwQB8dT4zSIBxVjxV0G0cpDPGF4frk1OK5nRS6jp18WvH+19BiJQmiEGOYbh1Msoj4Jgom8uUvnRf9ZIIu1nm2mRMzVkeeic+C4pgQIDAQAB"
+rsend.notifications IN CNAME rsend-euw1.forge.rmta.net.
+send.notifications IN CNAME send.forge.rmta.net.

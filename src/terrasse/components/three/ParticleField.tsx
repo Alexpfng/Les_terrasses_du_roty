@@ -1,22 +1,22 @@
-import { useMemo, useRef } from 'react';
-import * as THREE from 'three';
-import { useFrame } from '@react-three/fiber';
-import vert from '@/terrasse/shaders/particles.vert?raw';
-import frag from '@/terrasse/shaders/particles.frag?raw';
+import { useMemo, useRef } from "react";
+import * as THREE from "three";
+import { useFrame } from "@react-three/fiber";
+import vert from "@/terrasse/shaders/particles.vert?raw";
+import frag from "@/terrasse/shaders/particles.frag?raw";
 
 interface ParticleFieldProps {
   count: number;
   /** drift : dérive lente (héro) · orbital : orbite autour de la bouteille */
-  mode?: 'drift' | 'orbital';
+  mode?: "drift" | "orbital";
   opacity?: number;
   driveCamera?: boolean;
 }
 
-const GOLD = new THREE.Color('#C9A227');
+const GOLD = new THREE.Color("#C9A227");
 
 export const ParticleField = ({
   count,
-  mode = 'drift',
+  mode = "drift",
   opacity = 0.6,
   driveCamera = false,
 }: ParticleFieldProps) => {
@@ -29,7 +29,7 @@ export const ParticleField = ({
     const seed = new Float32Array(count);
     const size = new Float32Array(count);
     for (let i = 0; i < count; i++) {
-      if (mode === 'orbital') {
+      if (mode === "orbital") {
         const a = Math.random() * Math.PI * 2;
         const r = 9 + Math.random() * 14;
         pos[i * 3] = Math.cos(a) * r;
@@ -43,9 +43,9 @@ export const ParticleField = ({
       seed[i] = Math.random();
       size[i] = 1.4 + Math.random() * 2.6;
     }
-    g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-    g.setAttribute('aSeed', new THREE.BufferAttribute(seed, 1));
-    g.setAttribute('aSize', new THREE.BufferAttribute(size, 1));
+    g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+    g.setAttribute("aSeed", new THREE.BufferAttribute(seed, 1));
+    g.setAttribute("aSize", new THREE.BufferAttribute(size, 1));
     return g;
   }, [count, mode]);
 
@@ -53,7 +53,7 @@ export const ParticleField = ({
     () => ({
       uTime: { value: 0 },
       uPixelRatio: { value: Math.min(window.devicePixelRatio, 1.6) },
-      uDrift: { value: mode === 'drift' ? 2.2 : 0.4 },
+      uDrift: { value: mode === "drift" ? 2.2 : 0.4 },
       uColor: { value: GOLD },
       uOpacity: { value: opacity },
     }),
@@ -62,7 +62,7 @@ export const ParticleField = ({
 
   useFrame(({ camera, clock }) => {
     if (matRef.current) matRef.current.uniforms.uTime.value = clock.elapsedTime;
-    if (ptsRef.current && mode === 'orbital') ptsRef.current.rotation.y += 0.0008;
+    if (ptsRef.current && mode === "orbital") ptsRef.current.rotation.y += 0.0008;
     if (driveCamera) {
       camera.position.set(0, 0, 34);
       camera.lookAt(0, 0, 0);

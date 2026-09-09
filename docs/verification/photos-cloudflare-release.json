@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-09-09T14:12:46.173Z",
+  "commit": "296198b69ac45a416807210b3c77593447aacc0e",
+  "branch": "codex/refonte-noir-or-2026-09-09",
+  "project": "les-terrasses-du-roty",
+  "canonical": "https://www.les-terrasses-du-roty.fr/",
+  "artifactSha256": "48d35c4b46c1cd53ab0bae002ca660647fa656aaca04e2fb9e5cc9e18a9c3a8a",
+  "sameArtifactPromoted": true,
+  "preview": {
+    "Id": "8072ae85-4dba-4fe3-b042-be5ee3ed8114",
+    "Environment": "Preview",
+    "Branch": "preproduction",
+    "Source": "296198b",
+    "Deployment": "https://8072ae85.les-terrasses-du-roty.pages.dev",
+    "Status": "4 minutes ago",
+    "Build": "https://dash.cloudflare.com/b1779ede460184fbcf5c4b90c36d11e2/pages/view/les-terrasses-du-roty/8072ae85-4dba-4fe3-b042-be5ee3ed8114"
+  },
+  "production": {
+    "Id": "9b2c15f8-283b-493b-89d7-0d61b9111e93",
+    "Environment": "Production",
+    "Branch": "production",
+    "Source": "296198b",
+    "Deployment": "https://9b2c15f8.les-terrasses-du-roty.pages.dev",
+    "Status": "28 seconds ago",
+    "Build": "https://dash.cloudflare.com/b1779ede460184fbcf5c4b90c36d11e2/pages/view/les-terrasses-du-roty/9b2c15f8-283b-493b-89d7-0d61b9111e93"
+  },
+  "previewChecks": {
+    "passed": true,
+    "pages": 19,
+    "resources": 112,
+    "repeatedGetHead": 60,
+    "otherChecks": 13,
+    "browserPages": 5,
+    "widths": [
+      390,
+      1440
+    ],
+    "nativeMenuScenarios": 7,
+    "errors": 0,
+    "googleRequests": 0
+  },
+  "productionChecks": {
+    "passed": true,
+    "pages": 19,
+    "resources": 112,
+    "links": 26,
+    "otherChecks": 11,
+    "browserPages": 5,
+    "widths": [
+      390,
+      1440
+    ],
+    "nativeMenuScenarios": 7,
+    "errors": 0,
+    "googleRequests": 0,
+    "gaCookies": 0,
+    "anonymousPreview": 401,
+    "technicalHosts": 503,
+    "officialLogoOriginalSha256": "7badf9367db345b8367a2a5af016fb2b768ac9ddfdb453485dc9557d86de16cd"
+  },
+  "runtimeObservation": {
+    "environment": "preview",
+    "events": 93,
+    "outcomes": [
+      "ok"
+    ],
+    "exceptions": 0,
+    "cpuMs": {
+      "median": 6,
+      "p95": 31,
+      "max": 34
+    },
+    "limitation": "Short observed window; peaks exceed nominal Free CPU allowance, so it does not establish sustained capacity. No CPU-limit error observed."
+  },
+  "noSecretsOrDnsChanged": true,
+  "emailsSentByTheseChecks": 0,
+  "formCheck": "Invalid empty JSON returns422; no provider call. The owner performs any final real submission separately.",
+  "testHarnessCorrection": "Wait for menu enabled before each open, including after full-document links. Remote diagnostic confirmed disabled:true before hydration on /vins/. Website source unchanged; test change will be committed separately.",
+  "rollback": {
+    "commit": "bf7957241ede2b144480b8f781eb35d5db8644b0",
+    "deployment": "a934ec80-a7b4-4a8f-b2e7-a83150b60f0f",
+    "preservedWorktree": "/tmp/roty-cloudflare-8b799b2",
+    "retainRedisAndSecrets": true
+  },
+  "evidence": [
+    "photos-cloudflare-artifact.json",
+    "photos-cloudflare-preview-http.json",
+    "photos-cloudflare-preview-browser.json",
+    "photos-cloudflare-preview-runtime.json",
+    "photos-cloudflare-production-http.json",
+    "photos-cloudflare-production-browser.json",
+    "photos-cloudflare-production-extra.json"
+  ]
+}

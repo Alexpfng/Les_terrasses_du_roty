@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from '@/terrasse/lib/gsapSetup';
-import { prefersReducedMotion } from './useReducedMotion';
+import { useEffect, useRef } from "react";
+import { gsap } from "@/terrasse/lib/gsapSetup";
+import { prefersReducedMotion } from "./useReducedMotion";
 
 /**
  * Bouton magnétique : l'élément suit légèrement le curseur quand il s'en
@@ -13,10 +13,10 @@ export const useMagnetic = <T extends HTMLElement>(strength = 0.35, radius = 90)
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (prefersReducedMotion() || window.matchMedia('(pointer: coarse)').matches) return;
+    if (prefersReducedMotion() || window.matchMedia("(pointer: coarse)").matches) return;
 
-    const xTo = gsap.quickTo(el, 'x', { duration: 0.5, ease: 'power3' });
-    const yTo = gsap.quickTo(el, 'y', { duration: 0.5, ease: 'power3' });
+    const xTo = gsap.quickTo(el, "x", { duration: 0.5, ease: "power3" });
+    const yTo = gsap.quickTo(el, "y", { duration: 0.5, ease: "power3" });
 
     const onMove = (e: MouseEvent) => {
       const r = el.getBoundingClientRect();
@@ -38,11 +38,11 @@ export const useMagnetic = <T extends HTMLElement>(strength = 0.35, radius = 90)
       yTo(0);
     };
 
-    window.addEventListener('mousemove', onMove);
-    el.addEventListener('mouseleave', reset);
+    window.addEventListener("mousemove", onMove);
+    el.addEventListener("mouseleave", reset);
     return () => {
-      window.removeEventListener('mousemove', onMove);
-      el.removeEventListener('mouseleave', reset);
+      window.removeEventListener("mousemove", onMove);
+      el.removeEventListener("mouseleave", reset);
       gsap.set(el, { x: 0, y: 0 });
     };
   }, [strength, radius]);

@@ -9,38 +9,261 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VinsRouteImport } from './routes/vins'
+import { Route as TerrassesPierreSecheRouteImport } from './routes/terrasses-pierre-seche'
+import { Route as ProfessionnelsRouteImport } from './routes/professionnels'
+import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
+import { Route as JournalRouteImport } from './routes/journal'
+import { Route as DomaineRouteImport } from './routes/domaine'
+import { Route as DemandeRouteImport } from './routes/demande'
+import { Route as ConfidentialiteRouteImport } from './routes/confidentialite'
+import { Route as ConditionsDeVenteRouteImport } from './routes/conditions-de-vente'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as VinsCuvee2024RouteImport } from './routes/vins_.cuvee-2024'
+import { Route as VinsCuvee2023RouteImport } from './routes/vins_.cuvee-2023'
+import { Route as JournalSlugRouteImport } from './routes/journal_.$slug'
 
+const VinsRoute = VinsRouteImport.update({
+  id: '/vins',
+  path: '/vins',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TerrassesPierreSecheRoute = TerrassesPierreSecheRouteImport.update({
+  id: '/terrasses-pierre-seche',
+  path: '/terrasses-pierre-seche',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfessionnelsRoute = ProfessionnelsRouteImport.update({
+  id: '/professionnels',
+  path: '/professionnels',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
+  id: '/mentions-legales',
+  path: '/mentions-legales',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JournalRoute = JournalRouteImport.update({
+  id: '/journal',
+  path: '/journal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DomaineRoute = DomaineRouteImport.update({
+  id: '/domaine',
+  path: '/domaine',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DemandeRoute = DemandeRouteImport.update({
+  id: '/demande',
+  path: '/demande',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConfidentialiteRoute = ConfidentialiteRouteImport.update({
+  id: '/confidentialite',
+  path: '/confidentialite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConditionsDeVenteRoute = ConditionsDeVenteRouteImport.update({
+  id: '/conditions-de-vente',
+  path: '/conditions-de-vente',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VinsCuvee2024Route = VinsCuvee2024RouteImport.update({
+  id: '/vins_/cuvee-2024',
+  path: '/vins/cuvee-2024',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VinsCuvee2023Route = VinsCuvee2023RouteImport.update({
+  id: '/vins_/cuvee-2023',
+  path: '/vins/cuvee-2023',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JournalSlugRoute = JournalSlugRouteImport.update({
+  id: '/journal_/$slug',
+  path: '/journal/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/conditions-de-vente': typeof ConditionsDeVenteRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/demande': typeof DemandeRoute
+  '/domaine': typeof DomaineRoute
+  '/journal': typeof JournalRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/professionnels': typeof ProfessionnelsRoute
+  '/terrasses-pierre-seche': typeof TerrassesPierreSecheRoute
+  '/vins': typeof VinsRoute
+  '/journal/$slug': typeof JournalSlugRoute
+  '/vins/cuvee-2023': typeof VinsCuvee2023Route
+  '/vins/cuvee-2024': typeof VinsCuvee2024Route
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/conditions-de-vente': typeof ConditionsDeVenteRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/demande': typeof DemandeRoute
+  '/domaine': typeof DomaineRoute
+  '/journal': typeof JournalRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/professionnels': typeof ProfessionnelsRoute
+  '/terrasses-pierre-seche': typeof TerrassesPierreSecheRoute
+  '/vins': typeof VinsRoute
+  '/journal/$slug': typeof JournalSlugRoute
+  '/vins/cuvee-2023': typeof VinsCuvee2023Route
+  '/vins/cuvee-2024': typeof VinsCuvee2024Route
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/conditions-de-vente': typeof ConditionsDeVenteRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/demande': typeof DemandeRoute
+  '/domaine': typeof DomaineRoute
+  '/journal': typeof JournalRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/professionnels': typeof ProfessionnelsRoute
+  '/terrasses-pierre-seche': typeof TerrassesPierreSecheRoute
+  '/vins': typeof VinsRoute
+  '/journal_/$slug': typeof JournalSlugRoute
+  '/vins_/cuvee-2023': typeof VinsCuvee2023Route
+  '/vins_/cuvee-2024': typeof VinsCuvee2024Route
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/conditions-de-vente'
+    | '/confidentialite'
+    | '/demande'
+    | '/domaine'
+    | '/journal'
+    | '/mentions-legales'
+    | '/professionnels'
+    | '/terrasses-pierre-seche'
+    | '/vins'
+    | '/journal/$slug'
+    | '/vins/cuvee-2023'
+    | '/vins/cuvee-2024'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/conditions-de-vente'
+    | '/confidentialite'
+    | '/demande'
+    | '/domaine'
+    | '/journal'
+    | '/mentions-legales'
+    | '/professionnels'
+    | '/terrasses-pierre-seche'
+    | '/vins'
+    | '/journal/$slug'
+    | '/vins/cuvee-2023'
+    | '/vins/cuvee-2024'
+  id:
+    | '__root__'
+    | '/'
+    | '/conditions-de-vente'
+    | '/confidentialite'
+    | '/demande'
+    | '/domaine'
+    | '/journal'
+    | '/mentions-legales'
+    | '/professionnels'
+    | '/terrasses-pierre-seche'
+    | '/vins'
+    | '/journal_/$slug'
+    | '/vins_/cuvee-2023'
+    | '/vins_/cuvee-2024'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ConditionsDeVenteRoute: typeof ConditionsDeVenteRoute
+  ConfidentialiteRoute: typeof ConfidentialiteRoute
+  DemandeRoute: typeof DemandeRoute
+  DomaineRoute: typeof DomaineRoute
+  JournalRoute: typeof JournalRoute
+  MentionsLegalesRoute: typeof MentionsLegalesRoute
+  ProfessionnelsRoute: typeof ProfessionnelsRoute
+  TerrassesPierreSecheRoute: typeof TerrassesPierreSecheRoute
+  VinsRoute: typeof VinsRoute
+  JournalSlugRoute: typeof JournalSlugRoute
+  VinsCuvee2023Route: typeof VinsCuvee2023Route
+  VinsCuvee2024Route: typeof VinsCuvee2024Route
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/vins': {
+      id: '/vins'
+      path: '/vins'
+      fullPath: '/vins'
+      preLoaderRoute: typeof VinsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terrasses-pierre-seche': {
+      id: '/terrasses-pierre-seche'
+      path: '/terrasses-pierre-seche'
+      fullPath: '/terrasses-pierre-seche'
+      preLoaderRoute: typeof TerrassesPierreSecheRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/professionnels': {
+      id: '/professionnels'
+      path: '/professionnels'
+      fullPath: '/professionnels'
+      preLoaderRoute: typeof ProfessionnelsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mentions-legales': {
+      id: '/mentions-legales'
+      path: '/mentions-legales'
+      fullPath: '/mentions-legales'
+      preLoaderRoute: typeof MentionsLegalesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journal': {
+      id: '/journal'
+      path: '/journal'
+      fullPath: '/journal'
+      preLoaderRoute: typeof JournalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/domaine': {
+      id: '/domaine'
+      path: '/domaine'
+      fullPath: '/domaine'
+      preLoaderRoute: typeof DomaineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/demande': {
+      id: '/demande'
+      path: '/demande'
+      fullPath: '/demande'
+      preLoaderRoute: typeof DemandeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/confidentialite': {
+      id: '/confidentialite'
+      path: '/confidentialite'
+      fullPath: '/confidentialite'
+      preLoaderRoute: typeof ConfidentialiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conditions-de-vente': {
+      id: '/conditions-de-vente'
+      path: '/conditions-de-vente'
+      fullPath: '/conditions-de-vente'
+      preLoaderRoute: typeof ConditionsDeVenteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +271,44 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/vins_/cuvee-2024': {
+      id: '/vins_/cuvee-2024'
+      path: '/vins/cuvee-2024'
+      fullPath: '/vins/cuvee-2024'
+      preLoaderRoute: typeof VinsCuvee2024RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vins_/cuvee-2023': {
+      id: '/vins_/cuvee-2023'
+      path: '/vins/cuvee-2023'
+      fullPath: '/vins/cuvee-2023'
+      preLoaderRoute: typeof VinsCuvee2023RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journal_/$slug': {
+      id: '/journal_/$slug'
+      path: '/journal/$slug'
+      fullPath: '/journal/$slug'
+      preLoaderRoute: typeof JournalSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ConditionsDeVenteRoute: ConditionsDeVenteRoute,
+  ConfidentialiteRoute: ConfidentialiteRoute,
+  DemandeRoute: DemandeRoute,
+  DomaineRoute: DomaineRoute,
+  JournalRoute: JournalRoute,
+  MentionsLegalesRoute: MentionsLegalesRoute,
+  ProfessionnelsRoute: ProfessionnelsRoute,
+  TerrassesPierreSecheRoute: TerrassesPierreSecheRoute,
+  VinsRoute: VinsRoute,
+  JournalSlugRoute: JournalSlugRoute,
+  VinsCuvee2023Route: VinsCuvee2023Route,
+  VinsCuvee2024Route: VinsCuvee2024Route,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

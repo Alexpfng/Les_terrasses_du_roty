@@ -1,5 +1,5 @@
-import { useState, type FormEvent } from 'react';
-import { useMagnetic } from '@/terrasse/hooks/useMagnetic';
+import { useState, type FormEvent } from "react";
+import { useMagnetic } from "@/terrasse/hooks/useMagnetic";
 
 /**
  * TODO_INTEGRATION : brancher sur le formulaire client du Shopify existant
@@ -16,8 +16,8 @@ export const NewsletterForm = () => {
   const submit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    const email = String(data.get('email') ?? '').trim();
-    if (!email || !email.includes('@') || email.startsWith('@')) {
+    const email = String(data.get("email") ?? "").trim();
+    if (!email || !email.includes("@") || email.startsWith("@")) {
       setError("Une adresse email valide, s'il vous plaît");
       return;
     }
@@ -30,12 +30,12 @@ export const NewsletterForm = () => {
       <p
         className="display"
         style={{
-          padding: '14px 0',
+          padding: "14px 0",
           fontSize: 19,
-          fontStyle: 'italic',
-          color: 'var(--ltdr-gold)',
+          fontStyle: "italic",
+          color: "var(--ltdr-gold)",
           margin: 0,
-          animation: 'ltdr-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) both',
+          animation: "ltdr-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) both",
         }}
         role="status"
       >
@@ -49,14 +49,23 @@ export const NewsletterForm = () => {
       onSubmit={submit}
       noValidate
       style={{
-        display: 'flex',
+        display: "flex",
         gap: 0,
         marginTop: 28,
         maxWidth: 440,
-        borderBottom: '1px solid rgba(244,240,230,0.3)',
+        borderBottom: "1px solid rgba(244,240,230,0.3)",
       }}
     >
-      <label htmlFor="ltdr-news" style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clipPath: 'inset(50%)' }}>
+      <label
+        htmlFor="ltdr-news"
+        style={{
+          position: "absolute",
+          width: 1,
+          height: 1,
+          overflow: "hidden",
+          clipPath: "inset(50%)",
+        }}
+      >
         Votre adresse email
       </label>
       <input
@@ -64,18 +73,18 @@ export const NewsletterForm = () => {
         name="email"
         type="email"
         autoComplete="email"
-        placeholder={error ?? 'Votre adresse email'}
+        placeholder={error ?? "Votre adresse email"}
         style={{
           flex: 1,
           minWidth: 0,
-          background: 'none',
-          border: 'none',
-          outline: 'none',
-          color: 'var(--ltdr-ivory)',
-          fontFamily: 'var(--font-body)',
+          background: "none",
+          border: "none",
+          outline: "none",
+          color: "var(--ltdr-ivory)",
+          fontFamily: "var(--font-body)",
           fontWeight: 300,
           fontSize: 14,
-          padding: '14px 0',
+          padding: "14px 0",
         }}
       />
       <button
@@ -83,15 +92,15 @@ export const NewsletterForm = () => {
         type="submit"
         data-hover="1"
         style={{
-          background: 'none',
-          border: 'none',
-          cursor: 'pointer',
-          color: 'var(--ltdr-gold)',
+          background: "none",
+          border: "none",
+          cursor: "pointer",
+          color: "var(--ltdr-gold)",
           fontSize: 11,
-          letterSpacing: '0.3em',
-          textTransform: 'uppercase',
-          padding: '14px 0 14px 18px',
-          willChange: 'transform',
+          letterSpacing: "0.3em",
+          textTransform: "uppercase",
+          padding: "14px 0 14px 18px",
+          willChange: "transform",
         }}
       >
         S'inscrire
