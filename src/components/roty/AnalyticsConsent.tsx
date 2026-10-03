@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { startTransition, useEffect, useRef, useState } from "react";
 import {
   ANALYTICS_PREFERENCES_EVENT,
   createAnalyticsController,
@@ -44,7 +44,9 @@ export function AnalyticsConsent({
       allowedPaths: initialPaths.current,
     });
     controller.current = analytics;
-    const unsubscribe = analytics.subscribe(setState);
+    const unsubscribe = analytics.subscribe((nextState) => {
+      startTransition(() => setState(nextState));
+    });
     const unregister = registerAnalyticsController(analytics);
     const open = () => {
       returnFocus.current =
