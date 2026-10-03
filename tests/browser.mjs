@@ -28,7 +28,9 @@ const context = await browser.newContext({
 });
 const page = await context.newPage();
 const pageErrors = [];
-page.on("pageerror", (error) => pageErrors.push(error.message));
+page.on("pageerror", (error) =>
+  pageErrors.push(`${new URL(page.url()).pathname}: ${error.message}`),
+);
 const sitemap = await (await fetch(base + "/sitemap.xml")).text();
 const paths = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
 try {
