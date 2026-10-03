@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-09-09T13:00:16.311Z",
+  "store": "vwpjn4-w0.myshopify.com",
+  "adminUrl": "https://admin.shopify.com/store/vwpjn4-w0/settings/plan",
+  "adminAccess": "Available in the owner's authorized browser session",
+  "subscription": {
+    "observedStatus": "La boutique sera désactivée le 8 déc. 2026",
+    "scheduledDeactivationDate": "2026-12-08",
+    "cancellationWasAlreadyPresent": true,
+    "planWasNotReactivated": true,
+    "cancellationPerformedByThisIntervention": false,
+    "billingAccountDeleted": false
+  },
+  "theme": {
+    "id": "183360323928",
+    "name": "Les Terrasses du Roty",
+    "downloadRequestedThroughShopify": true,
+    "exportRecipient": "max.corre@icloud.com",
+    "exportDownloadedLocally": false,
+    "originalThemeModified": false,
+    "exportEmailRequested": true,
+    "exportReceiptConfirmed": false
+  },
+  "storefront": {
+    "observedVisibility": "Private",
+    "passwordProtectionEnabled": true,
+    "passwordProtectionVerifiedBy": "Root agent in authenticated Shopify online store preferences",
+    "adminPreferencesUrl": "https://admin.shopify.com/store/vwpjn4-w0/online_store/preferences",
+    "publicLegacyRoot": {
+      "url": "https://vwpjn4-w0.myshopify.com/",
+      "status": 301,
+      "location": "https://www.les-terrasses-du-roty.fr/",
+      "server": "cloudflare",
+      "tlsVerified": true,
+      "title": null,
+      "rotySsrMain": false,
+      "shopifyStorefrontMarkup": false
+    },
+    "closurePending": false
+  },
+  "historicalOrdersCustomersProducts": "Orders and customers preserved; product content preserved, only the two product statuses changed to draft",
+  "catalogue": {
+    "allExistingProductsNowDraft": true,
+    "productIds": ["15234627338584", "15234585330008"],
+    "before": "Actif",
+    "after": "Brouillon",
+    "evidence": "docs/evidence/shopify-catalogue-retired.json",
+    "effectConfirmedByShopify": "Draft products are hidden from all sales channels and applications",
+    "productsDeleted": false
+  },
+  "scope": {
+    "dnsMutationsByThisDocumentationUpdate": false,
+    "shopifyMutationsByThisDocumentationUpdate": false
+  }
+}

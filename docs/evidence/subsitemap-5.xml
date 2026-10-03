@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/blogs/infos</loc>
+    <lastmod>2025-08-11T14:50:03+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/blogs/vendanges-2024</loc>
+    <lastmod>2025-08-07T12:06:39+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/blogs/infos/vendanges-2024-une-cuvee-qui-s-annonce-exceptionnelle-%F0%9F%8D%87</loc>
+    <lastmod>2025-08-11T14:22:16+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0930/1806/3192/articles/image00001_f867b161-a382-4d0f-b8d8-03fd8f6c1bf6.jpg?v=1754914936</image:loc>
+      <image:title>Vendanges 2024 : une cuvée qui s’annonce exceptionnelle</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/blogs/infos/la-syrah-un-cepage-noble-du-sud-qui-s-epanouit-au-coeur-du-bourbonnais</loc>
+    <lastmod>2025-08-11T14:17:21+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0930/1806/3192/articles/image00010_7b0f8815-00d8-46ff-8529-9632988345b8.jpg?v=1754914641</image:loc>
+      <image:title>La Syrah : un cépage noble du Sud qui s’épanouit au cœur du Bourbonnais</image:title>
+      <image:caption>Cuvée 2023</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/blogs/infos/l-origine-des-terrasses-du-roty</loc>
+    <lastmod>2025-08-11T14:32:40+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0930/1806/3192/articles/524710596_1152116086726506_988266549394180262_n_5ebda3b0-2c12-4301-bcc1-b8ecfee9affb.jpg?v=1754915560</image:loc>
+      <image:title>L’origine des Terrasses du Roty</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/blogs/infos/l-art-de-la-vinification-vendanges-maceration-et-elevage</loc>
+    <lastmod>2025-08-11T14:50:03+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0930/1806/3192/articles/fut.jpg?v=1754916603</image:loc>
+      <image:title>L’art de la vinification : vendanges, macération et élevage</image:title>
+    </image:image>
+  </url>
+</urlset>

@@ -1,0 +1,16 @@
+{
+  "startedAt": "2026-09-09T12:34:45.927Z",
+  "base": "https://www.les-terrasses-du-roty.fr",
+  "commit": "bf7957241ede2b144480b8f781eb35d5db8644b0",
+  "test": "One authorized production technical form submission; real Redis and Resend; HTTP client only, no Google script or analytics event",
+  "accepted": true,
+  "providerDelivery": "delivered",
+  "mailboxReceipt": "not_verified",
+  "finishedAt": "2026-09-09T12:34:46.511Z",
+  "httpStatus": 200,
+  "serverStatus": "accepted",
+  "requestId": "10ef8bf8-6178-460d-a708-ebcd504a090d",
+  "providerId": "cde5e306-ebd4-4d39-b47e-9ec1bd84c3a1",
+  "providerDeliveredAt": "2026-09-09T12:34Z",
+  "providerEvidence": "Resend owner UI: matching request_id tag and recipient; sent + delivered, SMTP Gmail 250 2.0.0 OK. Displayed minute precision."
+}

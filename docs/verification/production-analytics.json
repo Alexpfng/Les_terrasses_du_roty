@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-09-09T12:38:10.993Z",
+  "url": "https://www.les-terrasses-du-roty.fr/",
+  "type": "One real consented technical page visit; no form submission and no generate_lead",
+  "requests": [
+    {
+      "phase": "accepted",
+      "host": "www.googletagmanager.com",
+      "path": "/gtag/js",
+      "measurementId": "G-L2PJT90F4Y",
+      "event": null,
+      "pageLocation": null,
+      "referrer": null
+    },
+    {
+      "phase": "accepted",
+      "host": "region1.google-analytics.com",
+      "path": "/g/collect",
+      "measurementId": "G-L2PJT90F4Y",
+      "event": "page_view",
+      "pageLocation": "https://www.les-terrasses-du-roty.fr/",
+      "referrer": ""
+    }
+  ],
+  "responses": [
+    {
+      "phase": "accepted",
+      "host": "www.googletagmanager.com",
+      "path": "/gtag/js",
+      "status": 200
+    },
+    {
+      "phase": "accepted",
+      "host": "region1.google-analytics.com",
+      "path": "/g/collect",
+      "status": 204
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "No Google request before a choice",
+    "No Google request after refusal",
+    "Real Google collection request accepted after consent; correct measurement ID and stripped query; no lead event",
+    "Withdrawal removes Analytics cookies and prevents collection on the next page"
+  ],
+  "passed": true
+}

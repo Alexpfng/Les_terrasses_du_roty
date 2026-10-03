@@ -1,0 +1,195 @@
+{
+  "checkedAt": "2026-09-09T14:10:20.582Z",
+  "base": "https://www.les-terrasses-du-roty.fr",
+  "commit": "296198b69ac45a416807210b3c77593447aacc0e",
+  "pages": [
+    {
+      "photographs": [
+        {
+          "source": "/assets/img/bottle-studio-800.avif",
+          "alt": "Présentation de la bouteille de Syrah 2024, avec l’étiquette noire et or des Terrasses du Roty",
+          "naturalWidth": 720,
+          "naturalHeight": 900
+        },
+        {
+          "source": "/assets/img/label-crop-800.avif",
+          "alt": "Détail de l’étiquette originale des Terrasses du Roty, Syrah 2024",
+          "naturalWidth": 720,
+          "naturalHeight": 614
+        },
+        {
+          "source": "/assets/img/img-9683-1600.avif",
+          "alt": "Travail de la vigne au Roty, sur les coteaux de Saulcet dans l’Allier",
+          "naturalWidth": 1280,
+          "naturalHeight": 960
+        },
+        {
+          "source": "/assets/img/roty-restoration-800.avif",
+          "alt": "Un engin à chenilles travaille le sol d’une terrasse, photographie des archives du domaine",
+          "naturalWidth": 410,
+          "naturalHeight": 307
+        },
+        {
+          "source": "/assets/img/roty-planting-800.avif",
+          "alt": "Vue aérienne du travail manuel de plantation dans une parcelle, archives du domaine",
+          "naturalWidth": 410,
+          "naturalHeight": 307
+        },
+        {
+          "source": "/assets/img/roty-harvest-woman-800.avif",
+          "alt": "Une personne récolte des grappes dans les rangs avec un seau jaune, archives du domaine",
+          "naturalWidth": 410,
+          "naturalHeight": 546
+        },
+        {
+          "source": "/assets/img/wine-cork-800.avif",
+          "alt": "Photographie d’illustration : détail d’un goulot de bouteille de vin",
+          "naturalWidth": 720,
+          "naturalHeight": 1025
+        },
+        {
+          "source": "/assets/img/wine-reflections-800.avif",
+          "alt": "Photographie d’illustration : un verre de vin et des reflets de feuillage",
+          "naturalWidth": 720,
+          "naturalHeight": 1083
+        },
+        {
+          "source": "/assets/img/dji-0086-800.avif",
+          "alt": "Le chantier de remise en état des terrasses du Roty à Saulcet",
+          "naturalWidth": 720,
+          "naturalHeight": 539
+        }
+      ],
+      "path": "/",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "photographs": [
+        {
+          "source": "/assets/img/label-crop-800.avif",
+          "alt": "Détail de l’étiquette originale des Terrasses du Roty, Syrah 2024",
+          "naturalWidth": 720,
+          "naturalHeight": 614
+        }
+      ],
+      "path": "/vins/",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "photographs": [
+        {
+          "source": "/assets/img/wine-table-800.avif",
+          "alt": "Photographie d’illustration : un verre de vin rouge sur une table de restaurant",
+          "naturalWidth": 792,
+          "naturalHeight": 1188
+        }
+      ],
+      "path": "/professionnels/",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "photographs": [
+        {
+          "source": "/assets/img/wine-tasting-800.avif",
+          "alt": "Deux verres de vin aux reflets lumineux, photographie d’illustration",
+          "naturalWidth": 504,
+          "naturalHeight": 756
+        }
+      ],
+      "path": "/demande/?profil=caviste",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [
+        390,
+        1440
+      ]
+    },
+    {
+      "photographs": [
+        {
+          "source": "/assets/img/wine-cork-800.avif",
+          "alt": "Photographie d’illustration : détail d’un goulot de bouteille de vin",
+          "naturalWidth": 720,
+          "naturalHeight": 1025
+        },
+        {
+          "source": "/assets/img/wine-reflections-800.avif",
+          "alt": "Photographie d’illustration : un verre de vin et des reflets de feuillage",
+          "naturalWidth": 720,
+          "naturalHeight": 1083
+        },
+        {
+          "source": "/assets/img/dji-0086-800.avif",
+          "alt": "Le chantier de remise en état des terrasses du Roty à Saulcet",
+          "naturalWidth": 720,
+          "naturalHeight": 539
+        },
+        {
+          "source": "/assets/img/wine-motion-800.avif",
+          "alt": "Photographie d’illustration : du vin rouge en mouvement dans un verre",
+          "naturalWidth": 720,
+          "naturalHeight": 1079
+        },
+        {
+          "source": "/assets/img/wine-table-800.avif",
+          "alt": "Photographie d’illustration : un verre de vin rouge sur une table de restaurant",
+          "naturalWidth": 720,
+          "naturalHeight": 1080
+        },
+        {
+          "source": "/assets/img/wine-silhouette-800.avif",
+          "alt": "Photographie d’illustration : une bouteille et un verre de vin sur fond sombre",
+          "naturalWidth": 720,
+          "naturalHeight": 900
+        },
+        {
+          "source": "/assets/img/roty-harvest-2024-800.avif",
+          "alt": "Deux personnes récoltent des grappes dans les rangs de vigne",
+          "naturalWidth": 720,
+          "naturalHeight": 960
+        }
+      ],
+      "path": "/journal/",
+      "status": 200,
+      "hydrated": true,
+      "lazyImagesLoaded": true,
+      "responsiveWidths": [
+        390,
+        1440
+      ]
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "googleRequests": 0,
+  "passed": true,
+  "menu": [
+    "Enter opens a native modal, focuses close and marks opener expanded",
+    "Tab and Shift+Tab wrap within the modal; background controls receive no focus",
+    "Open modal locks body overflow and prevents wheel scrolling of the background",
+    "Escape closes the menu, restores body scrolling and returns focus to the opener",
+    "Close button restores opener focus and scroll state",
+    "A menu link navigates to the cuvées and closes the modal with scrolling restored",
+    "Switching to desktop closes the modal and moves focus to the visible header brand"
+  ],
+  "gaCookies": 0
+}

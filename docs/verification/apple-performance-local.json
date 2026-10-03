@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-09-09T13:13:38.461Z",
+  "scope": "Local production build, isolated Chrome, 390x844@2x, 150ms/1.6Mbps down/750Kbps up, CPU4x. Lab measurement only, not public Core Web Vitals.",
+  "runs": [
+    {
+      "run": 1,
+      "lcp": 1228,
+      "cls": 0,
+      "longTasks": 2,
+      "ttfb": 4.700000001117587,
+      "resourceBytes": 206137,
+      "heroLoaded": true,
+      "overflow": false
+    },
+    {
+      "run": 2,
+      "lcp": 1212,
+      "cls": 0,
+      "longTasks": 1,
+      "ttfb": 3.599999999627471,
+      "resourceBytes": 206137,
+      "heroLoaded": true,
+      "overflow": false
+    },
+    {
+      "run": 3,
+      "lcp": 1200,
+      "cls": 0,
+      "longTasks": 0,
+      "ttfb": 3.199999999254942,
+      "resourceBytes": 206137,
+      "heroLoaded": true,
+      "overflow": false
+    }
+  ]
+}

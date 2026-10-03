@@ -1,0 +1,38 @@
+{
+  "deployedSha": "296198b69ac45a416807210b3c77593447aacc0e",
+  "initialSubmission": {
+    "checkedAt": "2026-09-09T14:10:17.468Z",
+    "httpStatus": 200,
+    "response": {
+      "status": "accepted",
+      "request_id": "9fc7567f-f26d-490d-8fc2-e9117465471e",
+      "message": "Votre demande a bien été transmise. Le domaine vous répondra pour préciser les disponibilités et les modalités. Aucun achat n’est confirmé à ce stade."
+    },
+    "googleRequests": [],
+    "browserErrors": []
+  },
+  "confirmationAndReplay": {
+    "sha": "296198b69ac45a416807210b3c77593447aacc0e",
+    "base": "https://www.les-terrasses-du-roty.fr",
+    "checkedAt": "2026-09-09T14:12:18.947Z",
+    "consent": "refused",
+    "submittedVia": "real browser form",
+    "technicalTest": true,
+    "idempotentReplayOf": "9fc7567f-f26d-490d-8fc2-e9117465471e",
+    "googleRequests": [],
+    "browserErrors": [],
+    "httpStatus": 200,
+    "response": {
+      "status": "accepted",
+      "request_id": "9fc7567f-f26d-490d-8fc2-e9117465471e",
+      "message": "Votre demande a bien été transmise. Le domaine vous répondra pour préciser les disponibilités et les modalités. Aucun achat n’est confirmé à ce stade."
+    },
+    "requestId": "9fc7567f-f26d-490d-8fc2-e9117465471e",
+    "visibleSuccess": "✓\n\nDemande transmise\n\nMerci pour votre message.\n\nVotre demande a bien été transmise. Le domaine vous répondra pour préciser les disponibilités et les modalités. Aucun achat n’est confirmé à ce stade.\n\nRéférence : 9fc7567f-f26d-490d-8fc2-e9117465471e\n\nRevenir aux cuvées\n↗",
+    "focusOnSuccess": true,
+    "passed": true
+  },
+  "providerEvidence": "../evidence/resend-apple-ui-delivery.json",
+  "testHarnessCorrection": "The first helper incorrectly equated the public request_id with the client idempotency key. The API correctly uses separate identifiers. An exact same-payload, same-key browser replay returned the original request_id and visibly confirmed success; Resend still showed only one matching message. No application change or new email was required.",
+  "passed": true
+}

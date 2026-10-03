@@ -1,0 +1,24 @@
+$ dig +noall +answer www.les-terrasses-du-roty.fr CNAME
+www.les-terrasses-du-roty.fr. 3600 IN	CNAME	shops.myshopify.com.
+
+$ dig +noall +answer www.les-terrasses-du-roty.fr A
+www.les-terrasses-du-roty.fr. 3600 IN	CNAME	shops.myshopify.com.
+shops.myshopify.com.	2846	IN	A	23.227.38.74
+
+$ dig +noall +answer les-terrasses-du-roty.fr A
+les-terrasses-du-roty.fr. 3414	IN	A	23.227.38.65
+
+$ dig +noall +answer les-terrasses-du-roty.fr AAAA
+
+$ dig +noall +answer les-terrasses-du-roty.fr NS
+les-terrasses-du-roty.fr. 3309	IN	NS	dns200.anycast.me.
+les-terrasses-du-roty.fr. 3309	IN	NS	ns200.anycast.me.
+
+$ dig +noall +answer les-terrasses-du-roty.fr MX
+les-terrasses-du-roty.fr. 3309	IN	MX	1 mx4.mail.ovh.net.
+les-terrasses-du-roty.fr. 3309	IN	MX	10 mx3.mail.ovh.net.
+
+$ dig +noall +answer les-terrasses-du-roty.fr TXT
+les-terrasses-du-roty.fr. 3414	IN	TXT	"v=spf1 -all"
+
+$ dig +noall +answer _dmarc.les-terrasses-du-roty.fr TXT

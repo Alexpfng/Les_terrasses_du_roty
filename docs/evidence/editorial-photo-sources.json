@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-09-09T13:24:22.156Z",
+  "origin": "Photographs supplied directly by the owner in the conversation on 9 September 2026. No claim that these atmospheric photographs depict the Roty estate or its actual wines.",
+  "photos": [
+    {
+      "name": "wine-reflections",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/LCDR-photos-Max/alaksiej-carankievic-KzzZ4xqXFFI-unsplash.jpg",
+      "width": 2848,
+      "height": 4288,
+      "variants": 6
+    },
+    {
+      "name": "wine-silhouette",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/LCDR-photos-Max/mae-mu-rgEHTLwaI_8-unsplash.jpg",
+      "width": 2491,
+      "height": 3114,
+      "variants": 6
+    },
+    {
+      "name": "wine-motion",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/LCDR-photos-Max/saman-taheri-MXMs8q2OjeA-unsplash.jpg",
+      "width": 4912,
+      "height": 7360,
+      "variants": 6
+    },
+    {
+      "name": "wine-tasting",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/LCDR-photos-Max/anna-bratiychuk-IeNoBmJ011g-unsplash.jpg",
+      "width": 3456,
+      "height": 5184,
+      "variants": 6
+    },
+    {
+      "name": "wine-cork",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/LCDR-photos-Max/andreas-haslinger-aZgVmUVqkwA-unsplash.jpg",
+      "width": 4160,
+      "height": 5925,
+      "variants": 6
+    },
+    {
+      "name": "wine-table",
+      "source": "/Users/maxcorre/Desktop/DMERX/CDR/LCDR-photos-Max/sahand-karwan-CSQNSwksxEY-unsplash.jpg",
+      "width": 4160,
+      "height": 6240,
+      "variants": 6
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-09-09T12:02:44.296Z",
+  "base": "https://ea443b12.les-terrasses-du-roty.pages.dev",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "hydrated": true,
+      "responsiveWidths": [390, 1440]
+    },
+    {
+      "path": "/demande/?profil=caviste",
+      "status": 200,
+      "hydrated": true,
+      "responsiveWidths": [390, 1440]
+    },
+    {
+      "path": "/professionnels/",
+      "status": 200,
+      "hydrated": true,
+      "responsiveWidths": [390, 1440]
+    }
+  ],
+  "errors": [],
+  "googleRequests": 0,
+  "passed": true
+}

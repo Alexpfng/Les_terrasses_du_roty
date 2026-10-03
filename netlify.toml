@@ -1,0 +1,12 @@
+# Nitro is already provided by the existing Lovable/TanStack Vite wrapper.
+# Keep that stack and select its Netlify Functions preset explicitly.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  ROTY_BUILD_TARGET = "netlify"
+
+# Runtime secrets must be configured with Netlify CLI/API, not in this file.
+# Nitro emits the SSR function in .netlify/functions-internal automatically.

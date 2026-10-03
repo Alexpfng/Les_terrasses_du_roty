@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-09-09T12:34:09.332Z",
+  "target": "https://a934ec80.les-terrasses-du-roty.pages.dev",
+  "events": [
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-production",
+      "eventTimestamp": 1788957269637,
+      "cpuTime": 10,
+      "wallTime": 13,
+      "path": "/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": ["wallTime", "cpuTime", "eventTimestamp"]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-production",
+      "eventTimestamp": 1788957269742,
+      "cpuTime": 9,
+      "wallTime": 10,
+      "path": "/demande/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": ["wallTime", "cpuTime", "eventTimestamp"]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-production",
+      "eventTimestamp": 1788957269809,
+      "cpuTime": 11,
+      "wallTime": 19,
+      "path": "/professionnels/",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": ["wallTime", "cpuTime", "eventTimestamp"]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-production",
+      "eventTimestamp": 1788957269853,
+      "cpuTime": 1,
+      "wallTime": 1,
+      "path": "/api/analytics-config",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": ["wallTime", "cpuTime", "eventTimestamp"]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-production",
+      "eventTimestamp": 1788957269908,
+      "cpuTime": 0,
+      "wallTime": 1,
+      "path": "/robots.txt",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": ["wallTime", "cpuTime", "eventTimestamp"]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-production",
+      "eventTimestamp": 1788957269931,
+      "cpuTime": 0,
+      "wallTime": 0,
+      "path": "/sitemap.xml",
+      "method": "GET",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 0,
+      "availableTimingFields": ["wallTime", "cpuTime", "eventTimestamp"]
+    },
+    {
+      "outcome": "ok",
+      "scriptName": "pages-worker--19153655-production",
+      "eventTimestamp": 1788957286015,
+      "cpuTime": 9,
+      "wallTime": 445,
+      "path": "/api/demandes",
+      "method": "POST",
+      "exceptionCount": 0,
+      "exceptionNames": [],
+      "logCount": 1,
+      "availableTimingFields": ["wallTime", "cpuTime", "eventTimestamp"]
+    }
+  ],
+  "stderr": [],
+  "exitCode": 0
+}

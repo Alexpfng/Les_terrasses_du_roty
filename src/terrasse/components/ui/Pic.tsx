@@ -1,16 +1,16 @@
-import type { CSSProperties } from 'react';
-import { photoSources, type PhotoAsset } from '@/terrasse/lib/assets';
+import type { CSSProperties } from "react";
+import { photoSources, type PhotoAsset } from "@/terrasse/lib/assets";
 
 interface PicProps {
   photo: PhotoAsset;
   sizes: string;
   style?: CSSProperties;
   id?: string;
-  loading?: 'lazy' | 'eager';
+  loading?: "lazy" | "eager";
 }
 
 /** AVIF → WebP → JPEG, dimensions explicites, lazy par défaut. */
-export const Pic = ({ photo, sizes, style, id, loading = 'lazy' }: PicProps) => {
+export const Pic = ({ photo, sizes, style, id, loading = "lazy" }: PicProps) => {
   const s = photoSources(photo);
   return (
     <picture>
@@ -26,7 +26,7 @@ export const Pic = ({ photo, sizes, style, id, loading = 'lazy' }: PicProps) => 
         alt={photo.alt}
         loading={loading}
         decoding="async"
-        style={{ display: 'block', width: '100%', height: 'auto', ...style }}
+        style={{ display: "block", width: "100%", height: "auto", ...style }}
       />
     </picture>
   );

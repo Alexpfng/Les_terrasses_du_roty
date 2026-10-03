@@ -1,30 +1,5 @@
 export function renderErrorPage(): string {
   return `<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>This page didn't load</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body { font: 15px/1.5 system-ui, -apple-system, sans-serif; background: #fafafa; color: #111; display: grid; place-items: center; min-height: 100vh; margin: 0; padding: 1.5rem; }
-      .card { max-width: 28rem; width: 100%; text-align: center; padding: 2rem; }
-      h1 { font-size: 1.25rem; margin: 0 0 0.5rem; }
-      p { color: #4b5563; margin: 0 0 1.5rem; }
-      .actions { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
-      a, button { padding: 0.5rem 1rem; border-radius: 0.375rem; font: inherit; cursor: pointer; text-decoration: none; border: 1px solid transparent; }
-      .primary { background: #111; color: #fff; }
-      .secondary { background: #fff; color: #111; border-color: #d1d5db; }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>This page didn't load</h1>
-      <p>Something went wrong on our end. You can try refreshing or head back home.</p>
-      <div class="actions">
-        <button class="primary" onclick="location.reload()">Try again</button>
-        <a class="secondary" href="/">Go home</a>
-      </div>
-    </div>
-  </body>
-</html>`;
+<html lang="fr"><head><meta charset="utf-8"><title>Page indisponible | Les Terrasses du Roty</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><style>
+*{box-sizing:border-box}body{font:15px/1.8 Arial,sans-serif;background:#f7f4ed;color:#29241f;display:grid;place-items:center;min-height:100vh;margin:0;padding:24px}main{max-width:560px;text-align:center}img{width:75px;height:auto;margin:0 auto 35px}h1{font:400 42px/1.1 Georgia,serif}p{color:#6c645b}a{display:inline-block;background:#24201c;color:#fffdf8;text-decoration:none;padding:12px 22px;margin-top:20px}a:focus-visible{outline:2px solid #80621f;outline-offset:5px}</style></head><body><main><img src="/assets/img/logo-etiquette-light.svg" alt="Les Terrasses du Roty"><h1>Cette page est momentanément indisponible.</h1><p>Vous pouvez réessayer plus tard ou revenir à l’accueil. Pour joindre le domaine : +33 6 21 56 01 17.</p><a href="/">Revenir à l’accueil</a></main></body></html>`;
 }

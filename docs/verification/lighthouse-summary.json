@@ -1,0 +1,21 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "fetchTime": "2026-09-09T09:39:32.254Z",
+  "lighthouseVersion": "12.8.2",
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "scores": {
+    "performance": 85,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "metrics": {
+    "first-contentful-paint": "2.0 s",
+    "largest-contentful-paint": "4.1 s",
+    "total-blocking-time": "0 ms",
+    "cumulative-layout-shift": "0",
+    "speed-index": "2.0 s"
+  },
+  "note": "Mesure locale mobile simulée, indexation volontairement bloquée en préproduction. Pas une mesure du domaine Shopify ou du futur hébergement."
+}

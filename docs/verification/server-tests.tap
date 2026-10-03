@@ -1,0 +1,134 @@
+
+> test:server
+> tsc -p tests/tsconfig.json && node --test .test-build/tests/*.test.js
+
+TAP version 13
+# Subtest: missing or unsafe server configuration fails closed before external calls
+ok 1 - missing or unsafe server configuration fails closed before external calls
+  ---
+  duration_ms: 9.929667
+  ...
+# Subtest: endpoint only accepts POST
+ok 2 - endpoint only accepts POST
+  ---
+  duration_ms: 0.149375
+  ...
+# Subtest: strict origin and fetch metadata reject missing, spoofed and cross-site submissions
+ok 3 - strict origin and fetch metadata reject missing, spoofed and cross-site submissions
+  ---
+  duration_ms: 0.932834
+  ...
+# Subtest: only uncompressed JSON is accepted
+ok 4 - only uncompressed JSON is accepted
+  ---
+  duration_ms: 0.482209
+  ...
+# Subtest: unknown routing/header fields, invalid types, campaign PII and honeypot cannot send
+ok 5 - unknown routing/header fields, invalid types, campaign PII and honeypot cannot send
+  ---
+  duration_ms: 6.878833
+  ...
+# Subtest: streamed byte limit applies without content-length and with multibyte UTF-8
+ok 6 - streamed byte limit applies without content-length and with multibyte UTF-8
+  ---
+  duration_ms: 0.359334
+  ...
+# Subtest: mock provider acceptance is required; recipient fixed, Reply-To valid, input never becomes HTML
+ok 7 - mock provider acceptance is required; recipient fixed, Reply-To valid, input never becomes HTML
+  ---
+  duration_ms: 4.827791
+  ...
+# Subtest: accepted replay does not contact the mock provider
+ok 8 - accepted replay does not contact the mock provider
+  ---
+  duration_ms: 0.609458
+  ...
+# Subtest: atomic storage outcomes are respected without a provider call
+ok 9 - atomic storage outcomes are respected without a provider call
+  ---
+  duration_ms: 2.419125
+  ...
+# Subtest: Redis outage fails closed without contacting the mock provider
+ok 10 - Redis outage fails closed without contacting the mock provider
+  ---
+  duration_ms: 0.363667
+  ...
+# Subtest: mock provider rejection, rate limit, server failure or malformed success never shows acceptance
+ok 11 - mock provider rejection, rate limit, server failure or malformed success never shows acceptance
+  ---
+  duration_ms: 2.520542
+  ...
+# Subtest: mock provider network timeout returns uncertainty, not a simulated success
+ok 12 - mock provider network timeout returns uncertainty, not a simulated success
+  ---
+  duration_ms: 0.475667
+  ...
+# Subtest: mock provider acceptance remains factual if Redis finalization fails, and emits only a technical alert
+ok 13 - mock provider acceptance remains factual if Redis finalization fails, and emits only a technical alert
+  ---
+  duration_ms: 0.417667
+  ...
+# Subtest: a body that never completes times out and is cancelled before external calls
+ok 14 - a body that never completes times out and is cancelled before external calls
+  ---
+  duration_ms: 5001.008292
+  ...
+# Subtest: schema normalizes acceptable strings and supports a complete professional request
+ok 15 - schema normalizes acceptable strings and supports a complete professional request
+  ---
+  duration_ms: 0.585667
+  ...
+# Subtest: real Redis Lua: concurrent identical requests produce only one mock-provider call
+ok 16 - real Redis Lua: concurrent identical requests produce only one mock-provider call
+  ---
+  duration_ms: 137.126208
+  ...
+# Subtest: real Redis Lua: a key reused with changed contents is rejected
+ok 17 - real Redis Lua: a key reused with changed contents is rejected
+  ---
+  duration_ms: 8.182458
+  ...
+# Subtest: real Redis Lua: uncertain retry keeps provider payload, request ID and idempotency header identical
+ok 18 - real Redis Lua: uncertain retry keeps provider payload, request ID and idempotency header identical
+  ---
+  duration_ms: 11.299875
+  ...
+# Subtest: real Redis Lua: per-address limit survives new UUIDs and spoofed proxy IP headers
+ok 19 - real Redis Lua: per-address limit survives new UUIDs and spoofed proxy IP headers
+  ---
+  duration_ms: 17.846875
+  ...
+# Subtest: real Redis Lua: global quota atomically caps concurrent requests with different addresses
+ok 20 - real Redis Lua: global quota atomically caps concurrent requests with different addresses
+  ---
+  duration_ms: 44.599791
+  ...
+# Subtest: real Redis Lua: daily quota blocks sending across the short window
+ok 21 - real Redis Lua: daily quota blocks sending across the short window
+  ---
+  duration_ms: 4.175
+  ...
+# Subtest: real Redis Lua: definite provider rejection remains terminal for that key
+ok 22 - real Redis Lua: definite provider rejection remains terminal for that key
+  ---
+  duration_ms: 6.439708
+  ...
+# Subtest: real Redis Lua: 23-hour uncertain requests require manual review before provider deduplication expires
+ok 23 - real Redis Lua: 23-hour uncertain requests require manual review before provider deduplication expires
+  ---
+  duration_ms: 9.424
+  ...
+# Subtest: real Redis Lua: stored state contains only pseudonymous metadata and expires within 48 hours
+ok 24 - real Redis Lua: stored state contains only pseudonymous metadata and expires within 48 hours
+  ---
+  duration_ms: 6.739042
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5083.284791

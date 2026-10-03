@@ -1,0 +1,248 @@
+{
+  "checkedAt": "2026-09-09T13:18:41.508092+00:00",
+  "zone": "les-terrasses-du-roty.fr",
+  "stage": "Read-only baseline before root nameserver migration; no apex mutation yet",
+  "zoneUiState": "pending",
+  "wwwPagesUiState": "active",
+  "checks": [
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "MX",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "MX",
+          "value": "1 mx4.mail.ovh.net."
+        },
+        {
+          "name": "les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "MX",
+          "value": "10 mx3.mail.ovh.net."
+        }
+      ]
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "A",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "A",
+          "value": "23.227.38.65"
+        }
+      ]
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "TXT",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "TXT",
+          "value": "\"v=spf1 -all\""
+        }
+      ]
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "account.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "account.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "CNAME",
+          "value": "shops.myshopify.com."
+        }
+      ]
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "www.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "www.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "CNAME",
+          "value": "les-terrasses-du-roty.pages.dev."
+        }
+      ]
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "resend._domainkey.notifications.les-terrasses-du-roty.fr.",
+      "type": "TXT",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "resend._domainkey.notifications.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "TXT",
+          "value": "\"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAAKa7iDiuH5fGU8RVLz2559UaikosF655AFu5PCas0F/3RwoNZ6Tzb+KC7lJ9o88+DcYWxwQB8dT4zSIBxVjxV0G0cpDPGF4frk1OK5nRS6jp18WvH+19BiJQmiEGOYbh1Msoj4Jgom8uUvnRf9ZIIu1nm2mRMzVkeeic+C4pgQIDAQAB\""
+        }
+      ]
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "rsend.notifications.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "rsend.notifications.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "CNAME",
+          "value": "rsend-euw1.forge.rmta.net."
+        }
+      ]
+    },
+    {
+      "server": "desi.ns.cloudflare.com",
+      "name": "send.notifications.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "send.notifications.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "CNAME",
+          "value": "send.forge.rmta.net."
+        }
+      ]
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "MX",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "MX",
+          "value": "1 mx4.mail.ovh.net."
+        },
+        {
+          "name": "les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "MX",
+          "value": "10 mx3.mail.ovh.net."
+        }
+      ]
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "A",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "A",
+          "value": "23.227.38.65"
+        }
+      ]
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "les-terrasses-du-roty.fr.",
+      "type": "TXT",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "TXT",
+          "value": "\"v=spf1 -all\""
+        }
+      ]
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "account.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "account.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "CNAME",
+          "value": "shops.myshopify.com."
+        }
+      ]
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "www.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "www.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "CNAME",
+          "value": "les-terrasses-du-roty.pages.dev."
+        }
+      ]
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "resend._domainkey.notifications.les-terrasses-du-roty.fr.",
+      "type": "TXT",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "resend._domainkey.notifications.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "TXT",
+          "value": "\"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAAKa7iDiuH5fGU8RVLz2559UaikosF655AFu5PCas0F/3RwoNZ6Tzb+KC7lJ9o88+DcYWxwQB8dT4zSIBxVjxV0G0cpDPGF4frk1OK5nRS6jp18WvH+19BiJQmiEGOYbh1Msoj4Jgom8uUvnRf9ZIIu1nm2mRMzVkeeic+C4pgQIDAQAB\""
+        }
+      ]
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "rsend.notifications.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "rsend.notifications.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "CNAME",
+          "value": "rsend-euw1.forge.rmta.net."
+        }
+      ]
+    },
+    {
+      "server": "rodrigo.ns.cloudflare.com",
+      "name": "send.notifications.les-terrasses-du-roty.fr.",
+      "type": "CNAME",
+      "matchesBaseline": true,
+      "answers": [
+        {
+          "name": "send.notifications.les-terrasses-du-roty.fr.",
+          "ttl": 3600,
+          "type": "CNAME",
+          "value": "send.forge.rmta.net."
+        }
+      ]
+    }
+  ],
+  "allMatch": true,
+  "dnssecUiEnabled": false,
+  "mutationsPerformed": false
+}

@@ -1,0 +1,30 @@
+Relevé DNS avant toute bascule Netlify
+2026-09-09T11:21:24.355547+00:00
+
+les-terrasses-du-roty.fr A
+les-terrasses-du-roty.fr. 3176	IN	A	23.227.38.65
+
+les-terrasses-du-roty.fr AAAA
+(aucune réponse)
+
+les-terrasses-du-roty.fr NS
+les-terrasses-du-roty.fr. 3176	IN	NS	ns200.anycast.me.
+les-terrasses-du-roty.fr. 3176	IN	NS	dns200.anycast.me.
+
+les-terrasses-du-roty.fr MX
+les-terrasses-du-roty.fr. 3600	IN	MX	1 mx4.mail.ovh.net.
+les-terrasses-du-roty.fr. 3600	IN	MX	10 mx3.mail.ovh.net.
+
+les-terrasses-du-roty.fr TXT
+les-terrasses-du-roty.fr. 3600	IN	TXT	"v=spf1 -all"
+
+www.les-terrasses-du-roty.fr CNAME
+www.les-terrasses-du-roty.fr. 3600 IN	CNAME	shops.myshopify.com.
+
+www.les-terrasses-du-roty.fr A
+www.les-terrasses-du-roty.fr. 3600 IN	CNAME	shops.myshopify.com.
+shops.myshopify.com.	2052	IN	A	23.227.38.74
+
+www.les-terrasses-du-roty.fr AAAA
+www.les-terrasses-du-roty.fr. 3600 IN	CNAME	shops.myshopify.com.
+shops.myshopify.com.	2049	IN	AAAA	2620:127:f00f:e::

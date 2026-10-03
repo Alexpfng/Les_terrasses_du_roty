@@ -1,0 +1,22 @@
+[
+  {
+    "path": "public/assets/img/logo-gold.png",
+    "sha256": "58d055c740a5b8b5abb1a95eefaf980423d03565790a13f6a834d713c97a09a6",
+    "identical_to_original_commit": true
+  },
+  {
+    "path": "public/assets/img/img-9683-800.jpg",
+    "sha256": "dbce38955886383121f5debe24c2d7f8000b4cfc7c8ff9d268d7fecb636c9030",
+    "identical_to_original_commit": true
+  },
+  {
+    "path": "public/assets/img/dji-0086-800.jpg",
+    "sha256": "65bc3097d9b73b9a28c7f571499e75b71c7f9e2a26b77bbbf5b233b812be10df",
+    "identical_to_original_commit": true
+  },
+  {
+    "path": "public/assets/img/img-2855-800.jpg",
+    "sha256": "da641e8eaa33dd3c270f35c4cb18687774980790d94c65cacaa529a1c30996b2",
+    "identical_to_original_commit": true
+  }
+]

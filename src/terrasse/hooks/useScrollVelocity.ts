@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
-import { gsap } from '@/terrasse/lib/gsapSetup';
-import { getLenis } from '@/terrasse/lib/lenis';
-import { prefersReducedMotion } from './useReducedMotion';
+import { useEffect } from "react";
+import { gsap } from "@/terrasse/lib/gsapSetup";
+import { getLenis } from "@/terrasse/lib/lenis";
+import { prefersReducedMotion } from "./useReducedMotion";
 
 /**
  * Cisaillement (skew) léger des grands textes piloté par la VITESSE de scroll —
@@ -25,12 +25,12 @@ export const useScrollVelocity = (): void => {
       last = y;
       const target = gsap.utils.clamp(-MAX, MAX, v * 0.06);
       skew += (target - skew) * 0.18; // lissage + retour à 0 quand v→0
-      root.style.setProperty('--vskew', `${skew.toFixed(3)}deg`);
+      root.style.setProperty("--vskew", `${skew.toFixed(3)}deg`);
     };
     gsap.ticker.add(tick);
     return () => {
       gsap.ticker.remove(tick);
-      root.style.setProperty('--vskew', '0deg');
+      root.style.setProperty("--vskew", "0deg");
     };
   }, []);
 };

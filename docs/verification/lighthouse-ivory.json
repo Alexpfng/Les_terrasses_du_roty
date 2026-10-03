@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-09T10:44:05.471Z",
+  "url": "http://127.0.0.1:4173/",
+  "version": "12.8.2",
+  "categories": {
+    "performance": 89,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "metrics": {
+    "first-contentful-paint": "2.0 s",
+    "largest-contentful-paint": "3.5 s",
+    "total-blocking-time": "0 ms",
+    "cumulative-layout-shift": "0"
+  },
+  "context": "Production build on loopback. Mobile simulated. Preview intentionally noindex; not a measurement of the public Shopify site."
+}

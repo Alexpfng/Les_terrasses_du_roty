@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-09T12:22:46.223Z",
+  "runtime": "Local workerd via existing Miniflare; latest supported compatibility date 2026-05-22",
+  "note": "No credentials used; deliberately invalid bearer token. A 401 response demonstrates a real HTTP call was reached, not valid Redis authentication.",
+  "result": {
+    "hmac": "ok",
+    "unbound": {
+      "error": "Illegal invocation: function called with incorrect `this` reference. See https://developers.cloudflare.com/workers/observability/errors/#illegal-invocation-errors for details."
+    },
+    "boundError": {
+      "error": "Invalid redirect value, must be one of \"follow\" or \"manual\" (\"error\" won't be implemented since it does not make sense at the edge; use \"manual\" and check the response status code)."
+    },
+    "boundManual": {
+      "status": 401
+    }
+  }
+}

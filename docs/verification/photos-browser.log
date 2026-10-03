@@ -1,0 +1,29 @@
+
+> test:browser
+> node tests/browser.mjs
+
+{
+  "status": "passed",
+  "pages": 19,
+  "responsive": 95,
+  "axePages": 19,
+  "nojsPages": 19,
+  "form": [
+    "Cuvee and professional context prefilled",
+    "Accessible validation summary receives focus",
+    "Real endpoint 503: no success, input retained",
+    "Mocked uncertainty then 503 preserves reference/key, blocks changed content and retries after 23h",
+    "Keyboard skip link reaches main",
+    "Reduced motion disables smooth scroll"
+  ],
+  "menu": [
+    "Enter opens a native modal, focuses close and marks opener expanded",
+    "Tab and Shift+Tab wrap within the modal; background controls receive no focus",
+    "Open modal locks body overflow and prevents wheel scrolling of the background",
+    "Escape closes the menu, restores body scrolling and returns focus to the opener",
+    "Close button restores opener focus and scroll state",
+    "A menu link navigates to the cuvées and closes the modal with scrolling restored",
+    "Switching to desktop closes the modal and moves focus to the visible header brand"
+  ],
+  "errors": []
+}

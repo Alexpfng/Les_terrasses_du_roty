@@ -1,0 +1,253 @@
+{
+  "checkedAt": "2026-09-09T11:49:11.096Z",
+  "baseUrl": "https://preproduction--les-terrasses-du-roty.netlify.app",
+  "commit": "8b799b272f0e167a642ed179d00000f8f0da5e25",
+  "deployId": "6aa14733a01a39611d0de394",
+  "checks": [
+    {
+      "path": "/",
+      "authorized": false,
+      "status": 401,
+      "expected": 401,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/sitemap.xml",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/domaine/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/vins/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/professionnels/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/demande/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/journal/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/mentions-legales/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/confidentialite/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/robots.txt",
+      "authorized": true,
+      "status": 200,
+      "expected": 200,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/unknown-roty-path/",
+      "authorized": true,
+      "status": 404,
+      "expected": 404,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/cart",
+      "authorized": true,
+      "status": 410,
+      "expected": 410,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/checkout",
+      "authorized": true,
+      "status": 410,
+      "expected": 410,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": null
+    },
+    {
+      "path": "/products/les-terrasses-du-roty-cuvee-2023",
+      "authorized": true,
+      "status": 301,
+      "expected": 301,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": "/vins/cuvee-2023/"
+    },
+    {
+      "path": "/pages/contact",
+      "authorized": true,
+      "status": 301,
+      "expected": 301,
+      "robots": "noindex, nofollow",
+      "cacheControl": "no-store",
+      "location": "/demande/"
+    }
+  ],
+  "passed": 27,
+  "emailsSent": 0
+}

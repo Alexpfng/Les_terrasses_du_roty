@@ -1,0 +1,897 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "checkedAt": "2026-09-09T10:44:01.102Z",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Les Terrasses du Roty — Sept terrasses. Une Syrah.",
+      "canonical": "https://www.les-terrasses-du-roty.fr/",
+      "structuredData": 1,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/domaine/",
+      "status": 200,
+      "title": "Le domaine — Saulcet, Allier | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/domaine/",
+      "structuredData": 2,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "status": 200,
+      "title": "Sept terrasses en pierre sèche à Saulcet | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/terrasses-pierre-seche/",
+      "structuredData": 2,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/vins/",
+      "status": 200,
+      "title": "Les cuvées de Syrah du Roty | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/",
+      "structuredData": 2,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "status": 200,
+      "title": "Cuvée 2024 — Syrah du Roty | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/cuvee-2024/",
+      "structuredData": 2,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "status": 200,
+      "title": "Cuvée 2023 — Syrah du Roty | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/cuvee-2023/",
+      "structuredData": 2,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/professionnels/",
+      "status": 200,
+      "title": "Cavistes et restaurateurs — Contact professionnel | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/professionnels/",
+      "structuredData": 2,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/demande/",
+      "status": 200,
+      "title": "Contacter le domaine — Demander des bouteilles | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/demande/",
+      "structuredData": 1,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/journal/",
+      "status": 200,
+      "title": "Le journal du Roty — Vigne, Syrah et pierre sèche | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/",
+      "structuredData": 2,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/mentions-legales/",
+      "status": 200,
+      "title": "Mentions légales | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/mentions-legales/",
+      "structuredData": 1,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/confidentialite/",
+      "status": 200,
+      "title": "Confidentialité et données personnelles | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/confidentialite/",
+      "structuredData": 1,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "status": 200,
+      "title": "Modalités de demande et d’achat | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/conditions-de-vente/",
+      "structuredData": 1,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "status": 200,
+      "title": "Acheter du vin en direct dans l’Allier | Le guide du Roty | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/acheter-vin-direct-producteur-allier/",
+      "structuredData": 3,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "status": 200,
+      "title": "Vin bio près de Saint-Pourçain : les repères utiles | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vin-bio-pres-saint-pourcain/",
+      "structuredData": 3,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "status": 200,
+      "title": "Vignes en terrasses et pierre sèche | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vignes-terrasses-pierre-seche-roty/",
+      "structuredData": 3,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "status": 200,
+      "title": "Syrah à Saulcet, dans l’Allier | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/syrah-saulcet-allier/",
+      "structuredData": 3,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "status": 200,
+      "title": "Cavistes et restaurateurs | Découvrir la Syrah du Roty | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/cavistes-restaurateurs-syrah-roty/",
+      "structuredData": 3,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "status": 200,
+      "title": "Vendanges, macération et élevage | Archives du Roty | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vinification-vendanges-maceration-elevage/",
+      "structuredData": 3,
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "status": 200,
+      "title": "Vendanges 2024 au Roty | Archives du domaine | Les Terrasses du Roty",
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vendanges-2024/",
+      "structuredData": 3,
+      "internalLinks": "passed"
+    }
+  ],
+  "responsive": [
+    {
+      "path": "/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/domaine/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/domaine/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/domaine/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/domaine/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/domaine/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/professionnels/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/professionnels/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/professionnels/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/professionnels/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/professionnels/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/demande/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/demande/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/demande/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/demande/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/demande/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/mentions-legales/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/mentions-legales/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/mentions-legales/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/mentions-legales/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/mentions-legales/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/confidentialite/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/confidentialite/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/confidentialite/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/confidentialite/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/confidentialite/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "width": 360,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "width": 390,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "width": 768,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "width": 1280,
+      "overflow": false,
+      "greenUI": false
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "width": 1440,
+      "overflow": false,
+      "greenUI": false
+    }
+  ],
+  "accessibility": [
+    {
+      "path": "/",
+      "violations": []
+    },
+    {
+      "path": "/domaine/",
+      "violations": []
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "violations": []
+    },
+    {
+      "path": "/vins/",
+      "violations": []
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "violations": []
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "violations": []
+    },
+    {
+      "path": "/professionnels/",
+      "violations": []
+    },
+    {
+      "path": "/demande/",
+      "violations": []
+    },
+    {
+      "path": "/journal/",
+      "violations": []
+    },
+    {
+      "path": "/mentions-legales/",
+      "violations": []
+    },
+    {
+      "path": "/confidentialite/",
+      "violations": []
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "violations": []
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "violations": []
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "violations": []
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "violations": []
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "violations": []
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "violations": []
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "violations": []
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "violations": []
+    }
+  ],
+  "noJavaScript": [
+    {
+      "path": "/",
+      "characters": 2458
+    },
+    {
+      "path": "/domaine/",
+      "characters": 1284
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "characters": 1307
+    },
+    {
+      "path": "/vins/",
+      "characters": 746
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "characters": 769
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "characters": 774
+    },
+    {
+      "path": "/professionnels/",
+      "characters": 965
+    },
+    {
+      "path": "/demande/",
+      "characters": 1310
+    },
+    {
+      "path": "/journal/",
+      "characters": 2094
+    },
+    {
+      "path": "/mentions-legales/",
+      "characters": 1434
+    },
+    {
+      "path": "/confidentialite/",
+      "characters": 2628
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "characters": 1684
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "characters": 4325
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "characters": 4573
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "characters": 4529
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "characters": 4193
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "characters": 4784
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "characters": 2230
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "characters": 2091
+    }
+  ],
+  "form": [
+    "Cuvee and professional context prefilled",
+    "Accessible validation summary receives focus",
+    "Real endpoint 503: no success, input retained",
+    "Mocked uncertainty then 503 preserves reference/key, blocks changed content and retries after 23h",
+    "Keyboard skip link reaches main",
+    "Reduced motion disables smooth scroll"
+  ],
+  "errors": [],
+  "pageErrors": [],
+  "status": "passed"
+}

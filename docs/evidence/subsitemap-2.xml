@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/products/les-terrasses-du-roty-cuvee-2023</loc>
+    <lastmod>2026-09-09T11:08:01+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0930/1806/3192/files/IMG_2855.heic?v=1754573830</image:loc>
+      <image:title>Les Terrasses du Roty – Cuvée 2023</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.les-terrasses-du-roty.fr/products/cuvee-2024-les-terrasses-du-roty-precommande</loc>
+    <lastmod>2026-09-09T11:08:01+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0930/1806/3192/files/LES_TERRASSES_DU_ROTY_previsu.jpg?v=1754574247</image:loc>
+      <image:title>Les Terrasses du Roty – Cuvée 2024</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+</urlset>

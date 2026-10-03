@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
-import { gsap } from '@/terrasse/lib/gsapSetup';
-import { useLtdrStore } from '@/terrasse/lib/store';
-import { LOGOS, LABEL_TEXTURE, PHOTOS } from '@/terrasse/lib/assets';
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "@/terrasse/lib/gsapSetup";
+import { useLtdrStore } from "@/terrasse/lib/store";
+import { LOGOS, LABEL_TEXTURE, PHOTOS } from "@/terrasse/lib/assets";
 
 /** Assets réellement préchargés — la barre de progression ne ment pas. */
 const CRITICAL: string[] = [
@@ -59,7 +59,7 @@ export const Preloader = () => {
           gsap.to(el, {
             opacity: 0,
             duration: 0.7,
-            ease: 'power2.inOut',
+            ease: "power2.inOut",
             onComplete: () => {
               setGone(true);
               setReady(true);
@@ -87,35 +87,48 @@ export const Preloader = () => {
       aria-label="Chargement"
       role="status"
       style={{
-        position: 'fixed',
+        position: "fixed",
         inset: 0,
-        zIndex: 'var(--z-preloader)' as unknown as number,
-        background: 'var(--ltdr-black)',
-        display: 'grid',
-        placeItems: 'center',
+        zIndex: "var(--z-preloader)" as unknown as number,
+        background: "var(--ltdr-black)",
+        display: "grid",
+        placeItems: "center",
       }}
     >
-      <div style={{ display: 'grid', justifyItems: 'center', gap: 26 }}>
-        <div style={{ position: 'relative', width: 'clamp(110px, 16vmin, 180px)', aspectRatio: '784 / 592' }}>
+      <div style={{ display: "grid", justifyItems: "center", gap: 26 }}>
+        <div
+          style={{
+            position: "relative",
+            width: "clamp(110px, 16vmin, 180px)",
+            aspectRatio: "784 / 592",
+          }}
+        >
           {Array.from({ length: STRIPS }, (_, s) => (
             <div
               key={s}
               style={{
-                position: 'absolute',
+                position: "absolute",
                 left: 0,
-                width: '100%',
-                height: '10%',
+                width: "100%",
+                height: "10%",
                 top: `${s * 10}%`,
                 backgroundImage: `url(${LOGOS.sunGold})`,
-                backgroundSize: '100% 1000%',
+                backgroundSize: "100% 1000%",
                 backgroundPosition: `0 ${(s / (STRIPS - 1)) * 100}%`,
                 opacity: STRIPS - 1 - s < visible ? 1 : 0.06,
-                transition: 'opacity .4s',
+                transition: "opacity .4s",
               }}
             />
           ))}
         </div>
-        <span style={{ fontSize: 10, letterSpacing: '0.32em', textTransform: 'uppercase', color: 'var(--ltdr-ivory-45)' }}>
+        <span
+          style={{
+            fontSize: 10,
+            letterSpacing: "0.32em",
+            textTransform: "uppercase",
+            color: "var(--ltdr-ivory-45)",
+          }}
+        >
           {Math.round(progress * 100)} %
         </span>
       </div>

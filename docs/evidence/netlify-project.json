@@ -1,0 +1,58 @@
+{
+  "id": "b5b6a14e-3b07-4f89-8016-af1740b20192",
+  "name": "les-terrasses-du-roty",
+  "ssl_url": "https://les-terrasses-du-roty.netlify.app",
+  "admin_url": "https://app.netlify.com/projects/les-terrasses-du-roty",
+  "account_slug": "maxclubcomptable",
+  "account_type": "Free",
+  "default_domain": "les-terrasses-du-roty.netlify.app",
+  "build_settings": {},
+  "published_deploy": null,
+  "functions_region": "us-east-2",
+  "lifecycle_state": "active",
+  "checkedAt": "2026-09-09T12:21:53.865612+00:00",
+  "runtimeVariableKeys": [
+    "RESEND_API_KEY",
+    "ROTY_ALLOWED_ORIGINS",
+    "ROTY_FORM_HASH_SECRET",
+    "ROTY_FORM_NAMESPACE",
+    "ROTY_GA_ENABLED",
+    "ROTY_GA_MEASUREMENT_ID",
+    "ROTY_MAIL_FROM",
+    "ROTY_PREVIEW_MODE",
+    "ROTY_PREVIEW_PASSWORD",
+    "ROTY_PREVIEW_USER",
+    "ROTY_REDIS_REST_TOKEN",
+    "ROTY_REDIS_REST_URL"
+  ],
+  "secretsIncluded": false,
+  "analytics": {
+    "measurementId": "G-L2PJT90F4Y",
+    "enabled": false,
+    "contexts": "all"
+  },
+  "preview": {
+    "id": "6aa14e0f2aa93a27d5114874",
+    "url": "https://preproduction--les-terrasses-du-roty.netlify.app",
+    "context": "branch-deploy",
+    "state": "ready",
+    "commit": "2ae3351792acf7aa1c74afbc8d98eb00166b898c",
+    "function": "server",
+    "published_at": null
+  },
+  "productionQuota": {
+    "blocked": true,
+    "reason": "Current cycle credits exhausted; operational credits cannot fund production deploys",
+    "operationalCreditsRemainingObserved": 20.4,
+    "operationalCreditsExpire": "2026-10-02",
+    "planChanged": false
+  },
+  "emailConfiguration": {
+    "domain": "notifications.les-terrasses-du-roty.fr",
+    "sender": "site@notifications.les-terrasses-du-roty.fr",
+    "keyScope": "sending access, Roty domain only",
+    "rotated": true,
+    "oldKeyRevoked": true,
+    "positiveEmailTestOnNetlify": false
+  }
+}

@@ -1,10 +1,10 @@
-import { useEffect, useMemo } from 'react';
-import * as THREE from 'three';
-import { useFrame } from '@react-three/fiber';
-import { progressState, smoothstep } from '@/terrasse/lib/progress';
-import { ANIM } from '@/terrasse/lib/animConfig';
-import { makeGlowSprite, disposeGroup } from '@/terrasse/lib/threeUtils';
-import { CameraRig } from './CameraRig';
+import { useEffect, useMemo } from "react";
+import * as THREE from "three";
+import { useFrame } from "@react-three/fiber";
+import { progressState, smoothstep } from "@/terrasse/lib/progress";
+import { ANIM } from "@/terrasse/lib/animConfig";
+import { makeGlowSprite, disposeGroup } from "@/terrasse/lib/threeUtils";
+import { CameraRig } from "./CameraRig";
 
 interface TerracesSceneProps {
   active: boolean;
@@ -94,7 +94,19 @@ const buildTerraces = (): TerracesBuild => {
       const mat = new THREE.LineBasicMaterial({ color: 0xc9a227, transparent: true, opacity: op });
       const ph = rr(0, Math.PI * 2);
       contour(-halfL, gapC - gapW / 2, yy - vOff, z, bow, refW, tilt, wobAmp, wobFreq, ph, mat);
-      contour(gapC + gapW / 2, halfR, yy + vOff, z, bow, refW, tilt, wobAmp, wobFreq, ph + 0.5, mat);
+      contour(
+        gapC + gapW / 2,
+        halfR,
+        yy + vOff,
+        z,
+        bow,
+        refW,
+        tilt,
+        wobAmp,
+        wobFreq,
+        ph + 0.5,
+        mat,
+      );
     }
     y += rr(2.0, 2.95);
     z -= rr(4.8, 6.5);
@@ -115,7 +127,15 @@ const buildTerraces = (): TerracesBuild => {
   for (let r = 0; r < 4; r++) {
     const yy = sunCY + (r - 1.5) * 2.4;
     const hw = Math.sqrt(Math.max(0, SR * SR - (yy - sunCY) * (yy - sunCY)));
-    group.add(mkLine([new THREE.Vector3(-hw + 1.5, yy, sunCZ - 0.1), new THREE.Vector3(hw - 1.5, yy, sunCZ - 0.1)], sunMat));
+    group.add(
+      mkLine(
+        [
+          new THREE.Vector3(-hw + 1.5, yy, sunCZ - 0.1),
+          new THREE.Vector3(hw - 1.5, yy, sunCZ - 0.1),
+        ],
+        sunMat,
+      ),
+    );
   }
 
   const glow = makeGlowSprite();
@@ -133,10 +153,16 @@ const buildTerraces = (): TerracesBuild => {
     da[i * 3 + 1] = Math.random() * 22;
     da[i * 3 + 2] = -Math.random() * 56 + 10;
   }
-  dg.setAttribute('position', new THREE.BufferAttribute(da, 3));
+  dg.setAttribute("position", new THREE.BufferAttribute(da, 3));
   const dust = new THREE.Points(
     dg,
-    new THREE.PointsMaterial({ color: 0xc9a227, size: 0.11, transparent: true, opacity: 0.42, depthWrite: false }),
+    new THREE.PointsMaterial({
+      color: 0xc9a227,
+      size: 0.11,
+      transparent: true,
+      opacity: 0.42,
+      depthWrite: false,
+    }),
   );
   group.add(dust);
 
@@ -185,8 +211,13 @@ export const TerracesScene = ({ active }: TerracesSceneProps) => {
   return (
     <>
       <primitive object={built.group} />
-      <fogExp2 attach="fog" args={['#0A0908', 0.012]} />
-      <CameraRig path={path} look={look} getProgress={() => progressState.terraces} active={active} />
+      <fogExp2 attach="fog" args={["#0A0908", 0.012]} />
+      <CameraRig
+        path={path}
+        look={look}
+        getProgress={() => progressState.terraces}
+        active={active}
+      />
     </>
   );
 };

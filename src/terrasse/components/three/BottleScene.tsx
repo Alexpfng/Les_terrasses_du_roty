@@ -1,13 +1,18 @@
-import { useEffect, useMemo, useRef } from 'react';
-import * as THREE from 'three';
-import { useFrame, useLoader } from '@react-three/fiber';
-import { progressState, smoothstep } from '@/terrasse/lib/progress';
-import { ANIM } from '@/terrasse/lib/animConfig';
-import { LABEL_TEXTURE, LABEL_EMISSIVE } from '@/terrasse/lib/assets';
-import { makeEnvMap, makeGlowSprite, makeContactShadow, disposeGroup } from '@/terrasse/lib/threeUtils';
-import { useLtdrStore } from '@/terrasse/lib/store';
-import { BottleLights, type BottleLightsHandle } from './Lights';
-import { ParticleField } from './ParticleField';
+import { useEffect, useMemo, useRef } from "react";
+import * as THREE from "three";
+import { useFrame, useLoader } from "@react-three/fiber";
+import { progressState, smoothstep } from "@/terrasse/lib/progress";
+import { ANIM } from "@/terrasse/lib/animConfig";
+import { LABEL_TEXTURE, LABEL_EMISSIVE } from "@/terrasse/lib/assets";
+import {
+  makeEnvMap,
+  makeGlowSprite,
+  makeContactShadow,
+  disposeGroup,
+} from "@/terrasse/lib/threeUtils";
+import { useLtdrStore } from "@/terrasse/lib/store";
+import { BottleLights, type BottleLightsHandle } from "./Lights";
+import { ParticleField } from "./ParticleField";
 
 interface BottleSceneProps {
   active: boolean;
@@ -55,14 +60,14 @@ export const BottleScene = ({ active }: BottleSceneProps) => {
 
     // verre — teinte lie-de-vin très sombre, rendu studio
     const glassMat =
-      tier === 'high'
+      tier === "high"
         ? new THREE.MeshPhysicalMaterial({
             color: 0x120808,
             transmission: 0.92,
             thickness: 1.8,
             roughness: 0.04,
             ior: 1.52,
-            attenuationColor: new THREE.Color('#3a0f17'),
+            attenuationColor: new THREE.Color("#3a0f17"),
             attenuationDistance: 1.1,
             clearcoat: 1,
             clearcoatRoughness: 0.1,
@@ -79,14 +84,20 @@ export const BottleScene = ({ active }: BottleSceneProps) => {
             envMapIntensity: 1.4,
           });
     const glass = new THREE.Mesh(
-      new THREE.LatheGeometry(PROFILE.map(([x, y]) => new THREE.Vector2(x, y)), 64),
+      new THREE.LatheGeometry(
+        PROFILE.map(([x, y]) => new THREE.Vector2(x, y)),
+        64,
+      ),
       glassMat,
     );
     group.add(glass);
 
     // capsule noir satin
     const capsule = new THREE.Mesh(
-      new THREE.LatheGeometry(CAPSULE_PROFILE.map(([x, y]) => new THREE.Vector2(x, y)), 48),
+      new THREE.LatheGeometry(
+        CAPSULE_PROFILE.map(([x, y]) => new THREE.Vector2(x, y)),
+        48,
+      ),
       new THREE.MeshStandardMaterial({
         color: 0x0d0b0a,
         roughness: 0.35,
@@ -189,7 +200,8 @@ export const BottleScene = ({ active }: BottleSceneProps) => {
 
     // 4. caméra : recul studio (bouteille entière) → gros plan étiquette → recul
     // hero : bouteille entière, recul studio ; gros plan : l'étiquette remplit le cadre
-    const pushIn = smoothstep(B.pushInStart, B.pushInEnd, p) * (1 - smoothstep(B.pushOutStart, B.pushOutEnd, p));
+    const pushIn =
+      smoothstep(B.pushInStart, B.pushInEnd, p) * (1 - smoothstep(B.pushOutStart, B.pushOutEnd, p));
     if (active) {
       camera.position.set(0, lerp(17, 6, pushIn), lerp(46, 16, pushIn));
       camera.lookAt(0, lerp(13, 5.8, pushIn), 0);
@@ -204,7 +216,7 @@ export const BottleScene = ({ active }: BottleSceneProps) => {
       <primitive object={built.shadow} />
       <primitive object={built.glow} />
       <BottleLights ref={lights} />
-      <ParticleField count={tier === 'low' ? 80 : 220} mode="orbital" opacity={0.45} />
+      <ParticleField count={tier === "low" ? 80 : 220} mode="orbital" opacity={0.45} />
     </>
   );
 };

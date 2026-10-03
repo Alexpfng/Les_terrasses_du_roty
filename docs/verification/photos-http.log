@@ -1,0 +1,183 @@
+
+> test:http
+> node tests/http.mjs
+
+{
+  "checkedAt": "2026-09-09T13:53:48.944Z",
+  "base": "http://127.0.0.1:4173",
+  "checks": [
+    {
+      "path": "/products/les-terrasses-du-roty-cuvee-2023",
+      "status": 301,
+      "location": "/vins/cuvee-2023/"
+    },
+    {
+      "path": "/products/cuvee-2024-les-terrasses-du-roty-precommande",
+      "status": 301,
+      "location": "/vins/cuvee-2024/"
+    },
+    {
+      "path": "/collections/all",
+      "status": 301,
+      "location": "/vins/"
+    },
+    {
+      "path": "/collections/cuvees-2023",
+      "status": 301,
+      "location": "/vins/cuvee-2023/"
+    },
+    {
+      "path": "/collections/frontpage",
+      "status": 301,
+      "location": "/vins/cuvee-2023/"
+    },
+    {
+      "path": "/pages/contact",
+      "status": 301,
+      "location": "/demande/"
+    },
+    {
+      "path": "/blogs/infos",
+      "status": 301,
+      "location": "/journal/"
+    },
+    {
+      "path": "/blogs/infos/l-origine-des-terrasses-du-roty",
+      "status": 301,
+      "location": "/domaine/"
+    },
+    {
+      "path": "/blogs/infos/la-syrah-un-cepage-noble-du-sud-qui-s-epanouit-au-coeur-du-bourbonnais",
+      "status": 301,
+      "location": "/journal/syrah-saulcet-allier/"
+    },
+    {
+      "path": "/blogs/infos/vendanges-2024-une-cuvee-qui-s-annonce-exceptionnelle-%F0%9F%8D%87",
+      "status": 301,
+      "location": "/journal/vendanges-2024/"
+    },
+    {
+      "path": "/blogs/infos/l-art-de-la-vinification-vendanges-maceration-et-elevage",
+      "status": 301,
+      "location": "/journal/vinification-vendanges-maceration-elevage/"
+    },
+    {
+      "path": "/blogs/vendanges-2024",
+      "status": 301,
+      "location": "/journal/vendanges-2024/"
+    },
+    {
+      "path": "/policies/legal-notice",
+      "status": 301,
+      "location": "/mentions-legales/"
+    },
+    {
+      "path": "/policies/privacy-policy",
+      "status": 301,
+      "location": "/confidentialite/"
+    },
+    {
+      "path": "/policies/contact-information",
+      "status": 301,
+      "location": "/demande/"
+    },
+    {
+      "path": "/pages/data-sharing-opt-out",
+      "status": 301,
+      "location": "/confidentialite/"
+    },
+    {
+      "path": "/policies/terms-of-service",
+      "status": 301,
+      "location": "/mentions-legales/"
+    },
+    {
+      "path": "/vins",
+      "status": 308,
+      "location": "/vins/"
+    },
+    {
+      "path": "/domaine?source=test",
+      "status": 308,
+      "location": "/domaine/?source=test"
+    },
+    {
+      "path": "/cart",
+      "status": 410
+    },
+    {
+      "path": "/cart/add",
+      "status": 410
+    },
+    {
+      "path": "/checkout",
+      "status": 410
+    },
+    {
+      "path": "/checkouts/old",
+      "status": 410
+    },
+    {
+      "path": "/account",
+      "status": 410
+    },
+    {
+      "path": "/account/login",
+      "status": 410
+    },
+    {
+      "path": "/policies/shipping-policy",
+      "status": 410
+    },
+    {
+      "path": "/policies/refund-policy",
+      "status": 410
+    },
+    {
+      "path": "/policies/terms-of-sale",
+      "status": 410
+    },
+    {
+      "path": "/inconnue-test-404/",
+      "status": 404
+    },
+    {
+      "path": "/journal/article-inexistant/",
+      "status": 404
+    },
+    {
+      "path": "/products/produit-inconnu/",
+      "status": 404
+    },
+    {
+      "path": "/agents.md",
+      "status": 404
+    },
+    {
+      "name": "Initial HTML and protected indexing",
+      "passed": true
+    },
+    {
+      "name": "Local preview excluded from indexing",
+      "passed": true
+    },
+    {
+      "name": "Sitemap 19 canonical URLs, no invented dates",
+      "passed": true
+    },
+    {
+      "name": "Real endpoint without provider",
+      "status": 503,
+      "emailSent": false
+    },
+    {
+      "name": "Email endpoint rejects GET",
+      "status": 405
+    },
+    {
+      "name": "Browser bundle has no mail credentials/provider implementation/commerce/3D",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-09-09T12:40:59.911468+00:00",
+  "store": "vwpjn4-w0",
+  "adminUrl": "https://admin.shopify.com/store/vwpjn4-w0/products",
+  "action": "Both existing Roty products set to draft through authenticated Shopify bulk-action UI",
+  "products": [
+    {
+      "id": "15234627338584",
+      "name": "Les Terrasses du Roty – Cuvée 2024",
+      "before": "Actif",
+      "after": "Brouillon",
+      "inventoryBefore": "Stock non suivi",
+      "channelsBeforeDirectlyExpanded": [
+        "Boutique en ligne",
+        "Point de vente",
+        "Shop"
+      ]
+    },
+    {
+      "id": "15234585330008",
+      "name": "Les Terrasses du Roty – Cuvée 2023",
+      "before": "Actif",
+      "after": "Brouillon",
+      "inventoryBefore": "0 en stock",
+      "channelCountBefore": 3
+    }
+  ],
+  "uiEvidence": {
+    "view": "Tous",
+    "totalProductsOnPage": 2,
+    "confirmationTitle": "Définir 2 produits comme brouillons ?",
+    "confirmationEffect": "Définir des produits comme brouillons les masquera de tous les canaux de vente et applications.",
+    "afterRowsReopened": [
+      {
+        "id": "15234627338584",
+        "status": "Brouillon"
+      },
+      {
+        "id": "15234585330008",
+        "status": "Brouillon"
+      }
+    ],
+    "product2024DetailReopened": "Brouillon shown beside heading and in Statut; share hint says to include product in Online Store channel first",
+    "salesChannelsVisibleInNavigation": [
+      "Boutique en ligne",
+      "Agentique",
+      "Shop"
+    ],
+    "assignedChannelCountStillVisibleAfterDraft": 3
+  },
+  "scope": {
+    "ordersDeleted": false,
+    "customersDeleted": false,
+    "productsDeleted": false,
+    "channelsUninstalled": false,
+    "subscriptionReactivated": false,
+    "purchaseMade": false,
+    "reversible": true
+  },
+  "notes": [
+    "Draft hides products across sales channels and apps according to Shopify confirmation. Channel assignments remain stored and were not deleted.",
+    "Password protection, subscription cancellation and domain detachment are managed by the root agent and recorded in separate evidence.",
+    "No customer or order data was read or modified by this action."
+  ]
+}

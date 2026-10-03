@@ -4,9 +4,9 @@
  * plus, GSAP et R3F gèlent. Ce module expose de quoi avancer le temps et le
  * scroll de façon déterministe pour vérifier les scènes hors navigateur réel.
  */
-import { gsap, ScrollTrigger } from './gsapSetup';
-import { advance } from '@react-three/fiber';
-import { getLenis } from './lenis';
+import { gsap, ScrollTrigger } from "./gsapSetup";
+import { advance } from "@react-three/fiber";
+import { getLenis } from "./lenis";
 
 declare global {
   interface Window {

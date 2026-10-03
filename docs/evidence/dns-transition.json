@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-09-09T13:38:46.016Z",
+  "registrar": "OVHcloud",
+  "domain": "les-terrasses-du-roty.fr",
+  "activeNameservers": [
+    "desi.ns.cloudflare.com",
+    "rodrigo.ns.cloudflare.com"
+  ],
+  "preparedCloudflareNameservers": [
+    "desi.ns.cloudflare.com",
+    "rodrigo.ns.cloudflare.com"
+  ],
+  "dnssec": {
+    "deactivationRequested": true,
+    "managerStatus": "En cours de désactivation",
+    "ovhIndicatedDelay": "environ 24 heures",
+    "parentDsStillPresentAtCheck": false,
+    "oldDsKeyTag": 62702,
+    "oldDsTtlSeconds": 3600,
+    "migrationRequirement": "Wait for removal of the old DS at the .fr parent and expiry of its old TTL before changing nameservers",
+    "parentDsRemovalFirstObservedAt": "2026-09-09T12:26:31Z",
+    "earliestNameserverMigrationAfterOldTtl": "2026-09-09T13:26:31Z",
+    "preSubmissionChecks": "Old DS absent at .fr parent, 1.1.1.1 and 8.8.8.8; old 3600-second TTL elapsed before submitting NS change.",
+    "cloudflareSigningEnabled": true,
+    "cloudflareUiStatus": "Pending; waiting for DS at registrar",
+    "newDsPublishedAtRegistrar": false,
+    "preparedEvidence": "docs/evidence/cloudflare-dnssec-prepared.json",
+    "earliestConservativeRegistrarPublicationAt": "2026-09-09T15:34:09.224392+00:00"
+  },
+  "www": {
+    "ovhTtlSeconds": 300,
+    "oldCname": "shops.myshopify.com",
+    "newCnamePrepared": "les-terrasses-du-roty.pages.dev",
+    "cloudflarePagesDomainAssociationCreated": true,
+    "dnsDestinationChanged": true,
+    "dnsChangedAt": "2026-09-09T12:30:17Z",
+    "publicResolversChecked": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ],
+    "newARecords": [
+      "172.66.45.48",
+      "172.66.46.208"
+    ],
+    "pagesProductionDeployment": "a934ec80",
+    "productionCommit": "bf7957241ede2b144480b8f781eb35d5db8644b0",
+    "publicServingNewVersion": true,
+    "pagesDomainStatus": "active",
+    "pagesDomainEvidence": "docs/verification/cloudflare-domain.json",
+    "httpsVerified": true,
+    "httpEvidence": {
+      "url": "https://www.les-terrasses-du-roty.fr/",
+      "status": 200,
+      "location": null,
+      "server": "cloudflare",
+      "tlsVerified": true,
+      "title": "Les Terrasses du Roty — Syrah à Saulcet, Allier",
+      "rotySsrMain": true,
+      "shopifyStorefrontMarkup": false
+    },
+    "pagesProductionDeploymentFullId": "a934ec80-a7b4-4a8f-b2e7-a83150b60f0f"
+  },
+  "apex": {
+    "observedHttpsRedirect": "308 https://www.les-terrasses-du-roty.fr/",
+    "temporaryDependency": "Old Shopify redirect retained only for clients caching the former OVH delegation or apex A record; current authoritative apex uses Cloudflare Pages.",
+    "existingOvhHosting": "lesterh.cluster029.hosting.ovh.net",
+    "existingOvhSsl": "No certificate shown in the OVH certificate inventory",
+    "httpEvidence": {
+      "url": "https://les-terrasses-du-roty.fr/",
+      "status": 308,
+      "location": "https://www.les-terrasses-du-roty.fr/",
+      "tlsVerified": true,
+      "evidence": "docs/verification/cloudflare-apex-http.json"
+    },
+    "previousA": "23.227.38.65",
+    "currentDns": {
+      "type": "CNAME",
+      "target": "les-terrasses-du-roty.pages.dev",
+      "proxied": true,
+      "ttl": "Auto"
+    },
+    "pagesDomainStatus": "active",
+    "httpsVerified": true,
+    "pathAndQueryPreserved": true
+  },
+  "mailRecords": "Existing OVH MX, root SPF and all three verified Resend records preserved",
+  "sources": [
+    "https://developers.cloudflare.com/dns/dnssec/",
+    "https://docs.ovhcloud.com/fr/guides/web-cloud/domains/dns-dnssec",
+    "https://developers.cloudflare.com/pages/configuration/custom-domains/#add-a-custom-apex-domain"
+  ],
+  "nameserverMigrationPerformed": true,
+  "latestReadOnlyPublicChecks": {
+    "checkedAt": "2026-09-09T13:38:46.016Z",
+    "evidence": "docs/verification/cloudflare-apex-http.json",
+    "total": 7,
+    "passed": 7,
+    "normalPublicResolution": true
+  },
+  "nameserverMigrationRequested": true,
+  "nameserverRequestAcceptedConfirmedAt": "2026-09-09T13:27:46.329891+00:00",
+  "nameserverUiEvidence": {
+    "message": "Votre demande de mise à jour a bien été prise en considération et sera traitée dans les meilleurs délais.",
+    "cloudflareServers": "En cours d’activation",
+    "ovhServers": "En cours de suppression"
+  },
+  "nameserverMigrationState": "Delegation observed at all three .fr authoritative servers; Cloudflare zone active; apex and www Pages domains active with SSL enabled.",
+  "allParentsCloudflareFirstObservedAt": "2026-09-09T13:34:09.224392+00:00",
+  "earliestConservativeLegacyCleanupAt": "2026-09-09T15:34:09.224392+00:00",
+  "cloudflareZoneRecordCount": 9,
+  "cloudflareApexTransitionEvidence": "docs/evidence/cloudflare-apex-transition.json"
+}

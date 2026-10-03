@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-09-09T12:30:08.991Z",
+  "deploymentId": "a934ec80-a7b4-4a8f-b2e7-a83150b60f0f",
+  "environment": "production",
+  "url": "https://a934ec80.les-terrasses-du-roty.pages.dev",
+  "aliases": null,
+  "commit": "bf7957241ede2b144480b8f781eb35d5db8644b0",
+  "branch": "production",
+  "status": "success",
+  "technicalHostsProtected": [
+    {
+      "url": "https://a934ec80.les-terrasses-du-roty.pages.dev",
+      "status": 503
+    },
+    {
+      "url": "https://les-terrasses-du-roty.pages.dev",
+      "status": 503
+    }
+  ],
+  "canonicalHost": "https://www.les-terrasses-du-roty.fr",
+  "dnsState": "OVH www CNAME applied at 12:30:17 UTC; Pages Active, SSL enabled, correct public site HTTPS200 verified.",
+  "emailProof": "cloudflare-mail.json",
+  "mailRuntimeProof": "cloudflare-mail-runtime.json",
+  "canonicalHostVerifiedAt": "2026-09-09T12:35:49.610Z"
+}

@@ -1,0 +1,1096 @@
+{
+  "checkedAt": "2026-09-09T14:10:20.442Z",
+  "base": "https://www.les-terrasses-du-roty.fr",
+  "commit": "296198b69ac45a416807210b3c77593447aacc0e",
+  "checks": [
+    {
+      "name": "Routing",
+      "path": "/pages/contact",
+      "status": 301,
+      "location": "/demande/"
+    },
+    {
+      "name": "Routing",
+      "path": "/products/les-terrasses-du-roty-cuvee-2023",
+      "status": 301,
+      "location": "/vins/cuvee-2023/"
+    },
+    {
+      "name": "Routing",
+      "path": "/vins",
+      "status": 308,
+      "location": "/vins/"
+    },
+    {
+      "name": "Routing",
+      "path": "/cart",
+      "status": 410
+    },
+    {
+      "name": "Routing",
+      "path": "/checkout",
+      "status": 410
+    },
+    {
+      "name": "Routing",
+      "path": "/account",
+      "status": 410
+    },
+    {
+      "name": "Routing",
+      "path": "/inexistante-recette/",
+      "status": 404
+    },
+    {
+      "name": "Production analytics config, no Google call made",
+      "status": 200
+    },
+    {
+      "name": "Public indexing enabled and sitemap linked",
+      "status": 200
+    },
+    {
+      "name": "Invalid form body refused, no email attempted",
+      "status": 422
+    },
+    {
+      "name": "Preview remains password protected",
+      "status": 401
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 22230,
+      "wallTimeMs": 35,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/domaine/",
+      "status": 200,
+      "bytes": 13426,
+      "wallTimeMs": 31,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/domaine/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "status": 200,
+      "bytes": 13235,
+      "wallTimeMs": 37,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/terrasses-pierre-seche/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/vins/",
+      "status": 200,
+      "bytes": 13787,
+      "wallTimeMs": 29,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "status": 200,
+      "bytes": 12240,
+      "wallTimeMs": 115,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/cuvee-2024/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "status": 200,
+      "bytes": 11816,
+      "wallTimeMs": 29,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/vins/cuvee-2023/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/professionnels/",
+      "status": 200,
+      "bytes": 15669,
+      "wallTimeMs": 32,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/professionnels/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/demande/",
+      "status": 200,
+      "bytes": 15220,
+      "wallTimeMs": 37,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/demande/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/journal/",
+      "status": 200,
+      "bytes": 20110,
+      "wallTimeMs": 31,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/mentions-legales/",
+      "status": 200,
+      "bytes": 11360,
+      "wallTimeMs": 29,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/mentions-legales/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/confidentialite/",
+      "status": 200,
+      "bytes": 14267,
+      "wallTimeMs": 29,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/confidentialite/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "status": 200,
+      "bytes": 11173,
+      "wallTimeMs": 28,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/conditions-de-vente/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "status": 200,
+      "bytes": 22275,
+      "wallTimeMs": 37,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/acheter-vin-direct-producteur-allier/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "status": 200,
+      "bytes": 23840,
+      "wallTimeMs": 25,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vin-bio-pres-saint-pourcain/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "status": 200,
+      "bytes": 23376,
+      "wallTimeMs": 28,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vignes-terrasses-pierre-seche-roty/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "status": 200,
+      "bytes": 22252,
+      "wallTimeMs": 30,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/syrah-saulcet-allier/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "status": 200,
+      "bytes": 24861,
+      "wallTimeMs": 34,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/cavistes-restaurateurs-syrah-roty/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "status": 200,
+      "bytes": 17089,
+      "wallTimeMs": 28,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vinification-vendanges-maceration-elevage/",
+      "noindex": false,
+      "cacheControl": null
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "status": 200,
+      "bytes": 16580,
+      "wallTimeMs": 33,
+      "ssr": true,
+      "canonical": "https://www.les-terrasses-du-roty.fr/journal/vendanges-2024/",
+      "noindex": false,
+      "cacheControl": null
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/index-CitWDa0c.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/SiteLayout-BYqfd9hs.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/routes-Bw5eMt3B.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/ContentCards-C34N3eV3.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/roty-C0XtbExz.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/analytics-BJC-j9Rh.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/site-shell-CbOCdysw.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/editorial-premium-DhSwAbFY.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/form-premium-BPxHr1rX.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/favicon-etiquette.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/fonts/inter-latin.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/logo-etiquette-black.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/bottle-studio-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/label-crop-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/img-9683-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-restoration-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-planting-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-cork-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-reflections-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/dji-0086-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/logo-etiquette-light.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/bottle-studio-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/bottle-studio-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/bottle-studio-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/bottle-studio-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/label-crop-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/label-crop-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/label-crop-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/label-crop-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/img-9683-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/img-9683-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/img-9683-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/img-9683-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-restoration-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-restoration-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-restoration-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-restoration-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-planting-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-planting-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-planting-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-planting-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-woman-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-cork-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-cork-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-cork-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-cork-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-reflections-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-reflections-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-reflections-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-reflections-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/dji-0086-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/dji-0086-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/dji-0086-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/dji-0086-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/domaine-BP3ZU5gu.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/EditorialPages-CbWREytv.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-vineyard-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-team-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-vineyard-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-vineyard-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-vineyard-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-vineyard-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-team-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-team-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-team-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-team-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/terrasses-pierre-seche-D10sIIK3.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-terraces-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-terraces-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-terraces-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-terraces-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-terraces-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/vins-Dpjj66aV.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/vins_.cuvee-2024-D8xveoTJ.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/vins_.cuvee-2023-C31py3vj.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/professionnels-LeEfoYQQ.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-table-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-table-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-table-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-table-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-table-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/demande-COlFRgnk.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-tasting-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-tasting-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-tasting-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-tasting-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-tasting-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/journal-CRX4n5Zk.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-motion-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-silhouette-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-800.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-motion-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-motion-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-motion-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-motion-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-silhouette-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-silhouette-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-silhouette-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/wine-silhouette-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-800.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-1600.avif",
+      "status": 200,
+      "contentType": "image/avif",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-800.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/img/roty-harvest-2024-1600.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/mentions-legales-Ba-060gA.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/LegalPages-CU5ahLlF.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/confidentialite-B4sKKJ6v.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/conditions-de-vente-68k79hsP.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/journal_._slug--9eJPadt.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "cacheControl": "public, max-age=31536000, immutable"
+    }
+  ],
+  "links": [
+    {
+      "path": "/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/vins/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/domaine/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/journal/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/professionnels/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/demande/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/terrasses-pierre-seche/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/vins/cuvee-2024/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/vins/cuvee-2023/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/journal/vendanges-2024/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/journal/acheter-vin-direct-producteur-allier/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/journal/vin-bio-pres-saint-pourcain/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/journal/vignes-terrasses-pierre-seche-roty/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/mentions-legales/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/confidentialite/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/conditions-de-vente/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/demande/?objet=autre",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/demande/?profil=particulier&objet=bouteilles",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/demande/?cuvee=2024&objet=bouteilles",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 307,
+          "location": "/demande/?cuvee=%222024%22&objet=bouteilles"
+        }
+      ]
+    },
+    {
+      "path": "/journal/syrah-saulcet-allier/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/demande/?cuvee=2023&objet=bouteilles",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 307,
+          "location": "/demande/?cuvee=%222023%22&objet=bouteilles"
+        }
+      ]
+    },
+    {
+      "path": "/demande/?profil=caviste&objet=professionnel",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/demande/?profil=restaurateur&objet=professionnel",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/journal/cavistes-restaurateurs-syrah-roty/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/demande/?profil=professionnel&objet=professionnel",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    },
+    {
+      "path": "/journal/vinification-vendanges-maceration-elevage/",
+      "method": "HEAD",
+      "status": 200,
+      "redirects": []
+    }
+  ],
+  "passed": true
+}

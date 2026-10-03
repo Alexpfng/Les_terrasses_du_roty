@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-09-09T12:28:48.031Z",
+  "project": "les-terrasses-du-roty",
+  "branch": "production",
+  "productionBindings": {
+    "RESEND_API_KEY": "secret_text",
+    "ROTY_ALLOWED_ORIGINS": "secret_text",
+    "ROTY_FORM_HASH_SECRET": "secret_text",
+    "ROTY_FORM_NAMESPACE": "secret_text",
+    "ROTY_GA_ENABLED": "secret_text",
+    "ROTY_GA_MEASUREMENT_ID": "secret_text",
+    "ROTY_MAIL_FROM": "secret_text",
+    "ROTY_PREVIEW_MODE": "secret_text",
+    "ROTY_REDIS_REST_TOKEN": "secret_text",
+    "ROTY_REDIS_REST_URL": "secret_text"
+  },
+  "previewPasswordPresent": true,
+  "productionPasswordAbsent": true,
+  "productionNamespace": "roty-cloudflare-production",
+  "allowedOrigins": "https://www.les-terrasses-du-roty.fr",
+  "analyticsEnabled": true,
+  "measurementId": "G-L2PJT90F4Y",
+  "note": "Provider secrets preserved; configuration becomes active on the next Production deployment. Values of secrets were never printed."
+}

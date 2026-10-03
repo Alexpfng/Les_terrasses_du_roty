@@ -1,0 +1,23 @@
+{
+  "siren": "892392010",
+  "nom_complet": "LES COTES DU ROTY",
+  "nature_juridique": "5710",
+  "etat_administratif": "A",
+  "date_mise_a_jour": "2026-09-08T10:50:40",
+  "tva": [
+    "FR01892392010"
+  ],
+  "siege": {
+    "adresse": "14 CHEMIN DU GRAVIER 03300 CUSSET",
+    "siret": "89239201000013"
+  },
+  "dirigeants": [
+    {
+      "siren": "507934727",
+      "denomination": "TOMAX",
+      "qualite": "Président de SAS",
+      "type_dirigeant": "personne morale"
+    }
+  ],
+  "source": "https://recherche-entreprises.api.gouv.fr/search?q=892392010"
+}

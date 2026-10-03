@@ -19,25 +19,25 @@ export const ANIM = {
   },
   /* Acte I — pin + dissolution au scroll (en % de viewport) */
   hero: {
-    pinLength: '110%',
+    pinLength: "110%",
     sunScaleOut: 1.35,
   },
   /* Textes révélés mot à mot */
   split: {
-    start: 'top 78%',
-    end: 'top 26%',
+    start: "top 78%",
+    end: "top 26%",
     fromOpacity: 0.08,
     stagger: 0.06,
   },
   /* Parallaxe multi-plans (amplitude de base en %, mise à l'échelle responsive) */
   parallax: { amplitude: 60, scrub: 0.8 },
   /* Acte III — désaturation pilotée par le scroll */
-  desat: { start: 'top 65%', end: 'center 40%' },
+  desat: { start: "top 65%", end: "center 40%" },
   /* Compteurs */
-  counter: { start: 'top 82%', duration: 1.8 },
+  counter: { start: "top 82%", duration: 1.8 },
   /* Acte IV — terrasses 3D */
   terraces: {
-    pinLength: '280%',
+    pinLength: "280%",
     captions: [
       { at: 0.06, out: 0.32 },
       { at: 0.38, out: 0.6 },
@@ -48,7 +48,7 @@ export const ANIM = {
   },
   /* Acte VI — bouteille 3D */
   bottle: {
-    pinLength: '360%',
+    pinLength: "360%",
     riseEnd: 0.12,
     lightStart: 0.04,
     lightEnd: 0.3,

@@ -1,0 +1,42 @@
+{
+  "observationDate": "2026-09-09",
+  "releaseCommit": "bf7957241ede2b144480b8f781eb35d5db8644b0",
+  "source": "Authenticated Google UI observations reported by the root task. Realtime observation has date-only precision; Search Console fresh checks have displayed minute precision.",
+  "analytics": {
+    "propertyId": "553368095",
+    "measurementId": "G-L2PJT90F4Y",
+    "networkEvidence": "../verification/production-analytics.json",
+    "realCollectionStatus": 204,
+    "realtime": {
+      "activeUsers": 1,
+      "eventCounts": {
+        "page_view": 7
+      },
+      "scope": "Aggregate realtime window visible in the Google UI",
+      "attribution": "The seven page_view events are not attributed to the technical QA visit. Their individual origins were not established."
+    },
+    "technicalVisitGeneratedLead": false
+  },
+  "searchConsole": {
+    "property": "https://www.les-terrasses-du-roty.fr/",
+    "propertyType": "URL prefix",
+    "ownershipVerifiedInUi": true,
+    "sitemap": "https://www.les-terrasses-du-roty.fr/sitemap.xml",
+    "sitemapSubmittedInUi": true,
+    "sitemapProcessingStatus": "Traitement du sitemap réussi",
+    "indexingConfirmed": false,
+    "rankingClaims": null,
+    "sitemapDetailObservedAtUtcMinute": "2026-09-09T13:06Z",
+    "lastReadDate": "2026-09-09",
+    "discoveredPages": 19,
+    "discoveredVideos": 0,
+    "liveUrlTest": {
+      "url": "https://www.les-terrasses-du-roty.fr/",
+      "displayedLocalTime": "09/09/2026 15:06 Europe/Paris",
+      "access": "Google a accès à cette URL",
+      "indexability": "La page peut être indexée"
+    },
+    "historicalHomeIndexed": true,
+    "historicalIndexLimitation": "The historical home index may represent previous Shopify content; it does not prove indexing of bf79572 or the upcoming Apple interface."
+  }
+}

@@ -1,6 +1,6 @@
-import { useMemo, useRef } from 'react';
-import * as THREE from 'three';
-import { useFrame } from '@react-three/fiber';
+import { useMemo, useRef } from "react";
+import * as THREE from "three";
+import { useFrame } from "@react-three/fiber";
 
 interface CameraRigProps {
   path: THREE.CatmullRomCurve3;

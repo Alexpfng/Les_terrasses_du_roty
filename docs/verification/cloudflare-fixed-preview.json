@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-09-09T12:26:40.585Z",
+  "commit": "bf7957241ede2b144480b8f781eb35d5db8644b0",
+  "immutable": "https://0a55b884.les-terrasses-du-roty.pages.dev",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "noindex": true,
+      "h1Count": 1,
+      "canonical": true
+    },
+    {
+      "path": "/demande/",
+      "status": 200,
+      "noindex": true,
+      "h1Count": 1,
+      "canonical": true
+    },
+    {
+      "path": "/professionnels/",
+      "status": 200,
+      "noindex": true,
+      "h1Count": 1,
+      "canonical": true
+    },
+    {
+      "path": "/api/analytics-config",
+      "status": 200,
+      "noindex": true,
+      "config": {
+        "enabled": false,
+        "measurementId": null
+      }
+    }
+  ]
+}

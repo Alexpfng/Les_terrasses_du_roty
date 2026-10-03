@@ -30,3 +30,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local configuration and test output
+.env
+.env.*
+!.env.example
+.test-build/
+test-results/
+
+!docs/verification/*.log
+
+# Local Netlify folder
+.netlify
