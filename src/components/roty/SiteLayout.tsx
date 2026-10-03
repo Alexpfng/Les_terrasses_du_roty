@@ -13,14 +13,12 @@ const links = [
 
 export function SiteLayout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [enhanced, setEnhanced] = useState(false);
   const menu = useRef<HTMLDialogElement>(null);
   const closeButton = useRef<HTMLButtonElement>(null);
   const brand = useRef<HTMLAnchorElement>(null);
   const pathname = useRouterState({ select: (state) => state.location.pathname });
 
   useEffect(() => {
-    setEnhanced(true);
     const desktop = window.matchMedia("(min-width: 1000px)");
     const closeOnDesktop = () => {
       if (desktop.matches && menu.current?.open) {
@@ -87,7 +85,6 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
               aria-expanded={menuOpen}
               aria-controls="mobile-nav"
               aria-haspopup="dialog"
-              disabled={!enhanced}
               onClick={() => setMenuOpen(true)}
             >
               <span className="shell-menu-lines" aria-hidden="true">
