@@ -240,6 +240,34 @@
 .ed-feature-copy {
   padding-block: 18px;
 }
+.search-landing .ed-actions {
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-faq {
+  padding-block: 110px;
+}
+.search-intent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.search-intent-grid article {
+  padding: 34px;
+  border: 1px solid #e5e5e7;
+  border-radius: 24px;
+  background: #fff;
+}
+.search-intent-grid h2 {
+  margin-bottom: 18px;
+  font-size: clamp(28px, 3vw, 38px);
+}
+.search-intent-grid p:not(.ed-eyebrow) {
+  margin: 0;
+  color: #6e6e73;
+  font-size: 17px;
+  line-height: 1.7;
+}
 .ed-feature-copy a:not(.button, .text-link),
 .ed-faq a {
   color: #8a6728;
@@ -1053,6 +1081,12 @@
   }
   .journal-item .journal-meta {
     margin-bottom: 16px;
+  }
+  .search-intent-grid {
+    grid-template-columns: 1fr;
+  }
+  .search-faq {
+    padding-block: 76px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

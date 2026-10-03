@@ -124,6 +124,10 @@ export function DomainePage() {
               Retrouvez les informations propres à chaque cuvée sur sa fiche. La dénomination du vin
               se précise à partir de son étiquette et des informations du domaine.
             </p>
+            <p>
+              Pour une recherche locale, consultez aussi notre page consacrée au{" "}
+              <a href="/vin-allier/">vin de l’Allier et à l’achat direct à Saulcet</a>.
+            </p>
             <ButtonLink href="/vins/">Explorer les cuvées</ButtonLink>
           </div>
         </div>
@@ -285,6 +289,10 @@ export function VinsPage() {
               Le guide de l’achat en direct
             </ButtonLink>
           </div>
+          <p className="ed-note ed-note-center">
+            Besoin de comprendre le cépage avant de choisir ? Consultez notre{" "}
+            <a href="/vin-syrah/">guide du vin de Syrah</a>.
+          </p>
         </div>
       </section>
       <ContactBand />

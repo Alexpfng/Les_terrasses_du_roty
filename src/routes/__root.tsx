@@ -9,6 +9,7 @@ import editorialCss from "../editorial-premium.css?url";
 import formCss from "../form-premium.css?url";
 import { SITE_URL, structuredData } from "@/content/seo";
 import { googleSiteVerificationMeta } from "@/lib/analytics";
+import { siteFacts } from "@/content/site-facts";
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -47,13 +48,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         url: SITE_URL + "/",
         logo: SITE_URL + "/assets/img/logo-etiquette-light.svg",
         email: "taff.roty@gmail.com",
+        telephone: siteFacts.phone,
+        sameAs: [siteFacts.instagram],
         location: {
           "@type": "Place",
           name: "Saulcet, Allier",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Saulcet",
-            addressRegion: "Allier",
+            streetAddress: siteFacts.location.street,
+            postalCode: siteFacts.location.postalCode,
+            addressLocality: siteFacts.location.locality,
+            addressRegion: siteFacts.location.department,
             addressCountry: "FR",
           },
         },

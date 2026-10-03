@@ -220,6 +220,8 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
               <a href="/domaine/">Le domaine</a>
               <a href="/terrasses-pierre-seche/">Les terrasses</a>
               <a href="/journal/">Le journal</a>
+              <a href="/vin-allier/">Vin de l’Allier</a>
+              <a href="/vin-syrah/">Guide de la Syrah</a>
             </nav>
             <div className="shell-footer-contact">
               <h2>Restons en contact.</h2>
@@ -227,6 +229,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
                 Écrire au domaine <span aria-hidden="true">↗</span>
               </a>
               <a href="/professionnels/">Vous êtes professionnel ?</a>
+              <a href="tel:+33621560117">+33 6 21 56 01 17</a>
               <span>taff.roty@gmail.com</span>
             </div>
           </div>

@@ -73,9 +73,14 @@ try {
   assert.ok(robots.includes("Disallow: /"));
   results.checks.push({ name: "Local preview excluded from indexing", passed: true });
   const sitemap = await (await fetch(base + "/sitemap.xml")).text();
-  assert.equal([...sitemap.matchAll(/<loc>/g)].length, 19);
+  assert.equal([...sitemap.matchAll(/<loc>/g)].length, 21);
   assert.ok(!/lastmod|products|checkout|cart/.test(sitemap));
-  results.checks.push({ name: "Sitemap 19 canonical URLs, no invented dates", passed: true });
+  results.checks.push({ name: "Sitemap 21 canonical URLs, no invented dates", passed: true });
+  const llms = await fetch(base + "/llms.txt");
+  assert.equal(llms.status, 200);
+  assert.match(llms.headers.get("content-type") || "", /text\/plain/i);
+  assert.match(await llms.text(), /\/vin-allier\//);
+  results.checks.push({ name: "AI discovery file exposes verified entity facts", passed: true });
   const form = await fetch(base + "/api/demandes", {
     method: "POST",
     headers: { "Content-Type": "application/json", Origin: base },

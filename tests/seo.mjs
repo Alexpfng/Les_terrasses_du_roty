@@ -28,6 +28,8 @@ const expectedPaths = [
   "/",
   "/domaine/",
   "/terrasses-pierre-seche/",
+  "/vin-allier/",
+  "/vin-syrah/",
   "/vins/",
   "/vins/cuvee-2024/",
   "/vins/cuvee-2023/",
@@ -127,9 +129,9 @@ try {
   assert.deepEqual(
     [...xml.urls].sort(),
     expectedPaths.map((path) => canonicalOrigin + path).sort(),
-    "Sitemap must contain exactly the 19 reviewed canonical pages, without duplicates",
+    "Sitemap must contain exactly the 21 reviewed canonical pages, without duplicates",
   );
-  report.checks.push({ name: "Valid sitemap with all 19 unique canonical URLs", passed: true });
+  report.checks.push({ name: "Valid sitemap with all 21 unique canonical URLs", passed: true });
 
   const imagePaths = new Set();
   const seen = { title: new Set(), description: new Set(), canonical: new Set() };
@@ -255,7 +257,7 @@ try {
       assert.equal(document["@context"], "https://schema.org", `${path}: schema context`);
       return document["@graph"] || [document];
     });
-    const allowedTypes = ["Organization", "WebSite", "BreadcrumbList", "BlogPosting"];
+    const allowedTypes = ["Organization", "WebSite", "BreadcrumbList", "BlogPosting", "FAQPage"];
     assert.ok(
       nodes.every((node) => allowedTypes.includes(node["@type"])),
       `${path}: unreviewed schema type`,
@@ -294,6 +296,9 @@ try {
     assert.equal(organization.taxID, "892392010");
     assert.equal(organization.url, canonicalOrigin + "/");
     assert.equal(organization.email, "taff.roty@gmail.com");
+    assert.equal(organization.telephone, "+33 6 21 56 01 17");
+    assert.equal(organization.location?.address?.streetAddress, "8 Rue Louis Neillot");
+    assert.equal(organization.location?.address?.postalCode, "03500");
     assert.equal(organization.location?.address?.addressLocality, "Saulcet");
     assert.equal(organization.location?.address?.addressCountry, "FR");
     imagePaths.add(organization.logo);
@@ -394,7 +399,7 @@ try {
   );
   report.checks.push({ name: "Canonical URLs ignore query parameters", passed: true });
   report.checks.push({
-    name: "Unique titles, descriptions, canonicals and consistent social metadata on 19 SSR pages",
+    name: "Unique titles, descriptions, canonicals and consistent social metadata on 21 SSR pages",
     passed: true,
   });
   report.checks.push({

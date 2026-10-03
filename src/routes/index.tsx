@@ -124,6 +124,10 @@ function Home() {
             <ButtonLink secondary href="/domaine/">
               Découvrir notre histoire
             </ButtonLink>
+            <p className="home-local-link">
+              Vous cherchez un producteur près de Saint-Pourçain ? Découvrez notre{" "}
+              <a href="/vin-allier/">vin de l’Allier à Saulcet</a>.
+            </p>
           </div>
         </div>
         <figure className="home-landscape home-reveal">

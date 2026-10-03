@@ -2,7 +2,15 @@
 export const siteFacts = {
   name: "Les Terrasses du Roty",
   canonicalOrigin: "https://www.les-terrasses-du-roty.fr",
-  location: { locality: "Saulcet", department: "Allier", country: "France" },
+  location: {
+    street: "8 Rue Louis Neillot",
+    postalCode: "03500",
+    locality: "Saulcet",
+    department: "Allier",
+    country: "France",
+  },
+  phone: "+33 6 21 56 01 17",
+  instagram: "https://www.instagram.com/terrasses_du_roty/",
   grape: "Syrah",
   terraceCount: 7,
   projectStarted: "octobre 2021",

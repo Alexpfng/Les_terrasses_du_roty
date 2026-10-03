@@ -3,6 +3,8 @@ export const publishedPaths = [
   "/",
   "/domaine/",
   "/terrasses-pierre-seche/",
+  "/vin-allier/",
+  "/vin-syrah/",
   "/vins/",
   "/vins/cuvee-2024/",
   "/vins/cuvee-2023/",

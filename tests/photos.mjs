@@ -58,7 +58,7 @@ try {
   const paths = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
     (match) => new URL(match[1]).pathname,
   );
-  assert.equal(paths.length, 19);
+  assert.equal(paths.length, 21);
   for (const path of paths) {
     const response = await page.goto(base + path, { waitUntil: "networkidle" });
     assert.equal(response.status(), 200, path);

@@ -73,6 +73,38 @@ export function beforeSiteRequest(request: Request): Response | null {
           : `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE_URL}/sitemap.xml\n`,
         { headers: { "Content-Type": "text/plain; charset=utf-8" } },
       );
+    if (url.pathname === "/llms.txt")
+      return new Response(
+        [
+          "# Les Terrasses du Roty",
+          "",
+          "> Domaine de Syrah à Saulcet, dans l'Allier, autour de sept terrasses en pierre sèche.",
+          "",
+          `Canonical site: ${SITE_URL}/`,
+          `Contact: ${SITE_URL}/demande/`,
+          `Local page: ${SITE_URL}/vin-allier/`,
+          `Syrah guide: ${SITE_URL}/vin-syrah/`,
+          `Wines: ${SITE_URL}/vins/`,
+          `Professionals: ${SITE_URL}/professionnels/`,
+          `Journal: ${SITE_URL}/journal/`,
+          "",
+          "## Verified entity facts",
+          "",
+          "- Public name: Les Terrasses du Roty",
+          "- Legal name: LES COTES DU ROTY",
+          "- Public address: 8 Rue Louis Neillot, 03500 Saulcet, France",
+          "- Public phone: +33 6 21 56 01 17",
+          "- Grape presented by the domain: Syrah",
+          "- Documented vintages: 2023 and 2024",
+          "- Landscape: seven dry-stone terraces",
+          "",
+          "## Commercial limits",
+          "",
+          "Prices, stock, transport and professional terms must be confirmed directly with the domain. The website has no cart, checkout or online payment. The site does not claim that the Roty Syrah has the AOC Saint-Pourçain designation. Current organic certification must not be inferred without a current certificate.",
+          "",
+        ].join("\n"),
+        { headers: { "Content-Type": "text/plain; charset=utf-8" } },
+      );
     if (url.pathname === "/sitemap.xml")
       return new Response(
         `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publishedPaths.map((path) => `<url><loc>${SITE_URL}${path}</loc></url>`).join("")}</urlset>`,

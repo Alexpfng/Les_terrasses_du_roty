@@ -10,6 +10,8 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VinsRouteImport } from './routes/vins'
+import { Route as VinSyrahRouteImport } from './routes/vin-syrah'
+import { Route as VinAllierRouteImport } from './routes/vin-allier'
 import { Route as TerrassesPierreSecheRouteImport } from './routes/terrasses-pierre-seche'
 import { Route as ProfessionnelsRouteImport } from './routes/professionnels'
 import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
@@ -26,6 +28,16 @@ import { Route as JournalSlugRouteImport } from './routes/journal_.$slug'
 const VinsRoute = VinsRouteImport.update({
   id: '/vins',
   path: '/vins',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VinSyrahRoute = VinSyrahRouteImport.update({
+  id: '/vin-syrah',
+  path: '/vin-syrah',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VinAllierRoute = VinAllierRouteImport.update({
+  id: '/vin-allier',
+  path: '/vin-allier',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TerrassesPierreSecheRoute = TerrassesPierreSecheRouteImport.update({
@@ -99,6 +111,8 @@ export interface FileRoutesByFullPath {
   '/mentions-legales': typeof MentionsLegalesRoute
   '/professionnels': typeof ProfessionnelsRoute
   '/terrasses-pierre-seche': typeof TerrassesPierreSecheRoute
+  '/vin-allier': typeof VinAllierRoute
+  '/vin-syrah': typeof VinSyrahRoute
   '/vins': typeof VinsRoute
   '/journal/$slug': typeof JournalSlugRoute
   '/vins/cuvee-2023': typeof VinsCuvee2023Route
@@ -114,6 +128,8 @@ export interface FileRoutesByTo {
   '/mentions-legales': typeof MentionsLegalesRoute
   '/professionnels': typeof ProfessionnelsRoute
   '/terrasses-pierre-seche': typeof TerrassesPierreSecheRoute
+  '/vin-allier': typeof VinAllierRoute
+  '/vin-syrah': typeof VinSyrahRoute
   '/vins': typeof VinsRoute
   '/journal/$slug': typeof JournalSlugRoute
   '/vins/cuvee-2023': typeof VinsCuvee2023Route
@@ -130,6 +146,8 @@ export interface FileRoutesById {
   '/mentions-legales': typeof MentionsLegalesRoute
   '/professionnels': typeof ProfessionnelsRoute
   '/terrasses-pierre-seche': typeof TerrassesPierreSecheRoute
+  '/vin-allier': typeof VinAllierRoute
+  '/vin-syrah': typeof VinSyrahRoute
   '/vins': typeof VinsRoute
   '/journal_/$slug': typeof JournalSlugRoute
   '/vins_/cuvee-2023': typeof VinsCuvee2023Route
@@ -147,6 +165,8 @@ export interface FileRouteTypes {
     | '/mentions-legales'
     | '/professionnels'
     | '/terrasses-pierre-seche'
+    | '/vin-allier'
+    | '/vin-syrah'
     | '/vins'
     | '/journal/$slug'
     | '/vins/cuvee-2023'
@@ -162,6 +182,8 @@ export interface FileRouteTypes {
     | '/mentions-legales'
     | '/professionnels'
     | '/terrasses-pierre-seche'
+    | '/vin-allier'
+    | '/vin-syrah'
     | '/vins'
     | '/journal/$slug'
     | '/vins/cuvee-2023'
@@ -177,6 +199,8 @@ export interface FileRouteTypes {
     | '/mentions-legales'
     | '/professionnels'
     | '/terrasses-pierre-seche'
+    | '/vin-allier'
+    | '/vin-syrah'
     | '/vins'
     | '/journal_/$slug'
     | '/vins_/cuvee-2023'
@@ -193,6 +217,8 @@ export interface RootRouteChildren {
   MentionsLegalesRoute: typeof MentionsLegalesRoute
   ProfessionnelsRoute: typeof ProfessionnelsRoute
   TerrassesPierreSecheRoute: typeof TerrassesPierreSecheRoute
+  VinAllierRoute: typeof VinAllierRoute
+  VinSyrahRoute: typeof VinSyrahRoute
   VinsRoute: typeof VinsRoute
   JournalSlugRoute: typeof JournalSlugRoute
   VinsCuvee2023Route: typeof VinsCuvee2023Route
@@ -206,6 +232,20 @@ declare module '@tanstack/react-router' {
       path: '/vins'
       fullPath: '/vins'
       preLoaderRoute: typeof VinsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vin-syrah': {
+      id: '/vin-syrah'
+      path: '/vin-syrah'
+      fullPath: '/vin-syrah'
+      preLoaderRoute: typeof VinSyrahRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vin-allier': {
+      id: '/vin-allier'
+      path: '/vin-allier'
+      fullPath: '/vin-allier'
+      preLoaderRoute: typeof VinAllierRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terrasses-pierre-seche': {
@@ -305,6 +345,8 @@ const rootRouteChildren: RootRouteChildren = {
   MentionsLegalesRoute: MentionsLegalesRoute,
   ProfessionnelsRoute: ProfessionnelsRoute,
   TerrassesPierreSecheRoute: TerrassesPierreSecheRoute,
+  VinAllierRoute: VinAllierRoute,
+  VinSyrahRoute: VinSyrahRoute,
   VinsRoute: VinsRoute,
   JournalSlugRoute: JournalSlugRoute,
   VinsCuvee2023Route: VinsCuvee2023Route,

@@ -53,7 +53,9 @@ function DemandePage() {
             <p>
               Les Terrasses du Roty
               <br />
-              Saulcet, Allier
+              8 Rue Louis Neillot
+              <br />
+              03500 Saulcet, Allier
             </p>
             <p style={{ marginTop: 16 }}>
               taff.roty@gmail.com
